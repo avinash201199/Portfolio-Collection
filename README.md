@@ -9,7 +9,7 @@
 * Create an issue with description and wait for approval.
 * Then fork this repository.
 * In the forked repository create a folder ,the folder name should be your full name.
-* Add your files to the folder, for example check [this]()
+* Add your files to the folder, for example check [this](https://github.com/avinash201199/Portfolio-Collection/tree/main/Alex-main)
 * Make pull request after adding the files.
 * Wait for review.
 
