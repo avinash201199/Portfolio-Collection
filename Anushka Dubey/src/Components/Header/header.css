@@ -1,0 +1,51 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex:1;
+    padding: 12px;
+    position: relative;
+    height: 60px;
+}
+.menu{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.menuIcon{
+    font-size: 24px;
+}
+
+.mobileMenu{
+    display: none;
+}
+
+.webMenu{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    display: flex;
+    font-size: 36px;
+    color:rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 720px){
+    .header{
+        background-size: auto;
+    }
+    .mobileMenu{
+        display: flex;
+        flex-direction: column;
+    }
+    .webMenu{
+        display: none;
+    }
+    .logo{
+        font-size: 24px;
+    }
+}
+

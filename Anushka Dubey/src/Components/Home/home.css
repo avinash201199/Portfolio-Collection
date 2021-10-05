@@ -1,0 +1,32 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    background-image: url("../../Assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 30%;
+    opacity: 0.9;
+}
+
+
+@media only screen and (max-width: 1024px){
+.home{
+    width: 90%;
+}
+}
+
+@media only screen and (max-width: 512px){
+.home{
+    width: 100%;
+    background-image: url("../../Assets/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 20%;
+    opacity: 0.9;
+}
+}

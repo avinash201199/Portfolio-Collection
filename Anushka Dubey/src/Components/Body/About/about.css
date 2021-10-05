@@ -1,0 +1,36 @@
+.about{
+    margin-top: 50px;
+    padding-bottom: 48px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutInfo{
+    font-size: 18px;
+    font-weight: 100;
+
+}
+.aboutPictureLogo{
+    height:400px;
+}
+.impName{
+    font-style: italic;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 720px) {
+    .about{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .aboutPictureLogo{
+        height: 250px;
+    }
+    .aboutInfo{
+        font-size: 15px;
+    }
+
+}
