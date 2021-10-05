@@ -1,0 +1,40 @@
+.mobile{
+    background-color: white;
+    height: 100vh;
+    width: 60vh;
+    position:absolute;
+    right: 0px;
+    top:-6px;
+    padding: 18px 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.closeIcon{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 28px;
+}
+
+.mobileOptions{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 24px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.mobileOption{
+    font-size: 24px;
+    margin: 12px 8px;
+    display: flex;
+}
+
+.mobileOption a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    
+}

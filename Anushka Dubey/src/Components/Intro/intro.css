@@ -1,0 +1,43 @@
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100ch;
+    width: 50%;
+    margin: auto;
+    
+}
+
+.introPic{
+    height: 230px;
+    border-radius: 50%;
+    margin-top: 12ch;
+}
+
+.introContent{
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+.introContent2{
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+}
+
+@media only screen and (max-width:720px){
+    .intro{
+        height: 70ch;
+        width:90%;
+        margin: auto;
+    }
+    .introPic{
+        height: 150px;
+    }
+    .introContent{
+        font-size: 30px;
+    }
+    .introContent2{
+        font-size: 13px;
+    }
+}
