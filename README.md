@@ -15,6 +15,6 @@
 
 Contact me here for any doubt - https://www.instagram.com/lets__code/
 
-[1. Portfolio template](https://ritiportfolio.glitch.me/#home)
-[2. Rishita](https://rishitashaw.github.io/)
-[3. Portfolio template](https://igotabadidea.github.io/)
+[1. Portfolio template](https://ritiportfolio.glitch.me/#home)<br>
+[2. Rishita](https://rishitashaw.github.io/)<br>
+[3. Portfolio template](https://igotabadidea.github.io/)<br>
