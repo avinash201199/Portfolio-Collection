@@ -1,0 +1,15 @@
+// mixins
+@mixin flex() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+// transition
+@mixin custom-transition($property, $duration) {
+  -webkit-transition: $property $duration + s;
+  -o-transition: $property $duration + s;
+  transition: $property $duration + s;
+}
