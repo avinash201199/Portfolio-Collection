@@ -20,3 +20,4 @@ Contact me here for any doubt - https://www.instagram.com/lets__code/
 [3. Portfolio template](https://igotabadidea.github.io/)<br>
 [4. Yashika](https://yashika.netlify.app/) <br>
 [5. Portfolio template](https://www.jessieanhnguyen.com/) <br>
+[6. Rosita sikarwar](https://portfolio-rosita.netlify.app/) <br>
