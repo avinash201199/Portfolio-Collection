@@ -19,5 +19,5 @@ Contact me here for any doubt - https://www.instagram.com/lets__code/
 [2. Rishita](https://rishitashaw.github.io/)<br>
 [3. Portfolio template](https://igotabadidea.github.io/)<br>
 [4. Yashika](https://yashika.netlify.app/) <br>
-[5. Megha Vihwakarma](https://megha-vishwakarma.github.io/cv/) <br>
+[5. Megha Vishwakarma](https://megha-vishwakarma.github.io/cv/) <br>
 [6. Portfolio template](https://www.jessieanhnguyen.com/) <br>
