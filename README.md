@@ -24,7 +24,7 @@ This repository contains collection of portfolio's from various open source enth
 #### Extra Steps if you want to display your portfolio on the website*
 * Go to index.html file (which can be found in the root directory)
 * Go to the portfolio section (starting from line 176)
-* Add neccassary changes to the code snippet provided below and maintain the order of the code (only add your code snippet below the last added portfolio)
+* Add neccessary changes to the code snippet provided below and maintain the order of the code (only add your code snippet below the last added portfolio)
 * If you want to add your own image to the card add the image [here](https://github.com/avinash201199/Portfolio-Collection/tree/main/website/assets/imgs)
 ```html
 <a href="add-your-webapp-link-here"  target=”_blank” class="item expertises-item">
