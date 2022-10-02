@@ -1,0 +1,139 @@
+
+
+
+
+.about .wrap{
+    display: grid;
+    grid-template-areas: 'heading pic'
+                         'para pic'
+                         'cta pic';
+}
+.about hr{
+    margin: 0;
+    width: 63%;
+}
+.heading{
+    grid-area: heading;
+    align-self: center;
+}
+.heading *{
+    margin: 0%;
+}
+.heading h2{
+    font-size: 3rem;
+    color: #E7E9E9;
+}
+.heading h3{
+    font-size: 2rem;
+    color: #BAC3CF;
+}
+.aboutMe{
+    grid-area: para;
+    font-size: 1.5rem;
+    width: 90%;
+    color: #BAC3CF;
+}
+.aboutMe span{
+    color: #E7E9E9;
+    font-weight: 500;
+}
+.about a{
+    grid-area: cta;
+}
+.img{
+    grid-area: pic;
+    justify-self: center;
+    width: 75%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(to right, #36FBB1, #a8ffde, #a8ffde, #36FBB1);
+    filter: blur(0.5px) grayscale(0.8);
+    transition: 0.5s all linear;
+}
+.img img{
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    transition: 0.5s all linear;
+}
+.img:hover{
+    filter: blur(0px) grayscale(0) drop-shadow(10px 10px 15px black);
+}
+.img:hover > img{
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 1200px) {
+    .about hr{
+        width: 57%;
+    }
+}
+@media only screen and (max-width: 1010px) {
+    .about hr{
+        width: 49%;
+    }
+    .img{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .about h2{
+        font-size: 2.5rem;
+    }
+    .img{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .about hr{
+        width: 41%;
+    }
+    .about h2{
+        font-size: 2rem;
+    }
+    .img{
+        width: 100%;
+        filter: blur(0px) grayscale(0) drop-shadow(10px 10px 15px black);
+        z-index: -1;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .about .wrap{
+        grid-template-areas: 'heading'
+        'para'
+        'pic'
+                             'cta';
+    }
+    .about h2{
+        font-size: 3rem;
+    }
+    .heading{
+        margin-top: 40px;
+    }
+    .heading h3{
+        display: none;
+    }
+    .aboutMe{
+        width: 100%;
+    }
+    .img{
+        border-radius: 40px;
+        width: 75%;
+    }
+    .about a{
+        margin: 20px auto;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .about h2{
+        font-size: 2.5rem;
+    }
+    .about hr{
+        width: 33%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .about h2{
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,11 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    height: 10vh;
+}
+footer span{
+    border-right: 1px solid white;
+}

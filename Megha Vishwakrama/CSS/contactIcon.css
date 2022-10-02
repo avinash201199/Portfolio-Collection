@@ -1,0 +1,186 @@
+.contactButton{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+}
+.contactIcon, .closeIcon{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+}
+.closeIcon{
+    opacity: 0;
+}
+.showIcon{
+    animation: showIcon 0.75s linear 0s 1 forwards;
+}
+@keyframes showIcon{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.hideIcon{
+    animation: hideIcon 0.75s linear 0s 1 forwards;
+}
+@keyframes hideIcon{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.first, .second, .third, .fourth{
+    position: absolute;
+    width: 40px;
+    bottom: 0px;
+    right: 0;
+    transform-origin: right;
+    opacity: 0;
+    z-index: 100000;
+}
+.first::before{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: url(../icons/twitter.svg);
+    transform: rotate(-10deg);
+    background-color: #061320;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 50%;
+}
+.second::before{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: url(../icons/mail.svg);
+    transform: rotate(-40deg);
+    background-color: #061320;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 50%;
+    z-index: 1000;
+}
+.third::before{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: url(../icons/github.svg);
+    transform: rotate(-70deg);
+    background-color: #061320;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 50%;
+    z-index: 2;
+}
+.fourth::before{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: url(../icons/linkedin.svg);
+    transform: rotate(-100deg);
+    background-color: #061320;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+/* Animation to show the contacts */
+.showFirst{
+    animation: showFirst 0.75s linear 0.25s 1 forwards;
+}
+@keyframes showFirst{
+    0%{
+        width: 40px;
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        width: 150px;
+        transform: rotate(10deg);
+        opacity: 1;
+    }
+}
+.show{
+    animation: show 0.75s linear 0.25s 1 forwards;
+}
+@keyframes show{
+    0%{
+        width: 40px;
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        width: 150px;
+        transform: rotate(30deg);
+        opacity: 1;
+    }
+
+}
+/* Animation to hide the contacts */
+.hideFirst{
+    animation: hideFirst 0.75s linear 0.25s 1 forwards;
+}
+@keyframes hideFirst{
+    0%{
+        width: 150px;
+        transform: rotate(10deg);
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        width: 40px;
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+}
+.hide{
+    animation: hide 0.75s linear 0.25s 1 forwards;
+}
+@keyframes hide{
+    0%{
+        width: 150px;
+        transform: rotate(30deg);
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        width: 40px;
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contactButton{
+        display: block;
+    }
+}
