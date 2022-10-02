@@ -1,0 +1,167 @@
+/* Navigation Bar */
+nav{
+    width: 100%;
+    min-height: 10vh;
+    position: fixed;
+    top: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    background-color: #061320;
+}
+nav img{
+    height: 45px;
+    width: 45px;
+    margin-left: 20px;
+}
+menu{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+menu hr{
+    position: relative;
+    height: 2px;
+    width: 35px;
+    background-color: #36FBB1;
+    border-color: #36FBB1;
+    transform-origin: left;
+    margin: 0;
+}
+.phoneMenu{
+    position: fixed;
+    top: -100vh;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #061320;
+    z-index: 1;
+}
+.removePhoneMenu{
+    animation: removePhoneMenu 0.5s linear 0s 1 forwards;
+}
+@keyframes removePhoneMenu{
+    0%{
+        top: 10vh;
+    }
+    100%{
+        top: -100vh;
+    }
+}
+.showPhoneMenu{
+    animation: showPhoneMenu 0.5s linear 0s 1 forwards;
+}
+@keyframes showPhoneMenu{
+    0%{
+        top: -100vh;
+    }
+    100%{
+        top: 10vh;
+    }
+}
+/* animation classes to show animation in menu button while showing menu in phone*/
+.remove{
+    animation: remove 0.3s linear 0s 1 forwards;
+}
+@keyframes remove{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 30px;
+    }
+}
+.rotateDown{
+    animation: rotateDown 0.3s linear 0s 1 forwards;
+}
+@keyframes rotateDown{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(45deg);
+    }
+}
+.rotateUp{
+    animation: rotateUp 0.3s linear 0s 1 forwards;
+}
+@keyframes rotateUp{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(-45deg);
+    }
+}
+/* animation classes to show animation in menu button while hiding menu */
+.revind2{
+    animation: revind2 0.3s linear 0s 1 forwards;
+}
+@keyframes revind2{
+    0%{
+        left: 30px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+.revind1{
+    animation: revind1 0.3s linear 0s 1 forwards;
+}
+@keyframes revind1{
+    0%{
+        transform: rotateZ(45deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+.revind3{
+    animation: revind3 0.3s linear 0s 1 forwards;
+}
+@keyframes revind3{
+    0%{
+        transform: rotateZ(-45deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+ul{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+ul a{
+    color: #D6E2DE;
+    transition: 0.1s all;
+}
+ul a:hover{
+    color: #36FBB1;
+}
+ul li{
+    list-style: none;
+    padding: 0 2%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul, section{
+        display: none;
+    }
+    menu, .phoneMenu{
+        display: flex;
+    }
+}

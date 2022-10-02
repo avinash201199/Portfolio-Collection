@@ -1,0 +1,42 @@
+.contact{
+    height: 90vh;
+}
+.contact hr{
+    margin: 0%;
+    width: 72%;
+}
+.contact .wrap{
+    flex-direction: column;
+}
+.contact .wrap > *{
+    padding: 30px 0;
+}
+.contact h3{
+    width: 65%;
+    margin: 0%;
+    text-align: center;
+    color: #BAC3CF;
+    font-weight: 500;
+    z-index: -1;
+}
+.contact .socials{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+@media only screen and (max-width: 600px) {
+    .contact h3{
+        width: 80%;
+    }
+    .contact .socials{
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .contact h3{
+        width: 90%;
+    }
+    .contact .socials{
+        width: 40%;
+    }
+}
