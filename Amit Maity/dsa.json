@@ -1,0 +1,47 @@
+[
+    {
+        "name": "C++ DSA Codes",
+        "icon": "https://img.icons8.com/color/50/000000/c-plus-plus-logo.png",
+        "link": "https://github.com/maityamit/Cpp-DSA-Notes-and-Programs"
+    },
+    {
+        "name": "C++ DSA Notes",
+        "icon": "https://img.icons8.com/color/50/000000/c-plus-plus-logo.png",
+        "link": "https://drive.google.com/drive/folders/1k1fOYHfrwnkUejehQZdSBsbMjdt0urs8"
+    },
+    {
+        "name": "LeetCode Practice🧑‍💻",
+        "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/50/000000/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png",
+        "link": "https://github.com/maityamit/LeetCode-Practice"
+    },
+    {
+        "name": "NeetCode.io Practice🧑‍💻",
+        "icon": "https://img.icons8.com/clouds/50/000000/rocket.png",
+        "link": "https://github.com/maityamit/NeeCode.io"
+    },
+    {
+        "name": "Android Guides",
+        "icon": "https://img.icons8.com/bubbles/50/000000/android-os.png",
+        "link": "https://github.com/maityamit/Android-Development-Codes-and-Notes"
+    },
+    {
+        "name": "Jetpack Compose",
+        "icon": "https://img.icons8.com/color/50/000000/kotlin.png",
+        "link": "https://github.com/maityamit/Jetpack-Compose-Android"
+    },
+    {
+        "name": "DSA Love Babbar",
+        "icon": "https://img.icons8.com/color/50/000000/c-plus-plus-logo.png",
+        "link": "https://github.com/maityamit/DSA-Sheet-by-Love-Babbar"
+    },
+    {
+        "name": "Flutter Notes",
+        "icon": "https://img.icons8.com/color/50/000000/flutter.png",
+        "link": "https://github.com/maityamit/Flutter-App-Development-Learn"
+    },
+    {
+        "name": "Web Dev",
+        "icon": "https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/50/000000/external-web-development-coding-kiranshastry-lineal-color-kiranshastry.png",
+        "link": "https://github.com/maityamit/The-Complete-2022-Web-Development-Bootcamp-by-Angela-Yu"
+    }
+]

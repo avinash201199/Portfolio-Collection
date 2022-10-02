@@ -58,6 +58,9 @@ This repository contains collection of portfolio's from various open source enth
 [7. Riti Kumari](https://ritiportfolio.glitch.me/#home)
 
 [8. Rosita Sikarwar](https://portfolio-rosita.netlify.app/)
+
+[9. Amit Maity](https://maityamit.github.io/maityamit-portfolio)
+
 ## Contact
 
 If you guys have any doubts you can contact me here:
