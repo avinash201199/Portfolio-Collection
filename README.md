@@ -23,3 +23,5 @@ Contact me here for any doubt - https://www.instagram.com/lets__code/
 [4. Yashika](https://yashika.netlify.app/) <br>
 [5. Megha Vishwakarma](https://megha-vishwakarma.github.io/cv/) <br>
 [6. Portfolio template](https://www.jessieanhnguyen.com/) <br>
+[7. Rosita sikarwar](https://portfolio-rosita.netlify.app/) <br>
+
