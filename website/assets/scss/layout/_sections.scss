@@ -1,0 +1,20 @@
+.section {
+    padding: 60px 10px;
+
+    &:nth-child(odd) {
+        background-color: #f1fafb;
+    }
+
+    &.p-sm {
+        padding: 30px 0 !important;
+    }
+
+    &.p-md {
+        padding: 60px 0 !important;
+    } 
+
+    &.bg-overlay {
+        background: #2C3E50;
+        color: $white;
+    }
+}

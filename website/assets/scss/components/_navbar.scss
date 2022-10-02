@@ -1,0 +1,168 @@
+.navbar {
+      @include transition(all,.4s);
+
+      &.affix-top {
+            padding-top: ($navbar-padding-y) * 2;
+            padding-bottom: ($navbar-padding-y) * 2;
+            background: transparent !important;
+
+            .nav-link {
+                color: $white;
+            }
+      }
+
+      &.affix {
+            padding-top: $navbar-padding-y;
+            padding-bottom: $navbar-padding-y;
+            border-bottom: $border-width solid $border-color;
+
+            &.bg-light {
+                  background: $white !important;
+            }
+            &.bg-dark {
+                  background: $dark !important;
+            }
+            &.bg-primary {
+                  background: $primary !important;
+            }
+            &.bg-info {
+                  background: $info !important;
+            }
+            &.bg-success {
+                  background: $success !important;
+            }
+            &.bg-danger {
+                  background: $danger !important;
+            }
+            &.bg-warning {
+                  background: $warning !important;
+            }
+      }
+
+      &-brand {
+
+            .brand-img {
+                width: $navbar-brand-img-width;
+                margin: -$navbar-brand-padding-y 0;
+            }
+      }
+
+      &-toggler {
+            position: relative;
+            border: none;
+            outline: none !important;
+            height: $navbar-toggler-height;
+            width: $navbar-toggler-width;
+
+
+            &-icon {
+                  position: absolute;
+                  top: 50%;
+                  right: 0;
+                  width: 25px;
+                  height: $toggler-icon-height;
+                  border-radius: 20px;
+                  transform: translateY(-50%);
+                  @include transition(all,.3s);
+                  transition-timing-function: cubic-bezier(.82,.1,.14,1.12);
+
+                  &:after,
+                  &:before {
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        height: $toggler-icon-height;
+                        border-radius: inherit;
+                        background: inherit;
+                        @include transition(all,.3s);
+                        transition-timing-function: cubic-bezier(.82,.1,.14,1.12);
+                  }
+
+                  &:before {
+                        top: - $toggler-icon-spacer-y;
+                        width: $toggler-icon-top-width;
+                  }
+
+                  &:after {
+                        top: $toggler-icon-spacer-y;
+                        width: $toggler-icon-bottom-width;
+                  }
+            }
+
+            &[aria-expanded="true"] {
+
+                  .navbar-toggler-icon {
+                        height: 4px;
+                        width: 35px;
+
+                        &:after,
+                        &:before {
+                              top: 0;
+                              opacity: 0;
+                              width: 35px;
+                        }
+                  }
+            }
+      }
+      
+      &-nav {
+            .nav-link {
+                  font-size: $navbar-link-font-size;
+                  font-weight: $navbar-link-font-weight;
+
+                  &.active {
+                    color: $primary !important;
+                  }
+            }
+      }
+}
+
+@include media-breakpoint-down(sm) { 
+    .navbar-expand-sm {
+
+        .navbar-collapse {
+            padding: $navbar-padding-y 0;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) { 
+    .navbar-expand-md {
+
+        .navbar-collapse {
+            padding: $navbar-padding-y 0;
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) { 
+    .navbar-expand-lg {
+
+        .navbar-collapse {
+            padding: $navbar-padding-y 0;
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) { 
+    .navbar-expand-xl {
+
+        .navbar-collapse {
+            padding: $navbar-padding-y 0;
+        }
+    }
+}
+
+.navbar-light {
+
+    .navbar-toggler-icon {
+        background: $navbar-light-color;
+    }
+}
+
+.navbar-dark {
+
+    .navbar-toggler-icon {
+        background: $navbar-dark-color;
+    }
+}

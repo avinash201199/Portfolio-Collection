@@ -1,0 +1,116 @@
+.infos {
+  height: 100px;
+  padding-bottom: 20px;
+  color: $white;
+  @include flex;
+  opacity: 0.8;
+  align-items: flex-end;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .title,
+  .socials {
+    flex-grow: 1;
+
+    .subtitle {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+  }
+
+  .title {
+    .font-small {
+      color: $white;
+      font-size: 13px;
+    }
+  }
+
+  .subtitle {
+    margin: 2px;
+
+    i {
+      width: 20px;
+      display: inline-block;
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  .social-links {
+    a {
+      font-size: 14px;
+      color: $white;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+/* contact section */
+.list {
+  list-style-type: none;
+  padding-left: 0;
+  padding: 0 30px;
+
+  .list-head {
+    border-bottom: 1px solid $gray-300;
+    padding-bottom: 6px;
+  }
+
+  .list-body {
+    padding-top: 6px;
+
+    p {
+      margin-bottom: 5px;
+
+      i {
+        display: inline-block;
+        width: 20px;
+      }
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      margin-bottom: 4px;
+    }
+
+    .social-links {
+      margin-top: 15px;
+
+      a {
+        display: inline;
+        padding: 0 8px 0 0;
+      }
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+p {
+  font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
+  opacity: 0.9;
+  color: #111;
+  letter-spacing: 0.6px;
+}
+
+.xs-font {
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+.title {
+  font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1300 - 300)));
+}
