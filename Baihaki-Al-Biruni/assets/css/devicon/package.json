@@ -1,0 +1,59 @@
+{
+  "_from": "devicon",
+  "_id": "devicon@2.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-u7l8jBcLiaEm5mWHSDTDBPxoAzB9a4YjHiBDIOAVApL0m+eatz3WXNO1eAr8E5QBYzLJtlyIRFEBVtX7xQMhwA==",
+  "_location": "/devicon",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "devicon",
+    "name": "devicon",
+    "escapedName": "devicon",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/devicon/-/devicon-2.2.0.tgz",
+  "_shasum": "a19ddc9410f7294fbbe0825fe6259c80681cdb15",
+  "_spec": "devicon",
+  "_where": "D:\\ProjectCode\\NuxtTailwind",
+  "author": {
+    "name": "konpa"
+  },
+  "bugs": {
+    "url": "https://github.com/konpa/devicon/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Programming related icons collection",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-concat-css": "^2.0.0",
+    "gulp-minify-css": "^0.4.3",
+    "gulp-plumber": "^0.6.6"
+  },
+  "homepage": "http://konpa.github.io/devicon/",
+  "keywords": [
+    "programming",
+    "icons",
+    "svg",
+    "font"
+  ],
+  "license": "MIT",
+  "main": "devicon.min.css",
+  "name": "devicon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konpa/devicon.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.2.0"
+}
