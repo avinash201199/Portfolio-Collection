@@ -1,0 +1,24 @@
+{
+  "name": "NuxtTailwind",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "devicon": "^2.2.0",
+    "nuxt": "^2.14.6",
+    "tailwindcss-dark-mode": "^1.1.7"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^2.0.5",
+    "@nuxtjs/tailwindcss": "^3.2.0",
+    "fibers": "^5.0.0",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.0.5"
+  }
+}
