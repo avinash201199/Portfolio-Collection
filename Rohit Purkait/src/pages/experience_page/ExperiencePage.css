@@ -1,0 +1,41 @@
+.ExperiencePage {
+  min-height: 100vh;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.ExperiencePage-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+}
+
+.ExperiencePage-work-block {
+  margin-bottom: 2em;
+}
+
+.ExperiencePage-title {
+  font-size: 3rem;
+  font-family: "Caveat Brush";
+  margin-bottom: 0.5em;
+}
+
+.ExperiencePage-description {
+  font-size: 1.5rem;
+  font-family: "Caveat";
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: 1000px) {
+  .ExperiencePage-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .ExperiencePage-image {
+    margin-bottom: 1.5em;
+  }
+}
