@@ -68,5 +68,4 @@ This repository contains collection of portfolio's from various open source enth
 
 If you guys have any doubts you can contact me here:
 
-- [Avinash Singh]
-  (https://www.instagram.com/lets__code/)
+ [Avinash Singh](https://www.instagram.com/lets__code/)
