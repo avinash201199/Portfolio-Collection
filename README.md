@@ -61,6 +61,8 @@ This repository contains collection of portfolio's from various open source enth
 
 [9. Amit Maity](https://maityamit.github.io/maityamit-portfolio)
 
+[10. Baihaki Al Biruni](https://baihakialbiruni.dev)
+
 ## Contact
 
 If you guys have any doubts you can contact me here:
