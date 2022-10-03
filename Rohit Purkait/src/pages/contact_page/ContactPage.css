@@ -1,0 +1,70 @@
+.ContactPage {
+  min-height: 100vh;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.ContactPage-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+}
+
+.ContactPage-image {
+  margin-top: 2em;
+}
+
+.ContactPage-socials-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.ContactPage-mail-title,
+.ContactPage-social-title {
+  font-family: "Caveat Brush";
+  font-size: 4rem;
+}
+
+.ContactPage-mail {
+  font-family: "Caveat";
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+}
+
+.linkedin-link,
+.github-link {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.linkedin-link:hover {
+  color: #2565af;
+}
+
+.github-link:hover {
+  color: #f5aa1a;
+}
+
+@media screen and (max-width: 1000px) {
+  .ContactPage-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ContactPage-image {
+    width: 90%;
+    margin-bottom: 2em;
+  }
+
+  .ContactPage-socials-block {
+    justify-content: center;
+  }
+}

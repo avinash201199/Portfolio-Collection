@@ -1,0 +1,21 @@
+.NavBar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  padding: 1.5em 0;
+  font-family: "Dancing Script";
+  font-size: 1.5rem;
+}
+
+.NavBar-link {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 450px) {
+  .NavBar-container {
+    font-size: 1rem;
+  }
+}
