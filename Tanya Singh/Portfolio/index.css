@@ -1,0 +1,346 @@
+ body {
+     background-color: whitesmoke;
+     margin: 0px;
+     height: 0px;
+ }
+ .hey {
+     padding-top: 100px;
+     font-size: 40px;
+     color: black;
+     text-align: center;
+     padding-left: 520px;
+     font-family: 'Tinos', serif;
+ }
+ .name {
+     padding-top: 10px;
+     font-weight: bolder;
+     font-size: 90px;
+     color: lightcoral;
+     text-align: center;
+     width: 100%;
+     padding-left: 260px;
+     font-family: 'Jura', sans-serif;
+ }
+ .student {
+     padding-top: 20px;
+     padding-left: 560px;
+     font-size: 30px;
+     text-align: center;
+     color: black;
+     font-family: 'Tinos', serif;
+ }
+ .icons1 {
+     display: flex;
+     list-style: none;
+     align-items: center;
+     justify-content: space-around;
+     margin: 1rem 0 3rem 0;
+     margin: 20px;
+     padding-left: 570px;
+ }
+
+ .icons1 li {
+     margin: 20px;
+ }
+ .icons1 a {
+     text-decoration: none;
+     color: black;
+ }
+ .icons1 a i {
+     font-size: 30px;
+ }
+ .icons1 a:hover i {
+     color: white;
+ }
+ ul li {
+     background-color: lightpink;
+     border-radius: 50%;
+     height: 40px;
+     width: 40px;
+ }
+ ul li:nth-child(1) {
+     background-color: lightpink;
+ }
+ ul li:nth-child(2) {
+     background-color: lightgreen;
+ }
+ ul li:nth-child(3) {
+     background-color: lightblue;
+ }
+ .container1 {
+     background-color: #27483f;
+     background: url(/d.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 500px;
+     color: aliceblue;
+     object-fit: cover;
+     width: 100%;
+     display: flex;
+     text-align: center;
+ }
+ .container2 {
+     text-align: center;
+     background-color: lightblue;
+     height: 40px;
+     font-size: 30px;
+     font-family: 'Jura', sans-serif;
+ }
+ .about {
+     text-align: center;
+     font-size: 25px;
+     font-family: 'Tinos', serif;
+     height: 130px;
+     width: 100%;
+     padding-top: 20px;
+     justify-content: space-around;
+ }
+ .my {
+     text-align: center;
+     margin: 40px;
+     padding-top: 40px;
+ }
+ .skill {
+     text-align: center;
+     background-color: lightpink;
+     font-family: 'Jura', sans-serif;
+     font-size: 30px;
+     height: 40px;
+ }
+ .contact {
+     text-align: center;
+     background-color: lightgreen;
+     font-family: 'Jura', sans-serif;
+     font-size: 30px;
+     height: 40px;
+ }
+ .container4 {
+     width: 100%;
+ }
+ .container3 {
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-between;
+     height: 500px;
+     padding-top: 80px;
+ }
+ .container3 .box {
+     position: relative;
+     width: 350px;
+     padding: 40px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+     border-radius: 4px;
+     margin: 20px;
+     box-sizing: border-box;
+     overflow: hidden;
+     height: 350px;
+ }
+ .container3 .box .icon {
+     position: relative;
+     width: 100%;
+     height: 90px;
+     color: black;
+     background: greenyellow;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10%;
+     margin: 0 auto;
+     font-size: 40px;
+     transition: 1s;
+ }
+ .container3 .box:nth-child(1) .icon {
+     box-shadow: 0 0 0 0 lightblue;
+     background: lightblue;
+ }
+ .container3 .box:nth-child(1):hover .icon {
+     box-shadow: 0 0 0 400px lightblue;
+     background: lightblue;
+ }
+ .container3 .box:nth-child(2) .icon {
+     box-shadow: 0 0 0 0 lightgreen;
+     background: lightgreen;
+ }
+ .container3 .box:nth-child(2):hover .icon {
+     box-shadow: 0 0 0 400px lightgreen;
+     background: lightgreen;
+ }
+ .container3 .box:nth-child(3) .icon {
+     box-shadow: 0 0 0 0 lightpink;
+     background: lightpink;
+ }
+ .container3 .box:nth-child(3):hover .icon {
+     box-shadow: 0 0 0 400px lightpink;
+     background: lightpink;
+ }
+ .container3 .box .content {
+     position: relative;
+     z-index: 1;
+     transition: 0.5s;
+ }
+ .container3 .box:hover .content {
+     color: white;
+ }
+ .container3 .box .content p {
+     position: relative;
+     z-index: 1;
+     transition: 0.5s;
+     font-size: 20px;
+     font-family: 'Tinos', serif;
+     margin: 10px 0;
+     padding: 0;
+ }
+ .username {
+     text-align: left;
+     padding: 7px;
+     padding-top: 35px;
+ }
+ .forms {
+     padding-top: 60px;
+ }
+ #register {
+     background: url(/bg3.png);
+     width: 500px;
+     text-align: left;
+     margin-left: 500px;
+     border-radius: 10%;
+     height: 470px;
+ }
+ label {
+     font-weight: bold;
+     font-size: 20px;
+     font-family: 'Jura', sans-serif;
+ }
+ .heading {
+     text-align: center;
+     padding-top: 10px;
+     font-size: 20px;
+     font-family: 'Tinos', serif;
+ }
+ input[type="submit"] {
+     border-radius: 30px;
+     background-color: black;
+     color: white;
+     height: 40px;
+     width: 90px;
+     text-align: center;
+     align-items: center;
+     font-family: 'Tinos', serif;
+     margin-left: 220px;
+     font-size: 15px;
+ }
+ input[type="submit"]:hover {
+     background-color: white;
+     color: black;
+     cursor: pointer;
+ }
+ input[type="name"],
+ input[type="number"],
+ input[type="email"] {
+     width: 100%;
+     height: 30px;
+     background-color: whitesmoke;
+     border-radius: 10px;
+ }
+
+ .footer p {
+     background-color: lightblue;
+     text-align: center;
+     font-size: 20px;
+     font-family: 'Tinos', serif;
+ }
+ .aboutc {
+     width: 1000px;
+     padding-left: 250px;
+     font-size: 25px;
+ }
+ @media only screen and (max-width:700px) {
+     .header {
+         background-color: white;
+         height: 500px;
+         width: 100%;
+     }
+     .container1 {
+         display: flex;
+         height: 500px;
+     }
+     .hey {
+         text-align: left;
+         padding-left: 250px;
+     }
+     .name {
+         text-align: center;
+         padding-left: 0;
+     }
+     .student {
+         padding-left: 0;
+     }
+     .icons1 {
+         padding-left: 0;
+     }
+     .container2 {
+         width: 100%;
+     }
+     .aboutc {
+         padding-left: 0;
+         width: 100%;
+     }
+     .about {
+         height: 150px;
+     }
+     .skil {
+         width: 100%;
+     }
+     .contact {
+         width: 100%;
+     }
+     .container3 .box {
+         height: 500px;
+     }
+     #register {
+         margin-left: 100px;
+     }
+ }
+ @media only screen and (min-width:701px) and (max-width:1360px) {
+     .container1 {
+         width: 100%;
+         display: flex;
+         height: 500px;
+     }
+     .hey {
+         text-align: left;
+         padding-left: 290px;
+     }
+     .name {
+         text-align: center;
+         padding-left: 100px;
+     }
+     .student {
+         padding-left: 70px;
+     }
+     .icons1 {
+         padding-left: 0;
+     }
+     .container2 {
+         width: 100%;
+     }
+     .aboutc {
+         padding-left: 0;
+         width: 100%;
+     }
+     .about {
+         height: 150px;
+     }
+     .skil {
+         width: 100%;
+     }
+     .contact {
+         width: 100%;
+     }
+     .container3 .box {
+         height: 500px;
+     }
+     #register {
+         margin-left: 100px;
+     }
+ }
