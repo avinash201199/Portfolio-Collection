@@ -1,0 +1,305 @@
+html[mode='light'] {
+	--color: #000;
+	--color2: #FFF;
+}
+
+html[mode='dark'] {
+	--color: #FFF;
+	--color2: #000;
+}
+
+html[mode='light'][theme="lily"] {
+	--background: #EDF3D3;
+	--monet: #535C23;
+	--url: url('../images/lily.jpg');
+}
+
+html[theme="lily"] {
+	--back: #EFF3D3;
+	--monet2: #101206;
+	--monet3: #323b07;
+}
+
+html[mode='dark'][theme="lily"] {
+	--background: #101206;
+	--monet: #A9B073;
+	--monet3: #e6eac7;
+	--url: url('../images/lily-dark.jpg');
+}
+
+html[mode='light'][theme="orchid"] {
+	--background: #DB897B;
+	--monet: #521F16;
+	--monet3: #521F16;
+	--url: url('../images/orchid.jpg');
+}
+
+html[mode='dark'][theme="orchid"] {
+	--background: #140806;
+	--monet: #DC8D80;
+	--url: url('../images/orchid-dark.jpg');
+}
+
+html[theme="orchid"] {
+	--back: #DB897B;
+	--monet2: #140806;
+	--monet3: #DB897B;
+}
+
+html[mode='light'][theme="pin"] {
+	--background: #fad8af;
+	--monet: #482B0D;
+	--monet3: #482B0D;
+	--url: url('../images/pin.jpg');
+}
+
+html[mode='dark'][theme="pin"] {
+	--background: #150B03;
+	--monet: #fad8af;
+	--url: url('../images/pin-dark.jpg');
+}
+
+html[theme="pin"] {
+	--back: #FAD8AF;
+	--monet2: #150B03;
+	--monet3: #fad8af;
+}
+
+html[mode='light'][theme="helle"] {
+	--background: #9F7D94;
+	/*--color: #FFF;*/
+	--monet: #2A1823;
+	--monet3: #180E14;
+	--url: url('../images/helle.jpg');
+}
+
+html[mode='dark'][theme="helle"] {
+	--background: #180E14;
+	--monet: #CEAAC0;
+	--url: url('../images/helle-dark.jpg');
+}
+
+html[theme="helle"] {
+	--back: #9F7D94;
+	--monet2: #180E14;
+	--monet3: #9F7D94;
+}
+
+html[mode='light'][theme="moth"] {
+	--background: #DEDADE;
+	--monet: #3D3C46;
+	--monet3: #3D3C46;
+	--url: url('../images/moth.jpg');
+}
+
+html[mode='dark'][theme="moth"] {
+	--background: #090C11;
+	--monet: #BFCADB;
+	--url: url('../images/moth-dark.jpg');
+}
+
+html[theme="moth"] {
+	--back: #949194;
+	--monet2: #090C11;
+	--monet3: #3D3C46;
+}
+
+@font-face {
+	font-family: archia;
+	src: url(../fonts/archia.woff);
+}
+
+@font-face {
+	font-family: gsans;
+	src: url(../fonts/gsans.ttf);
+}
+
+::-webkit-scrollbar {
+	width: 16px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	background: var(--monet);
+}
+
+* {
+	font-family: "KoHo";
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	border: 1px solid transparent;
+	background-clip: content-box !important;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+	background: var(--background);
+	transition: 0.3s;
+}
+
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit
+}
+
+ol,
+ul {
+	list-style: none;
+	text-decoration: none;
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px)
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0)
+	}
+}
+
+@keyframes fadeInUp2 {
+	0% {
+		opacity: 1;
+		transform: translateY(0)
+	}
+	to {
+		opacity: 0;
+		transform: translateY(-20px)
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px)
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0px)
+	}
+}
+
+@keyframes Up {
+	0% {
+		transform: translateY(-100%)
+	}
+	to {
+		transform: translateY(0)
+	}
+}
+
+@keyframes Down {
+	0% {
+		transform: translateY(0px)
+	}
+	to {
+		transform: translateY(-100%)
+	}
+}
+
+.down {
+	animation-name: Down!important;
+	animation-duration: 1s;
+}
+
+.fadeInDown {
+	animation-name: fadeInDown!important;
+	animation-duration: .45s;
+}
+
+.fadeInUp2 {
+	-webkit-animation-name: fadeInUp2!important;
+	animation-name: fadeInUp2!important;
+	-webkit-animation-duration: .45s!important;
+	animation-duration: .45s!important;
+	-webkit-animation-fill-mode: both!important;
+	animation-fill-mode: both!important;
+}
+
+.fadeInUp {
+	-webkit-animation-name: fadeInUp!important;
+	animation-name: fadeInUp!important;
+	-webkit-animation-duration: .45s!important;
+	animation-duration: .45s!important;
+	-webkit-animation-fill-mode: both!important;
+	animation-fill-mode: both!important;
+}
+
+.lily {
+	background-color: #EDF3D3;
+	height: 24px;
+	width: 24px;
+	border: solid 1px;
+	border-color: black;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.pin {
+	background-color: #fad8af;
+	height: 24px;
+	width: 24px;
+	border: solid 1px;
+	border-color: black;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.helle {
+	background-color: #9F7D94;
+	height: 24px;
+	width: 24px;
+	border: solid 1px;
+	border-color: black;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.orchid {
+	background-color: #DB897B;
+	height: 24px;
+	width: 24px;
+	border: solid 1px;
+	border-color: black;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.moth {
+	background-color: #DEDADE;
+	height: 24px;
+	width: 24px;
+	border: solid 1px;
+	border-color: black;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/materialicons/v109/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+}
+
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+}
+
+#particles-js {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.hide {
+	display: none !important;
+}

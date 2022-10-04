@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" mode="dark" theme="moth">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title id="title">Shivan Singh</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+   <link href="https://fonts.googleapis.com/css2?family=KoHo&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./css/home.css">
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/navbar.css">
+   <script src="https://kit.fontawesome.com/becbac7640.js" crossorigin="anonymous"></script>
+   <link rel="icon" class="main_icon" href="./images/icon.png" type="image/x-icon" sizes="256x256">
+</head>
+<header>
+   <nav class="navbar">
+      <b>
+         <span class="inner-switch"><i id="mode" class="fa fa-moon-o fa" aria-hidden="true"></i></span>
+         <div id="nav" class="sitenavigation">
+            <span class="menu-icon">
+               <a href="#" class="menu"><span></span></a>
+               <div id="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+            </span>
+            <ul id="anim" style="height: 60px;">
+               <div id="time1"></div>
+               <div id="navclose">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                     <path
+                        d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10">
+                     </path>
+                  </svg>
+               </div>
+               <div id="themes_bar" onclick="open_theme(this)">Themes <i class="fa fa-paint-brush"
+                     aria-hidden="true"></i><br>
+                  <div id="anim2" class="move">
+                     <li class="lily" onclick="set_theme('lily')"></li>
+                     <li class="pin" onclick="set_theme('pin')"></li>
+                     <li class="helle" onclick="set_theme('helle')"></li>
+                     <li class="orchid" onclick="set_theme('orchid')"></li>
+                     <li class="moth" onclick="set_theme('moth')"></li>
+                  </div>
+               </div>
+               <ul class="media">
+                  <li><span class="material-icons">
+                        network_wifi
+                     </span>
+                  </li>
+                  <li><span class="material-icons">
+                        signal_cellular_4_bar
+                     </span>
+                  </li>
+                  <li><span class="material-icons">
+                        battery_full
+                     </span>
+                  </li>
+               </ul>
+               <li class="selected top left" style="margin-left: 2px;"><a href="index.html">Home</a></li>
+               <li class="top right"><a href="projects.html">Projects</a></li>
+               <li class="left"><a href="education.html">Education</a></li>
+               <li class="right"><a href="experience.html">Experience</a></li>
+            </ul>
+         </div>
+      </b>
+   </nav>
+</header>
+
+<body style="animation-delay: 0.0s; transition: all .1s linear 0.3s;">
+   <div id="particles-js"></div>
+   <div class="Level fadeInUp" style="animation-delay: 0.5s;">
+      <div class="heading">
+         <div class="phone">
+            <div class="overlay"></div>
+            <div class="hi_back"></div>
+            <div id="day" onload="showTime()"></div>
+            <div id="time" onload="showTime()"></div>
+            <ul class="theme-icon">
+               <li class="lily" onclick="set_theme('lily')"></li>
+               <li class="pin" onclick="set_theme('pin')"></li>
+               <li class="helle" onclick="set_theme('helle')"></li>
+               <li class="orchid" onclick="set_theme('orchid')"></li>
+               <li class="moth" onclick="set_theme('moth')"></li>
+            </ul>
+            <div class="themes">Themes</div>
+         </div>
+         <div class="col"></div>
+         <div class="col1"></div>
+         <div class="text hi">Hi,</div>
+         <br>
+         <br>
+         <div class="profile profile_anim"><span></span></div>
+         <div class="my_info">
+            <div class="text me">I am Shivan</div>
+            <br>
+            <div>
+               <span class="text work">Currently working on
+                  <span class="animated-text" words="Android, Html, CSS, JavaScript, Python, Java"></span>
+               </span>
+               <ul class="social">
+                  <li>
+                     <a title="Resume"
+                        href="https://drive.google.com/file/d/1wK-mSxV94AcVSbqYRXsq6arZnA4Wu9QJ/view?usp=sharing">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                           <path
+                              d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7.753 18.305c-.261-.586-.789-.991-1.871-1.241-2.293-.529-4.428-.993-3.393-2.945 3.145-5.942.833-9.119-2.489-9.119-3.388 0-5.644 3.299-2.489 9.119 1.066 1.964-1.148 2.427-3.393 2.945-1.084.25-1.608.658-1.867 1.246-1.405-1.723-2.251-3.919-2.251-6.31 0-5.514 4.486-10 10-10s10 4.486 10 10c0 2.389-.845 4.583-2.247 6.305z" />
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="http://t.me/kingsmanz">
+                        <svg width="24px" height="24px" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                           xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                           xmlns:serif="http://www.serif.com/"
+                           style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                           <path id="telegram-4"
+                              d="M12,0c-6.626,0 -12,5.372 -12,12c0,6.627 5.374,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.628 -5.373,-12 -12,-12Zm3.224,17.871c0.188,0.133 0.43,0.166 0.646,0.085c0.215,-0.082 0.374,-0.267 0.422,-0.491c0.507,-2.382 1.737,-8.412 2.198,-10.578c0.035,-0.164 -0.023,-0.334 -0.151,-0.443c-0.129,-0.109 -0.307,-0.14 -0.465,-0.082c-2.446,0.906 -9.979,3.732 -13.058,4.871c-0.195,0.073 -0.322,0.26 -0.316,0.467c0.007,0.206 0.146,0.385 0.346,0.445c1.381,0.413 3.193,0.988 3.193,0.988c0,0 0.847,2.558 1.288,3.858c0.056,0.164 0.184,0.292 0.352,0.336c0.169,0.044 0.348,-0.002 0.474,-0.121c0.709,-0.669 1.805,-1.704 1.805,-1.704c0,0 2.084,1.527 3.266,2.369Zm-6.423,-5.062l0.98,3.231l0.218,-2.046c0,0 3.783,-3.413 5.941,-5.358c0.063,-0.057 0.071,-0.153 0.019,-0.22c-0.052,-0.067 -0.148,-0.083 -0.219,-0.037c-2.5,1.596 -6.939,4.43 -6.939,4.43Z" />
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://github.com/kingsman44">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                           <path
+                              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.linkedin.com/in/shivan-singh">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                           <path
+                              d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <br>
+   </div>
+   </div>
+</body>
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/home.js"></script>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" mode="dark" theme="moth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title id="title">Shivan Singh</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=KoHo&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./css/experience.css">
+	  <link rel="stylesheet" href="./css/main.css">
+	  <link rel="stylesheet" href="./css/navbar.css">
+	  <script src="https://kit.fontawesome.com/becbac7640.js" crossorigin="anonymous"></script>
+      <link rel="icon" class="main_icon" href="./images/icon.png" type="image/x-icon" sizes="256x256">
+   </head>
+   <header>
+      <nav class="navbar">
+         <b>
+            <span class="inner-switch"><i id="mode" class="fa fa-moon-o fa" aria-hidden="true"></i></span>
+            <div id="nav" class="sitenavigation">
+               <span class="menu-icon">
+                  <a href="#" class="menu"><span></span></a>
+                  <div id="hamburger">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div>
+               </span>
+               <ul style="height: 60px;">
+                  <div id="time1"></div>
+                  <div id="navclose">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                        <path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"></path>
+                     </svg>
+                  </div>
+				  <div id="themes_bar" onclick="open_theme(this)">Themes <i class="fa fa-paint-brush" aria-hidden="true"></i><br>
+				  <div class="move">
+					  <li class="lily" onclick="set_theme('lily')"></li>
+					  <li class="pin" onclick="set_theme('pin')"></li>
+					  <li class="helle" onclick="set_theme('helle')"></li>
+					  <li class="orchid" onclick="set_theme('orchid')"></li>
+					  <li class="moth" onclick="set_theme('moth')"></li>
+					</div>
+				  </div>
+                  <ul class="media">
+                     <li><span class="material-icons">
+                        network_wifi
+                        </span>
+                     </li>
+                     <li><span class="material-icons">
+                        signal_cellular_4_bar
+                        </span>
+                     </li>
+                     <li><span class="material-icons">
+                        battery_full
+                        </span>
+                     </li>
+                  </ul>
+                  <li class="top left"><a href="index.html">Home</a></li>
+                  <li class="top right"><a href="projects.html">Projects</a></li>
+                  <li class="left"><a href="education.html">Education</a></li>
+                  <li class="selected right"><a href="experience.html">Experience</a></li>
+               </ul>
+            </div>
+			</b>
+      </nav>
+   </header>
+   <body style="animation-delay: 0.1s; transition: all .5s linear 0.5s;" class="dark">
+   <div id="particles-js"></div>
+   <div class="heading">
+   <div class="head hi">Experience<br></div>
+   <div class="head me">Nothing ever becomes real 'til it is experienced.― John Keats</div>
+	</div>
+       <br>
+       <ul class="lan">
+       	<b>Languages</b>
+       	<div class="ph_fix">
+       	<li>C<div class="graph"><div class="graph lc lk l4"></div></div></li>
+       	<li>HTML, CSS<div class="graph"><div class="graph lc lk l6"></div></div></li>
+       	<li>JavaScript<div class="graph"><div class="graph lc lk l4"></div></div></li>
+       	<li>Linux Shell<div class="graph"><div class="graph lc lk l6"></div></div></li>
+       	<li>SQL<div class="graph"><div class="graph lc lk l4"></div></div></li>
+       	<li>Python<div class="graph"><div class="graph lc lk l4"></div></div></li>
+       	<!-- <li>Maximum<div class="graph">10</div></li></div> -->
+       </ul>
+       <br><br>
+       <div class="c_head">
+       <b>Courses and Certificates</b></div>
+       <div id="main"> </div>
+       <br>
+   </body>
+   <script src="./js/main.js"></script>
+   <script src="./js/experience.js"></script>
+</html>
