@@ -11010,6 +11010,7 @@ button.bg-dark:focus {
   .text-sm-center {
     text-align: center !important;
   }
+
 }
 
 @media (min-width: 768px) {
@@ -11777,6 +11778,10 @@ pre .code {
   margin-top: 100px;
 }
 
+.carousel-title{
+  padding-top: 20px;
+}
+
 .header .carousel .carousel-inner .carousel-title {
   font-size: calc(40px + (60 - 40) * ((100vw - 300px) / (1300 - 300)));
   font-weight: bold;
@@ -11863,6 +11868,8 @@ pre .code {
 
 .section {
   padding: 60px 10px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .section:nth-child(odd) {
