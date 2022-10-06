@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vaibhav Vijay's personal portfolio">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" sizes="16x16">
+    <link rel="alternate icon" href="images/favicon.ico" type="image/icon" sizes="16x16">
+    <title>Vaibhav Vijay</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body class="container">
+    <div class="landing-screen">
+        <div id="theme-switch" class="switch-container">
+            <div class="sun"></div>
+            <label class="switch">
+                <input type="checkbox" id="themeSwitch" aria-label="Theme switch">
+                <span class="slider round"></span>
+            </label>
+            <div class="moon"></div>
+        </div>
+
+        <section id="home" class="home">
+            <p class="home-greeting">Hello!</p>
+            <h1 class="home-text">
+                I'm <span class="my-name">Vaibhav Vijay</span>, a front-end software engineer focused on building beautiful interfaces & experiences.
+            </h1>
+            <div class="home-icon-container">
+                <a class="home-social-icon email-icon" aria-label="Email" href="mailto:vaibhavvijay9@gmail.com"></a>
+                <a class="home-social-icon linkedin-icon" aria-label="Linkedin" href="https://www.linkedin.com/in/vaibhavvijay9" target="_blank" rel="noopener noreferrer"></a>
+                <a class="home-social-icon github-icon" aria-label="Github" href="https://github.com/vaibhavvijay9" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+            <a class="download-btn" href="assets/Resume_Vaibhav-Vijay.pdf" download>
+                <img class="download-btn-icon" src="images/cloud-download.svg" alt="Download">Resume
+            </a>
+        </section>
+    </div>
+
+
+    <section id="about" class="section-container">
+        <h2 class="section-heading">About Me</h2>
+        <div style="padding: 10px;">
+            <p class="about-paragraph">
+                I'm a Senior Engineer at Nagarro, responsible for building new features for the product.
+                As a developer, creating things for the web with precise implementation gives me a feeling of satisfaction.
+            </p>
+            <p class="about-paragraph">
+                Previously, I worked at Dew Solutions where I worked on a hybrid Angular application and developed new features.
+                Before that I worked at Mindler, which was a great learning experience for me as I developed a product from scratch.
+                I started with Infosys as a Systems Engineer, where I worked on improving services for the client's application by setting up analytical tools.
+            </p>
+            <p>
+                If you catch me outside of work, I'm a traveler - loves exploring new places and likes playing table tennis!
+            </p>
+        </div>
+    </section>
+
+
+    <section id="skills" class="section-container">
+        <h2 class="section-heading">Skills</h2>
+        <div style="padding: 10px;display: flex;">
+            <div style="width: 250px;">
+                <h3 class="skill-heading">Technologies</h3>
+                <div class="skill">Angular</div>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">jQuery</div>
+                <div class="skill">Bootstrap</div>
+                <div class="skill">Tailwind CSS</div>
+                <div class="skill">NgRx</div>
+            </div>
+            <div>
+                <h3 class="skill-heading">Tools</h3>
+                <div class="skill">VS Code</div>
+                <div class="skill">Git & Github</div>
+                <div class="skill">Chrome DevTools</div>
+                <div class="skill">Postman</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience-new" class="section-container">
+        <h2 class="section-heading">Experience</h2>
+        <div class="tab-and-content-container">
+            <div class="tab">
+                <button class="tab-links" onclick="openTab(event, 'Tab1')" id="defaultOpen">Nagarro</button>
+                <button class="tab-links" onclick="openTab(event, 'Tab2')">Dew Solutions</button>
+                <button class="tab-links" onclick="openTab(event, 'Tab3')">Mindler</button>
+                <button class="tab-links" onclick="openTab(event, 'Tab4')">Infosys</button>
+            </div>
+            
+            <div class="tab-content-wrapper">
+                <div id="Tab1" class="tab-content">
+                    <div>
+                        <p class="designation">Senior Engineer, <span class="section-item-name job-company">Nagarro</span></p>
+                        <div class="job-duration">Dec 2021 - Present</div>                
+                    </div>
+                    <ul class="section-item-description">
+                        <li>Developed a social media platform for healthcare professionals using Angular.</li>
+                        <li>Also responsible for the development of the Admin portal for that application.</li>
+                    </ul>
+                </div>
+                <div id="Tab2" class="tab-content">
+                    <div>
+                        <p class="designation">Software Engineer, <span class="section-item-name job-company">Dew Solutions</span></p>
+                        <div class="job-duration">Apr 2020 - Dec 2021</div>                
+                    </div>
+                    <ul class="section-item-description">
+                        <li>Implemented new features using Angular for CENTRL - a platform for Privacy Management and Third-Party Risk.</li>
+                        <li>Developed new components and modules using Angular as per client requirements for the application.</li>
+                        <li>Responsible for maintaining and enhancing the existing code which also included working on AngularJS pages as it is a hybrid application.</li>
+                        <li>Implemented new features like primeNG library for UI, Internationalization and File handling with S3.</li>
+                    </ul>
+                </div>
+                <div id="Tab3" class="tab-content">
+                    <div>
+                        <p class="designation">Front-End Developer, <span class="section-item-name job-company">Mindler</span></p>
+                        <div class="job-duration">Aug 2019 - Apr 2020</div>
+                    </div>
+                    <ul class="section-item-description">
+                        <li>Single-handedly developed from scratch the front-end of a dynamic ed-tech product, Partner Platform, using Angular 8 and Bootstrap 4.</li>
+                        <li>Responsible for all the front-end related tasks of the existing product.</li>
+                        <li>Developed campaign pages for marketing using HTML and CSS.</li>
+                    </ul>
+                </div>
+                <div id="Tab4" class="tab-content">
+                    <div>
+                        <p class="designation">Systems Engineer, <span class="section-item-name job-company">Infosys</span></p>
+                        <div class="job-duration">May 2018 - Aug 2019</div>
+                    </div>
+                    <ul class="section-item-description">
+                        <li>Worked on Splunk to create dashboards for real time monitoring and Ibis Adapter Framework.</li>
+                        <li>Handled issues on production instances.</li>
+                    </ul>
+
+                    <div class="designation-sub-level">
+                        <p class="designation">Systems Engineer Trainee</p>
+                    </div>
+                    <ul class="section-item-description">
+                        <li>Training in J2EE to develop Enterprise Application using Java, Hibernate and AngularJS.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="education" class="section-container">
+        <h2 class="section-heading">Education</h2>
+        <div style="padding: 20px 10px;">
+            <div class="section-item-header">
+                <h3 class="section-item-name">B.Tech. in Computer Science & Engineering</h3>
+                <div>2018</div>
+            </div>
+            <p class="designation">SKIT, Jaipur</p>
+        </div>
+
+        <div style="padding: 20px 10px;">
+            <div class="section-item-header">
+                <h3 class="section-item-name">High School</h3>
+                <div>2014</div>
+            </div>
+            <p class="designation">Kendriya Vidyalaya, Avikanagar</p>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <p class="developer-credit">Developed By Vaibhav Vijay</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
