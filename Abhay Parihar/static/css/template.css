@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+	--primary-color: #000000;
+	--secondary-color: #ffffff;
+	--tertiary-color: #47e4bb;
+	--primary-font: 'Josefin Sans', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--primary-font);
+	font-weight: 200;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.nav__bar {
+	display: flex;
+	flex: 1 0 auto;
+}
+
+.nav__bar--menu {
+	list-style-type: none;
+	display: flex;
+	color: var(--secondary-color);
+	margin: auto;
+	margin-right: 5rem;
+	text-align: center;
+}
+
+.nav__button {
+	display: table-cell;
+	position: relative;
+}
+
+.nav__button a {
+	color: var(--secondary-color);
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	padding: 1rem 1.5rem;
+	position: relative;
+	margin: 0.2rem;
+	transition: all 2s;
+}
+
+.nav__button a:hover {
+	color: var(--primary-color);
+	font-weight: 600 !important;
+}
+
+.nav__button a::after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: '';
+	display: block;
+	width: 0%;
+	height: 0.2rem;
+	left: 0;
+	position: absolute;
+	background: var(--tertiary-color);
+	transition: all 2s;
+	opacity: 0;
+}
+
+.nav__button--active a::after {
+	width: 100%;
+	opacity: 1;
+}
+
+.nav__button a:hover::after {
+	z-index: -1;
+	animation: fill 1s forwards;
+	-webkit-animation: fill 1s forwards;
+	-moz-animation: fill 1s forwards;
+	opacity: 1;
+}
+
+@keyframes fill {
+	0% {
+		width: 0%;
+		height: 0.2rem;
+	}
+	50% {
+		width: 100%;
+		height: 0.2rem;
+	}
+	100% {
+		width: 100%;
+		height: 100%;
+		background: var(--tertiary-color);
+	}
+}
+
+.content {
+	width: 100%;
+	color: var(--secondary-color);
+	font-family: var(--primary-font);
+	font-weight: 200;
+	flex: 8 1 auto;
+}
+
+footer {
+	width: 100%;
+	flex: 1 0 0;
+	margin-bottom: 1rem;
+}
+
+footer a {
+	color: var(--secondary-color);
+	font-size: 2rem;
+	margin: 0.5rem 3.5vw;
+}
+
+footer a:hover {
+	color: var(--tertiary-color);
+}
+
+.credits {
+	color: var(--secondary-color);
+	width: fit-content;
+	margin: 0.5rem auto;
+}
+
+.credits a {
+	font-size: 1rem;
+	margin: 0;
+}
+
+@media (max-width: 768px) {
+	.nav__bar {
+		flex-direction: column;
+	}
+	.nav__button a {
+		padding: 0.5rem;
+	}
+	.nav__bar--menu {
+		margin: auto !important;
+	}
+	.credits {
+		width: 80%;
+	}
+}

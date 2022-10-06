@@ -1,0 +1,31 @@
+extends template.pug
+
+block stylesheet
+    link(rel="stylesheet", href="./../static/css/projects.css")
+
+block script
+    script(defer src="./../static/js/projects.js") 
+
+block content
+    img.main__img(src="./../static/img/project-main.png")
+    div.heading 
+        p.heading--my My 
+        p.heading--work Work 
+    
+    a.know-me(href="/know-me") Know Me
+
+    div.spinner 
+        i.fa.fa-spinner.fa-pulse 
+        p.wait Please wait while we are fetching projects.
+
+    div.projects__section.hidden
+        //- div.project
+        //-     div.project__details
+        //-         img.project__img(src="./../static/img/project-pic.png", alt="")
+        //-         div.overlay
+        //-             div.project__discription 
+        //-                 p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus numquam inducimus neque, quisquam 
+        //-             div.project__links
+        //-                 a.project__link--github(href="",target="_blank") GitHub Link 
+        //-                 a.project__link--website(href="",target="_blank") Website Link 
+        //-     p.project__name Project 1
