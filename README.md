@@ -64,7 +64,7 @@ This repository contains collection of portfolio's from various open source enth
 
 [11. Rohit Purkait](https://www.rohitpurkait.tech/)
 
-[12. Pavan Kamthane](https://pavan-kamthane-portfolio.web.app/)
+[14. Pavan Kamthane](https://pavan-kamthane-portfolio.web.app/)
 
 ## Contact
 
