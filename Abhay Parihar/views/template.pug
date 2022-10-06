@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title SpiralForge
+        link(rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css")
+        link(rel="shortcut icon", href="./../static/img/favicon.jpg", type="image/x-icon")
+        link(rel="stylesheet", href="./../static/css/template.css")
+        block stylesheet
+        script(defer src="./../static/js/template.js")
+        block script  
+    body 
+        nav.nav__bar 
+            block logo 
+            ul.nav__bar--menu
+                li.nav__button.nav__button--home
+                    a(href="/") Home  
+                li.nav__button.nav__button--projects 
+                    a(href="/projects") Projects  
+                li.nav__button.nav__button--contact 
+                    a(href="/contact") Contact Me 
+
+        section.content
+            block content 
+
+        footer
+            p.credits &copy; Designed by 
+                a(href="") Anushtha Bageria
+                |, and developed by 
+                a(href="") Abhay Parihar
+                | .
