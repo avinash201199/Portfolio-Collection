@@ -1,0 +1,34 @@
+<svg width="175" height="175" viewBox="0 0 175 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .svg-stroke {
+        stroke: black;
+    }
+    .svg-fill {
+        fill: black;
+    }
+    @media (prefers-color-scheme: dark) {
+        .svg-stroke {
+            stroke: white;
+        }
+        .svg-fill {
+            fill: white;
+        }
+    }
+</style>
+<path class="svg-stroke" d="M87.0057 15.7303L147.799 51.861V124.122L87.0057 160.253L26.2126 124.122V51.861L87.0057 15.7303Z" stroke="black" stroke-width="8"/>
+<path class="svg-stroke" d="M13.7228 44.9047L87.5 2.3094L161.277 44.9047V130.095L87.5 172.691L13.7228 130.095V44.9047Z" stroke="black" stroke-width="4"/>
+<g filter="url(#filter0_d)">
+<path class="svg-fill" d="M53.6884 55.0524H65.8804L87.0004 103.532L108.216 55.0524H120.312L87.7684 125.612H86.3284L53.6884 55.0524Z" fill="black"/>
+</g>
+<defs>
+<filter id="filter0_d" x="53.6884" y="55.0524" width="74.624" height="78.56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dx="4" dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>
