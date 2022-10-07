@@ -1,0 +1,15 @@
+.social-icons {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 180px;
+
+    .social-link {
+        font-size: 18px;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}

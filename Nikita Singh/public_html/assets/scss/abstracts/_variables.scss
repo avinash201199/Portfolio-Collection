@@ -1,0 +1,155 @@
+//
+// Color system
+//
+
+// stylelint-disable
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #eaf0fc;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$grays: ();
+$grays: map-merge((
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+), $grays);
+
+$blue:    #79A9F5;
+$indigo:  #C45F90;
+$purple:  #A16AE8;
+$pink:    #FC8BC0;
+$red:     #F85C70;
+$orange:  #FF8882;
+$yellow:  #FAD02C;
+$green:   #A3C14A;
+$teal:    #20c997;
+$cyan:    #47D8E0;
+
+$colors: ();
+$colors: map-merge((
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+), $colors);
+
+
+$primary:       $red;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $orange;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+
+$theme-colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      'Source Sans Pro', sans-serif;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:            $font-family-sans-serif;
+$headings-font-family:        'Dosis', sans-serif;
+// stylelint-enable value-keyword-case
+
+
+
+
+// Pagination
+
+$pagination-padding-y:              .3rem;
+$pagination-padding-x:              .7rem;
+$pagination-padding-y-sm:           .15rem;
+$pagination-padding-x-sm:           .5rem;
+$pagination-padding-y-lg:           .4rem ;
+$pagination-padding-x-lg:           1rem ;
+$pagination-border-color:           transparent;
+$pagination-color:                  $gray-800;
+$pagination-hover-bg:               rgba($primary, .3);
+$pagination-hover-border-color:     transparent;
+
+
+
+// Breadcrumbs
+
+$breadcrumb-padding-y:              .55rem;
+$breadcrumb-bg:                     transparent;
+$breadcrumb-font-size:              .9rem;
+
+$breadcrumb-divider-color:          $gray-900;
+$breadcrumb-active-color:           $gray-700;
+$breadcrumb-link-color:             $gray-900;
+$breadcrumb-divider:                quote("·");
+
+
+
+// Navbar
+
+$navbar-padding-y:                  .8rem;
+$navbar-nav-link-padding-x:         1.5rem;
+$navbar-light-color:                rgba($black, .8);
+
+
+
+// Progress bars
+$progress-height:                   .3rem;
+
+
+// cards
+$card-border-radius:                0;
+
+
+
+// links
+$link-hover-decoration:     none;
+
+
+
+
+
+
+

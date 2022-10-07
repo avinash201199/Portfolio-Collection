@@ -1,0 +1,79 @@
+/*!
+=========================================================
+* JohnDoe Landing page
+=========================================================
+
+* Copyright: 2019 DevCRUD (https://devcrud.com)
+* Licensed: (https://devcrud.com/licenses)
+* Coded by www.devcrud.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+
+// Core
+@import "vendors/bootstrap-4.3.1/functions";
+
+// custom variables
+@import "abstracts/variables";
+// bootstrap variables
+@import "vendors/bootstrap-4.3.1/variables";
+
+@import "vendors/bootstrap-4.3.1/mixins";
+@import "abstracts/mixins";
+
+
+// Bootstrap 4.3.1
+@import "vendors/bootstrap-4.3.1/root";
+@import "vendors/bootstrap-4.3.1/reboot";
+@import "vendors/bootstrap-4.3.1/type";
+@import "vendors/bootstrap-4.3.1/images";
+@import "vendors/bootstrap-4.3.1/code";
+@import "vendors/bootstrap-4.3.1/grid";
+@import "vendors/bootstrap-4.3.1/tables";
+@import "vendors/bootstrap-4.3.1/forms";
+@import "vendors/bootstrap-4.3.1/buttons";
+@import "vendors/bootstrap-4.3.1/transitions";
+@import "vendors/bootstrap-4.3.1/dropdown";
+@import "vendors/bootstrap-4.3.1/button-group";
+@import "vendors/bootstrap-4.3.1/input-group";
+@import "vendors/bootstrap-4.3.1/custom-forms";
+@import "vendors/bootstrap-4.3.1/nav";
+@import "vendors/bootstrap-4.3.1/navbar";
+@import "vendors/bootstrap-4.3.1/card";
+@import "vendors/bootstrap-4.3.1/breadcrumb";
+@import "vendors/bootstrap-4.3.1/pagination";
+@import "vendors/bootstrap-4.3.1/badge";
+@import "vendors/bootstrap-4.3.1/jumbotron";
+@import "vendors/bootstrap-4.3.1/alert";
+@import "vendors/bootstrap-4.3.1/progress";
+@import "vendors/bootstrap-4.3.1/media";
+@import "vendors/bootstrap-4.3.1/list-group";
+@import "vendors/bootstrap-4.3.1/close";
+@import "vendors/bootstrap-4.3.1/toasts";
+@import "vendors/bootstrap-4.3.1/modal";
+@import "vendors/bootstrap-4.3.1/tooltip";
+@import "vendors/bootstrap-4.3.1/popover";
+@import "vendors/bootstrap-4.3.1/carousel";
+@import "vendors/bootstrap-4.3.1/spinners";
+@import "vendors/bootstrap-4.3.1/utilities";
+@import "vendors/bootstrap-4.3.1/print";
+
+
+// custom 
+@import "base/typography";
+
+@import "components/breadcrumb";
+@import "components/button";
+@import "components/card";
+@import "components/code";
+@import "components/dropdowns";
+@import "components/nav";
+@import "components/navbars";
+@import "components/pagination";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/sections";
