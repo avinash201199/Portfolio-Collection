@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+.container {
+  margin-top: 100px;
+
+  height: 100vh;
+}
+
+.title h1:hover {
+  transform: scale(1.2);
+}
+.title {
+  color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1::after {
+  content: "";
+  position: absolute;
+  background-color: #ff3c78;
+  height: 3px;
+  width: 0%;
+  display: block;
+
+  bottom: -10px;
+  transition: 0.3s linear;
+}
+.title h1 {
+  transition: transform 0.5s;
+}
+.title h1:hover::after {
+  content: "";
+  height: 2px;
+  display: block;
+
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #282828;
+}
+.flip_card {
+  background-color: transparent;
+  width: 400px;
+  height: 500px;
+  margin: 30px;
+
+  perspective: 1000px;
+
+  border-radius: 50%;
+}
+
+.flip_card_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.image {
+  width: 100%;
+  margin: auto;
+}
+image img {
+  width: 100%;
+}
+.flip_card:hover .flip_card_inner {
+  transform: rotateY(180deg);
+}
+
+.flip_card_front,
+.flip_card_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip_card_front {
+  background-color: rgb(33, 31, 31);
+
+  color: wheat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flip_card_front img {
+  width: 90%;
+  height: auto;
+
+  border-radius: 5%;
+}
+
+.flip_card_back {
+  background-color: gray;
+
+  color: white;
+  display: flex;
+  text-overflow: wrap;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 600;
+
+  transform: rotateY(180deg);
+}
+.content{
+  width: 90%;
+  overflow-wrap: break-word;
+}
+.content p{
+  text-overflow: wrap;
+  font-size: 20px;
+
+}
+.flip_card_back button {
+  background-color: wheat;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.flip_card_back a {
+  color: black;
+
+  text-decoration: none;
+}

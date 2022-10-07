@@ -1,0 +1,25 @@
+.sticky_footer {
+  position: sticky;
+  top: 100%;
+  bottom: 0%;
+  padding: 40px;
+
+  background-color: #000000;
+
+  color: white;
+}
+.connect {
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+}
+.connect a {
+  padding: 30px;
+}
+.connect p {
+  margin: 30px;
+}
+.links {
+  display: flex;
+}
