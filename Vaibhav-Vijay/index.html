@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Website of Front-End Developer Vaibhav Vijay.">
+    <title>Vaibhav Vijay</title>
+    <link rel="icon" href="images/favicon.png" type="image/icon" sizes="16x16">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+    <div id="welcome-section" class="w-full bg-cover h-screen cover">
+        <nav id="navbar" class="items-center bg-transparent p-4 hidden md:flex md:w-full justify-between">
+            <div class="text-white">
+                <img src="images/Group 3.png" width="70px" height="70px" alt="Logo"/>
+            </div>
+            <div class="w-full md:w-auto">
+                <div>
+                    <a href="#about-me" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 menu-link">
+                    About Me</a>
+                    <a href="#portfolio" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 menu-link">
+                    Portfolio</a>
+                    <a href="#experience" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 menu-link">
+                    Experience</a>
+                    <a href="#tech" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 menu-link">
+                    Tech</a>
+                    <a href="#education" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white menu-link">
+                    Education</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="flex flex-col content-center h-screen bg-transparent text-center">
+            <img src="images/Group 3.png" class="text-left p-5 md:invisible" width="100px" height="70px" alt="Logo"/>
+            <div class="self-center w-40 h-40 rounded-full bg-blue-500">
+                <img src="images/myPhoto2.webp" class="rounded-full" alt="Vaibhav's photo"/>
+            </div>
+            <h1 class="text-5xl text-white">Vaibhav Vijay</h1>
+            <h2 class="text-2xl text-white">Front-End Developer</h2>
+        </div>
+    </div>
+    
+    <div id="about-me" class="w-full bg-gray-100 h-auto text-center">
+        <h2 class="py-16 text-3xl">ABOUT ME</h2>
+        <p class="px-8 pb-16 md:px-20">
+            I'm Vaibhav, a Front-End Developer. Currently working as a Senior Engineer at Nagarro.
+        </p>
+    </div>
+
+    <div id="portfolio" class="w-full h-auto bg-gray-100 text-center p-4 pb-12">
+        <h2 class="font-semibold text-xl py-4">PORTFOLIO</h2>
+        <div class="flex flex-wrap justify-center">
+            <div class="max-w-sm overflow-hidden shadow-2xl bg-white my-4 md:w-1/4 md:mx-2 rounded">
+                <img class="w-full" src="images/activity_tracker.jpg" alt="Activity Tracker">
+                <div class="px-6 py-4">
+                    <div class="font-semibold text-xl mb-2">
+                        <a href="https://activity-tracker.netlify.com/#/" class="hover:underline" target="_blank" rel="noopener noreferrer">Activity Tracker</a>
+                    </div>
+                    <p class="text-gray-700 text-base">
+                        Front-End developed using Vue.js and Tailwind CSS framework.
+                        <br> Back-End developed using Maven with APIs developed using Jersey for RESTful Web Services and MySQL as database.
+                    </p>
+                </div>
+            </div>
+            <div class="max-w-sm overflow-hidden shadow-2xl bg-white my-4 md:w-1/4 md:mx-2 rounded">
+                <img class="w-full" src="images/erp_system.jpg" alt="ERP System Application Homepage">
+                <div class="px-6 py-4">
+                    <div class="font-semibold text-xl mb-2">
+                        <a href="https://github.com/vaibhavvijay9/ERP-System" class="hover:underline" target="_blank" rel="noopener noreferrer">ERP System</a>
+                    </div>
+                    <p class="text-gray-700 text-base">
+                        A basic college ERP made using Swings Framework and MySQL as database.
+                    </p>
+                </div>
+            </div>
+            <div class="max-w-sm overflow-hidden shadow-2xl bg-white my-4 md:w-1/4 md:mx-2 rounded">
+                <img class="w-full" src="images/java_quiz.jpg" alt="JavaQuiz Homepage">
+                <div class="px-6 py-4">
+                    <div class="font-semibold text-xl mb-2">
+                        <a href="https://github.com/vaibhavvijay9/Java-Quiz" class="hover:underline" target="_blank" rel="noopener noreferrer">Java Quiz</a>
+                    </div>
+                    <p class="text-gray-700 text-base">
+                        A basic quiz made using Java Servlets and MySQL as database.Quiz consists of 15 unique and randomly selected questions from a pool of 150 questions.
+                    </p>
+                </div>
+            </div>
+            <div class="max-w-sm overflow-hidden shadow-2xl bg-white my-4 md:w-1/4 md:mx-2 rounded view-more">
+                <img class="w-full" src="images/blood_bank.jpg" alt="Blood Bank Homepage">
+                <div class="px-6 py-4">
+                    <div class="font-semibold text-xl mb-2">
+                        <a href="https://github.com/vaibhavvijay9/BloodBank" class="hover:underline" target="_blank" rel="noopener noreferrer">People's Blood Bank</a>
+                    </div>
+                    <p class="text-gray-700 text-base">
+                        A website for a blood bank designed using HTML and Materialize CSS framework with JSP as server side language and MySQL database.
+                    </p>
+                </div>
+            </div>
+            <div class="max-w-sm overflow-hidden shadow-2xl bg-white my-4 md:w-1/4 md:mx-2 rounded view-more">
+                <img class="w-full" src="images/travel_buddy.jpg" alt="Travel Buddy Homepage">
+                <div class="px-6 py-4">
+                    <div class="font-semibold text-xl mb-2">
+                        <a href="https://github.com/vaibhavvijay9/Travel-Buddy" class="hover:underline" target="_blank" rel="noopener noreferrer">Travel Buddy</a>
+                    </div>
+                    <p class="text-gray-700 text-base">
+                        Web Portal to hire tourist guides developed at Rajasthan Hackathon 3.0
+                    </p>
+                </div>
+            </div>
+            <div class="max-w-sm overflow-hidden shadow-2xl bg-white my-4 md:w-1/4 md:mx-2 rounded view-more">
+                <img class="w-full" src="images/product_landing_page.jpg" alt="Product Landing Page">
+                <div class="px-6 py-4">
+                    <div class="font-semibold text-xl mb-2">
+                        <a href="https://github.com/vaibhavvijay9/Product-Landing-Page" class="hover:underline" target="_blank" rel="noopener noreferrer">Product Landing Page</a>
+                    </div>
+                    <p class="text-gray-700 text-base">
+                        A responsive Product Landing Page made during FreeCodeCamp learning.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button id="view-projects" class="bg-transparent hover:bg-blue-500 text-xs text-blue-700 hover:text-white py-2 px-8 my-4 border-2 border-blue-500 hover:border-transparent" onclick="setVisibility()">VIEW MORE</button>
+    </div>
+
+    <div id="experience" class="w-auto bg-gray-800 h-auto text-center md:content-center py-12 px-4">
+        <h2 class="font-semibold text-xl">EXPERIENCE</h2>
+        <div class="md:w-1/2 md:mx-auto">
+            <p class="m-2">Where I have worked.</p>
+            <div class="text-left py-8 flex content-between border-b border-gray-700">
+                <div class="w-full">
+                    <span class="block font-bold">Nagarro</span>
+                    <span class="block text-sm mt-3">Senior Engineer</span>
+                </div>
+                <div class="w-full text-center">
+                    <span class="text-sm">DEC 2021 - PRESENT</span>
+                </div>
+            </div>
+            <div class="text-left py-8 flex content-between border-b border-gray-700">
+                <div class="w-full">
+                    <span class="block font-bold">Dew Solutions Pvt. Ltd.</span>
+                    <span class="block text-sm mt-3">Software Engineer</span>
+                </div>
+                <div class="w-full text-center">
+                    <span class="text-sm">APR 2020 - DEC 2021</span>
+                </div>
+            </div>
+            <div class="text-left py-8 flex content-between border-b border-gray-700">
+                <div class="w-full">
+                    <span class="block font-bold">Mindler Education Pvt. Ltd.</span>
+                    <span class="block text-sm mt-3">Front-End Developer</span>
+                </div>
+                <div class="w-full text-center">
+                    <span class="text-sm">AUG 2019 - APR 2020</span>
+                </div>
+            </div>
+            <div class="text-left py-8 flex content-between">
+                <div class="w-full">
+                    <span class="block font-bold">Infosys Ltd.</span>
+                    <span class="block text-sm mt-3">Systems Engineer</span>
+                    <span class="block text-sm mt-3">Systems Engineer Trainee</span>
+                </div>
+                <div class="w-full text-center">
+                    <span class="text-sm">MAY 2018 - AUG 2019</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tech" class="w-full bg-gray-100 h-auto text-center md:content-center py-12 px-6">
+        <h2 class="font-semibold text-xl">TECH</h2>
+        <div class="md:w-1/2 md:mx-auto">
+            <p class="m-2">Technologies / Tools I like working with.</p>
+            <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-2">Angular</span>
+            <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-2">HTML</span>
+            <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-2">CSS</span>
+            <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-2">JavaScript</span>
+            <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-2">jQuery</span>
+            <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-2">Bootstrap</span>
+            <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-2">Tailwind CSS</span>
+            <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-2">Splunk</span>
+            <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-2">VS Code</span>
+            <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-2">GitHub</span>
+            <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-2">NgRx</span>
+        </div>
+    </div>
+
+    <div id="education" class="w-auto bg-gray-700 h-auto text-center md:content-center py-12 px-4">
+        <h2 class="font-semibold text-xl">EDUCATION</h2>
+        <div class="md:w-1/2 md:mx-auto">
+            <p class="m-2">Education I have received.</p>
+            <div class="text-left py-8 flex content-between border-b border-gray-600">
+                <div class="w-full">
+                    <span class="block font-bold">B.Tech. in Computer Science &amp; Engineering</span>
+                    <span class="block text-sm mt-3">SKIT, Jaipur</span>
+                </div>
+                <div class="w-1/2 text-center">
+                    <span class="text-sm">2014 - 2018</span>
+                </div>
+            </div>
+            <div class="text-left py-8 flex content-between">
+                <div class="w-full">
+                    <span class="block font-bold">High School</span>
+                    <span class="block text-sm mt-3">Kendriya Vidyalaya, Avikanagar</span>
+                </div>
+                <div class="w-1/2 text-center">
+                    <span class="text-sm">2009 - 2014</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-auto bg-gray-200 h-auto p-6">
+        <span id="name" class="text-left p-4 pl-0 md:pl-8">Developed by Vaibhav Vijay</span>
+        <div class="w-1/2 md:w-1/6 my-4 flex justify-around">
+            <a href="mailto:vaibhavvijay9@gmail.com" aria-label="Email" class="px-4 py-1 hover:bg-gray-500" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/vaibhav-vijay-9b842214b" aria-label="Linkedin" class="px-4 py-1 hover:bg-gray-500" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/vaibhavvijay9" aria-label="GitHub" class="px-4 py-1 hover:bg-gray-500" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -18,27 +18,6 @@ This repository contains collection of portfolio's from various open source enth
 - Make pull request after adding the files.
 - Wait for review.
 
-#### Extra Steps if you want to display your portfolio on the website\*
-
-- Go to index.html file (which can be found in the root directory)
-- Go to the portfolio section (starting from line 176)
-- Add neccessary changes to the code snippet provided below and maintain the order of the code (only add your code snippet below the last added portfolio)
-- If you want to add your own image to the card add the image [here](https://github.com/avinash201199/Portfolio-Collection/tree/main/website/assets/imgs)
-
-```html
-<a
-  href="add-your-webapp-link-here"
-  target="”_blank”"
-  class="item expertises-item"
->
-  <img src="website/assets/imgs/img-1.jpg" // you can choose provided images
-  from img-1 to img-9 alt="#" class="box-shadow" />
-  <h6 class="mt-3 mb-2">Add your name + portfolio</h6>
-  <p class="xs-font">
-    Tech Stack - HTML/CSS, SCSS, Javascript // describe your tech stack
-  </p>
-</a>
-```
 
 ## Some Awesome Portfolio's shared with us
 
@@ -64,7 +43,10 @@ This repository contains collection of portfolio's from various open source enth
 
 [11. Rohit Purkait](https://www.rohitpurkait.tech/)
 
-[14. Pavan Kamthane](https://pavan-kamthane-portfolio.web.app/)
+
+[12. Pavan Kamthane](https://pavan-kamthane-portfolio.web.app/)
+[13. Ojas Jain](https://myportfolio-67882.web.app/#/)
+
 
 ## Contact
 

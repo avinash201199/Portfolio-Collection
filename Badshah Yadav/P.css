@@ -1,0 +1,185 @@
+body{
+  background-image: url("img/tech.gif");
+  background-size:100%;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+button,li.f{
+  transition: 400ms;
+}
+
+.container{
+  background-color:#01071122; 
+  height: 65vh;
+  width: 30vw;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 4rem 1.5rem;
+  max-width: 350px;
+  border-radius: 5%;
+  min-width: 300px;
+  cursor: pointer;
+  box-shadow: -5px 5px 5px black;
+}
+.container:hover{
+transform: scale(1.02);
+}
+
+.img{
+    display: flex;
+    margin: 0 auto;
+    object-position: center;
+    transition:0.5s ;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: -30px;
+    background: url("img/im.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img:hover{
+  transform: scale(1.2);
+  border-radius: 10%; 
+}
+
+ .nav{
+   font-weight: bold;
+   font-size:20px;
+   text-align: center;
+}
+
+.nav:hover{
+  transform: scale(1.2);
+}
+
+.menu{
+  display: flex;
+  column-gap: 2rem;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu .item p{
+  line-height: 0px;
+}
+
+.menu:hover{
+  transform: scale(1.06);
+}
+
+.bad{
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+  margin: 1rem;
+}
+
+ .btn2{
+  background-color: rgb(0, 60, 255);
+  border: none;
+  border-radius: 5px;
+  width:90px ;
+}
+
+.btn2:hover
+{
+  background-color: black;
+  transform: scale(1.2,1.2);
+}
+
+ .btn1{
+  background-color: rgb(10, 165, 64);
+  border: none;
+  border-radius: 5px;
+  width:90px ;
+}
+
+.btn1:hover
+{
+  background-color: black;
+  transform: scale(1.2,1.2);
+}
+
+.bad button a{
+  text-decoration: none;
+  color: white;
+   font-weight:900;
+}
+
+.text{
+  text-align: center;
+  font-size: 20px;
+}
+
+.text:hover{
+  transform: scale(1.1);
+  font-size: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.second{
+ margin-top: -20px;
+ margin-left: 20px;
+}
+
+.f{
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5%;
+ column-gap: 5px;
+ font-size: 18px;
+ margin: 2px;
+ padding: 3px;
+
+}
+.f:hover{
+  background: #c7f1f4;
+  box-shadow: 0 0 15px 3px #11071be6;
+}
+
+.logos{
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.fa-instagram-square{
+  color: rgb(218, 69, 69);
+}
+
+
+.fa-github{
+  color: black;
+}
+
+.fa-youtube-square{
+  color:red;
+}
+
+.fa-twitter{
+  color: blue;
+}
+
+.fa:hover,.fa-brands:hover{
+  transform: scale(1.2);
+}
+
+.copy{
+  text-align: center;
+}
+
+.copy:hover{
+  transform: scale(1.2);
+}
+
+@media only screen and (min-width:300px) and (max-width:500px){
+  .container{
+    display: block;
+  }
+}

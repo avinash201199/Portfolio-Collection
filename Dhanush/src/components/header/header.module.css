@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+.container {
+  background-color: #282828;
+  height: 80px;
+}
+
+.wraper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.left {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-left: -120px;
+}
+.imgdiv {
+  margin-left: -100px;
+}
+
+.name img {
+  height: 50px;
+  width: 50px;
+  color: wheat;
+  object-fit: fill;
+  margin-top: 10px;
+  padding: 10px;
+}
+.name h2 {
+  margin-top: 10px;
+  color: wheat;
+}
+.logo {
+  margin-left: 90px;
+}
+.right {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.link {
+  margin-right: 50px;
+  font-size: 22px;
+}
+a {
+  text-decoration: none;
+  color: wheat;
+}
+
+@media all and (max-width: 680px) {
+  .link {
+    margin-right: 0px;
+  }
+  .logo {
+    margin-left: 0px;
+  }
+}
+@media all and (max-width: 400px) {
+  .imgdiv {
+    margin-left: 110px;
+  }
+}

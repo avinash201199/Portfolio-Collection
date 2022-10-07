@@ -1,0 +1,30 @@
+{
+	"name": "spiralforge",
+	"version": "1.0.0",
+	"description": "Portfolio of Abhay Parihar. Designed by Anushtha Bageria",
+	"main": "app.js",
+	"scripts": {
+		"start": "node app.js",
+		"start:dev": "nodemon app.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/A-Spiral-Forge/SpiralForge.git"
+	},
+	"author": "Abhay Parihar",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/A-Spiral-Forge/SpiralForge/issues"
+	},
+	"homepage": "https://github.com/A-Spiral-Forge/SpiralForge#readme",
+	"dependencies": {
+		"express": "^4.17.2",
+		"pug": "^3.0.2"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15"
+	},
+	"engines": {
+		"node": "16.x"
+	}
+}
