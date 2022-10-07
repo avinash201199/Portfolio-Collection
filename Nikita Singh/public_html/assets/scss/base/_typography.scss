@@ -1,0 +1,44 @@
+body {
+}
+/* typography */
+p {
+	font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1300 - 300)));
+	opacity: .8;
+	color: #444;
+} 
+
+.title {
+	font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1300 - 300)));
+}
+
+.icon-md {
+    font-size: 22px;
+}
+
+.icon-lg {
+    font-size: 30px;
+}
+
+.icon-xl {
+	font-size: 65px;
+}
+
+.info {
+    li {
+        padding-bottom: 8px;
+    }
+    span {
+        font-weight: 600;
+        font-size: 14px;
+        color: $gray-800;
+    }
+    color: $gray-600;
+    font-size: 14px;
+}
+
+.line {
+    display: block;
+    width: 25px;
+    height: 1.5px;
+    background-color: $primary;
+}

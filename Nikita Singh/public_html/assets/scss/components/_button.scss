@@ -1,0 +1,43 @@
+.btn-rounded {
+	border-radius: 100px;
+}
+
+.w-lg {
+	min-width: 150px;
+}
+
+
+.btn-component {
+	position: fixed;
+	top: 140px;
+	right: -225px;
+	z-index: 9999;
+	transition: .4s;
+	padding: 8px 12px;
+	border-radius: 3px 0 0 3px;
+	font-weight: 100;
+
+	&.affix {
+		right: -115px;
+	}
+
+	i {
+		position: relative;
+		display: inline-block;
+		margin-right: 20px;
+		transition: .4s;
+	}
+
+	&:hover {
+		
+		right: 0;
+
+		i {
+			transform: translateX(10px);
+			margin-right: -20px;
+			opacity: 0;
+		}
+
+
+	}
+}
