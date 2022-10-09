@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collins' Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <!-- fonts (confirm link) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,900
+    |Source+Sans+Pro:300,900&display=swap">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="HTML tag logo">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home"class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services"class="nav__link">My services</a></li>
+                <li class="nav__item"><a href="#about"class="nav__link">About me </a></li>
+                <li class="nav__item"><a href="#work"class="nav__link">My work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Introduction-->
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong> Omariba Collins</strong>
+        </h1>
+        <p class="section___subtitle  section___subtitle--intro"> A Web Dev (Backend Heavy)</p>
+        <img src="img/face.png" alt="A picture of Collins Omariba" class="intro__img">
+
+    </section>
+
+    <!--My services-->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+
+            <div class="service">
+                <h3>Backend Development</h3>
+                <p>With Flask and Django I am able to develop Backend systems for websites and webapps that
+                     require user data handling and web info updates  such as ecommerce websites
+                      , blogs and instituition portals.</p>
+            </div> <!-- /service -->
+
+
+            <div class="service">
+                <h3>Frontend Development</h3>
+                <p>I am able to use Javascript, HTML, CSS and Reactjs  to develop
+                     simple but very elegant websites  such as, landing pages ,
+                      restaurant websites , small blogs e.t.c.</p>
+            </div> <!-- /service -->
+
+          
+
+            <div class="service">
+                <h3>Machine Learning</h3>
+                <p>I am able to process and use data to train machine Learning models according to specific needs
+                     e.g. trend analysis & data classification, plus present the analysis in readable charts
+                     and even display them on a web app for ease of interaction with. </p>
+            </div> <!-- /service -->
+
+        </div> <!-- /services -->
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about ">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Web dev into AI/ML(Backend Heavy)</p>
+
+        <div class="about-me__body">
+            <p>I have skills in the various web development technologies 
+                which I use to develop sleek and optimized
+                websites for commercial and personal use.</p>
+          <p> Am currently 
+              specializing in Backend Web Development using Django & Flask , plus the utilisation
+              and making of AI/ML tools </p>
+        </div>
+        <img src="img/about-me.jpg" alt="Omariba working on a computer" class="about-me__img">
+        
+    </section>
+
+    <!-- About me -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work" >My Work</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+        <div class="portfolio">
+            <!--Portfolio image item 01  -->
+            <a href="Spotify-music-rooms.html" class="portfolio__item">
+                <img src="img/musify_music_playing.png" alt="" class="portfolio__img">
+            </a>
+
+            <!--Portfolio image item 02  -->
+            <a href="lameck-farmland-solutions.html" class="portfolio__item">
+               <img src="img/lameck_farmland_solutions.png" alt="" class="portfolio__img">
+            </a>
+
+            <!--Portfolio image item 03  -->
+            <a href="Note-Taking-web-App.html" class="portfolio__item">
+               <img src="img/Note-Taking-Web-App.png" alt="" class="portfolio__img">
+            </a>
+
+            <!--Portfolio image item 04  -->
+            <a href="BootCampWebsite.html" class="portfolio__item">
+                <img src="img/BOOTCAMP Website.png" alt="" class="portfolio__img">
+            </a>
+
+              
+              <!--Portfolio image item 05  -->
+              <a href="Todolistapp.html" class="portfolio__item">
+                <img src="img/To Do List App 1.png" alt="" class="portfolio__img">
+             </a>
+        </div>
+    </section>
+
+    <!--Footer  -->
+    <footer class="footer">
+        <a href="mailto:collinsomariba@gmail.com" class="footer__link">collinsomariba@gmail.com</a>
+        <ul class="social-list">
+            
+        <li class="social-list__item">
+                <a href="https://github.com/Collins-Omariba" class="social-list__link">
+                    <i class="fab fa-github"></i>
+                </a>
+        </li> 
+
+        <li class="social-list__item">
+            <a href="https://www.linkedin.com/in/omariba-collins-b28b841b9" class="social-list__link">
+                <i class="fab fa-linkedin"></i>
+            </a>
+       </li>    
+        <li class="social-list__item">
+            <a href="https://twitter.com/OmaribaCollins" class="social-list__link">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        </ul>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
