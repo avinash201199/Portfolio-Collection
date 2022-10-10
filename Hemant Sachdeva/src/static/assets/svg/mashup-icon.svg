@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polyline id="path-1" points="4.58645833 30.2888889 0.266666667 26.1111111 0.266666667 0.261111111 26.4013605 0.261111111 26.4013605 26.1111111 9.6 26.1111111 9.6 9.4 21.3333333 9.4"></polyline>
+        <path d="M5.06666667,4.7 L9.86666667,9.66111111" id="path-2"></path>
+        <path d="M26.4,25.85 L21.6,21.4111111" id="path-3"></path>
+    </defs>
+    <g id="Ressource" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" stroke="#FFFFFF">
+            <g id="Logo" transform="translate(1.000000, 1.000000)">
+                <g transform="translate(0.124369, 0.230286)" id="Line">
+                    <g>
+                        <g transform="translate(0.000000, 0.017615)">
+                            <g stroke-linecap="round">
+                                <use stroke-width="0.5616" xlink:href="#path-1"></use>
+                                <use stroke-width="2.12300014" xlink:href="#path-1"></use>
+                            </g>
+                            <polyline stroke-width="2.12300014" stroke-linecap="round" points="26.8802083 0.261111111 31.2 4.43888889 31.2 30.2888889 5.06530616 30.2888889 5.06530616 4.69865421 21.6000001 4.69865421 21.6000001 21.4192682 9.6 21.4111111"></polyline>
+                            <g>
+                                <use stroke-width="0.5616" xlink:href="#path-2"></use>
+                                <use stroke-width="2.12300014" xlink:href="#path-2"></use>
+                            </g>
+                            <g>
+                                <use stroke-width="0.5616" xlink:href="#path-3"></use>
+                                <use stroke-width="2.12300014" xlink:href="#path-3"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
