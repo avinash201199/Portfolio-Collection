@@ -1,0 +1,783 @@
+/*  google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* similar content styling codes */
+section {
+  padding: 100px 0;
+}
+.max-width {
+  max-width: 100%;
+  padding: 0 80px;
+  margin: auto;
+}
+.about,
+.services,
+.teams,
+.contact,
+footer {
+  font-family: "Poppins", sans-serif;
+}
+.about .about-content,
+.services .serv-content,
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 38px;
+  padding-bottom: 4px;
+  font-family: "Ubuntu", sans-serif;
+  text-shadow: 2px 2px 2px rgb(31, 194, 189);
+  transition: 15sec;
+}
+.about .title {
+  position: relative;
+  text-align: center;
+  font-size: 33px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  padding-bottom: 1px;
+  font-family: "Ubuntu", sans-serif;
+  text-shadow: 2px 2px 2px rgb(31, 194, 189);
+  transition: 15sec;
+}
+section .title:hover {
+  font-size: 35px;
+  transform: translateY(12px);
+}
+section .title:hover {
+  font-size: 37px;
+  transform: translateY(12px);
+}
+
+/* navbar styling */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 0.2px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.navbar .max-width {
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+  color: rgb(23, 197, 156);
+}
+
+/* menu btn styling */
+.menu-btn {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+/* home section styling */
+.home {
+  display: flex;
+  background: url("./Images/Khushi.png") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+}
+.home .max-width {
+  width: 90%;
+  display: flex;
+}
+.home .home-content .text-1 {
+  font-size: 27px;
+}
+.home .home-content .text-2 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-3 {
+  font-size: 30px;
+  margin: 5px 0;
+}
+.home .home-content .text-3 span {
+  color: rgb(85, 233, 181);
+  font-weight: 400;
+}
+.home .home-content a {
+  display: inline-block;
+  background: rgb(42 146 109 / 48%);
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 8px;
+  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 2px solid rgb(255 255 255);
+  transition: all 0.3s ease;
+}
+.home .home-content a:hover {
+  color: rgb(49, 208, 174);
+  background: none;
+}
+
+/* about section styling */
+.about .about-content .left {
+  width: 40%;
+}
+.about .about-content .left img {
+  height: 400px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: 0.5s;
+  box-shadow: -8px 8px 15px black;
+}
+.about .about-content .left img:hover {
+  box-shadow: 8px -8px 15px black;
+  transform: rotate(2deg);
+}
+.about .about-content .right {
+  width: 60%;
+}
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about .about-content .right .text span {
+  color: #00796b;
+}
+.about .about-content .right p {
+  text-align: justify;
+}
+.about .about-content .right a {
+  display: inline-block;
+  background: #15a892;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 15px;
+  border-radius: 11px;
+  border: 2px solid #1acaaa;
+  transition: all 0.3s ease;
+}
+.about .about-content .right a:hover {
+  color: #15a892;
+  background: none;
+}
+
+/* my works section styling */
+.services,
+.teams {
+  color: #fff;
+  background: #111;
+}
+.services .serv-content .card {
+  width: calc(33% - 20px);
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 25px 15px;
+  padding-top: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 5px 5px 6px #1abaac;
+}
+.services .serv-content .card:hover {
+  background-image: radial-gradient(#0e877b8a, rgb(149, 240, 233));
+  transform: translateY(10px);
+  box-shadow: -5px -5px 6px #eaf4f3;
+}
+.services .serv-content .card .box {
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box {
+  transform: scale(1.05);
+}
+.services .serv-content .card i {
+  font-size: 50px;
+  color: crimson;
+  transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i {
+  color: #fff;
+}
+.services .serv-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+/* skills section styling */
+.skills .skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+  margin-top: 8px;
+  justify-content: center;
+}
+.teams .check-me {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.teams .carousel .card {
+  background: #222;
+  border-radius: 36px;
+  padding: 25px 35px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* contact section styling */
+
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .contact-content .left p {
+  text-align: justify;
+}
+.contact .contact-content .left .icons {
+  margin: 10px 0;
+}
+.contact .contact-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact-content .row .info {
+  margin-left: 30px;
+}
+.contact .contact-content .row i {
+  font-size: 25px;
+  color: rgb(37, 232, 199);
+}
+.contact .contact-content .info .head {
+  font-weight: 500;
+}
+.contact .contact-content .info .sub-title {
+  color: #333;
+}
+.contact .right form .fields {
+  display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact .right form .textarea {
+  height: 80px;
+  width: 100%;
+}
+.contact .right form .name {
+  margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+  border: 2px solid rgb(0, 0, 0);
+  background: #ace9e3c5;
+}
+.contact .right form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area {
+  display: flex;
+  align-items: center;
+}
+.right form .button-area button {
+  display: inline-block;
+  background: #15a892;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 15px;
+  border-radius: 11px;
+  border: 2px solid #1acaaa;
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover {
+  color: #15a892;
+  background: none;
+}
+/* footer section styling */
+footer {
+  background: #111;
+  padding: 15px 23px;
+  margin-top: -50px;
+  color: #fff;
+  text-align: center;
+}
+
+/* responsive media query start */
+@media (max-width: 1104px) {
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 947px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .home {
+    background: url("./Images/Khushi1.png");
+  }
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
+    left: 0;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 21px;
+  }
+  .home .home-content .text-2 {
+    font-size: 70px;
+  }
+  .home .home-content .text-3 {
+    font-size: 35px;
+  }
+  .home .home-content a {
+    font-size: 18px;
+    padding: 5px 8px;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 12px;
+  }
+  .max-width {
+    max-width: 930px;
+  }
+  .about .about-content .column {
+    width: 100%;
+  }
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .about .about-content .right {
+    flex: 100%;
+  }
+  .services .serv-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 690px) {
+  .max-width {
+    padding: 0 23px;
+  }
+  .home .home-content .text-2 {
+    font-size: 60px;
+  }
+  .home .home-content .text-3 {
+    font-size: 32px;
+  }
+  .home .home-content a {
+    font-size: 20px;
+  }
+  .services .serv-content .card {
+    width: 100%;
+  }
+  .home {
+    background: url("./Images/Khushi1.png");
+  }
+}
+
+@media (max-width: 500px) {
+  .home .home-content .text-2 {
+    font-size: 50px;
+  }
+  .home .home-content .text-3 {
+    font-size: 27px;
+  }
+  .about .about-content .right .text {
+    font-size: 19px;
+  }
+  .contact .right form .fields {
+    flex-direction: column;
+  }
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
+  .right form .error-box {
+    width: 150px;
+  }
+  .home {
+    background: url("./Images/Khushi1.png");
+  }
+}
+
+.img-logo {
+  height: 95px;
+  width: 210px;
+  padding: 7px;
+}
+.myphoto {
+  border-radius: 360px;
+}
+.social_icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+.social_icon li,
+.menu li {
+  list-style: none;
+}
+.social_icon li a {
+  font-size: 2em;
+  color: black;
+  margin: 0px 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.social_icon li a:hover {
+  transform: translateY(10px);
+}
+.mywork {
+  height: 100%;
+  width: 100%;
+}
+.skills1 {
+  width: 100px;
+  height: 100px;
+}
+.skills-bg {
+  background-image: linear-gradient(#e0f2f1, rgb(74, 236, 206), #e0f2f1);
+  margin: 19px;
+  padding: 5px;
+  border-radius: 18px;
+}
+.skills-bg:hover {
+  background-image: linear-gradient(
+    rgb(74, 236, 206),
+    #e0f2f1,
+    rgb(74, 236, 206)
+  );
+}
+.skills2 {
+  width: 120px;
+  height: 120px;
+  border-radius: 333px;
+  margin-top: 22px;
+  border: 3px solid white;
+}
+.check-bg {
+  background-image: linear-gradient(#006157, #009688, #e0f2f1);
+  margin: 25px;
+  padding: 15px;
+  border-radius: 0px 18px 0px 18px;
+  box-shadow: 2px -2px 3px white;
+}
+.check-bg:hover {
+  background-image: linear-gradient(#e0f2f1, #009688, #006157);
+  box-shadow: -2px 2px 3px white;
+  border-radius: 18px 0px 18px 0px;
+  color: black;
+}
+.detail {
+  position: relative;
+}
+.detail:after {
+  content: attr(data-hover);
+  visibility: hidden;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  top: 143%;
+  right: 33%;
+}
+.detail:hover:after {
+  visibility: visible;
+}
+.detail2 {
+  position: relative;
+}
+.detail2:after {
+  content: attr(data-hover);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  height: 181px;
+  width: 148px;
+  top: -628%;
+  right: -11%;
+  border-radius: 18px;
+}
+.detail2:hover::after {
+  color: black;
+}
+
+.teams .text {
+  margin: auto;
+  padding-bottom: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.skills .text {
+  margin: auto;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.services .text {
+  margin: auto;
+  padding-bottom: 10px;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.about .text {
+  margin: auto;
+  padding-bottom: 10px;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.interest-bg {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.interest {
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+  text-align: center;
+}
+.interest-bg .i-img {
+  height: 40px;
+  width: 40px;
+  padding: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 360px;
+  background-image: radial-gradient(rgb(255, 255, 255), rgb(18, 167, 149));
+}
+.interest-bg .i-img:hover {
+  background-image: radial-gradient(rgb(18, 167, 149), rgb(255, 255, 255));
+}
+.text-i .typing2 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #00796b;
+}
+.alert {
+  padding: 3px;
+  background-color: #000000; /* Red */
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 10px;
+  visibility: hidden;
+}
+.alert2 {
+  padding: 3px;
+  background-color: #000000; /* Red */
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 10px;
+  visibility: hidden;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  float: right;
+  font-weight: bold;
+  font-size: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* The close button2 */
+.closebtn2 {
+  margin-left: 15px;
+  color: white;
+  float: right;
+  font-weight: bold;
+  font-size: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: rgb(228, 21, 21);
+}
+.closebtn2:hover {
+  color: rgb(228, 21, 21);
+}
+.background-css {
+  background-color: #006157;
+  color: #6df8ea;
+  padding: 2px;
+  border-radius: 2px;
+  margin-top: 15px;
+  font-weight: 300;
+  margin-left: 3px;
+  font-size: 10px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 12px; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #023833;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #023833 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.linking {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: white;
+}
