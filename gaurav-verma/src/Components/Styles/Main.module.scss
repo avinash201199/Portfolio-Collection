@@ -1,0 +1,68 @@
+@import "mixins.scss";
+.flex {
+  background-color: rgb(128, 0, 128, 0.1);
+  @include flex;
+  padding: 2rem;
+  &__one {
+    margin-left: 2rem;
+    @media (max-width: 25em) {
+      flex-direction: column;
+      order: 2;
+    }
+    padding: 10rem 1rem;
+
+    margin-right: 10rem;
+    //display: inline-block;
+    &--logo {
+      cursor: pointer;
+      font-size: 7rem;
+      font-weight: 700;
+    }
+    &--about {
+      padding-top: 2rem;
+      font-size: 2rem;
+      color: #40403f;
+      @media (max-width: 25em) {
+        font-size: 3rem;
+      }
+    }
+  }
+  &__two {
+    position: relative;
+
+    &--border {
+      position: absolute;
+      border: 1px solid transparent;
+      border-bottom-color: purple;
+      width: 42rem;
+      height: 42rem;
+      border-radius: 50%;
+      -webkit-animation: rotate cubic-bezier(1, 1, 1, 1) 3s infinite;
+      animation: rotate cubic-bezier(1, 1, 1, 1) 3s infinite;
+    }
+    &--img {
+      margin: 1rem;
+      text-align: center;
+      width: 40rem;
+      height: 40rem;
+      background-image: linear-gradient(
+          to right,
+          rgba(128, 0, 128, 0.1),
+          rgba(128, 0, 128, 0.1)
+        ),
+        url("../Images/gaurav.jpg");
+      background-size: cover;
+      background-position: top;
+      border-radius: 50%;
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(-360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
