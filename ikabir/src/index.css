@@ -1,0 +1,91 @@
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* cursor: default; */
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.root,
+#root,
+#docs-root {
+    --window-transform-x: 0px;
+    --window-transform-y: 0px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+.closed-window {
+  animation: closeWindow 200ms 1 forwards;
+}
+
+@keyframes closeWindow {
+  0% {
+      opacity: 1;
+      transform: translate(var(--window-transform-x), var(--window-transform-y)) scale(1);
+      visibility: visible;
+  }
+
+  100% {
+      opacity: 0;
+      transform: translate(var(--window-transform-x), var(--window-transform-y)) scale(0.85);
+      visibility: hidden;
+  }
+}
+
+.window-y-border {
+  height: calc(100% - 10px);
+  width: calc(100% + 10px);
+  /* cursor: e-resize; */
+}
+
+.window-x-border {
+  height: calc(100% + 10px);
+  width: calc(100% - 10px);
+  /* cursor: n-resize; */
+}
+
+.windowMainScreen::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+}
+
+.windowMainScreen::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+.windowMainScreen::-webkit-scrollbar-thumb {
+  background-color: #D3D7CF;
+  border-radius: 5px;
+}
+.class1 {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.class2 {
+  font-weight: bold;
+  margin-right: 1ch;
+  color: blue;
+}
+.giphy {
+  width: 40%;
+}
