@@ -1,0 +1,10 @@
+@mixin flex {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  @media (max-width: 25em) {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}

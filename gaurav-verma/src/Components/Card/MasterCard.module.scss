@@ -1,0 +1,23 @@
+.master {
+  -webkit-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-x: scroll;
+  overflow-x: scroll;
+  -webkit-overflow-y: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  @media (max-width: 25em) {
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    -webkit-scroll-snap-type: y proximity;
+    scroll-snap-type: y proximity;
+    -webkit-overflow-y: scroll;
+    overflow-y: scroll;
+    -webkit-overflow-x: hidden;
+    overflow-x: hidden;
+  }
+}
