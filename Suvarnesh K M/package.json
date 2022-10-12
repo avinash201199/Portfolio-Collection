@@ -1,0 +1,57 @@
+{
+  "name": "portfolio",
+  "homepage": "https://suvarneshkm.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "colorthief": "^2.3.2",
+    "font-awesome": "^4.7.0",
+    "gh-pages": "^3.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-easy-emoji": "^1.5.0",
+    "react-headroom": "^3.1.1",
+    "react-icons": "^4.2.0",
+    "react-lottie": "^1.2.3",
+    "react-magnific-popup": "^1.0.1",
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-script-tag": "^1.1.2",
+    "react-scripts": "4.0.3",
+    "react-twitter-embed": "^3.0.3",
+    "react-typist": "^2.0.5",
+    "sass": "^1.34.1",
+    "simple-react-lightbox": "^3.6.6",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
