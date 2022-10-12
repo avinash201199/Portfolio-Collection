@@ -1,0 +1,221 @@
+#coverPage {
+  background: url("./assets/bg.png");
+  background-size: 1470px 780px;
+}
+
+#mainBoxFlex {
+  display: flex;
+  margin-top: 170px;
+  margin-left: 200px;
+}
+
+#profileImage {
+  border-radius: 200px;
+  border-width: 0;
+  height: 360px;
+  width: 360px;
+}
+
+#profileText {
+  margin-left: 180px;
+  font-family: "Barlow", sans-serif;
+  position: relative;
+  animation: button 4s ease-out 0s 1 forwards;
+}
+
+@keyframes button {
+  from {
+    color: rgba(0, 0, 0, 0);
+  }
+  to {
+    color: #201e1f;
+  }
+}
+
+#name {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#tagLine {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+#explore {
+  width: 150px;
+  height: 40px;
+  border: 2px solid #50b2c0;
+  font-family: "Barlow", sans-serif;
+  background-color: #50b1c000;
+  color: #50b2c0;
+  font-size: 20px;
+  margin-top: 30px;
+  animation: btn 2s ease-out 0s 1 forwards;
+}
+
+#explore:hover {
+  border: 3px solid #50b2c0;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgba(240, 234, 234, 0.365);
+}
+
+#explore:focus {
+  outline: none;
+}
+
+@keyframes btn {
+  from {
+    margin-top: 100px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+#btnFlex {
+  text-align: center;
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+  /* COVER PAGE */
+  #coverPage {
+    background-size: 400px 200px;
+  }
+  #mainBoxFlex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  #profileImage {
+    height: 200px;
+    width: 200px;
+    margin-top: 25%;
+  }
+  #profileText {
+    margin: 0;
+  }
+  #name {
+    font-size: 45px;
+    margin-top: 10%;
+  }
+  #tagLine {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 20px;
+  }
+}
+
+/*  iPads, Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #coverPage {
+    background-size: 500px 300px;
+  }
+  #mainBoxFlex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  #profileImage {
+    height: 290px;
+    width: 290px;
+    margin-top: 20%;
+  }
+  #profileText {
+    margin: 0;
+  }
+  #name {
+    font-size: 55px;
+    margin-top: 40px;
+  }
+  #tagLine {
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 20px;
+  }
+}
+
+/* Small screens, laptops */
+@media screen and (min-width: 769px) and (max-width: 1022px) {
+  #coverPage {
+    background-size: 600px 350px;
+  }
+  #mainBoxFlex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  #profileImage {
+    height: 300px;
+    width: 300px;
+    margin-top: 30%;
+  }
+  #profileText {
+    margin: 0;
+  }
+  #name {
+    font-size: 60px;
+    margin-top: 50px;
+  }
+  #tagLine {
+    font-size: 35px;
+    text-align: center;
+    margin: 10px 20px;
+  }
+}
+
+/* Desktops, large screens */
+@media screen and (min-width: 1023px) and (max-width: 1200px) {
+  #coverPage {
+    background-size: 1000px 500px;
+  }
+  #mainBoxFlex {
+    margin-left: 10%;
+  }
+  #profileImage {
+    height: 270px;
+    width: 270px;
+  }
+  #profileText {
+    margin: 0;
+    margin-left: 5%;
+  }
+  #name {
+    font-size: 45px;
+    margin-top: 50px;
+  }
+  #tagLine {
+    font-size: 27px;
+    text-align: center;
+  }
+}
+
+/* Extra large screens, TV */
+@media screen and (min-width: 1201px) and (max-width: 1290px) {
+  #mainBoxFlex {
+    margin-left: 12%;
+  }
+  #profileImage {
+    height: 350px;
+    width: 350px;
+    margin-top: 8%;
+  }
+  #profileText {
+    margin: 0;
+    margin-left: 5%;
+  }
+  #name {
+    font-size: 55px;
+    margin-top: 150px;
+  }
+  #tagLine {
+    font-size: 35px;
+    text-align: center;
+  }
+}
