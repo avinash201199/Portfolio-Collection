@@ -1,0 +1,3064 @@
+body {
+  font-family: "Barlow", sans-serif;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Main Navigation Bar Displaying Name */
+#navBar {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  font-family: "Barlow", sans-serif;
+  color: #201e1f;
+}
+
+/* Menu Bar  */
+.menuAnchor {
+  color: gray;
+  width: 100%;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #6d676b;
+  font-family: "Barlow", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: none;
+}
+
+.menuBtn {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #d4c1cb;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.menuBtn:hover {
+  color: #201e1f;
+  font-weight: bold;
+  border-bottom: 1px solid #383034;
+  cursor: pointer;
+}
+
+/* Sticky Social Media Bar */
+.icon-bar {
+  position: fixed;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 15px;
+  background-color: #201e1f;
+}
+
+#insta:hover {
+  background-color: #e40b69;
+}
+
+#linkedin:hover {
+  background-color: #0084ff;
+}
+
+#github:hover {
+  background-color: #366550;
+}
+
+#pinterest:hover {
+  background-color: #ff0000;
+}
+
+/* Main Flex for Skill Bubbles */
+#mainBubbleFlex {
+  display: flex;
+  margin-top: 0;
+  justify-content: center;
+  height: auto;
+  margin-bottom: 300px;
+}
+
+.bubble {
+  border-radius: 1000px;
+  font-family: "Barlow", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Class for Headings */
+.head {
+  font-size: 40px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+/* Education Box */
+#Education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 250px;
+}
+
+#EducationBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+#EducationHead {
+  width: 50%;
+}
+
+#EducationSchool,
+#EducationCollege {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  flex-direction: row;
+  box-shadow: 10px 20px 20px 0px black;
+  padding-right: 20px;
+  padding: none;
+  margin-bottom: 70px;
+}
+
+.eduPic {
+  height: 220px;
+  width: 220px;
+  margin: none;
+  margin-right: 50px;
+}
+.eduPic:hover {
+  cursor: pointer;
+  animation: expander 10s ease-in-out 0s 1;
+}
+
+@keyframes expander {
+  0% {
+    height: 220px;
+    width: 220px;
+  }
+  50% {
+    height: 400px;
+    width: 400px;
+  }
+  100% {
+    height: 220px;
+    width: 220px;
+  }
+}
+
+.headTextEducation {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.text1 {
+  color: black;
+  font-size: 30px;
+}
+
+.text2 {
+  margin-bottom: 15px;
+}
+
+.text3 {
+  color: black;
+  font-size: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.text4 {
+  color: black;
+  font-size: 17px;
+  margin-left: 20px;
+}
+
+.text5 {
+  color: black;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* About Box */
+#About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px;
+}
+
+#AboutBody {
+  width: 50%;
+  font-size: 22px;
+  text-align: justify;
+}
+
+#AboutHead {
+  width: 50%;
+}
+
+/* Project Box */
+#projectHead {
+  width: 70%;
+}
+
+#project {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#projectCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.imgProject {
+  height: 200px;
+  width: 400px;
+  margin: 30px;
+  border-radius: 6px;
+  box-shadow: 5px 5px 20px 0px black;
+}
+.imgProject:hover {
+  cursor: pointer;
+  animation: exp 5s ease-in-out 0s 5;
+}
+
+@keyframes exp {
+  0% {
+    height: 200px;
+    width: 400px;
+  }
+  50% {
+    height: 300px;
+    width: 500px;
+  }
+  100% {
+    height: 200px;
+    width: 400px;
+  }
+}
+
+/* Quote Box */
+#quote {
+  width: 1000px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid #201e1f;
+  border-bottom: 1px solid #201e1f;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#quote1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#quote2 {
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+#quoteBox {
+  margin-top: 300px;
+  margin-bottom: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote1 {
+  background-image: linear-gradient(to right, #d100c3, #00bbff 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#quote1:before {
+  content: "";
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+}
+
+#quote1:hover {
+  cursor: pointer;
+  background-position: 0;
+}
+
+#quote1:hover::before {
+  width: 100%;
+}
+
+/* Connect Box and Message Box */
+#connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#connectHead {
+  width: 600px;
+  border-bottom: 0px;
+  border-top: 1px solid #201e1f;
+  padding: 20px;
+  text-align: center;
+}
+
+#social {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#githubSocial:hover {
+  color: #0b7823;
+  box-shadow: 0px 0px 20px 2px #0b7823;
+}
+
+#linkedinSocial:hover {
+  color: #0084ff;
+  box-shadow: 0px 0px 20px 2px #0084ff;
+}
+
+#instaSocial:hover {
+  color: #ff0044;
+  box-shadow: 0px 0px 20px 2px #ff0044;
+}
+
+#pinterestSocial:hover {
+  color: #ff0000;
+  box-shadow: 0px 0px 20px 2px #ff0000;
+}
+
+.socialB {
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  border-radius: 20000px;
+}
+
+#messageSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#messageBox {
+  height: 330px;
+  width: 350px;
+  padding: 20px;
+  padding-top: 50px;
+  background-color: rgba(128, 128, 128, 0.313);
+  border-radius: 5px;
+}
+
+input {
+  width: 90%;
+  height: 15%;
+  margin-top: 10px;
+  outline: none;
+  padding-left: 13px;
+  border: 0px solid white;
+  border-radius: 5px;
+}
+
+input:focus,
+input:hover {
+  background: rgb(250, 170, 141);
+  background: linear-gradient(
+    103deg,
+    rgba(250, 170, 141, 0.7262255243894433) 0%,
+    rgba(254, 239, 221, 0.6561975131849616) 36%,
+    rgba(243, 175, 82, 0.7094188017003676) 61%,
+    rgba(255, 64, 0, 0.5889706224286589) 100%
+  );
+  color: black;
+  font-weight: bold;
+}
+
+#messageHead {
+  font-size: 40px;
+}
+
+#submitMessage {
+  margin-top: 20px;
+  height: 30px;
+  width: 30%;
+  color: white;
+  border-radius: 7px;
+  border: 0px solid black;
+  background: rgb(32, 30, 31);
+  background: linear-gradient(
+    103deg,
+    rgba(32, 30, 31, 1) 66%,
+    rgba(165, 164, 164, 0.5889706224286589) 100%
+  );
+}
+
+#submitMessage:hover {
+  cursor: pointer;
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: black;
+}
+
+/* Bubbles */
+
+/* DETERMINED */
+#flex1 {
+  height: 180px;
+  width: 180px;
+  font-size: 29px;
+  margin-left: 0;
+  background-color: #faaa8d;
+  animation: flex1 3s ease-in-out 0s 1 reverse;
+}
+#flex1:hover {
+  cursor: pointer;
+  animation: flex1hover 2s ease-in-out 0s 1;
+}
+
+@keyframes flex1hover {
+  0% {
+    font-size: 20px;
+  }
+  25% {
+    font-size: 29px;
+  }
+  50% {
+    font-size: 20px;
+  }
+  100% {
+    font-size: 29px;
+  }
+}
+
+@keyframes flex1 {
+  0% {
+    background-color: #faaa8d;
+    height: 180px;
+    width: 180px;
+    font-size: 29px;
+    color: black;
+  }
+  50% {
+    background-color: #faaa8d2d;
+    height: 150px;
+    width: 150px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.253);
+  }
+  100% {
+    background-color: #faaa8d;
+    height: 180px;
+    width: 180px;
+    font-size: 29px;
+    color: black;
+  }
+}
+
+/* GRAPHICS */
+#flex2 {
+  height: 230px;
+  width: 230px;
+  background-color: #201e1f;
+  color: white;
+  font-size: 40px;
+  animation: flex2 3s ease-in-out 0s 1 reverse;
+}
+#flex2:hover {
+  cursor: pointer;
+  animation: flex2hover 2s ease-in-out 0s 1;
+}
+
+@keyframes flex2hover {
+  0% {
+    font-size: 30px;
+  }
+  25% {
+    font-size: 40px;
+  }
+  50% {
+    font-size: 30px;
+  }
+  100% {
+    font-size: 40px;
+  }
+}
+
+@keyframes flex2 {
+  0% {
+    background-color: #201e1f;
+    height: 230px;
+    width: 230px;
+    font-size: 40px;
+    color: white;
+  }
+  50% {
+    background-color: #201e1f3b;
+    height: 200px;
+    width: 200px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.151);
+  }
+  100% {
+    background-color: #201e1f;
+    height: 230px;
+    width: 230px;
+    font-size: 40px;
+    color: white;
+  }
+}
+
+/*  PUNCTUAL */
+#flex3 {
+  height: 230px;
+  width: 230px;
+  margin-top: 200px;
+  background-color: #feefdd;
+  font-size: 40px;
+  animation: flex3 3s ease-in-out 0s 1 reverse;
+}
+#flex3:hover {
+  cursor: pointer;
+  animation: flex3hover 2s ease-in-out 0s 1;
+}
+
+@keyframes flex3hover {
+  0% {
+    font-size: 30px;
+  }
+  25% {
+    font-size: 40px;
+  }
+  50% {
+    font-size: 30px;
+  }
+  100% {
+    font-size: 40px;
+  }
+}
+
+@keyframes flex3 {
+  0% {
+    background-color: #feefdd;
+    height: 230px;
+    width: 230px;
+    color: black;
+    font-size: 40px;
+  }
+  50% {
+    background-color: #feefdd31;
+    height: 200px;
+    width: 200px;
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.164);
+  }
+  100% {
+    background-color: #feefdd;
+    height: 230px;
+    width: 230px;
+    color: black;
+    font-size: 40px;
+  }
+}
+
+/* PHOTOGRAPHY */
+#flex4 {
+  margin-top: 70px;
+  height: 280px;
+  width: 280px;
+  background-color: #ff4000;
+  font-size: 37px;
+  animation: flex4 3s ease-in-out 0s 1 reverse;
+}
+
+#flex4:hover {
+  cursor: pointer;
+  animation: flex4hover 2s ease-in-out 0s 1;
+}
+
+@keyframes flex4hover {
+  0% {
+    font-size: 33px;
+  }
+  25% {
+    font-size: 37px;
+  }
+  50% {
+    font-size: 33px;
+  }
+  100% {
+    font-size: 37px;
+  }
+}
+
+@keyframes flex4 {
+  0% {
+    background-color: #ff4000;
+    height: 280px;
+    width: 280px;
+    font-size: 37px;
+    color: black;
+  }
+  50% {
+    background-color: #ff400029;
+    height: 260px;
+    width: 260px;
+    font-size: 33px;
+    color: rgba(255, 255, 255, 0.164);
+  }
+  100% {
+    background-color: #ff4000;
+    height: 280px;
+    width: 280px;
+    font-size: 37px;
+    color: black;
+  }
+}
+
+/*  COMPUTER */
+#flex5 {
+  margin-top: 90px;
+  background-color: #f3af52;
+  height: 380px;
+  width: 380px;
+  font-size: 50px;
+  animation: flex5 3s ease-in-out 0s 1 reverse;
+}
+
+#flex5:hover {
+  cursor: pointer;
+  animation: flex5hover 2s ease-in-out 0s 1;
+}
+
+@keyframes flex5hover {
+  0% {
+    font-size: 45px;
+  }
+  25% {
+    font-size: 50px;
+  }
+  50% {
+    font-size: 45px;
+  }
+  100% {
+    font-size: 50px;
+  }
+}
+
+@keyframes flex5 {
+  0% {
+    background-color: #f3af52;
+    height: 380px;
+    width: 380px;
+    font-size: 50px;
+    color: black;
+  }
+  50% {
+    background-color: #f3b0522d;
+    height: 350px;
+    width: 350px;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.164);
+  }
+  100% {
+    background-color: #f3af52;
+    height: 380px;
+    width: 380px;
+    font-size: 50px;
+    color: black;
+  }
+}
+
+/* KEEN LEARNER */
+#flex6 {
+  height: 150px;
+  width: 150px;
+  margin-top: 200px;
+  background-color: #feefdd;
+  font-size: 25px;
+  animation: flex6 3s ease-in-out 0s 1 reverse;
+}
+
+#flex6:hover {
+  cursor: pointer;
+  animation: flex6hover 2s ease-in-out 0s 1;
+}
+
+@keyframes flex6hover {
+  0% {
+    font-size: 20px;
+  }
+  25% {
+    font-size: 25px;
+  }
+  50% {
+    font-size: 20px;
+  }
+  100% {
+    font-size: 25px;
+  }
+}
+
+@keyframes flex6 {
+  0% {
+    background-color: #feefdd;
+    height: 150px;
+    width: 150px;
+    font-size: 25px;
+    color: black;
+  }
+  50% {
+    background-color: #feefdd2e;
+    height: 120px;
+    width: 120px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.164);
+  }
+  100% {
+    background-color: #feefdd;
+    height: 150px;
+    width: 150px;
+    font-size: 25px;
+    color: black;
+  }
+}
+
+/* ############################################################################### */
+/* ############################################################################### */
+/* ############################################################################### */
+/* ############################################################################### */
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+  #navBar {
+    font-size: 35px;
+    width: 700px;
+  }
+
+  .menuBtn {
+    font-size: 15px;
+  }
+
+  #menu {
+    width: 700px;
+  }
+
+  .sticky-social-icons {
+    display: none;
+  }
+
+  #copyright {
+    width: 700px;
+  }
+
+  /* Connect Box and Message Box */
+  #connect {
+    width: 700px;
+  }
+
+  #connectHead {
+    width: 400px;
+    border-bottom: 0px;
+    padding: 20px;
+  }
+
+  #social {
+    width: 700px;
+  }
+
+  .socialB {
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    font-size: 40px;
+  }
+
+  #messageSocial {
+    margin-top: 50px;
+    margin-right: 0px;
+    width: 500px;
+  }
+
+  #messageBox {
+    height: 330px;
+    width: 200px;
+    margin-left: 0px;
+    padding: 20px;
+    padding-top: 50px;
+    padding-right: 20px;
+  }
+
+  input {
+    width: 180px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 13px;
+  }
+
+  #messageHead {
+    font-size: 30px;
+  }
+
+  #submitMessage {
+    margin-top: 20px;
+    height: 30px;
+    width: 150px;
+  }
+
+  /* Quote Box */
+  #quote {
+    width: 700px;
+    height: 150px;
+    margin: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  #quote2 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  #quoteBox {
+    width: 700px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+
+  #quote1 {
+    font-size: 40px;
+  }
+
+  /* About Box */
+  #About {
+    margin: 30px;
+    width: 700px;
+  }
+
+  #AboutBody {
+    width: 500px;
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  #AboutHead {
+    width: 500px;
+  }
+
+  /* Class for Headings */
+  .head {
+    font-size: 35px;
+  }
+
+  /* Project Box */
+  #projectBox {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  #project {
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+  }
+
+  #projectCards {
+    width: 500px;
+  }
+
+  .imgProject {
+    height: 200px;
+    width: 400px;
+    margin: 30px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 20px 0px black;
+  }
+
+  .imgProject:hover {
+    cursor: pointer;
+    animation: exp 5s ease-in-out 0s 5;
+  }
+
+  @keyframes exp {
+    0% {
+      height: 200px;
+      width: 400px;
+    }
+    50% {
+      height: 230px;
+      width: 430px;
+    }
+    100% {
+      height: 200px;
+      width: 400px;
+    }
+  }
+
+  #projectHead {
+    margin: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  /* Education Box */
+  #Education {
+    margin-top: 200px;
+    width: 700px;
+  }
+
+  #EducationBody {
+    width: 600px;
+  }
+
+  #EducationHead {
+    width: 300px;
+  }
+
+  #EducationSchool,
+  #EducationCollege {
+    padding-right: 20px;
+    margin-bottom: 70px;
+  }
+
+  .eduPic {
+    height: 220px;
+    width: 220px;
+    margin: 0px;
+    margin-right: 45px;
+  }
+
+  @keyframes expander {
+    0% {
+      height: 220px;
+      width: 220px;
+    }
+    50% {
+      height: 240px;
+      width: 240px;
+    }
+    100% {
+      height: 220px;
+      width: 220px;
+    }
+  }
+
+  .text1 {
+    font-size: 25px;
+  }
+
+  .text2 {
+    margin-bottom: 15px;
+  }
+
+  .text3 {
+    font-size: 17px;
+    margin-left: 17px;
+  }
+
+  .text4 {
+    font-size: 16px;
+    margin-left: 16px;
+  }
+
+  .text5 {
+    font-size: 14px;
+    margin-left: 16px;
+    margin-top: 8px;
+  }
+
+  /* bubble */
+  #mainBubbleFlex {
+    width: 700px;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+
+  /*  PUNCTUAL */
+  #flex3 {
+    height: 150px;
+    width: 150px;
+    margin: 0px;
+    margin-right: 5px;
+    font-size: 23px;
+    animation: flex3 3s ease-in-out 0s 1 reverse;
+  }
+
+  #flex3:hover {
+    cursor: pointer;
+    animation: flex3hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex3hover {
+    0% {
+      font-size: 23px;
+    }
+    25% {
+      font-size: 15px;
+    }
+    50% {
+      font-size: 23px;
+    }
+    100% {
+      font-size: 15px;
+    }
+  }
+
+  @keyframes flex3 {
+    0% {
+      background-color: #feefdd;
+      height: 150px;
+      width: 150px;
+      color: black;
+      font-size: 23px;
+    }
+    50% {
+      background-color: #feefdd31;
+      height: 100px;
+      width: 100px;
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.164);
+    }
+    100% {
+      background-color: #feefdd;
+      height: 150px;
+      width: 150px;
+      color: black;
+      font-size: 23px;
+    }
+  }
+
+  /* KEEN LEARNER */
+  #flex6 {
+    height: 130px;
+    width: 130px;
+    margin: 0px;
+    margin-right: 5px;
+    background-color: #feefdd;
+    font-size: 22px;
+    animation: flex6 3s ease-in-out 0s 1 reverse;
+  }
+
+  #flex6:hover {
+    cursor: pointer;
+    animation: flex6hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex6hover {
+    0% {
+      font-size: 22px;
+    }
+    25% {
+      font-size: 20px;
+    }
+    50% {
+      font-size: 22px;
+    }
+    100% {
+      font-size: 20px;
+    }
+  }
+
+  @keyframes flex6 {
+    0% {
+      background-color: #feefdd;
+      height: 130px;
+      width: 130px;
+      font-size: 22px;
+      color: black;
+    }
+    50% {
+      background-color: #feefdd2e;
+      height: 100px;
+      width: 100px;
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.164);
+    }
+    100% {
+      background-color: #feefdd;
+      height: 130px;
+      width: 130px;
+      font-size: 22px;
+      color: black;
+    }
+  }
+
+  /* PHOTOGRAPHY */
+  #flex4 {
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 75px;
+    height: 190px;
+    width: 190px;
+    font-size: 27px;
+    animation: flex4 3s ease-in-out 0s 1 reverse;
+  }
+
+  #flex4:hover {
+    cursor: pointer;
+    animation: flex4hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex4hover {
+    0% {
+      font-size: 22px;
+    }
+    25% {
+      font-size: 27px;
+    }
+    50% {
+      font-size: 22px;
+    }
+    100% {
+      font-size: 27px;
+    }
+  }
+
+  @keyframes flex4 {
+    0% {
+      background-color: #ff4000;
+      height: 190px;
+      width: 190px;
+      font-size: 27px;
+      color: black;
+    }
+    50% {
+      background-color: #ff400029;
+      height: 150px;
+      width: 150px;
+      font-size: 22px;
+      color: rgba(255, 255, 255, 0.164);
+    }
+    100% {
+      background-color: #ff4000;
+      height: 190px;
+      width: 190px;
+      font-size: 27px;
+      color: black;
+    }
+  }
+
+  /*  COMPUTER */
+  #flex5 {
+    margin: 0px;
+    margin-left: 50px;
+    margin-right: 10px;
+    background-color: #f3af52;
+    height: 240px;
+    width: 240px;
+    font-size: 30px;
+    animation: flex5 3s ease-in-out 0s 1 reverse;
+  }
+
+  #flex5:hover {
+    cursor: pointer;
+    animation: flex5hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex5hover {
+    0% {
+      font-size: 25px;
+    }
+    25% {
+      font-size: 30px;
+    }
+    50% {
+      font-size: 25px;
+    }
+    100% {
+      font-size: 30px;
+    }
+  }
+
+  @keyframes flex5 {
+    0% {
+      background-color: #f3af52;
+      height: 240px;
+      width: 240px;
+      font-size: 30px;
+      color: black;
+    }
+    50% {
+      background-color: #f3b0522d;
+      height: 210px;
+      width: 210px;
+      font-size: 25px;
+      color: rgba(255, 255, 255, 0.164);
+    }
+    100% {
+      background-color: #f3af52;
+      height: 240px;
+      width: 240px;
+      font-size: 30px;
+      color: black;
+    }
+  }
+
+  /* DETERMINED */
+  #flex1 {
+    height: 150px;
+    width: 150px;
+    font-size: 23px;
+    margin: 0px;
+    margin-right: 10px;
+    background-color: #faaa8d;
+    animation: flex1 3s ease-in-out 0s 1 reverse;
+  }
+  #flex1:hover {
+    cursor: pointer;
+    animation: flex1hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex1hover {
+    0% {
+      font-size: 20px;
+    }
+    25% {
+      font-size: 23px;
+    }
+    50% {
+      font-size: 20px;
+    }
+    100% {
+      font-size: 23px;
+    }
+  }
+
+  @keyframes flex1 {
+    0% {
+      background-color: #faaa8d;
+      height: 150px;
+      width: 150px;
+      font-size: 23px;
+      color: black;
+    }
+    50% {
+      background-color: #faaa8d2d;
+      height: 130px;
+      width: 130px;
+      font-size: 20px;
+      color: rgba(0, 0, 0, 0.253);
+    }
+    100% {
+      background-color: #faaa8d;
+      height: 150px;
+      width: 150px;
+      font-size: 23px;
+      color: black;
+    }
+  }
+
+  /* GRAPHICS */
+  #flex2 {
+    height: 240px;
+    width: 240px;
+    background-color: #201e1f;
+    color: white;
+    font-size: 40px;
+    animation: flex2 3s ease-in-out 0s 1 reverse;
+  }
+  #flex2:hover {
+    cursor: pointer;
+    animation: flex2hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex2hover {
+    0% {
+      font-size: 30px;
+    }
+    25% {
+      font-size: 40px;
+    }
+    50% {
+      font-size: 30px;
+    }
+    100% {
+      font-size: 40px;
+    }
+  }
+
+  @keyframes flex2 {
+    0% {
+      background-color: #201e1f;
+      height: 240px;
+      width: 240px;
+      font-size: 40px;
+      color: white;
+    }
+    50% {
+      background-color: #201e1f3b;
+      height: 200px;
+      width: 200px;
+      font-size: 30px;
+      color: rgba(255, 255, 255, 0.151);
+    }
+    100% {
+      background-color: #201e1f;
+      height: 240px;
+      width: 240px;
+      font-size: 40px;
+      color: white;
+    }
+  }
+}
+
+/* ############################################################################### */
+/* ############################################################################### */
+/* ############################################################################### */
+/* ############################################################################### */
+
+/*  iPads, Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #navBar {
+    font-size: 40px;
+    width: 1000px;
+  }
+
+  .menuBtn {
+    font-size: 17px;
+  }
+
+  .sticky-social-icons {
+    display: none;
+  }
+
+  #menu {
+    width: 1000px;
+  }
+
+  #copyright {
+    width: 1000px;
+  }
+
+  /* Connect Box and Message Box */
+  #connect {
+    width: 1000px;
+  }
+
+  #connectHead {
+    width: 400px;
+    border-bottom: 0px;
+    padding: 20px;
+  }
+
+  #social {
+    width: 1000px;
+  }
+
+  .socialB {
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    font-size: 40px;
+  }
+
+  #messageSocial {
+    margin-top: 50px;
+    margin-right: 0px;
+    width: 700px;
+  }
+
+  #messageBox {
+    height: 330px;
+    width: 300px;
+    margin-left: 0px;
+    padding: 20px;
+    padding-top: 50px;
+    padding-right: 20px;
+  }
+
+  input {
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 13px;
+  }
+
+  #messageHead {
+    font-size: 33px;
+  }
+
+  #submitMessage {
+    margin-top: 20px;
+    height: 30px;
+    width: 150px;
+  }
+
+  /* Quote Box */
+  #quote {
+    width: 1000px;
+    height: 200px;
+    margin: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  #quote2 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  #quoteBox {
+    width: 1000px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+
+  #quote1 {
+    font-size: 40px;
+  }
+
+  /* About Box */
+  #About {
+    margin: 30px;
+    width: 1000px;
+  }
+
+  #AboutBody {
+    width: 800px;
+    font-size: 21px;
+    text-align: justify;
+  }
+
+  #AboutHead {
+    width: 800px;
+  }
+
+  /* Project Box */
+  #projectBox {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  #project {
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+  }
+
+  #projectCards {
+    width: 1000px;
+  }
+
+  .imgProject {
+    height: 200px;
+    width: 400px;
+    margin: 30px;
+  }
+
+  .imgProject:hover {
+    animation: exp 5s ease-in-out 0s 5;
+  }
+
+  @keyframes exp {
+    0% {
+      height: 200px;
+      width: 400px;
+    }
+    50% {
+      height: 250px;
+      width: 450px;
+    }
+    100% {
+      height: 200px;
+      width: 400px;
+    }
+  }
+
+  #projectHead {
+    margin: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  /* Education Box */
+  #Education {
+    margin-top: 200px;
+    width: 1000px;
+  }
+
+  #EducationBody {
+    width: 700px;
+  }
+
+  #EducationHead {
+    width: 300px;
+  }
+
+  #EducationSchool,
+  #EducationCollege {
+    padding-right: 17px;
+    margin-bottom: 70px;
+  }
+
+  .eduPic {
+    height: 220px;
+    width: 220px;
+    margin: 0px;
+    margin-right: 45px;
+  }
+
+  @keyframes expander {
+    0% {
+      height: 220px;
+      width: 220px;
+    }
+    50% {
+      height: 240px;
+      width: 240px;
+    }
+    100% {
+      height: 220px;
+      width: 220px;
+    }
+  }
+
+  .text1 {
+    font-size: 25px;
+  }
+
+  .text2 {
+    margin-bottom: 15px;
+  }
+
+  .text3 {
+    font-size: 17px;
+    margin-left: 17px;
+  }
+
+  .text4 {
+    font-size: 16px;
+    margin-left: 16px;
+  }
+
+  .text5 {
+    font-size: 14px;
+    margin-left: 16px;
+    margin-top: 8px;
+  }
+
+  /* Bubble */
+  #mainBubbleFlex {
+    width: 1000px;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+
+  /*  PUNCTUAL */
+  #flex3 {
+    height: 180px;
+    width: 180px;
+    margin: 0px;
+    margin-right: 20px;
+    font-size: 29px;
+    animation: flex3 3s ease-in-out 0s 1 reverse;
+  }
+  #flex3:hover {
+    cursor: pointer;
+    animation: flex3hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex3hover {
+    0% {
+      font-size: 29px;
+    }
+    25% {
+      font-size: 25px;
+    }
+    50% {
+      font-size: 29px;
+    }
+    100% {
+      font-size: 25px;
+    }
+  }
+
+  @keyframes flex3 {
+    0% {
+      background-color: #feefdd;
+      height: 180px;
+      width: 180px;
+      color: black;
+      font-size: 29px;
+    }
+    50% {
+      background-color: #feefdd31;
+      height: 150px;
+      width: 150px;
+      font-size: 25px;
+      color: rgba(255, 255, 255, 0.164);
+    }
+    100% {
+      background-color: #feefdd;
+      height: 180px;
+      width: 180px;
+      color: black;
+      font-size: 29px;
+    }
+  }
+
+  /* KEEN LEARNER */
+  #flex6 {
+    height: 165px;
+    width: 165px;
+    margin: 0px;
+    margin-right: 10px;
+    background-color: #feefdd;
+    font-size: 26px;
+    animation: flex6 3s ease-in-out 0s 1 reverse;
+  }
+  #flex6:hover {
+    cursor: pointer;
+    animation: flex6hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex6hover {
+    0% {
+      font-size: 26px;
+    }
+    25% {
+      font-size: 23px;
+    }
+    50% {
+      font-size: 26px;
+    }
+    100% {
+      font-size: 23px;
+    }
+  }
+
+  @keyframes flex6 {
+    0% {
+      background-color: #feefdd;
+      height: 165px;
+      width: 165px;
+      font-size: 26px;
+      color: black;
+    }
+    50% {
+      background-color: #feefdd2e;
+      height: 145px;
+      width: 145px;
+      font-size: 22px;
+      color: rgba(255, 255, 255, 0.164);
+    }
+    100% {
+      background-color: #feefdd;
+      height: 130px;
+      width: 130px;
+      font-size: 26px;
+      color: black;
+    }
+  }
+
+  /* PHOTOGRAPHY */
+  #flex4 {
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 75px;
+    height: 230px;
+    width: 230px;
+    font-size: 30px;
+    animation: flex4 3s ease-in-out 0s 1 reverse;
+  }
+  #flex4:hover {
+    cursor: pointer;
+    animation: flex4hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex4hover {
+    0% {
+      font-size: 25=4px;
+    }
+    25% {
+      font-size: 30px;
+    }
+    50% {
+      font-size: 24px;
+    }
+    100% {
+      font-size: 30px;
+    }
+  }
+
+  @keyframes flex4 {
+    0% {
+      background-color: #ff4000;
+      height: 230px;
+      width: 230px;
+      font-size: 30px;
+      color: black;
+    }
+    50% {
+      background-color: #ff400029;
+      height: 150px;
+      width: 150px;
+      font-size: 23px;
+      color: rgba(255, 255, 255, 0.164);
+    }
+    100% {
+      background-color: #ff4000;
+      height: 230px;
+      width: 230px;
+      font-size: 30px;
+      color: black;
+    }
+  }
+
+  /*  COMPUTER */
+  #flex5 {
+    margin: 0px;
+    margin-left: 195px;
+    margin-bottom: 20px;
+    background-color: #f3af52;
+    height: 280px;
+    width: 280px;
+    font-size: 35px;
+    animation: flex5 3s ease-in-out 0s 1 reverse;
+  }
+  #flex5:hover {
+    cursor: pointer;
+    animation: flex5hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex5hover {
+    0% {
+      font-size: 30px;
+    }
+    25% {
+      font-size: 35px;
+    }
+    50% {
+      font-size: 30px;
+    }
+    100% {
+      font-size: 35px;
+    }
+  }
+
+  @keyframes flex5 {
+    0% {
+      background-color: #f3af52;
+      height: 280px;
+      width: 280px;
+      font-size: 35px;
+      color: black;
+    }
+    50% {
+      background-color: #f3b0522d;
+      height: 250px;
+      width: 250px;
+      font-size: 30px;
+      color: rgba(255, 255, 255, 0.164);
+    }
+    100% {
+      background-color: #f3af52;
+      height: 280px;
+      width: 280px;
+      font-size: 35px;
+      color: black;
+    }
+  }
+
+  /* DETERMINED */
+  #flex1 {
+    height: 190px;
+    width: 190px;
+    font-size: 27px;
+    margin: 0px;
+    margin-left: 10px;
+    background-color: #faaa8d;
+    animation: flex1 3s ease-in-out 0s 1 reverse;
+  }
+  #flex1:hover {
+    cursor: pointer;
+    animation: flex1hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex1hover {
+    0% {
+      font-size: 23px;
+    }
+    25% {
+      font-size: 27px;
+    }
+    50% {
+      font-size: 23px;
+    }
+    100% {
+      font-size: 27px;
+    }
+  }
+
+  @keyframes flex1 {
+    0% {
+      background-color: #faaa8d;
+      height: 190px;
+      width: 190px;
+      font-size: 27px;
+      color: black;
+    }
+    50% {
+      background-color: #faaa8d2d;
+      height: 140px;
+      width: 140px;
+      font-size: 23px;
+      color: rgba(0, 0, 0, 0.253);
+    }
+    100% {
+      background-color: #faaa8d;
+      height: 190px;
+      width: 190px;
+      font-size: 27px;
+      color: black;
+    }
+  }
+
+  /* GRAPHICS */
+  #flex2 {
+    height: 240px;
+    width: 240px;
+    margin: 0px;
+    margin-left: 20px;
+    background-color: #201e1f;
+    color: white;
+    font-size: 40px;
+    animation: flex2 3s ease-in-out 0s 1 reverse;
+  }
+  #flex2:hover {
+    cursor: pointer;
+    animation: flex2hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex2hover {
+    0% {
+      font-size: 30px;
+    }
+    25% {
+      font-size: 40px;
+    }
+    50% {
+      font-size: 30px;
+    }
+    100% {
+      font-size: 40px;
+    }
+  }
+
+  @keyframes flex2 {
+    0% {
+      background-color: #201e1f;
+      height: 240px;
+      width: 240px;
+      font-size: 40px;
+      color: white;
+    }
+    50% {
+      background-color: #201e1f3b;
+      height: 200px;
+      width: 200px;
+      font-size: 30px;
+      color: rgba(255, 255, 255, 0.151);
+    }
+    100% {
+      background-color: #201e1f;
+      height: 240px;
+      width: 240px;
+      font-size: 40px;
+      color: white;
+    }
+  }
+}
+
+/* ############################################################################### */
+/* ############################################################################### */
+/* ############################################################################### */
+/* ############################################################################### */
+
+/* Small screens, laptops */
+@media screen and (min-width: 769px) and (max-width: 1022px) {
+  #navBar {
+    font-size: 40px;
+    width: 1200px;
+  }
+
+  .menuBtn {
+    font-size: 17px;
+  }
+
+  #menu {
+    width: 1200px;
+  }
+
+  #copyright {
+    width: 1200px;
+  }
+
+  /* Connect Box and Message Box */
+  #connect {
+    width: 1200px;
+  }
+
+  #connectHead {
+    width: 400px;
+    border-bottom: 0px;
+    padding: 20px;
+  }
+
+  #social {
+    width: 1200px;
+  }
+
+  .socialB {
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    font-size: 40px;
+  }
+
+  #messageSocial {
+    margin-top: 50px;
+    margin-right: 0px;
+    width: 800px;
+  }
+
+  #messageBox {
+    height: 330px;
+    width: 300px;
+    margin-left: 0px;
+    padding: 20px;
+    padding-top: 50px;
+    padding-right: 20px;
+  }
+
+  input {
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 13px;
+  }
+
+  #messageHead {
+    font-size: 35px;
+  }
+
+  #submitMessage {
+    margin-top: 20px;
+    height: 30px;
+    width: 150px;
+  }
+
+  /* Quote Box */
+  #quote {
+    width: 1200px;
+    height: 200px;
+    margin: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  #quote2 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  #quoteBox {
+    width: 1200px;
+    margin-top: 250px;
+    margin-bottom: 250px;
+  }
+
+  #quote1 {
+    font-size: 40px;
+  }
+
+  /* About Box */
+  #About {
+    margin: 30px;
+    width: 1200px;
+  }
+
+  #AboutBody {
+    width: 900px;
+    font-size: 22px;
+    text-align: justify;
+  }
+
+  #AboutHead {
+    width: 900px;
+  }
+
+  /* Project Box */
+  #projectBox {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  #project {
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+  }
+
+  #projectCards {
+    width: 1200px;
+  }
+
+  .imgProject {
+    height: 200px;
+    width: 400px;
+    margin: 30px;
+  }
+
+  .imgProject:hover {
+    animation: exp 5s ease-in-out 0s 5;
+  }
+
+  @keyframes exp {
+    0% {
+      height: 200px;
+      width: 400px;
+    }
+    50% {
+      height: 250px;
+      width: 450px;
+    }
+    100% {
+      height: 200px;
+      width: 400px;
+    }
+  }
+
+  #projectHead {
+    margin: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  /* Education Box */
+  #Education {
+    margin-top: 200px;
+    width: 1200px;
+  }
+
+  #EducationBody {
+    width: 700px;
+  }
+
+  #EducationHead {
+    width: 300px;
+  }
+
+  #EducationSchool,
+  #EducationCollege {
+    padding-right: 17px;
+    margin-bottom: 70px;
+  }
+
+  .eduPic {
+    height: 220px;
+    width: 220px;
+    margin: 0px;
+    margin-right: 45px;
+  }
+
+  @keyframes expander {
+    0% {
+      height: 220px;
+      width: 220px;
+    }
+    50% {
+      height: 240px;
+      width: 240px;
+    }
+    100% {
+      height: 220px;
+      width: 220px;
+    }
+  }
+
+  .text1 {
+    font-size: 25px;
+  }
+
+  .text2 {
+    margin-bottom: 15px;
+  }
+
+  .text3 {
+    font-size: 17px;
+    margin-left: 17px;
+  }
+
+  .text4 {
+    font-size: 16px;
+    margin-left: 16px;
+  }
+
+  .text5 {
+    font-size: 14px;
+    margin-left: 16px;
+    margin-top: 8px;
+  }
+
+  /* Bubble */
+  #mainBubbleFlex {
+    width: 1200px;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+
+  /*  PUNCTUAL */
+  #flex3 {
+    height: 200px;
+    width: 200px;
+    margin: 0px;
+    margin-left: 50px;
+    font-size: 34px;
+    animation: flex3 3s ease-in-out 0s 1 reverse;
+  }
+  #flex3:hover {
+    cursor: pointer;
+    animation: flex3hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex3hover {
+    0% {
+      font-size: 34px;
+    }
+    25% {
+      font-size: 29px;
+    }
+    50% {
+      font-size: 34px;
+    }
+    100% {
+      font-size: 29px;
+    }
+  }
+
+  @keyframes flex3 {
+    0% {
+      background-color: #feefdd;
+      height: 200px;
+      width: 200px;
+      color: black;
+      font-size: 34px;
+    }
+    50% {
+      background-color: #feefdd31;
+      height: 170px;
+      width: 170px;
+      font-size: 29px;
+      color: rgba(255, 255, 255, 0.164);
+    }
+    100% {
+      background-color: #feefdd;
+      height: 200px;
+      width: 200px;
+      color: black;
+      font-size: 34px;
+    }
+  }
+
+  /* KEEN LEARNER */
+  #flex6 {
+    height: 180px;
+    width: 180px;
+    margin: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #feefdd;
+    font-size: 28px;
+    animation: flex6 3s ease-in-out 0s 1 reverse;
+  }
+  #flex6:hover {
+    cursor: pointer;
+    animation: flex6hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex6hover {
+    0% {
+      font-size: 28px;
+    }
+    25% {
+      font-size: 25px;
+    }
+    50% {
+      font-size: 28px;
+    }
+    100% {
+      font-size: 25px;
+    }
+  }
+
+  @keyframes flex6 {
+    0% {
+      background-color: #feefdd;
+      height: 180px;
+      width: 180px;
+      font-size: 28px;
+      color: black;
+    }
+    50% {
+      background-color: #feefdd2e;
+      height: 160px;
+      width: 160px;
+      font-size: 25px;
+      color: rgba(255, 255, 255, 0.164);
+    }
+    100% {
+      background-color: #feefdd;
+      height: 180px;
+      width: 180px;
+      font-size: 28px;
+      color: black;
+    }
+  }
+
+  /* PHOTOGRAPHY */
+  #flex4 {
+    margin: 0px;
+    margin-right: 20px;
+    height: 250px;
+    width: 250px;
+    font-size: 34px;
+    animation: flex4 3s ease-in-out 0s 1 reverse;
+  }
+  #flex4:hover {
+    cursor: pointer;
+    animation: flex4hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex4hover {
+    0% {
+      font-size: 34px;
+    }
+    25% {
+      font-size: 30px;
+    }
+    50% {
+      font-size: 34px;
+    }
+    100% {
+      font-size: 30px;
+    }
+  }
+
+  @keyframes flex4 {
+    0% {
+      background-color: #ff4000;
+      height: 250px;
+      width: 250px;
+      font-size: 34px;
+      color: black;
+    }
+    50% {
+      background-color: #ff400029;
+      height: 220px;
+      width: 220px;
+      font-size: 30px;
+      color: rgba(255, 255, 255, 0.164);
+    }
+    100% {
+      background-color: #ff4000;
+      height: 250px;
+      width: 250px;
+      font-size: 34px;
+      color: black;
+    }
+  }
+
+  /*  COMPUTER */
+  #flex5 {
+    margin: 0px;
+    background-color: #f3af52;
+    height: 300px;
+    width: 300px;
+    font-size: 40px;
+    animation: flex5 3s ease-in-out 0s 1 reverse;
+  }
+  #flex5:hover {
+    cursor: pointer;
+    animation: flex5hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex5hover {
+    0% {
+      font-size: 36px;
+    }
+    25% {
+      font-size: 40px;
+    }
+    50% {
+      font-size: 36px;
+    }
+    100% {
+      font-size: 40px;
+    }
+  }
+
+  @keyframes flex5 {
+    0% {
+      background-color: #f3af52;
+      height: 300px;
+      width: 300px;
+      font-size: 40px;
+      color: black;
+    }
+    50% {
+      background-color: #f3b0522d;
+      height: 250px;
+      width: 250px;
+      font-size: 34px;
+      color: rgba(255, 255, 255, 0.164);
+    }
+    100% {
+      background-color: #f3af52;
+      height: 300px;
+      width: 300px;
+      font-size: 40px;
+      color: black;
+    }
+  }
+
+  /* DETERMINED */
+  #flex1 {
+    height: 210px;
+    width: 210px;
+    font-size: 34px;
+    margin: 0px;
+    margin-left: 100px;
+    background-color: #faaa8d;
+    animation: flex1 3s ease-in-out 0s 1 reverse;
+  }
+  #flex1:hover {
+    cursor: pointer;
+    animation: flex1hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex1hover {
+    0% {
+      font-size: 29px;
+    }
+    25% {
+      font-size: 34px;
+    }
+    50% {
+      font-size: 29px;
+    }
+    100% {
+      font-size: 34px;
+    }
+  }
+
+  @keyframes flex1 {
+    0% {
+      background-color: #faaa8d;
+      height: 210px;
+      width: 210px;
+      font-size: 34px;
+      color: black;
+    }
+    50% {
+      background-color: #faaa8d2d;
+      height: 180px;
+      width: 180px;
+      font-size: 25px;
+      color: rgba(0, 0, 0, 0.253);
+    }
+    100% {
+      background-color: #faaa8d;
+      height: 210px;
+      width: 210px;
+      font-size: 34px;
+      color: black;
+    }
+  }
+
+  /* GRAPHICS */
+  #flex2 {
+    height: 290px;
+    width: 290px;
+    margin: 0px;
+    margin-left: 20px;
+    background-color: #201e1f;
+    color: white;
+    font-size: 45px;
+    animation: flex2 3s ease-in-out 0s 1 reverse;
+  }
+  #flex2:hover {
+    cursor: pointer;
+    animation: flex2hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex2hover {
+    0% {
+      font-size: 40px;
+    }
+    25% {
+      font-size: 45px;
+    }
+    50% {
+      font-size: 40px;
+    }
+    100% {
+      font-size: 45px;
+    }
+  }
+
+  @keyframes flex2 {
+    0% {
+      background-color: #201e1f;
+      height: 290px;
+      width: 290px;
+      font-size: 45px;
+      color: white;
+    }
+    50% {
+      background-color: #201e1f3b;
+      height: 260px;
+      width: 260px;
+      font-size: 40px;
+      color: rgba(255, 255, 255, 0.151);
+    }
+    100% {
+      background-color: #201e1f;
+      height: 290px;
+      width: 290px;
+      font-size: 45px;
+      color: white;
+    }
+  }
+}
+
+/* ############################################################################### */
+/* ############################################################################### */
+/* ############################################################################### */
+/* ############################################################################### */
+
+/* Desktops, large screens */
+@media screen and (min-width: 1023px) and (max-width: 1416px) {
+  #navBar {
+    font-size: 45px;
+    width: 1500px;
+  }
+
+  .menuBtn {
+    font-size: 20px;
+  }
+
+  #menu {
+    width: 1500px;
+  }
+
+  #copyright {
+    width: 1500px;
+  }
+
+  /* Connect Box and Message Box */
+  #connect {
+    width: 1500px;
+  }
+
+  #connectHead {
+    width: 500px;
+    border-bottom: 0px;
+    padding: 20px;
+  }
+
+  #social {
+    width: 1500px;
+  }
+
+  .socialB {
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    font-size: 40px;
+  }
+
+  #messageSocial {
+    margin-top: 50px;
+    margin-right: 0px;
+    width: 800px;
+  }
+
+  #messageBox {
+    height: 330px;
+    width: 300px;
+    margin-left: 0px;
+    padding: 20px;
+    padding-top: 50px;
+    padding-right: 20px;
+  }
+
+  input {
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 13px;
+  }
+
+  #messageHead {
+    font-size: 40px;
+  }
+
+  #submitMessage {
+    margin-top: 20px;
+    height: 30px;
+    width: 150px;
+  }
+
+  /* Quote Box */
+  #quote {
+    width: 1500px;
+    height: 200px;
+    margin: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  #quote2 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  #quoteBox {
+    width: 1500px;
+    margin-top: 250px;
+    margin-bottom: 250px;
+  }
+
+  #quote1 {
+    font-size: 40px;
+  }
+
+  /* About Box */
+  #About {
+    margin: 30px;
+    width: 1500px;
+  }
+
+  #AboutBody {
+    width: 1200px;
+    font-size: 23px;
+    text-align: justify;
+  }
+
+  #AboutHead {
+    width: 1200px;
+  }
+
+  /* Project Box */
+  #projectBox {
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  #project {
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+  }
+
+  #projectCards {
+    width: 1500px;
+  }
+
+  .imgProject {
+    height: 200px;
+    width: 400px;
+    margin: 30px;
+  }
+
+  .imgProject:hover {
+    animation: exp 5s ease-in-out 0s 5;
+  }
+
+  @keyframes exp {
+    0% {
+      height: 200px;
+      width: 400px;
+    }
+    50% {
+      height: 280px;
+      width: 480px;
+    }
+    100% {
+      height: 200px;
+      width: 400px;
+    }
+  }
+
+  /* Education Box */
+  #Education {
+    margin-top: 200px;
+    width: 1500px;
+  }
+
+  #EducationBody {
+    width: 700px;
+  }
+
+  #EducationHead {
+    width: 300px;
+  }
+
+  #EducationSchool,
+  #EducationCollege {
+    padding-right: 17px;
+    margin-bottom: 70px;
+  }
+
+  .eduPic {
+    height: 220px;
+    width: 220px;
+    margin: 0px;
+    margin-right: 45px;
+  }
+
+  @keyframes expander {
+    0% {
+      height: 220px;
+      width: 220px;
+    }
+    50% {
+      height: 240px;
+      width: 240px;
+    }
+    100% {
+      height: 220px;
+      width: 220px;
+    }
+  }
+
+  .text1 {
+    font-size: 25px;
+  }
+
+  .text2 {
+    margin-bottom: 15px;
+  }
+
+  .text3 {
+    font-size: 17px;
+    margin-left: 17px;
+  }
+
+  .text4 {
+    font-size: 16px;
+    margin-left: 16px;
+  }
+
+  .text5 {
+    font-size: 14px;
+    margin-left: 16px;
+    margin-top: 8px;
+  }
+
+  /* Bubble */
+  #mainBubbleFlex {
+    width: 1500px;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+
+  /*  PUNCTUAL */
+  #flex3 {
+    height: 220px;
+    width: 220px;
+    margin: 0px;
+    margin-left: 50px;
+    font-size: 36px;
+    animation: flex3 3s ease-in-out 0s 1 reverse;
+  }
+  #flex3:hover {
+    cursor: pointer;
+    animation: flex3hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex3hover {
+    0% {
+      font-size: 36px;
+    }
+    25% {
+      font-size: 31px;
+    }
+    50% {
+      font-size: 36px;
+    }
+    100% {
+      font-size: 31px;
+    }
+  }
+
+  @keyframes flex3 {
+    0% {
+      background-color: #feefdd;
+      height: 220px;
+      width: 220px;
+      color: black;
+      font-size: 36px;
+    }
+    50% {
+      background-color: #feefdd31;
+      height: 190px;
+      width: 190px;
+      font-size: 31px;
+      color: rgba(255, 255, 255, 0.164);
+    }
+    100% {
+      background-color: #feefdd;
+      height: 220px;
+      width: 220px;
+      color: black;
+      font-size: 36px;
+    }
+  }
+
+  /* KEEN LEARNER */
+  #flex6 {
+    height: 200px;
+    width: 200px;
+    margin: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #feefdd;
+    font-size: 30px;
+    animation: flex6 3s ease-in-out 0s 1 reverse;
+  }
+  #flex6:hover {
+    cursor: pointer;
+    animation: flex6hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex6hover {
+    0% {
+      font-size: 30px;
+    }
+    25% {
+      font-size: 27px;
+    }
+    50% {
+      font-size: 30px;
+    }
+    100% {
+      font-size: 27px;
+    }
+  }
+
+  @keyframes flex6 {
+    0% {
+      background-color: #feefdd;
+      height: 200px;
+      width: 200px;
+      font-size: 30px;
+      color: black;
+    }
+    50% {
+      background-color: #feefdd2e;
+      height: 170px;
+      width: 170px;
+      font-size: 27px;
+      color: rgba(255, 255, 255, 0.164);
+    }
+    100% {
+      background-color: #feefdd;
+      height: 200px;
+      width: 200px;
+      font-size: 30px;
+      color: black;
+    }
+  }
+
+  /* PHOTOGRAPHY */
+  #flex4 {
+    margin: 0px;
+    margin-right: 20px;
+    height: 270px;
+    width: 270px;
+    font-size: 37px;
+    animation: flex4 3s ease-in-out 0s 1 reverse;
+  }
+  #flex4:hover {
+    cursor: pointer;
+    animation: flex4hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex4hover {
+    0% {
+      font-size: 37px;
+    }
+    25% {
+      font-size: 35px;
+    }
+    50% {
+      font-size: 37px;
+    }
+    100% {
+      font-size: 35px;
+    }
+  }
+
+  @keyframes flex4 {
+    0% {
+      background-color: #ff4000;
+      height: 270px;
+      width: 270px;
+      font-size: 37px;
+      color: black;
+    }
+    50% {
+      background-color: #ff400029;
+      height: 250px;
+      width: 250px;
+      font-size: 35px;
+      color: rgba(255, 255, 255, 0.164);
+    }
+    100% {
+      background-color: #ff4000;
+      height: 270px;
+      width: 270px;
+      font-size: 37px;
+      color: black;
+    }
+  }
+
+  /*  COMPUTER */
+  #flex5 {
+    margin: 0px;
+    margin-left: 20px;
+    margin-right: 80px;
+    background-color: #f3af52;
+    height: 340px;
+    width: 340px;
+    font-size: 45px;
+    animation: flex5 3s ease-in-out 0s 1 reverse;
+  }
+  #flex5:hover {
+    cursor: pointer;
+    animation: flex5hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex5hover {
+    0% {
+      font-size: 40px;
+    }
+    25% {
+      font-size: 45px;
+    }
+    50% {
+      font-size: 40px;
+    }
+    100% {
+      font-size: 45px;
+    }
+  }
+
+  @keyframes flex5 {
+    0% {
+      background-color: #f3af52;
+      height: 340px;
+      width: 340px;
+      font-size: 45px;
+      color: black;
+    }
+    50% {
+      background-color: #f3b0522d;
+      height: 300px;
+      width: 300px;
+      font-size: 40px;
+      color: rgba(255, 255, 255, 0.164);
+    }
+    100% {
+      background-color: #f3af52;
+      height: 340px;
+      width: 340px;
+      font-size: 45px;
+      color: black;
+    }
+  }
+
+  /* DETERMINED */
+  #flex1 {
+    height: 240px;
+    width: 240px;
+    font-size: 37px;
+    margin: 0px;
+    margin-left: 150px;
+    background-color: #faaa8d;
+    animation: flex1 3s ease-in-out 0s 1 reverse;
+  }
+  #flex1:hover {
+    cursor: pointer;
+    animation: flex1hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex1hover {
+    0% {
+      font-size: 32px;
+    }
+    25% {
+      font-size: 37px;
+    }
+    50% {
+      font-size: 32px;
+    }
+    100% {
+      font-size: 37px;
+    }
+  }
+
+  @keyframes flex1 {
+    0% {
+      background-color: #faaa8d;
+      height: 240px;
+      width: 240px;
+      font-size: 37px;
+      color: black;
+    }
+    50% {
+      background-color: #faaa8d2d;
+      height: 220px;
+      width: 220px;
+      font-size: 32px;
+      color: rgba(0, 0, 0, 0.253);
+    }
+    100% {
+      background-color: #faaa8d;
+      height: 240px;
+      width: 240px;
+      font-size: 37px;
+      color: black;
+    }
+  }
+
+  /* GRAPHICS */
+  #flex2 {
+    height: 310px;
+    width: 310px;
+    margin: 0px;
+    margin-left: 20px;
+    background-color: #201e1f;
+    color: white;
+    font-size: 48px;
+    animation: flex2 3s ease-in-out 0s 1 reverse;
+  }
+  #flex2:hover {
+    cursor: pointer;
+    animation: flex2hover 2s ease-in-out 0s 1;
+  }
+
+  @keyframes flex2hover {
+    0% {
+      font-size: 43px;
+    }
+    25% {
+      font-size: 48px;
+    }
+    50% {
+      font-size: 43px;
+    }
+    100% {
+      font-size: 48px;
+    }
+  }
+
+  @keyframes flex2 {
+    0% {
+      background-color: #201e1f;
+      height: 310px;
+      width: 310px;
+      font-size: 48px;
+      color: white;
+    }
+    50% {
+      background-color: #201e1f3b;
+      height: 260px;
+      width: 260px;
+      font-size: 43px;
+      color: rgba(255, 255, 255, 0.151);
+    }
+    100% {
+      background-color: #201e1f;
+      height: 310px;
+      width: 310px;
+      font-size: 48px;
+      color: white;
+    }
+  }
+}
