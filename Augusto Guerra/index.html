@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+   <!--style especifico-->
+   <style>
+        body
+{
+    background-image:url("background.png");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-color:rgb(45, 24, 65);
+}
+header
+{
+    text-align:center;
+    color:rgb(218, 218, 218);
+    padding:120px;
+}
+h2
+{
+    font-size:65px;
+    font-family:georgia;
+    font-weight:bolder;
+}
+.bordao
+{
+    font-family:'Courier New', Courier, monospace;
+}
+.card
+{
+    background-image: linear-gradient(rgb(110, 78, 138), rgb(53, 33, 71));
+}
+/*ajuste no tamanho da fonte*/
+@media  (max-width: 620px)
+{
+h2
+{
+    font-size:25px;
+    font-family:georgia;
+    font-weight:bolder;
+}
+.bordao
+{
+    display:none;
+    font-family:'Courier New', Courier, monospace;
+}
+}
+    </style>
+</head>
+  <body>
+    <header class="header col-12">
+        <h2 class="col-12 mx-auto">KINOKULT</h2>
+        <p class="bordao col-12 mx-auto">a selection of must-have classics</p>
+        <a href = "pesquisa.html" class="searchmovieslink"><strong>serch movies</strong></a>
+    </header>
+    <div class="container-fluid">
+        <h1>HIGHLIGHTS</h1>
+        <div class="row destaques" id = "listaFilmes">
+            <!--javascript-->
+        </div>
+    </div>
+
+    <!--botao para carregar mais filmes-->
+    <div class= "col-12 bt_maisfilmes">
+        <button type="button" class="btn btn-success btf" id = "btMaisFilmes">More</button>
+        <button type="button" class="btn btn-success btf" id = "btMenosFilmes">Less</button>
+        <button type="button" class="btn btn-success btfd" id = "btEsconder">Hide</button>
+    </div>
+
+    <footer class="footer col-12">
+        <p>made with ❤️ and 🧠 by Augusto Guerra de Lima - 2022 ©️</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

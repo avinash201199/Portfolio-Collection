@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>detalhes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<!--style especifico-->
+<style>
+    header
+{
+    color:rgb(218, 218, 218);
+    padding:50px;
+}
+h2
+{
+    font-size:medium;
+    font-family:georgia;
+    font-weight:bolder;
+}
+</style>
+</head>
+  <body>
+    <header><h2>KINOKULT</h2></header>
+    <a href = "pesquisa.html" class="searchmovieslinka"><strong>serch movies</strong></a>
+    <h1>DETAILS</h1> 
+    <div class="container">
+    <div id="detalheFilme" class="row"></div>
+    </div>
+    <footer class="footer col-12">
+      <p>made with ❤️ and 🧠 by Augusto Guerra de Lima - 2022 ©️</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script>
+
+        const params = new URLSearchParams(location.search);
+
+        let id = params.get('id');
+
+        dadosFilmes = JSON.parse (localStorage.getItem('db_filmes'));
+        console.log(dadosFilmes);
+
+        let idxFilme = dadosFilmes.results.findIndex((elem)=>elem.id == id);
+
+        if(idxFilme > -1)
+        {
+            let filme = dadosFilmes.results[idxFilme];
+
+        document.getElementById('detalheFilme').innerHTML = `  
+        <style>
+          .card
+          {
+            background-image:url("https://image.tmdb.org/t/p/w500${filme.backdrop_path}");
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-color:transparent;
+          }
+        </style>
+
+  <div class="card mb-3 " style="width: 100;">
+    <div class="full">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://image.tmdb.org/t/p/w500${filme.poster_path}" class="card-img-top" alt="FilmeXPTO">
+      </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">${filme.title}</h5>
+        <p class="card-text">${filme.overview}</p>
+        <p class="card-text"><strong>Popularity:</strong> ${filme.popularity}</p>
+        <p class="card-text"><strong>Release date: </strong>${filme.release_date} </p>
+        <p class="card-text"><strong>Original Title: </strong>${filme.original_title}</p>
+        <p class="card-text"><strong>Original Language: </strong>${filme.original_language}</p>
+        <p class="card-text"><strong>Vote Average : </strong>${filme.vote_average}</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>`
+}
+else
+{
+    alert('Filme não encontrado');
+}
+        /*"Código do Filme: " + params.get('id');*/
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
