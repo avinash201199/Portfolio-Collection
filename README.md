@@ -47,6 +47,8 @@ This repository contains collection of portfolio's from various open source enth
 
 [13. Raihan H. Q.](https://hidesec.tech/)
 
+[14. Khushi Nikam](https://nikamkhushi.netlify.app)
+
 ## Contact
 
 If you guys have any doubts you can contact me here:
