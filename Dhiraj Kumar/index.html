@@ -1,0 +1,219 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <script src="https://kit.fontawesome.com/e16cc6cc64.js" crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.7.1/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="./src/style.css">
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body x-data="{ open: false }" class="antialiased">
+    <header class="relative">
+        <div class="px-4 sm:px-6 md:px-8">
+            <div
+                class="relative pt-6 lg:pt-8 flex items-center justify-between text-gray-700 font-semibold text-sm leading-6">
+                <a href="/">@dheeraj</a>
+                <div class="flex items-center">
+                    <div class="-my-1 ml-2 -mr-1 md:hidden">
+                        <button type="button" @click="open = true"
+                            class="text-gray-500 w-8 h-8 flex items-center justify-center hover:text-gray-600">
+                            <span class="sr-only">Navigation</span>
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="hidden md:block">
+                        <ul class="flex items-center space-x-8">
+                            <li><a class="hover:text-gray-500" href="#about">About</a></li>
+                            <li><a class="hover:text-gray-500" href="#skills">skills</a></li>
+                            <li><a class="hover:text-gray-500" href="#projects">projects</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="relative max-w-5xl mx-auto pt-20 lg:pt-32">
+                <div class="text-center mx-auto ">
+                    <img src="./src/assets/rick.jpg"
+                        class="rounded-full shadow-lg mb-4 mx-auto w-32 h-32  border-4 border-green-400" alt="Avatar" />
+                </div>
+                <h3 class="pt-4 text-gray-700 font-medium text-3xl sm:text-4xl lg:text-5xl tracking-tight text-center ">
+                    I'm Dheeraj</h3>
+                <p class=" pt-4 text-lg text-gray-600 text-center max-w-3xl mx-auto">Student, Front-end developer</p>
+            </div>
+        </div>
+    </header>
+    <section id="about" class="py-4">
+        <div class="px-4 sm:px-6 md:px-8">
+            <div class="relative max-w-5xl mx-auto pt-10 ">
+                <h1 class="text-gray-900 max-w-3xl mx-auto font-bold text-2xl tracking-tight text-center">
+                    About Me</h1>
+                <p class="mt-2 text-lg text-gray-600 text-left max-w-3xl mx-auto">Hello! My name is dhiraj. I am a
+                    Student currently studying Electrical engineering. My interest in web development started back in
+                    2018, when I started learning HTML, CSS and Javascript. In late 2020, I discovered Tailwind CSS, and
+                    was
+                    amazed! Tailwind CSS completely changed the way I looked at CSS forever. No longer did I have to
+                    worry about editing large, messy, and unorganized stylesheets. With Tailwind CSS, all the styling
+                    was done in the HTML.</p>
+            </div>
+        </div>
+        <div id="skills"
+            class=" mt-16 mb-8 border-2 border-t-blue-500 border-b-green-500 border-l-yellow-500 border-r-red-500 rounded-xl pb-6 pt-2 mx-8 px-4 shadow-lg sm:px-12 lg:mx-96">
+            <div class="relative mx-auto tracking-tight">
+                <h4 class="flex p-3 items-center justify-between font-semibold text-gray-800"><span
+                        class="shadow-lg inline-block px-2 rounded-lg bg-teal-400">Skills</span></h4>
+                <div
+                    class="relative max-w-lg w-full mx-auto md:mx-none grid gap-x-8 gap-y-12 sm:gap-8 md:gap-12 grid-cols-3 sm:grid-cols-5 items-center place-content-center">
+                    <div class="w-10 mx-auto flex items-center flex-col justify-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                        <p class="text-xs text-fun-gray font-bold mt-3 opacity-80">HTML</p>
+                    </div>
+                    <div class="w-10 mx-auto flex items-center flex-col justify-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                        <p class="text-xs text-fun-gray font-bold mt-3 opacity-80">CSS</p>
+                    </div>
+                    <div class="w-10 mx-auto flex items-center flex-col justify-center">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                        <p class="text-xs text-fun-gray font-bold mt-3 opacity-80">Javascript</p>
+                    </div>
+                    <div class="w-10 mx-auto flex items-center flex-col justify-center">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
+                        <p class="text-xs text-fun-gray font-bold mt-3 opacity-80">TailwindCSS</p>
+                    </div>
+                    <div class="w-10 mx-auto flex items-center flex-col justify-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                        <p class="text-xs text-fun-gray font-bold mt-3 opacity-80">React</p>
+                    </div>
+                    <div class="w-10 mx-auto flex items-center flex-col justify-center">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" />
+                        <p class="text-xs text-fun-gray font-bold mt-3 opacity-80">NextJs</p>
+                    </div>
+                    <div class="w-10 mx-auto flex items-center flex-col justify-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                        <p class="text-xs text-fun-gray font-bold mt-3 opacity-80">git</p>
+                    </div>
+                    <div class="w-10 mx-auto flex items-center flex-col justify-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+                        <p class="text-xs text-fun-gray font-bold mt-3 opacity-80">Figma</p>
+                    </div>
+                    <div class="w-10 mx-auto flex items-center flex-col justify-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
+                        <p class="text-xs text-fun-gray font-bold mt-3 opacity-80">Photoshop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- projects -->
+        <div id="projects"
+            class=" mt-16 mb-8 border-2 border-t-blue-500 border-b-green-500 border-l-yellow-500 border-r-red-500 rounded-xl pb-6 pt-2 mx-8 px-4 shadow-lg sm:px-12 lg:mx-96">
+            <div class=" mx-auto tracking-tight ">
+                <h4 class="flex p-3 items-center justify-between font-semibold text-gray-800"><span
+                        class="shadow-lg inline-block px-2 rounded-lg bg-teal-400">Projects</span></h4>
+                <div class="max-w-sm mx-auto flex flex-col md:justify-center">
+                    <a href="https://password-generator-512.vercel.app/" target="_blank"
+                        class="w-full relative rounded-xl transition hover:-translate-y-2 hover:opacity-75">
+                        <img class="w-[270px] rounded-md" src="./src/assets/Project preview.png" />
+                    </a>
+                    <div class="w-full mt-5">
+                        <div class="flex  justify-between">
+                            <a href="https://password-generator-512.vercel.app/" target="_blank">
+                                <h3 class="text-lg hover:underline duration-200 font-bold">Password Generator 🔗</h3>
+                            </a>
+                        </div>
+                        <ul class="flex flex-wrap items-center mt-2 -ml-2 list-none">
+                            <li
+                                class="m-1 rounded-lg text-sm text-white bg-cyan-500 py-1 px-2 cursor-pointer hover:opacity-75">
+                                React
+                            </li>
+                            <li
+                                class="m-1 rounded-lg text-sm text-white bg-cyan-500 py-1 px-2 cursor-pointer hover:opacity-75">
+                                NextJs
+                            </li>
+                            <li
+                                class="m-1 rounded-lg text-sm text-white bg-cyan-500 py-1 px-2 cursor-pointer hover:opacity-75">
+                                Typescript
+                            </li>
+                            <li
+                                class="m-1 rounded-lg text-sm text-white bg-cyan-500 py-1 px-2 cursor-pointer hover:opacity-75">
+                                Tailwindcss
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="border-t border-gray-200 w-2/3 mx-auto"></div>
+    <section id="tools" class="relative">
+        <div class="px-4 sm:px-6 md:px-8">
+            <div class="relative max-w-5xl mx-auto pt-6 sm:pt-6 lg:pt-16">
+                <h1 class="mb-5 text-gray-900 max-w-3xl mx-auto font-semibold text-2xl tracking-tight text-center">
+                    Framework used</h1>
+                <div class="flex relative flex-wrap justify-center overflow-auto">
+                    <a href="https://tailwindcss.com" class="p-2 m-2 shadow-lg border-2 hover:border-b-red-500"
+                        target="_blank">
+                        <img src="./src/assets/tailwind-css-wordmark.svg" class="w-18 h-6"></img>
+                    </a>
+                    <a href="https://alpinejs.dev" class="p-2 m-2 shadow-lg border-2 hover:border-b-red-500"
+                        target="_blank">
+                        <img src="./src/assets/alpine-wordmark.svg" class="w-18 h-5"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="max-w-5xl mx-auto text-gray-600 pt-8text-sm leading-6">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="mt-6 py-6 border-t border-gray-200 font-semibold text-center">
+                <p class="font-bold font-2x1">&copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>&nbsp;|&nbsp;<span class="">Made with <i class="devicon-tailwindcss-plain colored"></i> by
+                        <a href="https://github.com/dhiraj512" target="_blank" rel="noopener noreferrer">dhiraj</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- mobile menu -->
+    <div id="menu" class="">
+        <div x-show="open" @click="open = false" class="block fixed inset-0 bg-black bg-opacity-20 backdrop-blur-sm"
+            aria-hidden="true"></div>
+        <div x-show="open" @click.away="open = false" x-transition:enter="transition ease-out duration-100 transform"
+            x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-75 transform"
+            x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"
+            class="fixed top-0 right-0 left-4 m-2 bg-white rounded-lg shadow-lg p-6 text-base font-semibold text-gray-900">
+            <button @click="open = false"
+                class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center text-gray-500 hover:text-gray-600"
+                tabindex="0">
+                <span class="sr-only">Close navigation</span>
+                <svg viewBox="0 0 10 10" class="w-2.5 h-2.5 overflow-visible" aria-hidden="true">
+                    <path d="M0 0L10 10M10 0L0 10" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round"></path>
+                </svg>
+            </button>
+            <ul class="space-y-6">
+                <li><a @click="open = false" class="hover:text-gray-500" href="#about">About</a></li>
+                <li><a @click="open = false" class="hover:text-gray-500" href="#skills">skills</a></li>
+                <li><a @click="open = false" class="hover:text-gray-500" href="#projects">projects</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
