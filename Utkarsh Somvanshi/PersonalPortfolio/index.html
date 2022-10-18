@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section class="first">
+        <nav>
+            <div style="color: white;" class="logo" id="my_logo">
+                Utkarsh's PortFolio
+                </div>
+            <ul class="show" id="navigationList">
+                <li><a href="#about_me"> About </a></li>
+                <li><a href="#my_skills">Skills</a></li>
+                <li><a href="#my_projects"> Projects </a></li>
+                <li><a href="#my_contacts"> Contact </a></li>
+            </ul>
+            <img src="./menuIcon.jpg.png" alt="menuIcon" class="menuIcon" id="menuIcon" width="40px">
+        </nav>
+        <div class="introSection">
+            <div class="intro">
+                <h1 class="name">Utkarsh Somvanshi</h1>
+                <h1>Developer</h1>
+                <button class="AboutMeBtn"><a href="#about_me" style="text-decoration: none; list-style: none; color: black;">About Me</a></button>
+                <!--<button class="cvbtn">Download CV</button>-->
+            </div>
+            <div class="socialmedia">
+                <a href="https://www.linkedin.com/in/utkarsh-somvanshi-1951a2204/"> <img src="./Screenshot 2022-06-16 at 1.34.49 AM.png" alt="LinkedInLogo" class="socialmediaLogo"></a>
+                <a href="https://github.com/utkx2"> <img src="./Screenshot 2022-06-16 at 1.43.29 AM.png" alt="githubLogo" class="socialmediaLogo"></a>           
+            </div>
+        </div>
+    </section>
+    <section class="second" id="about_me">
+        <div class="information">
+            <h1 style="font-size: 50px;">About Me</h1>
+            <h2 style="font-size: 30px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem dignissimos libero earum nihil dicta. Officia iure architecto atque, minima dicta, harum commodi, debitis excepturi aspernatur adipisci laborum eligendi quis.
+            </h2>
+        </div>
+        <div class="devimg">
+            <img src="./20220610_203912.jpg" alt="utkx2" height="450px" style="border-radius: 250px;">
+        </div>
+    </section>
+    <section class="third" id="my_skills">
+        <div class="skills">
+            <h1 style="padding-bottom: 30px;">Skills</h1>
+            <ol style="list-style: none;">
+                <li>HTML</li>
+                <div class="skillsbar" style="width: 1300px; height: 10px; background-color: rgb(251, 80, 80)"></div>
+                <li>CSS</li>
+                <div class="skillsbar" style="width: 1300px; height: 10px; background-color: rgb(251, 80, 80)"></div>
+                <li>JavaScript</li>
+                <div class="skillsbar" style="width: 1000px; height: 10px; background-color: rgb(251, 80, 80)"></div>
+                <li>C++</li>
+                <div class="skillsbar" style="width: 1000px; height: 10px; background-color: rgb(251, 80, 80)"></div>
+                <li>C</li>
+                <div class="skillsbar" style="width: 1000px; height: 10px; background-color: rgb(251, 80, 80)"></div>
+                <li>Data Structures & Algorithm</li>
+                <div class="skillsbar" style="width: 800px; height: 10px; background-color: rgb(251, 80, 80)"></div>
+                <li>mySQL Workbench</li>
+                <div class="skillsbar" style="width: 800px; height: 10px; background-color: rgb(251, 80, 80)"></div>
+                <li>Node.Js</li>
+                <div class="skillsbar" style="width: 800px; height: 10px; background-color: rgb(251, 80, 80)"></div>
+            </ol>
+        </div>
+    </section>
+    <section class="fourth" id="my_projects">
+        <h1 style="font-size: 50px;">Projects</h1>
+        <div class="projectContainer">
+            <div class="projects">
+                <img src="./project1.png" class="projectImage" alt="project one image" width="290px">
+                <h3>People Counter</h3>
+                <p class="subtext">
+                    This is my first project and some infor about it. Really enjoyed making it.
+                </p>
+                <hr>
+                <p class="subtext"><a href="https://github.com/utkx2/peopleCounter"> View Here </a></p>
+            </div>
+            <div class="projects">
+                <img src="./project2.png" class="projectImage" alt="project two image" width="280px">
+                <h3>Blackjack Game</h3>
+                <p class="subtext">
+                    This is my second project and some infor about it. Really enjoyed making it.
+                </p>
+                <hr>
+                <p class="subtext"><a href="https://github.com/utkx2/BlackJack"> View Here </a></p>
+            </div>
+            <div class="projects">
+                <img src="./project3.png" class="projectImage" alt="project three image" width="300px">
+                <h3>Coffee Shop</h3>
+                <p class="subtext">
+                    This is my third project and some infor about it. Really enjoyed making it.
+                </p>
+                <hr>
+                <p class="subtext"><a href="#"> View Here </a></p>
+            </div>
+            <div class="projects">
+                <img src="./project4.png" class="projectImage" alt="project four image" width="280px">
+                <h3>Gym Membership</h3>
+                <p class="subtext">
+                    This is my fourth project and some info about it. Really enjoyed making it.
+                </p>
+                <hr>
+                <p class="subtext"><a href="https://github.com/utkx2/GigaCard"> View Here </a></p>
+            </div>
+        </div>
+    </section>
+    <footer class="contacts" id="my_contacts">
+        <h1 style="color: white; text-align: center; font-size: 50px;">Contact Me</h1>
+        <form>
+            Name : <input type="text" name="" id="">
+            E-mail : <input type="email" name="" id="">
+            Query : <textarea name="" id="" cols="30" rows="10"></textarea>
+            <p style="color: red; font-size: 15px;">*We never share your information with anyone.</p>
+            <button class="submitbtn">Submit</button>
+        </form>
+        <div style="color: white; text-align: center;">
+            <h3>Want to call directly?</h3>
+            <h3>
+                Phone No : <a href="tel:+917042253812" style="text-decoration: none; color: rgb(251, 80, 80);">+917042253812</a> or <a href="tel:+918882161712" style="text-decoration: none; color: rgb(251, 80, 80);">+918882161712</a>
+            </h3>
+        </div>
+    </footer>
+    <div style="background-color: rgb(251, 80, 80);">
+        <p style="color: white; text-align: center; padding: 10px;">
+            <a href="#my_logo" style="color: white; text-decoration: none;">Back to Top</a>
+        </p>
+    </div>
+    <script src="./code.js"></script>
+</body>
+</html>
