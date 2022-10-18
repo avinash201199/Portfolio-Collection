@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Raleway:wght@100;300;500&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    margin: 0px;
+    font-family: 'Kanit', sans-serif;
+    box-sizing: border-box;
+}
+section {
+    background-color: yellow;
+    border: 1px solid black;
+}
+.first {
+    background-color: rgb(5, 5, 44);
+    height: 100vh;
+    color: white;
+    font-size: 30px;
+}
+ul {
+    display: flex;
+}
+ul li {
+    list-style: none;
+    width: 130px;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+}
+ul li:hover {
+    transition: 0.5s all;
+    background-color: coral;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+.logo {
+    padding-left: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.intro {
+    margin: 50px 50px 150px 80px;
+}
+.introSection {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.name {
+    font-size: 100px;
+}
+.AboutMeBtn {
+    padding: 30px 80px 30px 80px;
+    margin: 50px 10px 0px 0px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: /*rgb(251, 80, 80)*/ coral;
+}
+.AboutMeBtn:hover {
+    transition: 0.3s all;
+    background-color: rgb(251, 80, 80);
+}
+.AboutMeBtn:active {
+    background-color: yellow;
+}
+.cvbtn {
+    padding: 30px 80px 30px 80px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: /*rgb(251, 80, 80)*/coral;
+    margin-top: 50px;
+}
+.cvbtn:hover {
+    transition: 0.5s all;
+        background-color: rgb(251, 80, 80);
+}
+.cvbtn:active {
+    background-color: yellow;
+}
+.socialmediaLogo {
+    height: 80px;
+    padding-bottom: 40px;
+    cursor: pointer;
+    display: flex;
+}
+.second {
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+.information {
+    margin: 80px;
+}
+.devimg {
+    position: relative;
+    right: 30px;
+}
+.third {
+    background-color: rgb(5, 5, 44);
+}
+.skills {
+    color: white;
+    margin: 80px;
+    font-size: 30px;
+}
+.skillsbar{
+    margin: 30px;
+}
+.fourth {
+    background-color: white;
+    margin: 80px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.projects {
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    box-shadow: 5px 5px 25px grey;
+}
+.projectContainer {
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width: 1000px) {
+    .projectContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.subtext {
+    margin: 20px;
+}
+.subtext a {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(251, 80, 80);
+}
+.projectImage {
+    margin: 10px;
+    border-radius: 150px;
+    margin-bottom: 50px;
+}
+hr {
+    margin: 0px 20px 0px 20px;
+}
+.contacts {
+    padding: 80px;
+    background-color: rgb(5, 5, 44);
+}
+form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 80px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    left: 30px;
+    font-size: 20px;
+}
+input {
+    margin: 10px 0px 10px 0px;
+}
+textarea {
+    margin: 10px 0px 10px 0px;
+}
+.submitbtn {
+    width: 150px;
+    padding: 10px;
+    margin: 20px 0px 20px 0px;
+    font-size: 20px;
+    background-color: coral;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.submitbtn:hover {
+    cursor: pointer;
+    background-color: rgb(251, 80, 80);
+    transition: 0.5s all;
+}
+.menuIcon {
+    display: none;
+}
+@media screen and (max-width : 1000px) {
+    .menuIcon {
+        cursor: pointer;
+        margin-right: 10px;
+        display: block;
+        align-self: flex-end;
+    }
+    ul {
+        display: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: rgb(27, 27, 65);
+        margin-top: 0px;
+        padding-bottom: 10px;
+    }
+    .logo {
+        display: none;
+    }
+}
