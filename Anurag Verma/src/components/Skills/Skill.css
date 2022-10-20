@@ -1,0 +1,39 @@
+.webd {
+    position: relative;
+    padding-bottom: 12px;
+    left: 25%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    border-radius: 14px;
+    padding: 1rem;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #bfe9ff, #ff6e7f);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+    margin-bottom: 100px;
+}
+
+.project-button {
+    position: relative;
+    /* left: 35%; */
+    width: 30%;
+    border-radius: 14px;
+    height: 160%;
+    font-size: 25px;
+    background-color: #bfe9ff;
+}
+
+.webd .skills {
+    margin-top: 2%;
+    margin-bottom: 7%;
+    text-align: center;
+    height: 30%;
+}
+
+.project-button:hover {
+    background-color: #fff;
+}

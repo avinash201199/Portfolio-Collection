@@ -1,0 +1,65 @@
+.profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+    margin: auto;
+    background: #8e9eab;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: rgb(129, 118, 118);
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+    margin-bottom: 70px;
+}
+
+.profile-h1 {
+    font-size: 60px;
+    padding-left: 3%;
+}
+
+.profile-h2 {
+    font-size: 60px;
+    padding-left: 3%;
+}
+
+.profile-h4 {
+    font-size: 25px;
+    padding: 3%;
+}
+
+.contact {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.linkdin {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+/* .content {
+    margin: 2%;
+} */
+
+.profile-pic {
+    width: 160%;
+    height: 50%;
+    border-radius: 14px;
+    /* object-fit: cover; */
+    overflow: hidden;
+}
