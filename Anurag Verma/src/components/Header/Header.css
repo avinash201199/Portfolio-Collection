@@ -1,0 +1,11 @@
+.header {
+    position: relative;
+    top: 0%;
+    color: white;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}

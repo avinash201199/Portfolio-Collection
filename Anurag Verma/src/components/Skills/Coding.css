@@ -1,0 +1,38 @@
+.code {
+    position: relative;
+    height: 35vh;
+    left: 25%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+    background: #334d50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cbcaa5, #334d50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cbcaa5, #334d50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-bottom: 100px;
+}
+
+.coding-button {
+    position: relative;
+    left: 15%;
+    width: 70%;
+    border-radius: 14px;
+    height: 220%;
+    font-size: 20px;
+    background-color: #bfe9ff;
+}
+
+.coding {
+    margin-bottom: 3%;
+    height: 30%;
+}
+
+.coding-button:hover {
+    background-color: #fff;
+}
