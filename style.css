@@ -1,0 +1,535 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior:smooth;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar{
+    position: fixed;
+    background: rgb(239, 243, 247);
+    width: 100%;
+    z-index: 999;
+    padding: 15px 0;
+    position: 30px 0;
+    font-family: "ubuntu",sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar .sticky{
+    background:  rgb(54, 53, 53);
+    padding: 15px 0;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.navbar .logo a span{
+     color:rgb(231, 12, 12) ;
+     transition: all 0.3s ease;
+}
+.navbar .sticky a span{
+    color:black ;
+    
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+      color: rgb(17, 17, 15);
+      font-size: 20px;
+      font-weight: 700;
+      margin-left: 50px;
+      transition: color 0.3s ease;
+      padding: 0 25px;
+}
+.navbar .menu li a:hover{
+     color: rgb(223, 2, 2);
+     font-weight: 600;
+}
+
+/* Home section start*/
+.home{
+    display: flex;
+    background: url("pravin2.jpg") no-repeat ;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed; 
+    color: silver;
+    min-height: 500px;
+    font-family: "ubuntu",sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 30px;
+    
+}
+.home .home-content .text-2{
+    font-size: 70px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 35px;
+    margin: 5px 0;    
+}
+.home .home-content .text-3 span{
+    color: rgb(77, 148, 219);
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background-color: silver;
+    color: rgb(18, 18, 19);
+    font-size: 20px;
+    padding: 15px 36px;
+    border-radius: 6px;
+    margin-top: 20px;
+    border: 3px solid blue;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: rgb(240, 227, 227);
+    border: 3px solid blue;
+    background: none;
+}
+/*about section styling*/
+section{
+    padding: 70px 0;
+    background-color: silver;
+}
+.about , footer{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background-color: rgb(0, 0, 240);
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    font-size: 20px;
+    color: red;
+    padding: 5px ;
+    background-color:silver;
+    transform: translateX(-50%);
+}
+.about .about-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about .about-content .left{
+  width: 45%;
+}
+.about .about-content .left img{
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.about .about-content .right{
+    width: 55%;
+  }
+  .about .about-content .right .text{
+    font-size: 33px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .about .about-content .right .text span{
+      color: rgb(29, 131, 233);
+  }
+.about .about-content .right p{
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background-color: rgb(29, 28, 28);
+    color: rgb(211, 211, 218);
+    font-size: 20px;
+    padding: 10px 70px;
+    border-radius: 6px;
+    margin-top: 20px;
+    border: 2px solid blue;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+.about .about-content .right a:hover{
+color: black;
+background: none;
+border: 3px solid blue;
+}
+
+/*skills section styling*/
+ 
+.skills{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.skills .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.skills .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background-color: rgb(0, 0, 240);
+    transform: translateX(-50%);
+}
+.skills .title::after{
+    content: "what i know";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    font-size: 20px;
+    color: red;
+    padding: 5px ;
+    background-color:silver;
+    transform: translateX(-50%);
+}
+ .skills .skills-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills .skills-content .left p{
+    text-align:justify;
+    font-size: 18px;
+    font-weight: 400;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+   font-size: 30px;
+   font-weight: 600;
+   margin-bottom:10px;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding: 5px 0px;
+    font-weight: 600;
+}
+.skills .skills-content .right .infor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills .skills-content .right span{
+    font-weight: 600;
+    font-size:18px ;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: rgb(135, 130, 214);
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: blue;
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 80%;
+}
+.skills-content .right .Java::before{
+    width: 50%;
+}
+.skills-content .right .GitHub::before{
+    width: 70%;
+}
+
+/* contatct section start */
+.contact{
+    font-size: 15px;
+    font-weight: 700;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contact .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 250px;
+    height: 3px;
+    background-color: rgb(0, 0, 240);
+    transform: translateX(-50%);
+}
+.contact .title::after{
+    content: "get in touch";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    font-size: 20px;
+    color: red;
+    padding: 5px ;
+    background-color:silver;
+    transform: translateX(-50%);
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content{
+     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact .contact-content .left p{
+    text-align:justify;
+    font-size: 18px;
+    font-weight: 400;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact .contact-content .left .text{
+   font-size: 30px;
+   font-weight: 600;
+   margin-bottom:10px;
+}
+.contact .contact-content .text{
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 10px;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: blue;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: rgb(75, 77, 80);
+    
+}
+ 
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: blue;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: silver;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+   /* opacity: 0;
+    pointer-events: none;
+    transition: all 0.3 ease;*/
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/*footer section styling*/
+footer{
+    background: #111;
+    padding: 5px 5px;
+    color: silver;
+    text-align: center;
+}
+footer span a{
+    color: rgb(235, 23, 23);
+   text-decoration: none;
+}
+footer span a:hover{
+    text-decoration:none;
+}
+
+
+/* responsive media query start */
+@media (max-width: 1070px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+    .services .serv-content .card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+}
