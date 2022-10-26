@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>PORTFOLIO</title>
+    <link rel="icon" type="image/x-icon" href="avatar.jpg">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="responsive.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/a985fc8a0b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="responsive">
+      <div class="colorlayer">
+        <nav>
+          <div class="openMenu"><i class="fa fa-bars"></i></div>
+          <ul class="mainMenu  OpenResp" >
+            <button
+              id="DefaultOpen"
+              class="Btn"
+              onclick="Page(event, 'MainPage')"
+            >
+              Home
+            </button>
+            <button class="Btn" onclick="Page(event, 'SecPage')">
+              About Me
+            </button>
+            <button class="Btn" onclick="Page(event, 'ThirdPage')">
+              Projects
+            </button>
+            <button class="Btn" onclick="Page(event, 'ContactUs')">
+              Connect
+            </button>
+            <div class="closeMenu"><i id = "cross" class="fa fa-times"></i></div>
+          </ul>
+        </nav>
+        <div id="MainPage" class="SlideContent">
+          <div id="IntroPage" class="Intro">
+            <h1>CHINMAY PUNDIR</h1>
+            <h3>━━━━━━━━━━━━━━━━</h3>
+            <h4>
+              I am this and that and dont know why i am this but because i am
+              that so thats why i am doing this.
+            </h4>
+          </div>
+          <div class="ImgAvatar">
+            <img src="avatar.jpg" alt="avatar" />
+          </div>
+        </div>
+
+        <div id="SecPage" class="SlideContent">
+          <div class="Intro-text">
+            <div class="static-text">
+              I am <span class="dynamic-text"></span>
+            </div>
+          </div>
+          <div class="AboutPage">
+            <h2>ABOUT ME</h2>
+            <h3 id="AboutText">
+              <span id="line1"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat quod incidunt. Quis ipsum eaque hic blanditiis sequi
+                sed, nemo eos, iste inventore amet excepturi. Iure, obcaecati
+                similique. Obcaecati, iusto
+              </span>
+              <span id="line2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit.Architecto pariatur tempore nam vitae corrupti alias, quis
+                inventore error et illo mollitia molestiae dolore. Totam
+                quisquam repellendus, ad magnam beatae at?</span
+              >
+              <span id="line3"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                doloribus amet molestiae rerum doloremque ipsa maxime assumenda,
+                ratione corporis fuga, aliquid facere repellendus explicabo rem
+                odit autem quos. Cum, ullam.</span
+              >
+              <span id="line4"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laborum totam obcaecati, recusandae animi, itaque eius placeat
+                soluta suscipit dolores qui adipisci earum doloremque sint optio
+                possimus accusantium ea eaque ratione.</span
+              >
+            </h3>
+          </div>
+          <div class="skills">
+            <h2>SKILLS</h2>
+            <div id="icons">
+              <i
+                id="i1"
+                class="fa-brands fa-html5 fa-6x"
+                data-hover="HTML5"
+              ></i>
+              <i
+                id="i2"
+                class="fa-brands fa-css3-alt fa-6x"
+                data-hover="CSS3"
+              ></i>
+              <i
+                id="i3"
+                class="fa-brands fa-js fa-6x"
+                data-hover="JAVASCIPT"
+              ></i>
+              <i
+                id="i4"
+                class="fa-solid fa-photo-film fa-6x"
+                data-hover="Editor"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <div id="ThirdPage" class="SlideContent">
+          <div class="ProjectPage">
+            <h2>PROJECTS</h2>
+            <div class="box">
+              <div class="BIGBOX1">
+                <div id="box1">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Earum rerum dolore sint voluptatem. Id sunt porro, vitae
+                  possimus maiores in dolorem itaque sit sapiente velit animi,
+                  eius expedita totam quod.
+                </div>
+                <div id="box2">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Earum rerum dolore sint voluptatem. Id sunt porro, vitae
+                  possimus maiores in dolorem itaque sit sapiente velit animi,
+                  eius expedita totam quod.
+                </div>
+              </div>
+              <div class="BIGBOX2">
+                <div id="box3">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Earum rerum dolore sint voluptatem. Id sunt porro, vitae
+                  possimus maiores in dolorem itaque sit sapiente velit animi,
+                  eius expedita totam quod.
+                </div>
+                <div id="box4">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Earum rerum dolore sint voluptatem. Id sunt porro, vitae
+                  possimus maiores in dolorem itaque sit sapiente velit animi,
+                  eius expedita totam quod.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ContactUs" class="SlideContent">
+          <div id="boxformsocial">
+            <form id="form" action="https://formspree.io/f/xnqrnpyd" method="post">
+              <h2 id="CntTxt">CONNECT</h2>
+              <div id="ContactBox">
+                <div id="name">
+                  <label id="LabName" for="fname">Name:</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="John" required
+                  >
+                </div>
+                <div id="email">
+                  <label id="LabEmail" for="femail">E-mail:</label>
+                  <input
+                    type="email"
+                    id="femail"
+                    name="femail"
+                    placeholder="john@example.com" required
+                  >
+                </div>
+                <div id="msg">
+                  <label id="LabMsg" for="fmsg">Message:</label>
+                  <textarea
+                    name="MESSAGE"
+                    id="MsgText"
+                    cols="20"
+                    rows="8"
+                    placeholder="Write your message here" required
+                  ></textarea>
+                </div>
+
+                <input id="SubmitBtn" type="submit" value="Submit" >
+              </div>
+            </form>
+          </div>
+          <div class="Socials">
+            <h2>SOCIALS</h2>
+            <div id="social-icons">
+              <a href="https://instagram.com" target="_blank">
+                <i id="i-ig" class="fa-brands fa-instagram fa-5x"></i
+              ></a>
+              <a href="https://facebook.com" target="_blank"
+                ><i id="i-fb" class="fa-brands fa-facebook fa-5x"></i
+              ></a>
+              <a href="https://twitter.com" target="_blank"
+                ><i id="i-tw" class="fa-brands fa-twitter fa-5x"></i
+              ></a>
+              <a href="https://linkedin.com" target="_blank"
+                ><i id="i-li" class="fa-brands fa-linkedin fa-5x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="FooterText">
+      <h5 style="background: none">&#169; Copyright Charm 2022</h5>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".dynamic-text", {
+        strings: ["Coder", "Student", "Editor", "Homosapien💀"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
