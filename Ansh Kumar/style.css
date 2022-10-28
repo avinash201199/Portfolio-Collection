@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;1,300&family=Source+Code+Pro:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  background-color: rgb(186, 186, 186);
+  /* width: 434px; */
+  font-family: "Karla", sans-serif;
+  height: 100vh;
+  transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+  padding: 45px;
+}
+
+.sidebar nav li {
+  list-style: none;
+  font-style: 30px;
+  padding: 33px 0px;
+}
+
+.sidebar nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  /* background-color: yellow; */
+  width: 90vw;
+}
+
+.container {
+  display: flex;
+}
+
+.infocontainer {
+  /* background-color: blueviolet; */
+  height: 58vh;
+  width: 80vw;
+  margin: 144px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.Devinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Source Code Pro", monospace;
+}
+
+.hello {
+  font-size: 65px;
+}
+
+.name {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Karla", sans-serif;
+}
+
+.about {
+  font-size: 40px;
+}
+
+.moreabout {
+  font-size: 22px;
+  margin-top: 22px;
+  font-family: "Karla", sans-serif;
+}
+
+.buttons {
+  margin-top: 34px;
+}
+
+.btn {
+  padding: 9px 14px;
+  border-radius: 20px;
+  color: white;
+  background-color: dodgerblue;
+  font-weight: bold;
+  font-size: 21px;
+  margin: 0px 3px;
+  cursor: pointer;
+}
+
+.btn-sm {
+  font-size: 10px;
+  padding: 7px 13px;
+  margin: 10px 0;
+}
+
+.btn:hover {
+  color: dodgerblue;
+  background-color: white;
+}
+.devpic img {
+  height: 58vh;
+}
+
+/* Contact css */
+
+.contactform {
+  padding: 0 34px;
+  font-family: "Karla", sans-serif;
+  padding-top: 144px;
+}
+
+.contactform h1 {
+  font-family: "Source Code Pro", monospace;
+  padding: 12px 0;
+}
+
+.contactform form div {
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactform form div input {
+  width: 26vw;
+  border-radius: 4px;
+  margin: 6px 0 0 0;
+  padding: 3px;
+}
+#form-check {
+  flex-direction: row;
+}
+
+#form-check input {
+  width: 24px;
+  margin: 3px 0px;
+}
+
+#emailHelp {
+  font-size: 11px;
+  color: midnightblue;
+  margin: 0px 5px;
+  padding: 3px 0 0 0;
+}
+
+/* blog css */
+.blogitem {
+  margin: 20px;
+  font-family: "Karla", sans-serif;
+}
+h1 {
+  font-family: "Karla", sans-serif;
+  margin: 23px;
+}
+p {
+  font-family: "Source Code Pro", monospace;
+}
+
+.intro h2 {
+  font-family: "Karla", sans-serif;
+  margin: 12px;
+}
+
+.intro p {
+  font-family: "Source Code Pro", monospace;
+  margin: 12px;
+}
+.skillcontainer {
+  padding: 12px;
+}
+.skillitem {
+  display: flex;
+  align-items: center;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 900;
+}
+.skill {
+  width: 265px;
+  height: 6px;
+  background-color: red;
+  border: 1.5px solid black;
+}
+
+.hundred {
+  width: 265px;
+  background-color: rgb(86, 216, 173);
+}
+.fifty {
+  width: 125px;
+  background-color: bisque;
+}
+.t5 {
+  width: 75px;
+  background-color: rgb(235, 118, 76);
+}
+
+.hamburger {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.ham {
+  margin-top: 10px;
+}
+.cross {
+  margin-left: 125px;
+  margin-top: 10px;
+}
+
+.sidebargo {
+  transform: translate(-443px, 0px);
+  position: absolute;
+}
+@media (max-width: 1000px) {
+  /* * {background-color: red;
+  } */
+  /* .sidebar {
+    transform: translate(-443px, 0px);
+    position: absolute;
+  } */
+  .devpic {
+    display: none;
+  }
+}
