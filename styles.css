@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0;
+}
+.sidebar{
+    background-color: rgb(154, 226, 231);
+    width: 10vw;
+    font-family: 'Ubuntu', sans-serif;
+    height: 120vh;
+    font-weight: bold;
+    position: absolute;
+}
+.sidebar nav{
+    padding: 20px;
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 18px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.buttons a :hover{ background-color: white;
+    color: rgb(98, 143, 146);
+
+}
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container{
+    display:flex
+}
+.infocontainer{
+    /* background-color: aqua; */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px 200px;
+    display:flex;
+    justify-content:space-around;
+
+}
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.hello{
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.name{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'PT Serif', serif
+}
+.skillcontainer{
+    margin-top: 20px;
+}
+
+
+
+
+.about{
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.moreabout{
+    font-size: 22px;
+    margin-top: 23px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.buttons{
+    margin-top: 34px;
+}
+
+.buttons button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: rgb(26, 36, 37);
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: white;
+    color: rgb(33, 202, 224);
+}
+.devPic img{
+    height: 58vh;
+
+}
+.achievements{
+    font-size: 22px;
+    margin-top: 23px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 150px;
+    
+}
+.achievements1{
+    margin-top: 23px;
+    margin-left: 180px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.moreachievements{
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 180px;
+}
+.achievements1 h2{
+    margin-top: 50px;
+}
+.achievements2{
+    margin-top: 10px;
+    margin-left: 180px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.achievements h1{
+    margin-left: 30px;
+}
+.moreachievements{
+    margin-top: 30px;
+    color: rgb(17, 182, 182);
+}
+.skill{
+    width: 265px;
+    height: 12px;
+    background-color: red;
+    border: 2px solid black;
+    font-family: 'Ubuntu', sans-serif;
+}
+.skillcontainer{
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.skillitem{
+    font-family: 'Ubuntu', sans-serif;
+    display:flex;
+    align-items: center;
+    font-weight: 900;
+}
+
+.hundered{
+    width: 265px;
+}
+.sixty{
+    width: 175px;
+    background-color: aqua;
+}
+.fifty{
+    width: 125px;
+    background-color: yellow;
+}
+.twentyfive{
+    width: 50px;
+    background-color: rgb(25, 105, 79);
+}
+.zero{
+    width: 10px;
+    background-color: brown;
+}
+.projects{
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
