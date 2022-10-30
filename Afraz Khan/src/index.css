@@ -1,0 +1,10 @@
+:root {
+  --light-text-color: #9ccc9c;
+  --dark-text-color: #649568;
+  --background-color: #2b5239;
+}
+
+body{
+  font-family: 'Press Start 2P', cursive;
+  background-color: var(--background-color);
+}
