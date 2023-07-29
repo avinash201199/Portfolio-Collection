@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>
+    <title>Portfolio</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" type="image/x-icon" href="./Images/ico.ico">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link  rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <!-- Navbar -->
+
+    <div class="navbarr">
+    <span class="navbar-brand">Aryan Anand</span>
+    <ul class="nav">
+        <li class="navlist"><a href="#about" class="nav-item">About</a></li>
+        <li class="navlist"><a href="#skill" class="nav-item">Skills</a></li>
+        <li class="navlist"><a href="#proj" class="nav-item">Projects</a></li>
+        <li class="navlist"><a href="#contact" class="nav-item">Contact</a></li>
+    </ul>
+    </div>
+    <div class="topnav">
+        <div class="topnav">
+            <a href="#home" class="active">Aryan Anand</a>
+            <div id="myLinks">
+              <a href="#about">About</a>
+              <a href="#skill">Skills</a>
+              <a href="#proj">Projects</a>
+              <a href="#contact">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+    </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+      
+      <!-- Myimg       -->
+          <div class="myimg">
+              <h1 class="hi">Hi There</h1>
+              <p style="color:rgb(255, 255, 255);margin-top: 3%;margin-left: 60%;font-size: 2vw;margin-right:5%;    animation: 2s ease-out 0s 1 opacity;">My name is Aryan Anand and Welcome to the Portfolio of this 19 year old Undergrad.</p>
+              <div style="margin-left:60%;margin-top: 5vw;animation: 2s ease-out 0s 1 opacity;">
+              <p style="color:white;font-size: 1.5vw;">Let's connect<br/><br/>
+              <a href="https://github.com/aryananand27" ><img src="git.png" class="socico"></a>
+              <a href="https://www.linkedin.com/in/aryan-anand-948998229/" ><img src="linked.png" class="socico"></a>
+              </p>
+              </div>
+      </div>
+      
+      <!-- About me -->
+      
+      <div class="about" id="about" style="    animation: 1s ease-out 0s 1 slideInleft;">
+        <h1 style="margin-top:4vw;font-weight: bold;text-align: center;margin-bottom: 4vw;">About Me</h1>
+        <p>I am a Bachelor Of Technology(Computer Science Engineering) undergrad in <b>Madan Mohan Malviya University of Technology</b> <i>Aspiring to become a Software Engineer</i>.<br/>Also I am <b>Executive Member of ROBOTICS CLUB(MMMUT).</b>
+        </p>
+      
+      </div>
+      
+      <!-- Skills -->
+      <h1 style="margin-top:4vw;font-weight: bold;text-align: center;margin-bottom: 4vw;" >My Skills</h1>
+      <div class="flex-container">
+        <div><img src="web.png" style="width:30px;"><p>Web Development</p></div>
+        <div><h2>C++</h2><p>C++(Intermediate)</p></div>
+        <div><img src="comm.png" style="width:40px;"><p>Communication</p></div>
+      </div>
+      
+      <!-- Projects -->
+      <div class="about" style="background-color:#33353d;color:white;height: auto;" id="proj">
+        <h1 style="margin-top:4vw;font-weight: bold;text-align: center;margin-bottom: 4vw;">Projects</h1>
+        <div class="proj">
+        <div class="projcontain">
+          <img src="dice.jpg" class="projimg">
+          <a href="https://aryananand27.github.io/Dice-game/" class="projlink">View Project</a>
+        </div>
+       
+        </div>
+      </div>
+      
+      <!-- Contacts -->
+      <h1 style="margin-top:4vw;font-weight: bold;text-align: center;margin-bottom: 4vw;" id="contact">Contact</h1>
+      <div class="form">
+      <form action="mailto:mgsaryananand2003@gmail.com" method="post" enctype="text/plain">
+        <div style="margin-bottom: 30px;margin-top: 30px;">Name:
+        <input type="text" name="name" class="input"><br>
+        </div>
+        <div style="margin-bottom: 30px;">
+        E-mail:
+        <input type="text" name="mail" class="input" style="margin-left:10vw;"><br>
+        </div>
+        <div style="margin-bottom: 30px;">
+        Comment:
+        <input type="text" name="comment" class="input"><br><br>
+        </div>
+        <div style="margin-left: 9vw;">
+        <input type="submit" value="Send" class="button">
+        <input type="reset" value="Reset" class="button">
+        </div>
+        </form>
+      </div>
+        <!-- Site footer -->
+        <footer class="site-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <h6>Aryan Anand</h6>
+                <p class="text-justify">mgsaryananand2003@gmail.com</p>
+              </div>
+      
+              <div class="col-xs-6 col-md-3">
+                <h6>Projects</h6>
+                <ul class="footer-links">
+                  <li><a href="https://aryananand27.github.io/Dice-game/">Dice-Game</a></li>
+                </ul>
+              </div>
+      
+              <div class="col-xs-6 col-md-3">
+                <h6>Quick Links</h6>
+                <ul class="footer-links">
+                  <li><a href="#about">About Me</a></li>
+                  <li><a href="#skill">Skills</a></li>
+                  <li><a href="#proj">Projects</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">This a Portfolio Of 
+             <a href="#">Aryan Anand </a>.
+                </p>
+              </div>
+      
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+                  <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100075712623601"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="git" href="https://github.com/aryananand27"><i class="fa fa-github"></i></a></li>
+                  <li><a class="linkedin" href="https://www.linkedin.com/in/aryan-anand-948998229/"><i class="fa fa-linkedin"></i></a></li>   
+                </ul>
+              </div>
+            </div>
+          </div>
+      </footer>
+      </body>
+      </html>

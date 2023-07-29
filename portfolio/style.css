@@ -1,0 +1,201 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script|Ubuntu|Roboto:400,700);
+
+/*html, body{
+  height: 100%;
+}*/
+
+body{
+  font-family: "Ubuntu", sans-serif;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.navbar-brand{
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.navbar li{
+  text-transform: capitalize;
+}
+
+#splash{
+  background-image: url(https://raw.githubusercontent.com/hash004/freecodecamp/master/portfolioPage/images/home.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  margin-top: 50px;
+  padding-top: 15%;
+  padding-bottom: 50px;
+  color: #fff;
+  font-size: 3em;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.5),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+  #splash h1{
+    font-size: 2em;
+  }
+
+  #splash a{
+    color: #fff;
+  }
+
+  #splash a:hover{
+    color: #e7e7e7;
+  }
+
+#portfolio{
+  background-image: url(https://raw.githubusercontent.com/hash004/freecodecamp/master/portfolioPage/images/portfolio.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  padding-bottom: 50px;
+  color: #fff;
+}
+
+  #portfolio h1{
+    font-size: 5em;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.5),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  }
+
+.thumbnail{
+  position: relative;
+}
+
+  .thumbnail img{
+    min-height: 250px;
+    min-width: 300px;
+  }
+
+.thumbnail-hover{
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 99%;
+  width: 99%;
+  opacity: 0;
+  transition:2s;
+}
+
+    .thumbnail-hover:hover{
+    top: 2px;
+    left: 2px;
+    position: absolute;
+    height: 99%;
+    width: 99%;
+    background-color: rgba(0,0,0,0.8);
+    margin: 0 auto;
+    transition:.5s;
+    opacity: 1;
+    padding-top: 30%;
+    border-radius: 5px;
+  }
+
+  .thumbnail-hover i{
+    text-decoration: none;
+    color: white;
+  }
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+#about{
+  background-image: url(https://raw.githubusercontent.com/hash004/freecodecamp/master/portfolioPage/images/about.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 50px;
+  color: #fff;
+}
+
+  #about h1{
+    font-size: 5em;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.5),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  }
+
+  #about p{
+    font-size: 1.5em;
+    text-align: justify;
+  }
+
+  #about img{
+    padding: 10px;
+    /*max-width: 180px;*/
+  }
+
+#white-bg{
+  /*background-color: rgba(0,0,0, 0.5);
+  border-radius: 20px;
+  margin-right: 10px;*/
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 6% 2%;
+}
+
+#contact{
+  background-image: url(https://raw.githubusercontent.com/hash004/freecodecamp/master/portfolioPage/images/contact.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 50px;
+  color: #fff;
+}
+
+  #contact h1{
+    font-size: 5em;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.5),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  }
+
+  #contact h2{
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.5),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  }
+
+  #contact address{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  #contact .fa-stack{
+    color: #333;
+  }
+
+  #contact .fa-stack:hover .fa-stack-1x{
+    color: #333;
+    transition: 0.5s;
+  }
+
+  #contact .fa-stack:hover .fa-stack-2x{
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  #contact a{
+    text-decoration: none;
+  }
+
+hr{
+  width: 25%;
+}

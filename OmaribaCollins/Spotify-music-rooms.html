@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note-Taking-Web-App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <!-- fonts (confirm link) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,900
+    |Source+Sans+Pro:300,900&display=swap">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="HTML tag logo">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html"class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services"class="nav__link">My services</a></li>
+                <li class="nav__item"><a href="index.html#about"class="nav__link">About me </a></li>
+                <li class="nav__item"><a href="index.html#work"class="nav__link">My work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ <!--Introduction-->
+
+<section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+        Spotify Music Rooms <strong> Web App</strong>
+    </h1>
+    <p class="section___subtitle  section___subtitle--intro">
+        <a href="https://github.com/Collins-Omariba/music_control" class="github__link"> 
+            <i class="fab fa-github"></i> <Strong> WEBSITE CODE</Strong></a>   </p>
+    <img src="img/musify_home.png" alt="" class="intro__img">
+
+</section>
+
+<div class="portfolio-item-individual">
+    <p> A room can be created by clicking the create room button and choosing
+        whether guests of the room can be allowed to play/pause
+        and the number of votes required to skip a song .
+
+        After creating a room the host can still change whether 
+        guests can play/pause and the votes required to skip by clicking the settings button
+    </p>
+
+    <p> A host can share their room code to guests who
+        can click the join room button and type/paste 
+        the room code to the shown box ,then click the Enter A  Room button.
+    </p>  
+
+    <p>
+        It is a great web app that implements serverside rendering of <strong>React</strong> code , 
+        the react frontend sends requests to the endpoints of the <strong>Django</strong> backend api.
+    </p>
+
+    <p>
+        The use of <strong>Spotify API</strong> enables accessing  of playback information from spotify and also control of 
+        music playing.
+    </p>
+    
+    <h3 class="screen_shot_text" ><strong>Below are screenshots of the website</strong> </h3>
+
+    <h4>1. Creating A room</h4>
+    <img src="img/musify_create_room.png" alt="">
+
+    <h4>2. joining A room</h4>
+    <img src="img/musify_join_room.png" alt="">
+
+    <h4>3. Music Playing interface</h4>
+    <img src="img/musify_music_playing.png" alt="">
+</div>
+
+
+<!--Footer  -->
+<footer class="footer">
+    <a href="mailto:collinsomariba@gmail.com" class="footer__link">collinsomariba@gmail.com</a>
+    <ul class="social-list">
+        
+    <li class="social-list__item">
+            <a href="https://github.com/Collins-Omariba" class="social-list__link">
+                <i class="fab fa-github"></i>
+            </a>
+    </li> 
+
+    <li class="social-list__item">
+        <a href="https://www.linkedin.com/in/omariba-collins-b28b841b9" class="social-list__link">
+            <i class="fab fa-linkedin"></i>
+        </a>
+   </li>    
+    <li class="social-list__item">
+        <a href="https://twitter.com/OmaribaCollins" class="social-list__link">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </li>
+
+    </ul>
+</footer>
+<script src="js/index.js"></script>
+</body>
+</html>   
