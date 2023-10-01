@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body::-webkit-scrollbar {
+    width: 15px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+    background: var(--bgDark) /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--accentColor); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 4px solid var(--bgDark); /* creates padding around scroll thumb */
+}
+
+:root{
+    --bgDark: #181818;
+    --colorDark: #FFFFFF;
+    --colorLight: #353535;
+    --bgLight: #FFFFFF;
+    --accentColor: #0051ff;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-transition{
+    transition: background 0.3s ease-in-out;
+}
+
+.app{
+    background: var(--bgLight);
+    color: var(--colorLight);
+    font-size: 30px;
+}
+
+.dark {
+    background: var(--bgDark);
+    color: var(--colorDark);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 13px 25px;
+    font-size: .9rem;
+}
+
+/* custom styles */
+.container{
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* Small */
+@media screen and (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+/* Medium */
+@media screen and (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+/* Large */
+@media screen and (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+/* Extra Large */
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+/*Transition*/
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 1s linear;
+}
+.fade-enter-from,
+.fade-leave-to{
+    opacity: 0;
+}
