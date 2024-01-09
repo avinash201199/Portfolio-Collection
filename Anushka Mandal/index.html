@@ -2,57 +2,170 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Anushka Mandal</title>
+    <title>Anushka Mandal - Data Engineer</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #f5f5f5;
+        color: #333;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .top-container {
+        background-color: #009688;
+        text-align: center;
+        padding: 80px 0;
+        position: relative;
+      }
+
+      .top-cloud, .bottom-cloud {
+        position: absolute;
+        width: 100%;
+        height: auto;
+      }
+
+      .top-cloud {
+        top: 0;
+      }
+
+      .bottom-cloud {
+        bottom: 0;
+      }
+
+      .top-container h1, .sub-title {
+        color: #fff;
+        font-family: 'Sacramento', cursive;
+      }
+
+      .sub-title .pro {
+        color: #ffeb3b;
+      }
+
+      .middle-container {
+        background-color: #fff;
+        padding: 50px 0;
+        text-align: center;
+      }
+
+      .profile-image {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 20px;
+      }
+
+      .intro {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .skills, .contact-me {
+        margin-top: 40px;
+      }
+
+      .skill-row, hr {
+        margin-top: 30px;
+      }
+
+      .coding-img, .photography-img {
+        width: 80px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .coding-paragraph, .photography-paragraph {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .contact-me h2, .contact-me h3 {
+        color: #009688;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: #009688;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-weight: bold;
+      }
+
+      .btn:hover {
+        background-color: #00796b;
+      }
+
+      .bottom-container {
+        background-color: #333;
+        padding: 30px 0;
+        color: #fff;
+        text-align: center;
+      }
+
+      .footer-link {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+      }
+
+      .copyright {
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
-  <div class="top-container">
-    <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-    <h1>I'm Anushka.</h1>
-    <h2 class="sub-title">a <span class="pro">pro</span>grammer</h2>
-    <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-    <img src="images/mountain.png" alt="mountain-img">
-  </div>
-  <div class="middle-container">
-    <div class="profile">
-      <img class="profile-image" src="images/profile.png" alt="profile-image">
-      <h2>Hello.</h2>
-      <p class="intro">Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
+    <div class="top-container">
+      <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+      <h1>Anushka Mandal</h1>
+      <h2 class="sub-title">a <span class="pro">data engineer</span></h2>
+      <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
+      <img src="images/mountain.png" alt="mountain-img">
     </div>
-    <hr color="EAF6F6">
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="coding-img" src="images/coding.png" alt="coding-img">
-        <h3>Coding</h3>
-        <p class="coding-paragraph">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+    <div class="middle-container">
+      <div class="profile">
+        <img class="profile-image" src="images/profile.png" alt="profile-image">
+        <h2>Hello.</h2>
+        <p class="intro">I'm a passionate data engineer with a strong background in designing and implementing scalable data solutions. Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
       </div>
-      <div class="skill-row">
-        <img class="photography-img" src="images/photography.png" alt="photography-img">
-        <h3>Photography</h3>
-        <p class="photography-paragraph">Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+      <hr color="EAF6F6">
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img class="coding-img" src="images/database.png" alt="database-img">
+          <h3>Data Engineering</h3>
+          <p class="coding-paragraph">I specialize in designing and optimizing databases, ETL processes, and data pipelines for efficient data management and analysis.</p>
+        </div>
+        <div class="skill-row">
+          <img class="photography-img" src="images/bigdata.png" alt="bigdata-img">
+          <h3>Big Data</h3>
+          <p class="photography-paragraph">Experienced in working with big data technologies like Apache Hadoop and Spark to process and analyze large datasets.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>Let's discuss how we can leverage data to drive insights and innovation.</h3>
+        <p>Feel free to reach out to me for collaboration or any data-related inquiries.</p>
+        <a class="btn" href="mailto:mandal.anushkaas18@gmail.com">CONTACT ME</a>
       </div>
     </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-      <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-      <a class="btn" href="mailto:mandal.anushkaas18@gmail.com">CONTACT ME</a>
+
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/">Twitter</a>
+      <a class="footer-link" href="https://www.google.com/">Website</a>
+      <p class="copyright">© Anushka Mandal | 2022</p>
     </div>
-  </div>
-
-
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-    <a class="footer-link" href="https://twitter.com/">Twitter</a>
-    <a class="footer-link" href="https://www.google.com/">Website</a>
-    <p class="copyright">© Anushka Mandal|2022</p>
-  </div>
 
   </body>
 </html>
