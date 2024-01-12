@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siddhant Tiwari | Projects</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <header>
+    <a href="index" class="logo">Siddhant Tiwari</a>
+    <ul>
+      <li><a href="index">Home</a></li>
+      <li><a href="projects" class="active">Projects</a></li>
+      <li>
+        <a
+          href="https://drive.google.com/file/d/1I8EvLZPegzGmJ5tOYrW3GdsF0GrKfze1/view?usp=sharing"
+          target="_blank"
+        >
+          Resume
+        </a>
+      </li>
+      <li><a href="socials">Socials</a></li>
+    </ul>
+  </header>
+  <body style="overflow-y: hidden;">
+    <svg
+      class="waves"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28"
+      preserveAspectRatio="none"
+      shape-rendering="auto"
+    >
+      <defs>
+        <path
+          id="gentle-wave"
+          d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+        />
+      </defs>
+      <g class="parallax">
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="0"
+          fill="rgba(255,255,255,0.7"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="3"
+          fill="rgba(255,255,255,0.5)"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="5"
+          fill="rgba(255,255,255,0.3)"
+        />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+    </svg>
+    {% block body %}
+    <h1 id="heading">My Projects</h1>
+
+    <div id="projects">
+      <div class="card">
+        <div class="card_image">
+          <img src="/static/document.png" alt="" />
+        </div>
+        <div class="card_title">
+          <a href="https://github.com/Siddhantst08/AI-RESUME-ANALYZER" target="_blank">
+            <p>AI Resume Analyzer using ML</p>
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_image">
+          <img src="/static/keepnote.jpeg" alt="" />
+        </div>
+        <div class="card_title">
+          <a href="https://github.com/Siddhantst08/keepNoteDjango-Project" target="_blank">
+            <p>KeepNote Django Project</p>
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_image">
+          <img src="/static/lock.jpg" alt="" />
+        </div>
+        <div class="card_title">
+          <a
+            href="https://github.com/Siddhantst08/User-Authentication-System-using-Django"
+            target="_blank"
+          >
+            <p>User Authentication System using Django</p>
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_image">
+          <img src="/static/snake.png" alt="" />
+        </div>
+        <div class="card_title">
+          <a
+            href="https://github.com/Siddhantst08/Snake_Game-Project"
+            target="_blank"
+          >
+            <p>Snake Game</p>
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card_image">
+          <img src="sign-up.jpg" alt="" />
+        </div>
+        <div class="card_title">
+          <a
+            href="https://github.com/RishikaKant/registration-form"
+            target="_blank"
+          >
+            <p>Registration Form</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+  </body>
+</html>
