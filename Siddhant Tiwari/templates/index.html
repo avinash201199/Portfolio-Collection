@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siddhant Tiwari | Home</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index" class="logo">Siddhant Tiwari</a>
+        <ul class="idm">
+            <li><a href="index" class="active">Home</a></li>
+            <li><a href="projects">Projects</a></li>
+            <li>
+                <a href="https://drive.google.com/file/d/1I8EvLZPegzGmJ5tOYrW3GdsF0GrKfze1/view?usp=sharing"
+                    target="_blank">
+                    Resume
+                </a>
+            </li>
+            <li><a href="socials">Socials</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="/static/stars.png" id="stars" />
+        <img src="/static/moon.png" id="moon" />
+        <img src="/static/mountains_behind.png" id="mountains_behind" />
+        <h2 id="text">WELCOME</h2>
+        <a href="#sec" id="btn">Explore</a>
+        {% comment %} <img src="/static/mountains_front.png" id="mountains_front" /> {% endcomment %}
+    </section>
+    <div class="sec" id="sec">
+        <h2>Hey! I am Siddhant Tiwari</h2>
+        <div class="container">
+            <p>
+                I am a
+                <span class="typed-text"></span>
+                <span class="cursor">&nbsp;</span>
+            </p>
+        </div>
+        <p>
+            I love connecting with people and learn new skills.
+            <br />
+            Currently a 4th year CSE undergraduate at Chandigarh University.
+        </p>
+        <br />
+        <br />
+        <p>
+            My
+            <strong>Tech Stacks</strong>
+            include:
+        </p>
+        <br />
+
+        <ul class="skills-bar-container">
+            <li>
+                <div class="progressbar-title">
+                    <h3>Python</h3>
+                    <span class="percent" id="html-pourcent"></span>
+                </div>
+                <div class="bar-container">
+                    <span class="progressbar progressred" id="progress-html"></span>
+                </div>
+            </li>
+            <li>
+                <div class="progressbar-title">
+                    <h3>HTML5</h3>
+                    <span class="percent" id="css-pourcent"></span>
+                </div>
+                <div class="bar-container">
+                    <span class="progressbar progressblue" id="progress-css"></span>
+                </div>
+            </li>
+
+            <li>
+                <div class="progressbar-title">
+                    <h3>Django Framework</h3>
+                    <span class="percent" id="javascript-pourcent"></span>
+                </div>
+                <div class="bar-container">
+                    <span class="progressbar progresspurple" id="progress-javascript"></span>
+                </div>
+            </li>
+
+            <li>
+                <div class="progressbar-title">
+                    <h3>Data Science</h3>
+                    <span class="percent" id="php-pourcent"></span>
+                </div>
+                <div class="bar-container">
+                    <span class="progressbar progressorange" id="progress-php"></span>
+                </div>
+            </li>
+
+            <li>
+                <div class="progressbar-title">
+                    <h3>Machine Learning</h3>
+                    <span class="percent" id="angular-pourcent"></span>
+                </div>
+                <div class="bar-container">
+                    <span class="progressbar progressgreen" id="progress-angular"></span>
+                </div>
+            </li>
+        </ul>
+        <div class="about-me">
+            <span>Connect!❤️</span>
+        </div>
+
+        <div>
+            <form method="post" action="/index">
+                {% csrf_token %}
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="name"
+                        placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="exampleFormControlInput1" name="age"
+                        placeholder="Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="place"
+                        placeholder="City & Country">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="ids"
+                        placeholder="Enter socials" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Go😎</button>
+            </form>
+
+        </div>
+
+
+
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars')
+        let moon = document.getElementById('moon')
+        let mountains_behind = document.getElementById('mountains_behind')
+        let text = document.getElementById('text')
+        let btn = document.getElementById('btn')
+        //let mountains_front = document.getElementById('mountains_front')
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY
+            stars.style.left = value * 0.25 + 'px'
+            moon.style.top = value * 1.05 + 'px'
+            mountains_behind.style.top = value * 0.5 + 'px'
+            // mountains_front.style.top = value * 0 + 'px'
+            text.style.marginRight = value * 4 + 'px'
+            text.style.marginTop = value * 1.5 + 'px'
+            btn.style.marginTop = value * 1.5 + 'px'
+            header.style.top = value * 0.5 + 'px'
+        })
+    </script>
+
+    <script>
+        const typedTextSpan = document.querySelector('.typed-text')
+        const cursorSpan = document.querySelector('.cursor')
+
+        const textArray = [
+            'Student',
+            'Full Stack developer',
+            'Space-enthusiast',
+            'Fitness Freak',
+            'Chai lover :)',
+        ]
+        const typingDelay = 200
+        const erasingDelay = 100
+        const newTextDelay = 2000 // Delay between current and next text
+        let textArrayIndex = 0
+        let charIndex = 0
+
+        function type() {
+            if (charIndex < textArray[textArrayIndex].length) {
+                if (!cursorSpan.classList.contains('typing'))
+                    cursorSpan.classList.add('typing')
+                typedTextSpan.textContent += textArray[textArrayIndex].charAt(
+                    charIndex,
+                )
+                charIndex++
+                setTimeout(type, typingDelay)
+            } else {
+                cursorSpan.classList.remove('typing')
+                setTimeout(erase, newTextDelay)
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                if (!cursorSpan.classList.contains('typing'))
+                    cursorSpan.classList.add('typing')
+                typedTextSpan.textContent = textArray[textArrayIndex].substring(
+                    0,
+                    charIndex - 1,
+                )
+                charIndex--
+                setTimeout(erase, erasingDelay)
+            } else {
+                cursorSpan.classList.remove('typing')
+                textArrayIndex++
+                if (textArrayIndex >= textArray.length) textArrayIndex = 0
+                setTimeout(type, typingDelay + 1100)
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // On DOM Load initiate the effect
+            if (textArray.length) setTimeout(type, newTextDelay + 250)
+        })
+    </script>
+
+    <script>
+        var lang = {
+            python: '100%',
+            HTML5: '90%',
+            Django_Framework: '70%',
+            Data_Science: '55%',
+            Machine_Learning: '65%',
+        }
+
+        var multiply = 4
+
+        $.each(lang, function (language, pourcent) {
+            var delay = 700
+
+            setTimeout(function () {
+                $('#' + language + '-pourcent').html(pourcent)
+            }, delay * multiply)
+
+            multiply++
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
