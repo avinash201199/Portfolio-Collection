@@ -1,3 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav ul li {
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+}
 .templates-container {
     width: 100%;
     display: flex;
@@ -17,9 +40,11 @@
 .template-item {
     flex: 1 0 18%; /* This will create 5 items per row */
     margin: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 35px rgba(27, 8, 230, 0.927);
     padding: 20px;
     text-align: center;
+    background-color: #dec824e2;
+    font-size: 35px;
 }
 
 .template-item img {
@@ -31,9 +56,10 @@
     display: block;
     margin-top: 10px;
     text-decoration: none;
-    color: #38d7b2;
+    color: #1c0dec;
 }
 
 .template-item p {
     margin-top: 10px;
+    color: blue;
 }
