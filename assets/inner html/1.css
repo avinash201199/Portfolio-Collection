@@ -1,0 +1,39 @@
+.templates-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.template-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.template-item {
+    flex: 1 0 18%; /* This will create 5 items per row */
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.template-item img {
+    width: 100%;
+    height: auto;
+}
+
+.template-item a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #38d7b2;
+}
+
+.template-item p {
+    margin-top: 10px;
+}
