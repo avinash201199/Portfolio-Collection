@@ -1,97 +1,88 @@
 :root {
-    --primary-color: #38d7b2;
-    --secondary-color: #2c2c2c;
-    --text-color: white;
-    --background-color: #1a1a1a;
+    --background-color: #333;
+    --text-color: #f8f9fa;
+    --primary-color: #00bfff;
+    --glow-color: #00ff00;
 }
 
 body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: var(--secondary-color);
 }
 
 .navbar a {
-    text-decoration: none;
-    color: var(--primary-color);
-    margin: 0 10px;
-    padding: 5px 10px;
-}
-.navbar a:hover {
-    background-color: var(--primary-color);
     color: var(--text-color);
+    margin-right: 20px; /* Adjust this value to increase or decrease the space */
 }
 
-.home-section, .about-section {
-    display: flex;
-    justify-content: space-between;
+.glow {
+    box-shadow: 0 0 10px var(--glow-color), 0 0 20px var(--glow-color), 0 0 30px var(--glow-color), 0 0 40px var(--glow-color);
+}
+
+.home-section, .about-section, .template-section, .contact-section  {
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-.home-section .description, .about-section .about-description {
-    flex: 1;
-    font-size: 35px;
-}
-
-.home-section .image, .about-section .about-image {
-    flex: 1;
-}
-
-.description span, .about-description span {
-    color: var(--primary-color);
-}
-
-.template-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.template-description {
+.home-card, .about-card, .template-card, .contact-card {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 30px;
+    border-radius: 10px;
     margin-bottom: 20px;
-    font-size:  30px;
+}
+
+.description, .about-description, .template-description, .contact-description {
+    text-align: center;
+    font-size: 45px;
+}
+
+.description p, .about-description p, .template-description p, .contact-description p {
+    margin: 10px 0;
+}
+
+.description span {
+    font-weight: bold;
+    color: var(--primary-color);
 }
 
 .view-templates {
+    display: block;
+    width: 100%;
+    padding: 10px;
     background-color: var(--primary-color);
     color: var(--text-color);
+    text-align: center;
     border: none;
-    padding: 20px 20px;
+    border-radius: 5px;
     cursor: pointer;
 }
-.view-templates:hover {
-    background-color: var(--secondary-color);
+
+.contact-social a {
+    color: var(--text-color);
+    margin-right: 10px;
+}
+.contact-social-card {
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(30, 220, 17, 0.978); /* This will make the card glow */
 }
 
-.contact-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-.contct-description{
-    flex: 1;
-    font-size: 35px;
-    align-items: first baseline;
-    justify-content: flex;
-}
 .contact-social {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+    margin-top: 20px;
 }
+
 .contact-social a {
     color: var(--text-color);
     margin: 0 10px;
