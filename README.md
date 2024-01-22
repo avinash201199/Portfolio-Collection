@@ -19,13 +19,8 @@ In the ever-evolving landscape of technology and design, having a standout portf
 [![GitHub issues](https://img.shields.io/github/issues/avinash201199/Portfolio-Collection)](https://github.com/avinash201199/Portfolio-Collection/issues)
 [![GitHub forks](https://img.shields.io/github/forks/avinash201199/Portfolio-Collection)](https://github.com/avinash201199/Portfolio-Collection/network)
 [![GitHub stars](https://img.shields.io/github/stars/avinash201199/Portfolio-Collection)](https://github.com/avinash201199/Portfolio-Collection/stargazers)
-# Contribution is fun! :green_heart:
 
-In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
-
-Happy Submissions :slightly_smiling_face:
-
-### How to Rate: 🌟
+# How to Rate: 🌟
 
 1. **Login with GitHub:**
    - Log in with your GitHub account on [Repo Rater](https://repo-rater.eddiehub.io/) 🚀.
@@ -41,6 +36,13 @@ Happy Submissions :slightly_smiling_face:
 
 5. **Submit:**
    - Submit your rating, 📝
+
+   
+# Contribution is fun! :green_heart:
+
+In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
+
+Happy Submissions :slightly_smiling_face:
 
 Your feedback is valuable! Thank you for contributing to the growth of the Portfolio-Collection repository. Happy rating! 🌈✨
 
