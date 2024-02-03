@@ -1,0 +1,355 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" opacity="0.58" width="800" height="800">
+    <g stroke-width="0.5" stroke="#f05941" fill="none">
+        <rect width="5" height="5" x="-2.5" y="-2.5" transform="rotate(45, 0, 0)"></rect>
+        <rect width="5" height="5" x="47.5" y="-2.5" transform="rotate(45, 50, 0)"></rect>
+        <rect width="5" height="5" x="97.5" y="-2.5" transform="rotate(45, 100, 0)"></rect>
+        <rect width="5" height="5" x="147.5" y="-2.5" transform="rotate(45, 150, 0)"></rect>
+        <rect width="5" height="5" x="197.5" y="-2.5" transform="rotate(45, 200, 0)"></rect>
+        <rect width="5" height="5" x="247.5" y="-2.5" transform="rotate(45, 250, 0)"></rect>
+        <rect width="5" height="5" x="297.5" y="-2.5" transform="rotate(45, 300, 0)"></rect>
+        <rect width="5" height="5" x="347.5" y="-2.5" transform="rotate(45, 350, 0)"></rect>
+        <rect width="5" height="5" x="397.5" y="-2.5" transform="rotate(45, 400, 0)"></rect>
+        <rect width="5" height="5" x="447.5" y="-2.5" transform="rotate(45, 450, 0)"></rect>
+        <rect width="5" height="5" x="497.5" y="-2.5" transform="rotate(45, 500, 0)"></rect>
+        <rect width="5" height="5" x="547.5" y="-2.5" transform="rotate(45, 550, 0)"></rect>
+        <rect width="5" height="5" x="597.5" y="-2.5" transform="rotate(45, 600, 0)"></rect>
+        <rect width="5" height="5" x="647.5" y="-2.5" transform="rotate(45, 650, 0)"></rect>
+        <rect width="5" height="5" x="697.5" y="-2.5" transform="rotate(45, 700, 0)"></rect>
+        <rect width="5" height="5" x="747.5" y="-2.5" transform="rotate(45, 750, 0)"></rect>
+        <rect width="5" height="5" x="797.5" y="-2.5" transform="rotate(45, 800, 0)"></rect>
+        <rect width="5" height="5" x="-2.5" y="47.5" transform="rotate(45, 0, 50)"></rect>
+        <rect width="5" height="5" x="47.5" y="47.5" transform="rotate(45, 50, 50)"></rect>
+        <rect width="5" height="5" x="97.5" y="47.5" fill="#f05941" stroke="none" transform="rotate(45, 100, 50)">
+        </rect>
+        <rect width="5" height="5" x="147.5" y="47.5" transform="rotate(45, 150, 50)"></rect>
+        <rect width="5" height="5" x="197.5" y="47.5" fill="#f05941" stroke="none" transform="rotate(45, 200, 50)">
+        </rect>
+        <rect width="5" height="5" x="247.5" y="47.5" transform="rotate(45, 250, 50)"></rect>
+        <rect width="5" height="5" x="297.5" y="47.5" transform="rotate(45, 300, 50)"></rect>
+        <rect width="5" height="5" x="347.5" y="47.5" transform="rotate(45, 350, 50)"></rect>
+        <rect width="5" height="5" x="397.5" y="47.5" transform="rotate(45, 400, 50)"></rect>
+        <rect width="5" height="5" x="447.5" y="47.5" transform="rotate(45, 450, 50)"></rect>
+        <rect width="5" height="5" x="497.5" y="47.5" transform="rotate(45, 500, 50)"></rect>
+        <rect width="5" height="5" x="547.5" y="47.5" transform="rotate(45, 550, 50)"></rect>
+        <rect width="5" height="5" x="597.5" y="47.5" transform="rotate(45, 600, 50)"></rect>
+        <rect width="5" height="5" x="647.5" y="47.5" transform="rotate(45, 650, 50)"></rect>
+        <rect width="5" height="5" x="697.5" y="47.5" transform="rotate(45, 700, 50)"></rect>
+        <rect width="5" height="5" x="747.5" y="47.5" transform="rotate(45, 750, 50)"></rect>
+        <rect width="5" height="5" x="797.5" y="47.5" transform="rotate(45, 800, 50)"></rect>
+        <rect width="5" height="5" x="-2.5" y="97.5" transform="rotate(45, 0, 100)"></rect>
+        <rect width="5" height="5" x="47.5" y="97.5" transform="rotate(45, 50, 100)"></rect>
+        <rect width="5" height="5" x="97.5" y="97.5" transform="rotate(45, 100, 100)"></rect>
+        <rect width="5" height="5" x="147.5" y="97.5" transform="rotate(45, 150, 100)"></rect>
+        <rect width="5" height="5" x="197.5" y="97.5" transform="rotate(45, 200, 100)"></rect>
+        <rect width="5" height="5" x="247.5" y="97.5" fill="#f05941" stroke="none" transform="rotate(45, 250, 100)">
+        </rect>
+        <rect width="5" height="5" x="297.5" y="97.5" transform="rotate(45, 300, 100)"></rect>
+        <rect width="5" height="5" x="347.5" y="97.5" fill="#f05941" stroke="none" transform="rotate(45, 350, 100)">
+        </rect>
+        <rect width="5" height="5" x="397.5" y="97.5" fill="#f05941" stroke="none" transform="rotate(45, 400, 100)">
+        </rect>
+        <rect width="5" height="5" x="447.5" y="97.5" transform="rotate(45, 450, 100)"></rect>
+        <rect width="5" height="5" x="497.5" y="97.5" transform="rotate(45, 500, 100)"></rect>
+        <rect width="5" height="5" x="547.5" y="97.5" fill="#f05941" stroke="none" transform="rotate(45, 550, 100)">
+        </rect>
+        <rect width="5" height="5" x="597.5" y="97.5" transform="rotate(45, 600, 100)"></rect>
+        <rect width="5" height="5" x="647.5" y="97.5" transform="rotate(45, 650, 100)"></rect>
+        <rect width="5" height="5" x="697.5" y="97.5" transform="rotate(45, 700, 100)"></rect>
+        <rect width="5" height="5" x="747.5" y="97.5" fill="#f05941" stroke="none" transform="rotate(45, 750, 100)">
+        </rect>
+        <rect width="5" height="5" x="797.5" y="97.5" transform="rotate(45, 800, 100)"></rect>
+        <rect width="5" height="5" x="-2.5" y="147.5" transform="rotate(45, 0, 150)"></rect>
+        <rect width="5" height="5" x="47.5" y="147.5" fill="#f05941" stroke="none" transform="rotate(45, 50, 150)">
+        </rect>
+        <rect width="5" height="5" x="97.5" y="147.5" transform="rotate(45, 100, 150)"></rect>
+        <rect width="5" height="5" x="147.5" y="147.5" transform="rotate(45, 150, 150)"></rect>
+        <rect width="5" height="5" x="197.5" y="147.5" fill="#f05941" stroke="none" transform="rotate(45, 200, 150)">
+        </rect>
+        <rect width="5" height="5" x="247.5" y="147.5" fill="#f05941" stroke="none" transform="rotate(45, 250, 150)">
+        </rect>
+        <rect width="5" height="5" x="297.5" y="147.5" fill="#f05941" stroke="none" transform="rotate(45, 300, 150)">
+        </rect>
+        <rect width="5" height="5" x="347.5" y="147.5" transform="rotate(45, 350, 150)"></rect>
+        <rect width="5" height="5" x="397.5" y="147.5" transform="rotate(45, 400, 150)"></rect>
+        <rect width="5" height="5" x="447.5" y="147.5" fill="#f05941" stroke="none" transform="rotate(45, 450, 150)">
+        </rect>
+        <rect width="5" height="5" x="497.5" y="147.5" transform="rotate(45, 500, 150)"></rect>
+        <rect width="5" height="5" x="547.5" y="147.5" transform="rotate(45, 550, 150)"></rect>
+        <rect width="5" height="5" x="597.5" y="147.5" transform="rotate(45, 600, 150)"></rect>
+        <rect width="5" height="5" x="647.5" y="147.5" transform="rotate(45, 650, 150)"></rect>
+        <rect width="5" height="5" x="697.5" y="147.5" fill="#f05941" stroke="none" transform="rotate(45, 700, 150)">
+        </rect>
+        <rect width="5" height="5" x="747.5" y="147.5" transform="rotate(45, 750, 150)"></rect>
+        <rect width="5" height="5" x="797.5" y="147.5" transform="rotate(45, 800, 150)"></rect>
+        <rect width="5" height="5" x="-2.5" y="197.5" transform="rotate(45, 0, 200)"></rect>
+        <rect width="5" height="5" x="47.5" y="197.5" transform="rotate(45, 50, 200)"></rect>
+        <rect width="5" height="5" x="97.5" y="197.5" transform="rotate(45, 100, 200)"></rect>
+        <rect width="5" height="5" x="147.5" y="197.5" transform="rotate(45, 150, 200)"></rect>
+        <rect width="5" height="5" x="197.5" y="197.5" transform="rotate(45, 200, 200)"></rect>
+        <rect width="5" height="5" x="247.5" y="197.5" transform="rotate(45, 250, 200)"></rect>
+        <rect width="5" height="5" x="297.5" y="197.5" transform="rotate(45, 300, 200)"></rect>
+        <rect width="5" height="5" x="347.5" y="197.5" fill="#f05941" stroke="none" transform="rotate(45, 350, 200)">
+        </rect>
+        <rect width="5" height="5" x="397.5" y="197.5" transform="rotate(45, 400, 200)"></rect>
+        <rect width="5" height="5" x="447.5" y="197.5" transform="rotate(45, 450, 200)"></rect>
+        <rect width="5" height="5" x="497.5" y="197.5" transform="rotate(45, 500, 200)"></rect>
+        <rect width="5" height="5" x="547.5" y="197.5" fill="#f05941" stroke="none" transform="rotate(45, 550, 200)">
+        </rect>
+        <rect width="5" height="5" x="597.5" y="197.5" transform="rotate(45, 600, 200)"></rect>
+        <rect width="5" height="5" x="647.5" y="197.5" transform="rotate(45, 650, 200)"></rect>
+        <rect width="5" height="5" x="697.5" y="197.5" fill="#f05941" stroke="none" transform="rotate(45, 700, 200)">
+        </rect>
+        <rect width="5" height="5" x="747.5" y="197.5" fill="#f05941" stroke="none" transform="rotate(45, 750, 200)">
+        </rect>
+        <rect width="5" height="5" x="797.5" y="197.5" transform="rotate(45, 800, 200)"></rect>
+        <rect width="5" height="5" x="-2.5" y="247.5" transform="rotate(45, 0, 250)"></rect>
+        <rect width="5" height="5" x="47.5" y="247.5" transform="rotate(45, 50, 250)"></rect>
+        <rect width="5" height="5" x="97.5" y="247.5" transform="rotate(45, 100, 250)"></rect>
+        <rect width="5" height="5" x="147.5" y="247.5" transform="rotate(45, 150, 250)"></rect>
+        <rect width="5" height="5" x="197.5" y="247.5" transform="rotate(45, 200, 250)"></rect>
+        <rect width="5" height="5" x="247.5" y="247.5" transform="rotate(45, 250, 250)"></rect>
+        <rect width="5" height="5" x="297.5" y="247.5" transform="rotate(45, 300, 250)"></rect>
+        <rect width="5" height="5" x="347.5" y="247.5" fill="#f05941" stroke="none" transform="rotate(45, 350, 250)">
+        </rect>
+        <rect width="5" height="5" x="397.5" y="247.5" transform="rotate(45, 400, 250)"></rect>
+        <rect width="5" height="5" x="447.5" y="247.5" transform="rotate(45, 450, 250)"></rect>
+        <rect width="5" height="5" x="497.5" y="247.5" transform="rotate(45, 500, 250)"></rect>
+        <rect width="5" height="5" x="547.5" y="247.5" fill="#f05941" stroke="none" transform="rotate(45, 550, 250)">
+        </rect>
+        <rect width="5" height="5" x="597.5" y="247.5" transform="rotate(45, 600, 250)"></rect>
+        <rect width="5" height="5" x="647.5" y="247.5" fill="#f05941" stroke="none" transform="rotate(45, 650, 250)">
+        </rect>
+        <rect width="5" height="5" x="697.5" y="247.5" fill="#f05941" stroke="none" transform="rotate(45, 700, 250)">
+        </rect>
+        <rect width="5" height="5" x="747.5" y="247.5" fill="#f05941" stroke="none" transform="rotate(45, 750, 250)">
+        </rect>
+        <rect width="5" height="5" x="797.5" y="247.5" transform="rotate(45, 800, 250)"></rect>
+        <rect width="5" height="5" x="-2.5" y="297.5" transform="rotate(45, 0, 300)"></rect>
+        <rect width="5" height="5" x="47.5" y="297.5" fill="#f05941" stroke="none" transform="rotate(45, 50, 300)">
+        </rect>
+        <rect width="5" height="5" x="97.5" y="297.5" transform="rotate(45, 100, 300)"></rect>
+        <rect width="5" height="5" x="147.5" y="297.5" transform="rotate(45, 150, 300)"></rect>
+        <rect width="5" height="5" x="197.5" y="297.5" fill="#f05941" stroke="none" transform="rotate(45, 200, 300)">
+        </rect>
+        <rect width="5" height="5" x="247.5" y="297.5" transform="rotate(45, 250, 300)"></rect>
+        <rect width="5" height="5" x="297.5" y="297.5" transform="rotate(45, 300, 300)"></rect>
+        <rect width="5" height="5" x="347.5" y="297.5" transform="rotate(45, 350, 300)"></rect>
+        <rect width="5" height="5" x="397.5" y="297.5" transform="rotate(45, 400, 300)"></rect>
+        <rect width="5" height="5" x="447.5" y="297.5" fill="#f05941" stroke="none" transform="rotate(45, 450, 300)">
+        </rect>
+        <rect width="5" height="5" x="497.5" y="297.5" transform="rotate(45, 500, 300)"></rect>
+        <rect width="5" height="5" x="547.5" y="297.5" transform="rotate(45, 550, 300)"></rect>
+        <rect width="5" height="5" x="597.5" y="297.5" transform="rotate(45, 600, 300)"></rect>
+        <rect width="5" height="5" x="647.5" y="297.5" fill="#f05941" stroke="none" transform="rotate(45, 650, 300)">
+        </rect>
+        <rect width="5" height="5" x="697.5" y="297.5" transform="rotate(45, 700, 300)"></rect>
+        <rect width="5" height="5" x="747.5" y="297.5" transform="rotate(45, 750, 300)"></rect>
+        <rect width="5" height="5" x="797.5" y="297.5" transform="rotate(45, 800, 300)"></rect>
+        <rect width="5" height="5" x="-2.5" y="347.5" transform="rotate(45, 0, 350)"></rect>
+        <rect width="5" height="5" x="47.5" y="347.5" transform="rotate(45, 50, 350)"></rect>
+        <rect width="5" height="5" x="97.5" y="347.5" fill="#f05941" stroke="none" transform="rotate(45, 100, 350)">
+        </rect>
+        <rect width="5" height="5" x="147.5" y="347.5" transform="rotate(45, 150, 350)"></rect>
+        <rect width="5" height="5" x="197.5" y="347.5" transform="rotate(45, 200, 350)"></rect>
+        <rect width="5" height="5" x="247.5" y="347.5" transform="rotate(45, 250, 350)"></rect>
+        <rect width="5" height="5" x="297.5" y="347.5" transform="rotate(45, 300, 350)"></rect>
+        <rect width="5" height="5" x="347.5" y="347.5" fill="#f05941" stroke="none" transform="rotate(45, 350, 350)">
+        </rect>
+        <rect width="5" height="5" x="397.5" y="347.5" transform="rotate(45, 400, 350)"></rect>
+        <rect width="5" height="5" x="447.5" y="347.5" transform="rotate(45, 450, 350)"></rect>
+        <rect width="5" height="5" x="497.5" y="347.5" fill="#f05941" stroke="none" transform="rotate(45, 500, 350)">
+        </rect>
+        <rect width="5" height="5" x="547.5" y="347.5" fill="#f05941" stroke="none" transform="rotate(45, 550, 350)">
+        </rect>
+        <rect width="5" height="5" x="597.5" y="347.5" transform="rotate(45, 600, 350)"></rect>
+        <rect width="5" height="5" x="647.5" y="347.5" transform="rotate(45, 650, 350)"></rect>
+        <rect width="5" height="5" x="697.5" y="347.5" transform="rotate(45, 700, 350)"></rect>
+        <rect width="5" height="5" x="747.5" y="347.5" fill="#f05941" stroke="none" transform="rotate(45, 750, 350)">
+        </rect>
+        <rect width="5" height="5" x="797.5" y="347.5" transform="rotate(45, 800, 350)"></rect>
+        <rect width="5" height="5" x="-2.5" y="397.5" transform="rotate(45, 0, 400)"></rect>
+        <rect width="5" height="5" x="47.5" y="397.5" transform="rotate(45, 50, 400)"></rect>
+        <rect width="5" height="5" x="97.5" y="397.5" transform="rotate(45, 100, 400)"></rect>
+        <rect width="5" height="5" x="147.5" y="397.5" transform="rotate(45, 150, 400)"></rect>
+        <rect width="5" height="5" x="197.5" y="397.5" transform="rotate(45, 200, 400)"></rect>
+        <rect width="5" height="5" x="247.5" y="397.5" transform="rotate(45, 250, 400)"></rect>
+        <rect width="5" height="5" x="297.5" y="397.5" transform="rotate(45, 300, 400)"></rect>
+        <rect width="5" height="5" x="347.5" y="397.5" transform="rotate(45, 350, 400)"></rect>
+        <rect width="5" height="5" x="397.5" y="397.5" transform="rotate(45, 400, 400)"></rect>
+        <rect width="5" height="5" x="447.5" y="397.5" transform="rotate(45, 450, 400)"></rect>
+        <rect width="5" height="5" x="497.5" y="397.5" transform="rotate(45, 500, 400)"></rect>
+        <rect width="5" height="5" x="547.5" y="397.5" transform="rotate(45, 550, 400)"></rect>
+        <rect width="5" height="5" x="597.5" y="397.5" transform="rotate(45, 600, 400)"></rect>
+        <rect width="5" height="5" x="647.5" y="397.5" transform="rotate(45, 650, 400)"></rect>
+        <rect width="5" height="5" x="697.5" y="397.5" fill="#f05941" stroke="none" transform="rotate(45, 700, 400)">
+        </rect>
+        <rect width="5" height="5" x="747.5" y="397.5" transform="rotate(45, 750, 400)"></rect>
+        <rect width="5" height="5" x="797.5" y="397.5" transform="rotate(45, 800, 400)"></rect>
+        <rect width="5" height="5" x="-2.5" y="447.5" transform="rotate(45, 0, 450)"></rect>
+        <rect width="5" height="5" x="47.5" y="447.5" transform="rotate(45, 50, 450)"></rect>
+        <rect width="5" height="5" x="97.5" y="447.5" transform="rotate(45, 100, 450)"></rect>
+        <rect width="5" height="5" x="147.5" y="447.5" transform="rotate(45, 150, 450)"></rect>
+        <rect width="5" height="5" x="197.5" y="447.5" fill="#f05941" stroke="none" transform="rotate(45, 200, 450)">
+        </rect>
+        <rect width="5" height="5" x="247.5" y="447.5" transform="rotate(45, 250, 450)"></rect>
+        <rect width="5" height="5" x="297.5" y="447.5" transform="rotate(45, 300, 450)"></rect>
+        <rect width="5" height="5" x="347.5" y="447.5" transform="rotate(45, 350, 450)"></rect>
+        <rect width="5" height="5" x="397.5" y="447.5" transform="rotate(45, 400, 450)"></rect>
+        <rect width="5" height="5" x="447.5" y="447.5" fill="#f05941" stroke="none" transform="rotate(45, 450, 450)">
+        </rect>
+        <rect width="5" height="5" x="497.5" y="447.5" transform="rotate(45, 500, 450)"></rect>
+        <rect width="5" height="5" x="547.5" y="447.5" fill="#f05941" stroke="none" transform="rotate(45, 550, 450)">
+        </rect>
+        <rect width="5" height="5" x="597.5" y="447.5" transform="rotate(45, 600, 450)"></rect>
+        <rect width="5" height="5" x="647.5" y="447.5" transform="rotate(45, 650, 450)"></rect>
+        <rect width="5" height="5" x="697.5" y="447.5" fill="#f05941" stroke="none" transform="rotate(45, 700, 450)">
+        </rect>
+        <rect width="5" height="5" x="747.5" y="447.5" fill="#f05941" stroke="none" transform="rotate(45, 750, 450)">
+        </rect>
+        <rect width="5" height="5" x="797.5" y="447.5" transform="rotate(45, 800, 450)"></rect>
+        <rect width="5" height="5" x="-2.5" y="497.5" transform="rotate(45, 0, 500)"></rect>
+        <rect width="5" height="5" x="47.5" y="497.5" transform="rotate(45, 50, 500)"></rect>
+        <rect width="5" height="5" x="97.5" y="497.5" fill="#f05941" stroke="none" transform="rotate(45, 100, 500)">
+        </rect>
+        <rect width="5" height="5" x="147.5" y="497.5" fill="#f05941" stroke="none" transform="rotate(45, 150, 500)">
+        </rect>
+        <rect width="5" height="5" x="197.5" y="497.5" fill="#f05941" stroke="none" transform="rotate(45, 200, 500)">
+        </rect>
+        <rect width="5" height="5" x="247.5" y="497.5" fill="#f05941" stroke="none" transform="rotate(45, 250, 500)">
+        </rect>
+        <rect width="5" height="5" x="297.5" y="497.5" transform="rotate(45, 300, 500)"></rect>
+        <rect width="5" height="5" x="347.5" y="497.5" transform="rotate(45, 350, 500)"></rect>
+        <rect width="5" height="5" x="397.5" y="497.5" transform="rotate(45, 400, 500)"></rect>
+        <rect width="5" height="5" x="447.5" y="497.5" fill="#f05941" stroke="none" transform="rotate(45, 450, 500)">
+        </rect>
+        <rect width="5" height="5" x="497.5" y="497.5" fill="#f05941" stroke="none" transform="rotate(45, 500, 500)">
+        </rect>
+        <rect width="5" height="5" x="547.5" y="497.5" transform="rotate(45, 550, 500)"></rect>
+        <rect width="5" height="5" x="597.5" y="497.5" transform="rotate(45, 600, 500)"></rect>
+        <rect width="5" height="5" x="647.5" y="497.5" transform="rotate(45, 650, 500)"></rect>
+        <rect width="5" height="5" x="697.5" y="497.5" fill="#f05941" stroke="none" transform="rotate(45, 700, 500)">
+        </rect>
+        <rect width="5" height="5" x="747.5" y="497.5" transform="rotate(45, 750, 500)"></rect>
+        <rect width="5" height="5" x="797.5" y="497.5" transform="rotate(45, 800, 500)"></rect>
+        <rect width="5" height="5" x="-2.5" y="547.5" transform="rotate(45, 0, 550)"></rect>
+        <rect width="5" height="5" x="47.5" y="547.5" transform="rotate(45, 50, 550)"></rect>
+        <rect width="5" height="5" x="97.5" y="547.5" transform="rotate(45, 100, 550)"></rect>
+        <rect width="5" height="5" x="147.5" y="547.5" transform="rotate(45, 150, 550)"></rect>
+        <rect width="5" height="5" x="197.5" y="547.5" transform="rotate(45, 200, 550)"></rect>
+        <rect width="5" height="5" x="247.5" y="547.5" transform="rotate(45, 250, 550)"></rect>
+        <rect width="5" height="5" x="297.5" y="547.5" transform="rotate(45, 300, 550)"></rect>
+        <rect width="5" height="5" x="347.5" y="547.5" fill="#f05941" stroke="none" transform="rotate(45, 350, 550)">
+        </rect>
+        <rect width="5" height="5" x="397.5" y="547.5" transform="rotate(45, 400, 550)"></rect>
+        <rect width="5" height="5" x="447.5" y="547.5" fill="#f05941" stroke="none" transform="rotate(45, 450, 550)">
+        </rect>
+        <rect width="5" height="5" x="497.5" y="547.5" transform="rotate(45, 500, 550)"></rect>
+        <rect width="5" height="5" x="547.5" y="547.5" fill="#f05941" stroke="none" transform="rotate(45, 550, 550)">
+        </rect>
+        <rect width="5" height="5" x="597.5" y="547.5" transform="rotate(45, 600, 550)"></rect>
+        <rect width="5" height="5" x="647.5" y="547.5" transform="rotate(45, 650, 550)"></rect>
+        <rect width="5" height="5" x="697.5" y="547.5" transform="rotate(45, 700, 550)"></rect>
+        <rect width="5" height="5" x="747.5" y="547.5" fill="#f05941" stroke="none" transform="rotate(45, 750, 550)">
+        </rect>
+        <rect width="5" height="5" x="797.5" y="547.5" transform="rotate(45, 800, 550)"></rect>
+        <rect width="5" height="5" x="-2.5" y="597.5" transform="rotate(45, 0, 600)"></rect>
+        <rect width="5" height="5" x="47.5" y="597.5" fill="#f05941" stroke="none" transform="rotate(45, 50, 600)">
+        </rect>
+        <rect width="5" height="5" x="97.5" y="597.5" transform="rotate(45, 100, 600)"></rect>
+        <rect width="5" height="5" x="147.5" y="597.5" transform="rotate(45, 150, 600)"></rect>
+        <rect width="5" height="5" x="197.5" y="597.5" transform="rotate(45, 200, 600)"></rect>
+        <rect width="5" height="5" x="247.5" y="597.5" transform="rotate(45, 250, 600)"></rect>
+        <rect width="5" height="5" x="297.5" y="597.5" transform="rotate(45, 300, 600)"></rect>
+        <rect width="5" height="5" x="347.5" y="597.5" transform="rotate(45, 350, 600)"></rect>
+        <rect width="5" height="5" x="397.5" y="597.5" transform="rotate(45, 400, 600)"></rect>
+        <rect width="5" height="5" x="447.5" y="597.5" transform="rotate(45, 450, 600)"></rect>
+        <rect width="5" height="5" x="497.5" y="597.5" fill="#f05941" stroke="none" transform="rotate(45, 500, 600)">
+        </rect>
+        <rect width="5" height="5" x="547.5" y="597.5" transform="rotate(45, 550, 600)"></rect>
+        <rect width="5" height="5" x="597.5" y="597.5" transform="rotate(45, 600, 600)"></rect>
+        <rect width="5" height="5" x="647.5" y="597.5" transform="rotate(45, 650, 600)"></rect>
+        <rect width="5" height="5" x="697.5" y="597.5" transform="rotate(45, 700, 600)"></rect>
+        <rect width="5" height="5" x="747.5" y="597.5" transform="rotate(45, 750, 600)"></rect>
+        <rect width="5" height="5" x="797.5" y="597.5" transform="rotate(45, 800, 600)"></rect>
+        <rect width="5" height="5" x="-2.5" y="647.5" transform="rotate(45, 0, 650)"></rect>
+        <rect width="5" height="5" x="47.5" y="647.5" transform="rotate(45, 50, 650)"></rect>
+        <rect width="5" height="5" x="97.5" y="647.5" fill="#f05941" stroke="none" transform="rotate(45, 100, 650)">
+        </rect>
+        <rect width="5" height="5" x="147.5" y="647.5" transform="rotate(45, 150, 650)"></rect>
+        <rect width="5" height="5" x="197.5" y="647.5" transform="rotate(45, 200, 650)"></rect>
+        <rect width="5" height="5" x="247.5" y="647.5" transform="rotate(45, 250, 650)"></rect>
+        <rect width="5" height="5" x="297.5" y="647.5" transform="rotate(45, 300, 650)"></rect>
+        <rect width="5" height="5" x="347.5" y="647.5" transform="rotate(45, 350, 650)"></rect>
+        <rect width="5" height="5" x="397.5" y="647.5" transform="rotate(45, 400, 650)"></rect>
+        <rect width="5" height="5" x="447.5" y="647.5" transform="rotate(45, 450, 650)"></rect>
+        <rect width="5" height="5" x="497.5" y="647.5" transform="rotate(45, 500, 650)"></rect>
+        <rect width="5" height="5" x="547.5" y="647.5" transform="rotate(45, 550, 650)"></rect>
+        <rect width="5" height="5" x="597.5" y="647.5" transform="rotate(45, 600, 650)"></rect>
+        <rect width="5" height="5" x="647.5" y="647.5" transform="rotate(45, 650, 650)"></rect>
+        <rect width="5" height="5" x="697.5" y="647.5" transform="rotate(45, 700, 650)"></rect>
+        <rect width="5" height="5" x="747.5" y="647.5" fill="#f05941" stroke="none" transform="rotate(45, 750, 650)">
+        </rect>
+        <rect width="5" height="5" x="797.5" y="647.5" transform="rotate(45, 800, 650)"></rect>
+        <rect width="5" height="5" x="-2.5" y="697.5" transform="rotate(45, 0, 700)"></rect>
+        <rect width="5" height="5" x="47.5" y="697.5" transform="rotate(45, 50, 700)"></rect>
+        <rect width="5" height="5" x="97.5" y="697.5" fill="#f05941" stroke="none" transform="rotate(45, 100, 700)">
+        </rect>
+        <rect width="5" height="5" x="147.5" y="697.5" transform="rotate(45, 150, 700)"></rect>
+        <rect width="5" height="5" x="197.5" y="697.5" transform="rotate(45, 200, 700)"></rect>
+        <rect width="5" height="5" x="247.5" y="697.5" fill="#f05941" stroke="none" transform="rotate(45, 250, 700)">
+        </rect>
+        <rect width="5" height="5" x="297.5" y="697.5" transform="rotate(45, 300, 700)"></rect>
+        <rect width="5" height="5" x="347.5" y="697.5" fill="#f05941" stroke="none" transform="rotate(45, 350, 700)">
+        </rect>
+        <rect width="5" height="5" x="397.5" y="697.5" fill="#f05941" stroke="none" transform="rotate(45, 400, 700)">
+        </rect>
+        <rect width="5" height="5" x="447.5" y="697.5" transform="rotate(45, 450, 700)"></rect>
+        <rect width="5" height="5" x="497.5" y="697.5" transform="rotate(45, 500, 700)"></rect>
+        <rect width="5" height="5" x="547.5" y="697.5" transform="rotate(45, 550, 700)"></rect>
+        <rect width="5" height="5" x="597.5" y="697.5" transform="rotate(45, 600, 700)"></rect>
+        <rect width="5" height="5" x="647.5" y="697.5" fill="#f05941" stroke="none" transform="rotate(45, 650, 700)">
+        </rect>
+        <rect width="5" height="5" x="697.5" y="697.5" transform="rotate(45, 700, 700)"></rect>
+        <rect width="5" height="5" x="747.5" y="697.5" transform="rotate(45, 750, 700)"></rect>
+        <rect width="5" height="5" x="797.5" y="697.5" transform="rotate(45, 800, 700)"></rect>
+        <rect width="5" height="5" x="-2.5" y="747.5" transform="rotate(45, 0, 750)"></rect>
+        <rect width="5" height="5" x="47.5" y="747.5" transform="rotate(45, 50, 750)"></rect>
+        <rect width="5" height="5" x="97.5" y="747.5" transform="rotate(45, 100, 750)"></rect>
+        <rect width="5" height="5" x="147.5" y="747.5" transform="rotate(45, 150, 750)"></rect>
+        <rect width="5" height="5" x="197.5" y="747.5" fill="#f05941" stroke="none" transform="rotate(45, 200, 750)">
+        </rect>
+        <rect width="5" height="5" x="247.5" y="747.5" transform="rotate(45, 250, 750)"></rect>
+        <rect width="5" height="5" x="297.5" y="747.5" transform="rotate(45, 300, 750)"></rect>
+        <rect width="5" height="5" x="347.5" y="747.5" fill="#f05941" stroke="none" transform="rotate(45, 350, 750)">
+        </rect>
+        <rect width="5" height="5" x="397.5" y="747.5" fill="#f05941" stroke="none" transform="rotate(45, 400, 750)">
+        </rect>
+        <rect width="5" height="5" x="447.5" y="747.5" transform="rotate(45, 450, 750)"></rect>
+        <rect width="5" height="5" x="497.5" y="747.5" transform="rotate(45, 500, 750)"></rect>
+        <rect width="5" height="5" x="547.5" y="747.5" fill="#f05941" stroke="none" transform="rotate(45, 550, 750)">
+        </rect>
+        <rect width="5" height="5" x="597.5" y="747.5" transform="rotate(45, 600, 750)"></rect>
+        <rect width="5" height="5" x="647.5" y="747.5" transform="rotate(45, 650, 750)"></rect>
+        <rect width="5" height="5" x="697.5" y="747.5" transform="rotate(45, 700, 750)"></rect>
+        <rect width="5" height="5" x="747.5" y="747.5" transform="rotate(45, 750, 750)"></rect>
+        <rect width="5" height="5" x="797.5" y="747.5" transform="rotate(45, 800, 750)"></rect>
+        <rect width="5" height="5" x="-2.5" y="797.5" transform="rotate(45, 0, 800)"></rect>
+        <rect width="5" height="5" x="47.5" y="797.5" transform="rotate(45, 50, 800)"></rect>
+        <rect width="5" height="5" x="97.5" y="797.5" transform="rotate(45, 100, 800)"></rect>
+        <rect width="5" height="5" x="147.5" y="797.5" transform="rotate(45, 150, 800)"></rect>
+        <rect width="5" height="5" x="197.5" y="797.5" transform="rotate(45, 200, 800)"></rect>
+        <rect width="5" height="5" x="247.5" y="797.5" transform="rotate(45, 250, 800)"></rect>
+        <rect width="5" height="5" x="297.5" y="797.5" transform="rotate(45, 300, 800)"></rect>
+        <rect width="5" height="5" x="347.5" y="797.5" transform="rotate(45, 350, 800)"></rect>
+        <rect width="5" height="5" x="397.5" y="797.5" transform="rotate(45, 400, 800)"></rect>
+        <rect width="5" height="5" x="447.5" y="797.5" transform="rotate(45, 450, 800)"></rect>
+        <rect width="5" height="5" x="497.5" y="797.5" transform="rotate(45, 500, 800)"></rect>
+        <rect width="5" height="5" x="547.5" y="797.5" transform="rotate(45, 550, 800)"></rect>
+        <rect width="5" height="5" x="597.5" y="797.5" transform="rotate(45, 600, 800)"></rect>
+        <rect width="5" height="5" x="647.5" y="797.5" transform="rotate(45, 650, 800)"></rect>
+        <rect width="5" height="5" x="697.5" y="797.5" transform="rotate(45, 700, 800)"></rect>
+        <rect width="5" height="5" x="747.5" y="797.5" transform="rotate(45, 750, 800)"></rect>
+        <rect width="5" height="5" x="797.5" y="797.5" transform="rotate(45, 800, 800)"></rect>
+    </g>
+</svg>
