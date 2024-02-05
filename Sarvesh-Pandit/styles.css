@@ -1,0 +1,286 @@
+
+/* This is code for Body */
+body {
+    background-image: url("../images/darkbg1.jpg"); /* Don't forget to change path to ../images/bg1.png */
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-color: #000f1a;
+    text-align: center;
+}
+
+/* This is code for Main */
+main {
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+}
+
+main > * {
+    text-align: left;
+}
+
+/* This is code for Section */
+section {
+    padding-bottom: 30px;
+  }
+
+/* This is code for Top Navigation Bar */
+.topnav {
+    font-family: 'Rubik', sans-serif;
+    margin-top: 15px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 42%;
+    margin: 0 auto; /* Center the topnav horizontally */
+    text-align: center;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    display: block; /* Change display to block */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transition: border-color 0.3s ease; /* Add smooth transition effect */
+}
+
+.border-visible {
+    border-color: #7a7a7a;
+}
+
+.topnav a {
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 20px;
+    color: rgb(182, 174, 174);
+    text-decoration: none;
+}
+
+
+
+/* This is code for Home Tags */
+
+h1 {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(182, 174, 174);
+    font-weight: lighter;
+
+}
+
+/* This is code for Resume */
+.resume {
+    color: white;
+    display: inline-block;
+    margin: 0 auto;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 10px;
+    border: 1px solid #00c552; /* Set your desired border color */
+    border-radius: 10px;
+    border-style:groove;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.resume:hover{
+    background-color: #277e2b;
+    cursor: pointer;
+}
+
+/* This is code for About Section */
+#about h2 {
+    margin-top: 170px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    color: rgb(182, 174, 174);
+    font-family: 'Roboto Mono', monospace;;
+}
+
+/* This is code for Skills Section */
+#skills h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.skill-container {
+    justify-content: center;
+}
+
+.skill-box {
+    color: rgb(247, 253, 251);
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #00c552; /* Set your desired border color */
+    border-radius: 2px;
+    background-color: rgb(56, 56, 56);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+
+/* This is code for Work/Experience Section */
+#work h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.period {
+    font-weight: lighter;
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+    color: rgb(182, 174, 174);
+
+}
+
+.company-role {
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+.details {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: rgb(182, 174, 174);
+}
+
+.work-skill-box {
+    color: #00c552;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #00c552; /* Set your desired border color */
+    border-radius: 2px;
+    background-color: rgb(56, 56, 56);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+
+/* This is code for Projects Section */
+#projects h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.projects-container {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-box {
+    color: white;
+    background-color: rgb(56, 54, 54);
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 18px;
+    height: 150px;
+    border: 0.5px solid rgb(167, 161, 161);
+    border-radius: 15px;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+/* This is code for Contact Me */
+#contact h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+label {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+input[type=text], textarea {
+    background-color: rgb(123, 131, 131);
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #00c552; /* Set your desired border color */
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;    
+}
+
+input[type=email] {
+    background-color: rgb(123, 131, 131);
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #00c552; /* Set your desired border color */
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column; 
+}
+
+input[type=submit] {
+    background-color: #000f1a;
+    color: white;
+    padding: 25px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    border: 1px solid #00c552; /* Set your desired border color */
+    border-radius: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #277e2b;
+  }
+
+input::placeholder{
+    color: white;
+}
+
+
+/* This is code for Footer */
+.ending {
+    text-align: center;
+    color: white;
+}
+
+.footer-icons {
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.footer-text {
+    vertical-align: middle
+}
