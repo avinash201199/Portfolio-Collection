@@ -73,4 +73,8 @@ Other module to be installed
 1. react-scroll
 2. react-icons
 
-update resume, linked account, github account, mail to your own accounts and detaiils
+update resume, linked account, github account, mail to your own accounts and details
+
+demo:
+![Screenshot 2024-02-08 215137](https://github.com/rachit-singhal12/Portfolio/assets/88622017/f2ded810-6a0f-4340-beff-77a21200fe67)
+
