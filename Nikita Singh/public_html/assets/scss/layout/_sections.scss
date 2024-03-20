@@ -1,0 +1,76 @@
+.section {
+    padding: 80px 0;
+
+    &.bg-custom-gray {
+        background: rgba(#F2F4F7, .15);
+    }
+}
+
+.about-section {
+    border-bottom: 1px solid $border-color;
+
+    .about-card {
+        padding: 60px;
+        border-right: 1px solid $border-color;
+
+        &:last-child {
+            border-right: none;
+        }
+
+    }
+}
+
+
+.contact {
+    position: relative;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+
+    @include media-breakpoint-down(md) {
+        padding: 300px 0 0;
+
+        .contact-form-card {
+            border-bottom: 1px solid $border-color;
+        }
+
+        .contact-form-card,
+        .contact-info-card {
+            min-height: auto !important;
+        }
+    }
+
+    .map {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-form-card,
+    .contact-info-card {
+        padding: 35px;
+        background: $white;
+        min-height: 500px;
+    }
+
+    .contact-info-card {
+        padding-right: 20px;
+    }
+
+    .contact-title {
+        margin-bottom: 30px;
+
+        &::after {
+            content: '';
+            width: 20px;
+            height: 2px;
+            background: $primary;
+            display: block;
+            margin-top: 10px;
+        }
+    }
+}

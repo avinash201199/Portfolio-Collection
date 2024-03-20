@@ -1,0 +1,11 @@
+pre {
+	border: 2px solid $border-color;
+	padding: 15px;
+	border-radius: $border-radius;
+	background: $gray-100;
+
+	code,
+	.code {
+		color: $gray-600;
+	}
+}

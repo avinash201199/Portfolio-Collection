@@ -1,0 +1,77 @@
+body{
+    background:  url("img/bg1.jpg");
+
+}
+.header{
+    background: #a8d4ae;
+    opacity:0.4;
+    margin-bottom: 30px;
+    letter-spacing: 4.5px;
+    height: 100px;
+    padding: 2%;
+    font-size: 1.2rem;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+    
+}
+.header a{
+    text-decoration: none;
+    color: #112014;
+}
+.header a:hover{
+    text-decoration: none;
+    color: #3d6846;
+}
+.icon img{
+    width: 40px;
+    height: 40px;
+}
+.me{
+    width: 50%;
+    border: 2px solid rgb(200, 218, 212);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: all 0.25s;
+}
+.me:hover{
+    transform: translate(-4px, -4px);
+    box-shadow: none;
+    border: 3px solid rgb(169, 182, 176);
+}
+#line{
+    font-size: 1.8rem;
+    font-family: 'Source Code Pro', monospace;
+    color: #386641;
+    text-align: center;
+    
+}
+p{
+    font-size: 1.6rem;
+    font-family: 'Source Code Pro', monospace;
+    color: #386641;
+    text-align: justify;
+}
+section{
+    font-size: 3.5rem;    
+    font-family: 'Averia Serif Libre', cursive;
+    color: #23523c;
+}
+p a{
+    font-size: 1.6rem;
+    font-family: 'Source Code Pro', monospace;
+    color: #386641;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+p a:hover{
+    font-size: 1.6rem;
+    font-family: 'Source Code Pro', monospace;
+    color: #478052;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+h1{
+    font-family: 'Averia Serif Libre', cursive;
+    color: #23523c;
+    letter-spacing: 3px;  
+}

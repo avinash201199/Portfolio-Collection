@@ -1,0 +1,94 @@
+/* New CSS */
+body{
+  background-color: rgb(38, 34, 23);
+}
+
+.bdg{
+  background-color: darkslategray;
+  color: aqua;
+  margin-top: 25px;
+  border-radius: 20px;
+}
+
+.tp{
+  font-family: Anton;
+  font-size: 70px;
+}
+
+.kls{
+  font-family: Bangers;
+  font-size: 24px;
+  color: yellow;
+}
+
+.cff{
+  margin-top: 4%;
+  font-family: Nanum Gothic Coding;
+  font-size: 18px;
+}
+.cff2{
+  font-family: Nanum Gothic Coding;
+  font-size: 18px;
+}
+
+.art{
+  margin-top: 2%;
+  font-family: Nanum Gothic Coding;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.no-art{
+  margin-left: 4%;
+  font-family: Bangers;
+  font-size: 40px;
+  color: cornflowerblue;
+}
+
+.scv{
+  margin-bottom: -5px;
+  font-family: Nanum Gothic Coding;
+  font-size: 18px;
+}
+
+.cp{
+  font-family: Nanum Gothic Coding;
+  font-size: 14px;
+  color: aqua;
+}
+
+a{
+  color: azure;
+  text-decoration: none;
+}
+
+a:hover{
+  color: cyan;
+}
+
+hr{
+  background-color: dimgray;
+  border-width: 6px;
+  border-radius: 4px;
+}
+/* End New CSS */
+
+/* Portfolio */
+.in{
+  font-family: Nanum Gothic Coding;
+  font-size: 18px;
+}
+.mp{
+  color: aqua;
+  font-family: Anton;
+  margin-top: 45px;
+}
+
+h3{
+  font-family: Bangers;
+  color: darkorange;
+}
+.row{
+  margin-bottom: 30px;
+}
+/* end portfolio */

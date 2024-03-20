@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/00b2e9f8b6.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="ajlogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-regular fa-bars" onclick="openmenu()"></i>                        </nav>
+            <div class="header-text">
+                <p></p>
+                <h1>Hi, I'm <span>AJAY</span> <br>from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--ABOUT-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user2.jpg">
+                </div>
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Committed and goal-oriented computer science student looking to
+                        pursue a career in the software engineering and research domain.
+                        Possess excellent knowledge in Python, Web Development and
+                        Data Structures. Learning AI ML to ingest huge amount of data and
+                        making things easier. Ability to learn things quickly and capable of
+                        working in a fast-paced and team-driven environment.
+                        </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Artificial Intelligence</span><br>Predicting Databases Using Libraries</li>
+                            <li><span>Web Development</span><br>Designing Web Interface</li>
+                            <li><span>Graphics Designing</span><br>Social Media Graphics & Digital Marketing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>AI ML</span><br>Worked on couple of Prediction Projects</li>
+                            <li><span>Web Development</span><br>Built frontend & designed layouts</li>
+                            <li><span>Graphics Design</span><br>Worked as an Graphics Designer Intern at NGO</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Undergraduation</span><br>Pursuing Computer Science Engineering</li>
+                            <li><span>Paris Summer Program</span><br>Attended Artificial Intelligence Bootcamp</li>
+                            <li><span>Higher Secondary</span><br>Physics, Chemistry Mathematics Majors</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--    --services--    -->
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web Development services include everuthing related to building web-based solution - whether it is a simple text page or a complex web application. Work on making website intutive to use, optimized for moblie devices and search engines matching the latest trends.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-database"></i>                    <h2>Database Prediction</h2>
+                    <p>Predictive analytics is making predictions about future outcomes using historical data combined with statistical modeling, data mining techniques and machine learning to identify risks and opportunities.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>                    <h2>Graphics Designing</h2>
+                    <p>Graphic Designing is the process of defining requirements, visualizing and creating graphics including illustrations, logos, layouts and photos. Deals on Developing design based on clients requirements.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--       Protfolio            -->
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="database1.jpg">
+                    <div class="layer">
+                        <h3>Prediction Models</h3>
+                        <p>Prepared Covid-19 cases tracking Prediction model which collects information from different data sources along with Vaccination rate of different states of India. Tested prediction approach on the datasheet using machine and deep
+                            learning libraries after cleaning and analyzing the data and received an accuracy of 87%.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="web3.jpg">
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>Coded Online food delivery website using Basic web Development afterwords stepping up to frontend of Covid-19 cases tracking website applying advance web-development which Project got selected at Smart India Hackathon. Along with 
+                            practicing development skills creating personal Portfolio.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="design1.jpg">
+                    <div class="layer">
+                        <h3>Graphic Designs</h3>
+                        <p>Worked as a Graphics Designer at Samagara Foundation designing Social Media posts, posters and worked over Digital Marketing which got published on the Companies website.
+                            Got an appreciation letter for the work presented.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see-more</a>
+        </div>
+    </div>
+
+
+    <!--          contact            -->
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>ajaydahiya2003@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>9466442432</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/ajaydahiya7" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/invites/contact/?i=pjgennkq5tz6&utm_content=a7abjvz" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ajay-dahiya-1a539a22a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © AJ. Made by Ajay Dahiya</p>
+        </div>
+    </div>
+    
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu()
+        {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu()
+        {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbwDzpTlzBIB4RkukBfeKE2otXAE6Le2BLFFs5uKEE-nzhs4wzBMrqhsvOsV6R-jzDQXwg/exec>'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>

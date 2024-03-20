@@ -1,0 +1,196 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Navlist{
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+}
+.nav_s{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+  position: relative;
+  left: 600px;
+}
+li{
+    list-style: none;
+    padding: 20px;
+}
+.banner{
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.profile{
+    /*box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
+    height: 90%;
+    width: 90%;
+}
+h1{
+    font-size: 80px;
+    margin: 5px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+#detail{
+    color: rgb(118, 118, 118);
+  
+    margin: 5px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 25px;
+}
+.fa-brands{
+    height: 100px;
+    
+}
+
+.icon{
+    font-size: 30px;
+    margin: 5px;
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+.work{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.code{
+   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
+    height: 90%;
+    width: 90%;
+    position: relative;
+    
+
+}
+.logo{
+    font-size: 40px;
+    margin: 5px;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    padding: 10px;
+
+}
+
+.Card{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top:15px;
+    margin: 20px;
+    left: 30px;
+    justify-content: center;
+
+}
+.card{
+ transition: width 1s, height 1s;
+    margin:10px;
+}
+.progress{
+    position: relative;
+ margin-left: 50px;
+    margin: 20px;
+
+}
+.blogs{
+
+    margin: 15px;
+}
+.contact{
+   
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+#cont{
+   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    height: 50%;
+    width: 50%;
+}
+#me{
+    font-family: 'Poppins', sans-serif;
+    font-size: 90px;
+}
+#Ankit{
+   font-size: 25px;
+   color: blueviolet;
+   font-weight: bold;
+}
+#mywork{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
+
+#detail{
+   
+    font-size: 20px;
+
+
+
+}
+#About{
+
+    font-size: 20px; 
+    color: rgb(118, 118, 118);
+}
+
+.skill{
+
+    position: relative;
+    left: 20px;
+
+}
+.hover:hover{
+    cursor: pointer;
+    border-bottom: 2px solid rgb(110, 79, 247);
+    font-weight: bold;
+  
+    opacity: 100%;
+    height: 60%;
+}
+
+.card-img-top{
+    height: 150px;
+    width: 50px;
+}
+.card:hover{
+
+    transform: translate(20 px);
+}
+#Ankit:hover{
+    color: palevioletred;
+}
+#me:hover{
+    color: palevioletred;
+    cursor: pointer;
+}
+.main{
+    margin-left:  50px;
+    margin-right:  50px;
+    
+}
+.card:hover{
+   
+cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

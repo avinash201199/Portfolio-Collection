@@ -1,0 +1,68 @@
+.AboutPage {
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.AboutPage-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.AboutPage-content {
+  max-width: 20em;
+  font-family: "Caveat Brush";
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.AboutPage-project {
+  margin-top: 3em;
+}
+
+.AboutPage-project-button {
+  text-decoration: none;
+  color: #1c1c1c;
+  background: white;
+  padding: 0.5em 1.5em;
+  border-radius: 30px;
+  font-size: 2rem;
+  font-family: "Caveat";
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.AboutPage-project-button:hover {
+  background: #f5aa1a;
+  color: #1c1c1c;
+}
+
+@media screen and (max-width: 1000px) {
+  .AboutPage {
+    overflow-y: scroll;
+  }
+
+  .AboutPage-container {
+    flex-direction: column;
+  }
+
+  .AboutPage-profile-pic {
+    width: 90%;
+    margin-bottom: 1.5em;
+  }
+
+  .AboutPage-content {
+    max-width: 10em;
+  }
+
+  .AboutPage-project {
+    margin-bottom: 2em;
+  }
+
+  .AboutPage-project-button {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 50%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+ 
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#aboutProject {
+  width: 70%;
+  text-align: justify;
+  font-size: 25px;
+  margin-top: none;
+  margin-bottom: 10%;
+}
+
+
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+  .slideshow-container{
+    width: 700px;
+  }
+  .mySlides{
+    width: 500px;
+  }
+  .prev,.next{
+    top: 50%;
+  }
+  .next{
+    left: 200%;
+  }
+  #aboutProject{
+    width:500px ;
+    font-size: 18px;
+  }
+
+}
+
+
+/*  iPads, Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .slideshow-container{
+    width: 1000px;
+  }
+  .mySlides{
+    width: 650px;
+  }
+  .prev,.next{
+    top: 50%;
+  }
+  .next{
+    left: 157%;
+  }
+
+  #aboutProject{
+    width:650px ;
+    font-size: 20px;
+  }
+
+}
+  
+/* Small screens, laptops */
+@media screen and (min-width: 769px) and (max-width: 1022px) {
+  .slideshow-container{
+    width: 1200px;
+  }
+  .mySlides{
+    width: 750px;
+  }
+  .prev,.next{
+    top: 50%;
+  }
+  .next{
+    left: 140%;
+  }
+
+  #aboutProject{
+    width:800px ;
+    font-size: 23px;
+  }
+}
+
+  /* Desktops, large screens */
+  @media screen and (min-width: 1023px) and (max-width: 1416px) {
+    .slideshow-container{
+      width: 1500px;
+    }
+    .mySlides{
+      width: 850px;
+    }
+    .prev,.next{
+      top: 50%;
+    }
+    .next{
+      left: 115%;
+    }
+    #aboutProject{
+      width:800px ;
+      font-size: 23px;
+    }
+  }

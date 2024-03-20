@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note-Taking-Web-App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <!-- fonts (confirm link) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,900
+    |Source+Sans+Pro:300,900&display=swap">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="HTML tag logo">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html"class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services"class="nav__link">My services</a></li>
+                <li class="nav__item"><a href="index.html#about"class="nav__link">About me </a></li>
+                <li class="nav__item"><a href="index.html#work"class="nav__link">My work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ <!--Introduction-->
+
+<section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+     Note Taking <strong> Web App</strong>
+    </h1>
+    <p class="section___subtitle  section___subtitle--intro">
+        <a href="https://github.com/Collins-Omariba/FLASK-WEB-APPLICATION" class="github__link"> 
+            <i class="fab fa-github"></i> <Strong> WEBSITE CODE</Strong></a>   </p>
+    <img src="img/face.png" alt="" class="intro__img">
+
+</section>
+
+<div class="portfolio-item-individual">
+    <p>The website's Backend is made using <strong>Flask</strong> , <strong>Flask-SQLAlchemy </strong> and <strong>flask-login</strong> . Users can signup by creating an account using their credentials 
+     and be able to login and out securely .</p>
+
+    <h3 class="screen_shot_text" ><strong>Below is a screenshot of the website</strong> </h3>
+
+    <img src="img/Note-Taking-Web-App.png" alt="">
+
+    <p>It is very elegant and can Convey a lot of information at a glance ,
+         It is also easy to navigate and interact with</p>
+</div>
+
+
+<!--Footer  -->
+<footer class="footer">
+    <a href="mailto:collinsomariba@gmail.com" class="footer__link">collinsomariba@gmail.com</a>
+    <ul class="social-list">
+        
+    <li class="social-list__item">
+            <a href="https://github.com/Collins-Omariba" class="social-list__link">
+                <i class="fab fa-github"></i>
+            </a>
+    </li> 
+
+    <li class="social-list__item">
+        <a href="https://www.linkedin.com/in/omariba-collins-b28b841b9" class="social-list__link">
+            <i class="fab fa-linkedin"></i>
+        </a>
+   </li>    
+    <li class="social-list__item">
+        <a href="https://twitter.com/OmaribaCollins" class="social-list__link">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </li>
+
+    </ul>
+</footer>
+<script src="js/index.js"></script>
+</body>
+</html>   

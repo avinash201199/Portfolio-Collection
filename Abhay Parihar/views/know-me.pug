@@ -1,0 +1,34 @@
+extends template.pug
+
+block stylesheet
+    link(rel="stylesheet", href="./../static/css/know-me.css")
+
+block script
+    script(rel="script", href="./../static/js/know-me.js")
+
+block logo
+    img.nav__bar--image(src="./../static/img/knowme-nav.png", alt="Logo")
+
+block content 
+    div.content__div
+        div.image__div
+            img(src="./../static/img/knowme-pic.png", alt="Abhay Parihar")
+        div.content__div--main
+            p.about__heading Get to 
+                br
+                span.about__heading--main Know Me 
+            p.about__content I can 
+                span.about__content--highlight code frontend websites 
+                |for your design. Additionally, I know 
+                span.about__content--highlight Advanced Javascript 
+                |to make better animations for your website. 
+                br
+                |I am currently learning 
+                span.about__content--highlight MERN Stack 
+                br
+                |and also 
+                span.about__content--highlight API Development
+                |.
+            p.cv__button 
+                a(href="./../static/files/Abhay_Parihar_Resume.pdf", download) Download CV 
+                a(href="./../static/files/Abhay_Parihar_Resume.pdf", download) Download Resume 

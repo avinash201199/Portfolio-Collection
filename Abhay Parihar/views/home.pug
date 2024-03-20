@@ -1,0 +1,22 @@
+extends template.pug 
+
+block stylesheet
+    link(rel="stylesheet", href="./../static/css/home.css")
+
+block script
+    script( defer src="./../static/js/home.js")
+
+block logo 
+    img.nav__bar--image(src="./../static/img/Spiralforge-logo.png", alt="Logo")
+
+block content 
+    div.home__main 
+        div.home__pic--bg
+        div.home__pic
+            img(src="./../static/img/home-pic.png", alt="Abhay Parihar")
+        div.home__content
+            p.home__greetings Hello World!
+            p.home__name This is 
+                span.home__name--span Abhay Parihar 
+            p.home__work &bull; Web Developer &bull;
+        a.know-me(href="/know-me") Know Me! 

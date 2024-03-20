@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    text-align: left;
+}
+
+.participation {
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.button {
+    width: 25%;
+    border-radius: 14px;
+    height: 100%;
+    font-size: 20px;
+    background-color: #bfe9ff;
+}

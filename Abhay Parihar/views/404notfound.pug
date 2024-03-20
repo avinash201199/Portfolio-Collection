@@ -1,0 +1,17 @@
+extends template.pug
+
+block stylesheet
+    link(rel="stylesheet", href="./../static/css/404notfound.css")
+
+block script 
+    script(rel="script", href="./../static/js/404notfound.js")
+
+block content
+    div.container
+        h1.status__code 404
+        img.bg__404(src="./../static/img/404bg.gif", alt="404")
+    div.msg__content
+        h3.status__msg Look like you're lost
+        p.status__msg--para the page you are looking for not avaible!
+        p.link__para 
+            a.home__button(href="/") Go to Home

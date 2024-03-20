@@ -1,0 +1,215 @@
+body{
+    margin: 0;
+    font-family:cursive;
+    text-align: center;
+    color: #40514E;
+    background-color: #ccf8f8f9;
+    
+}
+a{
+    color:#07696b ;
+    margin: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+a:hover{
+    color: #EAF6F6;
+}
+h1{
+    margin-top: 0;
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    color:#38A3A5;
+}
+hr{
+    background-color: white;
+    border-style:dotted none none;
+    width: 5%;
+    border-color: grey;
+    border-width: 5px;
+    margin:100px auto 100px auto;
+}
+p{
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.top-container{
+    background-color: #CDF0EA;
+    
+}
+
+.clouds{
+    width:1000px;
+    height: 400px;
+    position: relative;
+    left:200px;
+    
+} 
+
+.mountain{
+    width: 1510px;
+    height:800px ;
+    
+    
+}
+.middle-container{
+    margin:100px 0;
+}
+.skill-row{
+    width:50%;
+    margin: 100px auto 100px auto;
+    text-align:left;
+   
+}
+.skillimg{
+    width: 30%;
+    float: left;
+    margin-right: 30px;
+
+}
+.food{
+    width: 50%;
+    float: right;
+    margin-left: 30px;
+
+}
+h2{
+    font-size: 50px;
+    color:#00A19D;
+    
+}
+h3{
+    font-size: 40px;
+    color: #00A19D;
+}
+.intro{
+    width:30%;
+    margin:auto;
+}
+.contact-message{
+    width: 40%;
+    margin:40px auto 60px;
+}
+.copyright{
+    color: #EAF6F6;
+    font-size: 15px;
+    padding:20px 0;
+}
+.btn {
+    background: #07d1d1;
+    background-image: -webkit-linear-gradient(top, #07d1d1, #1983b0);
+    background-image: -moz-linear-gradient(top, #07d1d1, #1983b0);
+    background-image: -ms-linear-gradient(top, #07d1d1, #1983b0);
+    background-image: -o-linear-gradient(top, #07d1d1, #1983b0);
+    background-image: linear-gradient(to bottom, #07d1d1, #1983b0);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: cursive;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+  .bottom-container{
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
+  }
+
+
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color:#00818A; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #babebe;
+    display: block;
+    transition: 0.3s;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+.css-button {
+	font-family: Arial;
+	color: #FFFFFF;
+	font-size: 15px;
+	border-radius: 22px;
+	border: 1px #cdf0ea dotted;
+	background: linear-gradient(197deg, #4deed3 4%, #269d8a 72%);
+	text-shadow: 1px -7px 13px #71d1c4;
+	box-shadow: inset 1px 1px 2px 0px #bbdaf7;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+    position: relative;
+    bottom: 300px;
+    right: 100px;
+}
+.css-button:hover {
+	background: linear-gradient(197deg, #cdf0ea 4%, #63ecee 72%);
+}
+.css-button-icon {
+	padding: 12px 10px;
+	border-right: 1px solid rgba(255, 255, 255, 0.16);
+	box-shadow: rgba(0, 0, 0, 0.14) -1px 0px 0px inset;
+}
+.css-button-icon svg {
+	vertical-align: middle;
+	position: relative;
+}
+.css-button-text {
+	padding: 12px 9px;
+}

@@ -1,0 +1,37 @@
+[
+	{
+		"name": "Do Your Work",
+		"github": "https://github.com/A-Spiral-Forge/to-do-list",
+		"website": "https://a-spiral-forge.github.io/to-do-list/",
+		"discription": "This is a simple to-do list. This helps you to manage yout tasks. Also your data is safe in local storage so it won't lost.",
+		"image": "to-do-list.png"
+	},
+	{
+		"name": "Guess The Number",
+		"github": "https://github.com/A-Spiral-Forge/Guess-the-Number",
+		"website": "https://a-spiral-forge.github.io/Guess-the-Number",
+		"discription": "A simple JavaScript fun game which randomly generates a number and give hints one you start guesssing. Also computer maintains a high score.",
+		"image": "guess-the-number.png"
+	},
+	{
+		"name": "Forkify",
+		"github": "https://github.com/A-Spiral-Forge/forkify-abhay-parihar",
+		"website": "https://forkify-abhay-parihar.netlify.app/",
+		"discription": "This is a NodeJS application which takes recipes from a API and render it. Also it shows discription of recipe and ingredients per serving.",
+		"image": "forkify-abhay-parihar.png"
+	},
+	{
+		"name": "CoR Visualizer",
+		"github": "https://github.com/A-Spiral-Forge/OomProject",
+		"website": "/no-project",
+		"discription": "This is a Java Application. It helps user to visualize how ball simulates when it hits ground. GUI is designed in JavaFX.",
+		"image": "coefficient-of-restitution-visualizer.png"
+	},
+	{
+		"name": "Contact Management API",
+		"github": "https://github.com/A-Spiral-Forge/contact-management-api",
+		"website": "/no-project",
+		"discription": "This is a RESTful API. It helps to search contacts, create new contact, update and delete one. This helps in managing contects.",
+		"image": "API-image.jpg"
+	}
+]

@@ -1,0 +1,63 @@
+@import "mixins.scss";
+.flex {
+  padding: 2rem;
+  @include flex;
+  &__heading {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    padding: 2rem;
+    letter-spacing: 1rem;
+    font-size: 12rem;
+    transform: rotate(270deg);
+    @media (max-width: 25em) {
+      transform: rotate(0);
+      border: none;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    color: #000;
+    border-radius: 1rem;
+    -webkit-outline: 4px solid purple;
+    outline: 4px solid purple;
+    margin: 0 auto;
+    -webkit-outline-offset: 2rem;
+    outline-offset: 2rem;
+    background-color: rgb(128, 0, 128, 0.1);
+    font-size: 2rem;
+    max-width: 40rem;
+    //max-height: 20rem;
+    @media (max-width: 49.3em) {
+      -webkit-outline-offset: 0.5rem;
+      outline-offset: 0.5rem;
+    }
+    & p {
+      margin: 2rem;
+      margin-bottom: 5rem;
+      @media (max-width: 25em) {
+        font-size: 3rem;
+      }
+    }
+    & ul {
+      & li {
+        cursor: pointer;
+        display: inline;
+        padding: 2rem;
+
+        & a {
+          & img {
+            transition: all 0.3s;
+            &:hover {
+              transform: scale(1.1) translateY(-3px);
+            }
+            width: 5rem;
+            height: 5rem;
+          }
+        }
+      }
+    }
+  }
+}

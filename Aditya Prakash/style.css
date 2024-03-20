@@ -1,0 +1,683 @@
+:root{
+    --box-shadow:.5rem .5rem 1rem #ccc,
+                -.5rem -.5rem .5rem #fff;
+    --box-shadow2:.2rem .2rem 0.5rem rgb(70, 60, 142),
+                -.2rem -.2rem 1rem rgb(53, 62, 147);
+    --box-shadow3:.5rem .5rem 1rem rgb(243, 243, 246),
+                -.5rem -.5rem 1rem rgb(158, 158, 160);
+    --box-shadow4:.8rem .8rem .5rem rgb(39, 87, 244),
+                -.4rem -.8rem .5rem rgb(240, 236, 251);
+    --box-shadow5:.2rem .5rem .5rem rgb(39, 87, 244),
+                -.2rem -0.2rem .5rem rgb(240, 236, 251);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tourney', cursive;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* transition: all 0.5s linear; */
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+*::selection{
+    background: blue;
+    color:#ddd;
+}
+/* html::-webkit-scrollbar-track{
+    background:#222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--yellow);
+} */
+body{
+    /* background:linear-gradient(#d8d8d8,#dddbdb) ; */
+    /* background:linear-gradient(#ece9e9,#c9c7c7) ; */
+    background:linear-gradient(#ece9e9,#e7e7e7) ;
+    overflow-x: hidden;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding-left: 35rem;
+    
+}
+section{
+    min-height: 100vh;
+     padding:1rem; 
+}
+header{
+    
+    box-shadow: 0 5rem 5rem rgba(123, 122, 122, 0.3);
+    backdrop-filter: blur(.4rem);
+    position: fixed;
+    height: 100%;
+    width: 35rem;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    /* background: #ddd; */
+    background:rgb(224, 223, 223);
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+    z-index: 1000;
+}
+header .user img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 1.2rem;
+    margin-bottom: .5rem;
+    border: .6rem solid rgb(89, 49, 232);
+}
+header .user .name{
+    font-size: 3rem;
+    color: rgb(89, 49, 232);
+    
+}
+header .user .post{
+    font-size: 1.5rem;
+    color: purple;
+    padding-top: 0.5rem;
+    font-weight: bold;
+}
+header .navbar{
+    width: 80%;
+    /* width:100%; needed if any problem  */
+}
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+header .navbar ul li a{
+    display: block;
+    padding: 0.9rem;
+    margin: 1.5rem 0;
+    background: #ece9e9;
+    color:black;
+    font-size: 1.7rem;
+    border-radius: 5rem;
+    transition: 0.4s;
+    box-shadow: var(--box-shadow);
+    
+}
+header .navbar ul li a:hover{
+    background-color:rgb(68, 24, 230);
+    color: #ddd;
+    transform: scale(1.08,1.08);
+}
+#menu{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2.5rem;
+    background-color:black;
+    color:#ddd;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    z-index: 1000;
+    display: none;
+}
+.home{
+    display: flex;
+    justify-content:  center;
+    flex-flow: column;
+    padding: 0 15rem;
+    /* padding 15rem from right  */
+}
+.home h3{
+    font-size: 2.2rem;
+    color:purple ;
+}
+.home h2{
+    font-size: 4.5rem;
+    color:rgb(68, 24, 230);
+}
+.home p{
+    font-size: 1.5rem;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 1rem 0;
+}
+.home .know{
+    width: fit-content;
+}
+.btn{
+    background-color: rgb(68, 24, 230);
+    padding: .7rem 1.5rem;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top:1rem;
+    border-radius: 0.8rem;
+    transition: 0.2s;
+    z-index: 2;
+    /* box-shadow: var(--box-shadow); */
+    border-radius: 1.5rem;
+
+}
+
+.btn i{
+    padding: 0 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+}
+.btn:hover{
+    /* border: 2px solid black; */
+    background:#ddd;
+    color: black;
+    transform: scale(1.05,1.05);
+    box-shadow: var(--box-shadow5);
+    
+}
+
+.home .share{
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 3rem;
+    /* border-radius: .5rem;
+    box-shadow: var(--box-shadow); */
+    
+}
+.home .share a{
+
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    box-shadow: var(--box-shadow);
+    margin:.8rem;
+    font-size: 2.2rem;
+    color:var(--black);
+    border-radius: .5rem;
+    transition: 0.2s;
+}
+.home .share .fab{
+    color: black;
+    text-align: center;
+}
+.home .share .fas{
+    color: black;
+    text-align: center;
+}
+.home .share .fa-facebook-f:hover{
+    background-color:gainsboro;
+    color: rgb(5, 72, 227);
+    transform: scale(0.8,0.8);
+}
+.home .share .fa-twitter:hover{
+    background-color:gainsboro;
+    color: rgb(9, 164, 241);
+    transform: scale(0.8,0.8);
+}
+.home .share .fa-instagram:hover{
+    background-color:gainsboro;
+    color: rgb(248, 20, 176);
+    transform: scale(0.8,0.8);
+}
+.home .share .fa-linkedin:hover{
+    background-color:gainsboro;
+    color: rgb(21, 61, 240);
+    transform: scale(0.8,0.8);
+}
+.home .share .fa-download:hover{
+    background-color:gainsboro;
+    color: rgb(0, 102, 14);
+    transform: scale(0.8,0.8);
+    
+    
+}
+.home .share .fa-github:hover{
+    background-color:gainsboro;
+    color: rgb(6, 6, 6);
+    transform: scale(0.8,0.8);
+}
+/* home section ends */
+
+/* About Section starts */
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: 2px dotted purple;
+    color: #333;
+    margin: 0 5rem;
+    /* it means 5rem margin from left and right */
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.about .row .info{
+    flex: 1 1 48rem;
+    /* important */
+    padding: 2rem 1rem;
+    padding-left: 5rem;
+}
+.about .row .info h3{
+    font-size: 2rem;
+    color:rgb(68, 24, 230) ;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.about .row .info h3 span{
+    color: black;
+    padding: 0 0.5rem;
+}
+.about .row .counter{
+    flex:1 1 48rem;
+    /* important */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about .row .counter .box{
+    width: 20rem;
+    text-align: center;
+    box-shadow:var(--box-shadow);
+    padding: 2rem;
+    margin: 2rem;
+    border: 1px solid purple;
+    border-radius: 2rem;
+}
+.about .row .counter .box span{
+    font-size: 4rem;
+    color: rgb(68, 24, 230) ;
+}
+.about .row .counter .box h3{
+    font-size: 1.5rem;
+    color: black;
+}
+/* About section ends */
+
+/* Education Section strats */
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+.education .box-container .box{
+    width: 35rem;
+    margin: 4rem 2rem;
+    padding: 4rem 2rem;
+    border-left: .2rem solid black;
+    position: relative;
+}
+.education .box-container .box span{
+    font-size: 1.3rem;
+    padding: .5rem 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 4rem;
+    background: #ece9e9;
+    border: 1px solid purple;
+}
+.education .box-container .box h3{
+    font-size: 2rem;
+    color: rgb(68, 24, 230);
+    padding-top: 1.5rem;
+}
+.education .box-container .box h4{
+    font-size: 1.3rem;
+    color: black;
+    padding-top: 1rem 0;
+    font-weight: normal;
+    
+}
+.education .box-container .box i{
+    position: absolute;
+    top:-1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    font-size: 2rem;
+    background-color: rgb(68, 24, 230);
+    text-align: center;
+    color: #ece9e9;
+}
+
+/* Education section ends */
+
+/* skills section starts */
+.skills .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.skills .row .progress{
+    width: 39rem;
+    padding: 3rem 3rem;
+    position: relative;
+    
+    
+}
+.skills .row .progress h3{
+    color:black;
+    font-weight: normal;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .row .progress .bar{
+    
+    box-shadow: var(--box-shadow3);
+    border-radius: 5rem;
+    height:2rem;
+    padding:.3rem;
+    margin:2rem 0;
+    
+}
+.skills .row .progress .bar span{
+    display: block;
+    height: 100%;
+    width: 0%;
+    background:green;
+    border-radius: 5rem;
+}
+.skills .row .progress .cpp .anim{
+    background: blue;
+    animation: cpp 1.5s linear forwards;
+}
+@keyframes cpp{
+    100%{
+        width: 90%;
+    }
+}
+
+.skills .row .progress .dsa .anim{
+    background: rgb(6, 185, 101);
+    animation: dsa 1.5s linear forwards;
+}
+@keyframes dsa{
+    100%{
+        width: 60%;
+    }
+}
+.skills .row .progress .java .anim{
+    background: blue;
+    animation: java 1.5s linear forwards;
+}
+@keyframes java{
+    100%{
+        width: 50%;
+    }
+}
+.skills .row .progress .python .anim{
+    background: rgb(128, 0, 255);
+    animation: python 1.5s linear forwards;
+}
+@keyframes python{
+    100%{
+        width: 60%;
+    }
+}
+.skills .row .progress .html .anim{
+    background: rgb(235, 6, 6);
+    animation: html 1.5s linear forwards;
+}
+@keyframes html{
+    100%{
+        width: 80%;
+    }
+}
+.skills .row .progress .nodejs .anim{
+    background: rgb(3, 159, 138);
+    animation: nodejs 1.5s linear forwards;
+}
+@keyframes nodejs{
+    100%{
+        width: 50%;
+    }
+}
+.skills .row .progress .javascript .anim{
+    background: rgb(0, 112, 0);
+    animation: javascript 1.5s linear forwards;
+}
+@keyframes javascript{
+    100%{
+        width: 65%;
+    }
+}
+.skills .row .progress .sql .anim{
+    background: rgb(3, 157, 144);
+    animation: sql 1.5s linear forwards;
+}
+@keyframes sql{
+    100%{
+        width: 40%;
+    }
+}
+.skills .row .progress .reactjs .anim{
+    background: rgb(97, 1, 1);
+    animation: reactjs 1.5s linear forwards;
+}
+@keyframes reactjs{
+    100%{
+        width: 65%;
+    }
+}
+.skills .row .progress .algorithms .anim{
+    background: rgb(98, 78, 0);
+    animation: algorithms 1.5s linear forwards;
+}
+@keyframes algorithms{
+    100%{
+        width: 70%;
+    }
+}
+/* skills section ends */
+
+.projects .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.projects .box-container .box{
+   display: flex;
+   height: 20rem;
+   width: 23rem;
+   box-shadow: var(--box-shadow2);
+   border-radius: 1rem;
+   margin: 1.6rem;
+   overflow: hidden;
+   cursor: pointer;
+   flex-flow: column;
+   text-align: center;
+   justify-content: center;
+   background:rgb(68, 24, 230);
+   font-size: 1.8rem;
+   color: white;
+   transition: 0.2s;
+   /* border: 1.5px solid rgb(68, 24, 230) ; */
+}
+.projects .box-container .box h4{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.projects .box-container .box:hover{
+    background: none;
+    background: #ddd;
+    box-shadow: var(--box-shadow4);
+    color: black;
+    transform: scale(0.9,0.9);
+}
+/* contact section strts */
+.contacts .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contacts .row .content{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-left: 5rem;
+    padding-bottom: 15rem;
+}
+.contacts .row form{
+    flex: 1 1 45rem;
+    padding: 1rem;
+    margin: 2rem;
+    padding-right: 3rem;
+    margin-bottom: 4rem;
+}
+.contacts .row form .box{
+    width: 100%;
+    padding: 1rem;
+    margin: .8rem 0;
+    background: rgb(224, 224, 224);
+    color: black;
+    text-transform: none;
+    font-size: 1.7rem;
+    border-radius: .1rem;
+    border-bottom: 1px solid rgb(68, 24, 230);
+    
+}
+.contacts .row form .message{
+    height: 15rem;
+    resize: none;
+}
+.contacts .row .content .title{
+    text-transform: uppercase;
+    color:rgb(68, 24, 230);
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0rem;
+}
+
+.contacts .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    font-weight: normal;
+    text-transform: none;
+}
+.contacts .row .content .info h3 i{
+    padding-right: 1rem;
+    color:rgb(68, 24, 230);
+
+}
+.contacts .row form .box::placeholder{
+    text-transform: capitalize;
+}
+
+.top{
+    height: 4.5rem;
+    width: 4.5rem;
+    position: fixed;
+    bottom:1rem; right: 1rem;
+    z-index: 100;
+    /* display: none; */
+    border-radius: 50%;
+    
+}
+
+.credits{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 2.5rem 1rem;
+    border-top: 1.5px solid purple;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+.credits span{
+    color: blue;
+}
+/* media queries always written in last */
+@media (max-width:1200px){
+    html{
+       font-size:50%;
+    }
+    .home{
+        padding: 1rem 4rem;
+    }
+}
+@media (max-width:991px){
+    
+    header{
+        left: -120%;
+    }
+    #menu{
+        display: block;
+    }
+    header.toggle{
+        left: 0%;
+    }
+    body{
+        padding: 0;
+    }
+    .contacts .row .content{
+        padding-bottom: 15rem;
+    }
+    
+    
+}
+@media (max-width:768px){
+    
+    html{
+        font-size: 50%;
+    }
+    .contacts .row .content{
+        padding-bottom: 0;
+    }
+}
+@media (max-width:400px){
+    
+    header{
+        width: 100%;
+    }
+    .heading{
+        margin: 0 3rem;
+    }
+    .education .box-container .box{
+        width: 100%;
+    }
+    .contacts .row form{
+        margin:3rem 0;
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+    .about .row .counter .box{
+        width: 100%;
+    }
+    .projects .box-container .box{
+        width:100%;
+    }
+    .skills .row .progress{
+        width: 100%;
+    }
+    .contacts .row .content{
+        padding-bottom: 0;
+    }
+}
+

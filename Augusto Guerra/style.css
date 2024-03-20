@@ -1,0 +1,15 @@
+@font-face { font-family: pixel; src: url('slkscr.ttf'); }
+header{
+  margin-top:10%;
+}
+h1,h2,p,ul,a{
+  font-family: pixel;
+  color: #00ff00;
+  list-style: none;
+}
+footer{
+  font-family: pixel;
+  color: #00ff00;
+  vertical-align: bottom;
+  text-align: center;
+}

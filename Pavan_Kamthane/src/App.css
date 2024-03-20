@@ -1,0 +1,40 @@
+.Projects__header{
+    /* padding: 2rem 35rem; */
+    background: #111111;
+    width: 100vw;
+    /* border-bottom: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Project__headerone{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+
+}
+
+.explore{
+    /* padding: 0px 612px; */
+    background: #111111;
+    /* width: 100%; */
+    color: #dc143c;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.projects .title::after {
+
+    content: "";
+}
+
+@media screen and (max-width:500px) {
+    .Project__headerone{
+        font-size: 45px;
+    }
+    .explore{
+        font-size: 20px;
+    }
+}

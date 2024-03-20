@@ -1,0 +1,172 @@
+[
+  {
+    "name": "Tracky: Track Goal Android",
+    "desc": "Tracky is an Android App that assists you in achieving success by keeping track of your daily goals.",
+    "image": "tracky",
+    "category": "native_android",
+    "links": {
+      "view": "https://play.google.com/store/apps/details?id=achivementtrackerbyamit.example.achivetracker",
+      "code": "https://github.com/maityamit/Tracky-Track-your-goals-or-targets"
+    }
+  },
+  {
+    "name": "Sleepometer: Android App",
+    "desc": "Here is Sleepometer. Now you can measure and track your sleep in just single click.",
+    "image": "sleepometer",
+    "category": "native_android",
+    "links": {
+      "view": "https://play.google.com/store/apps/details?id=sleepometerbyamitmaity.example.sleepometer",
+      "code": "https://github.com/maityamit/Sleepometer-Android-App"
+    }
+  },
+  {
+    "name": "GitHub Peek",
+    "desc": "Here is GitHub Peek. Now you can view and follow the stats of GitHub Users with just one click.",
+    "image": "git_peek",
+    "category": "native_android",
+    "links": {
+      "view": "https://play.google.com/store/apps/details?id=githubpeekbyamit.example.githubpeek",
+      "code": "https://github.com/maityamit/Github-Peek-Android-App"
+    }
+  },
+  {
+    "name": "Share Layout Android Library",
+    "desc": "Share any layout screenshot including any string of any Android App to any app via Intent .",
+    "image": "share_lay",
+    "category": "library",
+    "links": {
+      "view": "https://github.com/maityamit/Share_Layout_Android_Library",
+      "code": "https://github.com/maityamit/Share_Layout_Android_Library"
+    }
+  },
+  {
+    "name": "Heritism : Heritage Sites",
+    "desc": "This app will show all the heritage sites in India with their location and small description also you will see their period .",
+    "image": "heritage",
+    "category": "native_android",
+    "links": {
+      "view": "https://play.google.com/store/apps/details?id=heritsm_heritagebyamit.example.heritsm_heritageofindia",
+      "code": "https://github.com/maityamit/Heritsm-Heritage_of_India-Application"
+    }
+  },
+  {
+    "name": "Covid 19 Vaccine Slot Available",
+    "desc": "Covid 19 Vaccine Slot Available application 📱 built using Java ♨️ and showing best practices of 🛠️ API",
+    "image": "covid19",
+    "category": "native_android",
+    "links": {
+      "view": "https://drive.google.com/file/d/1bSiO13LAU5NEyg6Hj9WSK1Sv1PNWO3a7/view",
+      "code": "https://github.com/maityamit/covid_19_vaccine_slot_find"
+    }
+  },
+  {
+    "name": "Love Calculator Android app",
+    "desc": "A Love Calculator Android app that will calculate love 🥰percentage 😉and comment appropriate comment 📝.",
+    "image": "love_calc",
+    "category": "native_android",
+    "links": {
+      "view": "https://github.com/maityamit/Love-Calculator-Android-App",
+      "code": "https://github.com/maityamit/Love-Calculator-Android-App"
+    }
+  },
+  {
+    "name": "JEE M&A 2020 Cutoff Check",
+    "desc": "JEE Main and Advanced cutoff 2020 check application 📱 built using Java ♨️ and showing best practices of 🛠️ API.",
+    "image": "jeemain",
+    "category": "native_android",
+    "links": {
+      "view": "https://drive.google.com/file/d/1kkgs7mT-mAAJ7DQxa7eJ-98J0oQBWRee/view",
+      "code": "https://github.com/maityamit/Jee_Main_2020_Cutoff"
+    }
+  },
+  {
+    "name": "Store Website Link & Save",
+    "desc": "Store your favourite Website 📱 easily and acess the website within a hand 🛠️ ! This app built using Java ♨️.",
+    "image": "storewebsite",
+    "category": "native_android",
+    "links": {
+      "view": "https://github.com/maityamit/Store_Website_Link_and_name/blob/master/Demo/app-debug.apk",
+      "code": "https://github.com/maityamit/Store_Website_Link_and_name"
+    }
+  },
+  {
+    "name": "BMI Calculator: Android",
+    "desc": "Here is BMI Calculator. You can view your BMI by inputting your height and weight with just one click.",
+    "image": "flutter_bmi",
+    "category": "hybrid_android",
+    "links": {
+      "view": "https://github.com/maityamit/BMI-Calculator-App-Flutter",
+      "code": "https://github.com/maityamit/BMI-Calculator-App-Flutter"
+    }
+  },
+  {
+    "name": "Freinds of School (WebSite)",
+    "desc": "Freinds of Schoolwebsite 📱 built using HTML , CSS , JS and showing best practices of 🛠️.",
+    "image": "freinds_website",
+    "category": "web_app",
+    "links": {
+      "view": "https://maityamit.github.io/freinds.github.io/",
+      "code": "https://github.com/maityamit/freinds.github.io"
+    }
+  },
+  {
+    "name": "Attendence tracking website ",
+    "desc": "Track your attendence by QR Code system.",
+    "image": "attendence_qr",
+    "category": "web_app",
+    "links": {
+      "view": "https://maityamit.github.io/Attendence_tracking_website.github.io/",
+      "code": "https://github.com/maityamit/Attendence_tracking_website.github.io"
+    }
+  },
+  {
+    "name": "WBCHSE 12th Imp qn Website",
+    "desc": "WBCHSE 12th Imp qn Website.",
+    "image": "12_th_website",
+    "category": "web_app",
+    "links": {
+      "view": "https://maityamit.github.io/wbchse_hs.github.io/",
+      "code": "https://github.com/maityamit/wbchse_hs.github.io"
+    }
+  },
+  {
+    "name": "BMI Calculator ( Using - Jetpack Compose )",
+    "desc": "Here is BMI Calculator. You can view your BMI by inputting your height and weight with just one click.",
+    "image": "bmi_jetpack",
+    "category": "native_android",
+    "links": {
+      "view": "https://drive.google.com/file/d/1OXT7n2-iT-DbYn90jI0qzz9MS6RDLmcr/view?usp=sharing",
+      "code": "https://github.com/maityamit/BMI-Calculator-JetPack-Compose"
+    }
+  },
+  {
+    "name": "QR Code Scan and Save history and Export Data to Excel",
+    "desc": "QR Code Scan and Save history and Export Data to Excel.    ",
+    "image": "qr_code_scannerapp",
+    "category": "native_android",
+    "links": {
+      "view": "https://github.com/maityamit/QR-Code-Scanner-App-and-Export-result",
+      "code": "https://github.com/maityamit/QR-Code-Scanner-App-and-Export-result"
+    }
+  },
+  {
+    "name": "Track My Test Android App",
+    "desc": "Track My Test 📱 built using Java ♨️. In this App You can store and track the exam number subjectwise of any examination",
+    "image": "trackmytestjava",
+    "category": "native_android",
+    "links": {
+      "view": "https://github.com/maityamit/My_test_record_app",
+      "code": "https://github.com/maityamit/My_test_record_app"
+    }
+  },
+  {
+    "name": "Currency Converter App",
+    "desc": "Currency Convert App Using Firebase application 📱 built using Java ♨️ and showing best practices of 🛠️ FireBase and API.",
+    "image": "currency_convertjaav",
+    "category": "native_android",
+    "links": {
+      "view": "https://github.com/maityamit/currency_convert_firebase",
+      "code": "https://github.com/maityamit/currency_convert_firebase"
+    }
+  }
+]

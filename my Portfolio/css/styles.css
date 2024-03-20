@@ -1,0 +1,129 @@
+/* All properties in alphabetical order */
+/* ** For seeing unique color pallets goto 'colorhunt.com' */
+*{
+    margin:0; /* css (as margin) set default by browser will now be reset to 0px */
+}
+/* ****  ( 16px = 1em = 100% )    */
+body{
+  
+ font-family: 'Baloo Bhai 2', cursive; 
+ text-align: center;
+ font-size: 22px;
+}
+.container1{
+    margin-top: 0px;
+    background: #E4F9F5; 
+ text-align:center;
+margin-top: 0px;
+}
+
+.mountain{
+    margin: 20px auto 10px;
+   
+}
+
+h1{
+    margin-top: 80px;
+    font-family: 'Sacramento', cursive;
+    font-size: 100px;
+    color: #54BAB9;
+    word-spacing: 24px;
+    letter-spacing: 2px;
+}
+.head{
+    font-size: 35px;
+    color: #54BAB9;
+}
+.cloud1{
+    position: absolute;
+    top: 360px;
+    left: 380px;
+}
+.cloud2 img{
+    position: relative;
+    top: 70px;
+    left: 350px;
+ 
+}
+h2,h3,a{
+    color: #11999E;
+   
+}
+.bottom{
+    margin: 40px 60px;
+}
+h2{
+    font-size: 40px;
+}
+.skill-row{
+    width:50%;
+    margin: 100px auto 100px;
+    text-align: left;
+}
+.Myprofile{
+    height: 200px;
+    width: 200px;
+}
+.profile{
+    margin:100px 100px;
+}
+
+.wd1{
+    width: 45%;
+    float:left;
+    margin-right: 30px;
+    
+    margin-bottom: 30px;
+
+}
+.wd2{
+    width: 45%;
+    float:right;
+    margin-left: 30px;
+    
+}
+.btn{
+  border-radius :8px;
+  word-spacing: 10px;
+  text-decoration:none;
+  border:2px solid #30e3cb;
+ 
+background-image: linear-gradient( #11cdd4,#11999e);
+color:white;
+padding:6px 18px 6px 18px;
+
+}
+.button{
+    margin:60px;
+}
+.btn:hover{     
+    background-image: linear-gradient( #30e3cb,#2bc4ad);
+   
+}
+/* (ANTI - FLOAT PROPERTIES ----by using this property our text will not wrap around the image only heading will wrap around it.)
+.content{
+    clear:left; 
+    or
+    clear:right;
+ } */
+  
+ /* **** u can use css button-generator.com to make button in just 2 mins. */
+
+ .bottom-container{
+    background-color: #66BFBF;
+    height: 260px;
+    width:100%;
+
+ }
+ .footer-link{
+   
+    margin: 40px auto 40px;
+    color: white;
+    text-decoration: none;
+    
+ }
+ .links{
+   
+    display: inline-block;
+    margin: 80px 80px 70px;
+ }

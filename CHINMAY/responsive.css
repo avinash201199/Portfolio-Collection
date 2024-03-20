@@ -1,0 +1,237 @@
+@media only screen and (max-width: 768px) {
+  .responsive {
+    display: flex;
+    flex-direction: row;
+  }
+  .Btn {
+    margin: 20px;
+  }
+  #MainPage {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 26px -65px 64px 32px;
+    width: 517px;
+  }
+  .ImgAvatar {
+    margin: 15px 0 0 0;
+  }
+  .Intro-text {
+    margin: 35px 0 0 0;
+  }
+  #SecPage .static-text {
+    font-size: 61px;
+  }
+  .AboutPage {
+    width: 508px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  #AboutText {
+    font-size: 14px;
+  }
+  #icons {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+  .ProjectPage {
+    height: 826px;
+    width: 505px;
+    margin: 49px 0 0 79px;
+  }
+  .Socials {
+    font-size: 13px;
+    margin: 41px 0 0 51px;
+  }
+  nav .mainMenu {
+    margin: 2px 6px 12px 101px;
+  }
+  #SecPage {
+    margin: 13px 0 0 117px;
+  }
+  #form {
+    margin: 42px 0 0 87px;
+  }
+}
+
+/* PHONE CSS */
+@media only screen and (max-width: 375px) {
+  .responsive {
+    display: flex;
+    flex-direction: row;
+  }
+  .ImgAvatar {
+    margin: -16px 0 0 0;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  #IntroPage {
+    width: 256px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  img {
+    height: 207px;
+    width: 216px;
+  }
+  .Btn {
+    margin: 37px 111px 2px 115px;
+    font-size: 25px;
+    padding: 7px 18px 9px 16px;
+  }
+  .burger {
+    visibility: visible;
+    background: 0 0;
+  }
+  .Intro-text {
+    margin: -35px 0 0 0;
+  }
+  #SecPage {
+    margin: 17px 21px 0 6px;
+  }
+  #SecPage .static-text {
+    margin: 2px 2px 3px 5px;
+    font-size: 46px;
+  }
+  #icons {
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+  .Socials {
+    font-size: 13px;
+    margin: 24px 2px 2px 2px;
+  }
+  .AboutPage {
+    width: 302px;
+    margin: 27px 2px 3px 31px;
+    height: 497px;
+  }
+  span {
+    font-size: 11px;
+  }
+  .dynamic-text {
+    border-radius: 8px;
+    font-size: 38px;
+  }
+  #AboutText {
+    font-size: 12px;
+  }
+  .static-text {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 29px;
+  }
+  .ProjectPage {
+    height: 772px;
+    width: 311px;
+    margin: 2px 0 8px 28px;
+  }
+  #box1,
+  #box2,
+  #box3,
+  #box4 {
+    font-size: 13px;
+    margin: -11px -2px 27px 9px;
+    padding: 14px 0 3px 2px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  #ContactBox {
+    width: 291px;
+    height: 365px;
+    align-items: inherit;
+  }
+  input[type="email"],
+  input[type="text"],
+  textarea {
+    width: 72%;
+    height: 49%;
+  }
+  #form {
+    width: 311px;
+    height: 502px;
+    margin: 2px 2px 2px 25px;
+  }
+  #email,
+  #msg,
+  #name {
+    font-size: 9px;
+    height: 70px;
+    padding: 1px 0 52px 0;
+    margin: -41px 0 0 17px;
+  }
+  #SubmitBtn {
+    margin: -2px 120px 0 104px;
+  }
+  #social-icons {
+    font-size: 9px;
+  }
+  #LabEmail,
+  #LabMsg,
+  #LabName {
+    font-size: 18px;
+  }
+  #MainPage {
+    margin: 2px 28px 34px 34px;
+    width: 308px;
+  }
+  .skills {
+    padding: 20px 2px 2px 2px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu {
+    height: 101vh;
+    position: fixed;
+    top: 0;
+    right: -9px;
+    left: -101px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #bbd7d7;
+    transition: top 1s ease 0s;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    background: 0 0;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  #cross {
+    background: 0 0;
+    color: #000;
+  }
+  textarea {
+    height: 69px;
+    width:200px;
+  }
+  .typed-cursor {
+    font-size: 39px;
+    opacity: 1;
+}
+}

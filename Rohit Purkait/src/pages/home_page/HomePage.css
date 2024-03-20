@@ -1,0 +1,64 @@
+.HomePage {
+  max-height: 100vh;
+  overflow: hidden;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.HomePage-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  padding: 1.5em 0;
+}
+
+.HomePage-title {
+  font-family: "Caveat";
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  margin-top: 1em;
+}
+
+.HomePage-sub-title {
+  font-family: "Caveat";
+  font-size: 2rem;
+  margin-bottom: 4.5rem;
+}
+
+.HomePage-explore-button {
+  text-decoration: none;
+  color: #1c1c1c;
+  background: white;
+  padding: 0.5em 1.5em;
+  border-radius: 30px;
+  font-size: 2rem;
+  font-family: "Caveat";
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.HomePage-explore-button:hover {
+  background: #f5aa1a;
+  color: #1c1c1c;
+}
+
+@media screen and (max-width: 1000px) {
+  .HomePage {
+    min-height: 100vh;
+    overflow-y: scroll;
+  }
+  .HomePage-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .HomePage-profile-pic {
+    width: 90%;
+  }
+
+  .HomePage-explore-button {
+    margin-bottom: 2rem;
+  }
+}

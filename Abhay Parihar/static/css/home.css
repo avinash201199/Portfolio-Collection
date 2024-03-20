@@ -1,0 +1,126 @@
+:root {
+	--primary-color: #000000;
+	--secondary-color: #ffffff;
+	--tertiary-color: #47e4bb;
+	--home-color: #a4aca8;
+	--primary-font: 'Josefin Sans', sans-serif;
+}
+
+body::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: url(./../img/home-background.png) center center repeat;
+	z-index: -1;
+	mix-blend-mode: luminosity;
+}
+
+.nav__bar--image {
+	width: 20%;
+}
+
+.content {
+	display: flex !important;
+	justify-content: center;
+	/* align-items: center; */
+}
+
+.home__pic--bg {
+	position: absolute;
+	--width: 19vw;
+	width: var(--width);
+	height: var(--width);
+	mix-blend-mode: hard-light;
+	background-color: var(--tertiary-color);
+	border-radius: 50%;
+	left: calc(50vw - var(--width) / 2);
+	z-index: -2;
+}
+
+.home__pic {
+	width: 15vw;
+	margin: auto;
+	display: flex;
+	margin-top: 2vw;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-color: var(--tertiary-color);
+	z-index: 1;
+}
+
+.home__pic img {
+	width: 100%;
+	z-index: 20;
+	mix-blend-mode: normal;
+	position: relative;
+	z-index: 10;
+}
+
+.home__content {
+	margin: 1.5rem auto;
+	width: fit-content;
+	color: var(--home-color);
+}
+
+.home__greetings {
+	font-size: 2rem;
+	line-height: 2.5rem;
+	text-align: center;
+	font-weight: 400;
+}
+
+.home__name {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+}
+
+.home__name--span {
+	color: var(--tertiary-color);
+	font-weight: 500;
+	font-size: 2rem;
+}
+
+.home__work {
+	text-align: center;
+	font-weight: 400;
+	line-height: 2.5rem;
+	font-size: 1.5rem;
+}
+
+.know-me {
+	color: var(--primary-color);
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	width: fit-content;
+	padding: 1rem 1.5rem;
+	position: relative;
+	margin: auto;
+	font-weight: 500;
+	background-color: var(--tertiary-color);
+}
+
+@media (max-width: 768px) {
+	.content {
+		flex-direction: column-reverse;
+	}
+	.nav__bar--image {
+		width: 50%;
+		margin: auto;
+	}
+	.home__pic--bg {
+		--width: 55vw;
+		margin-top: -4vw;
+	}
+	.home__pic {
+		width: 45vw;
+	}
+}

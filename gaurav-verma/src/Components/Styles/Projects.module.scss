@@ -1,0 +1,46 @@
+.div {
+  font-size: 3rem;
+  font-weight: 300;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  ul {
+    list-style: none;
+    @media (max-width: 25em) {
+      list-style: disc;
+    }
+    & li {
+      padding: 1rem 0;
+      color: #fff;
+      @media (max-width: 25em) {
+        font-size: 4rem;
+        font-weight: 700;
+      }
+      &:first-child {
+        color: #000;
+        padding: 1rem 2rem;
+        border: 1px solid #000;
+        border-radius: 1rem;
+        display: inline-block;
+      }
+    }
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 3rem;
+    font-weight: 300;
+    margin: 2rem;
+    cursor: pointer;
+    background-color: #000;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border-bottom: 1px solid #000;
+    &:hover {
+      color: blue;
+    }
+  }
+}

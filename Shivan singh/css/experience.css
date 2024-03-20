@@ -1,0 +1,177 @@
+html {
+     height: 100%;
+     box-sizing: border-box;
+     -webkit-text-size-adjust: 100%;
+     -webkit-tap-highlight-color: transparent;
+     overflow-x: hidden;
+}
+ body {
+     background-color: var(--background);
+     font-size: 1rem;
+     overflow-x: hidden;
+}
+ header {
+     background-color: transparent;
+     position: relative;
+     padding: 2vh 0;
+}
+ .heading {
+     display: block;
+    margin-top: 60px;
+     font-weight: 900;
+ }
+.me {
+	/* margin-top: -10px; */
+	font-size: 1.5rem;
+	max-inline-size: 500px;
+	display: inline-block !important;
+}
+.hi {
+	font-size: 4rem;
+}
+.heading .head {
+	margin-right: 10%;
+	margin-left: 10%;
+	color: var(--monet);
+	/* font-size: 10rem; */
+	display: inline;
+}
+.lan {
+     color: var(--monet);
+     margin-left: 10%;
+}
+
+.lan b {
+     font-size: 2rem;
+     font-weight: 900;
+}
+
+.lan li {
+     margin-left: 2px;
+     font-weight: 900;
+}
+
+.graph {
+    display: inline-block;
+    height: 1rem;
+    width: 150px;
+    background-color: var(--monet);
+    border-radius: 2px;
+    margin-top: 6px;
+    vertical-align: text-top;
+    left: 240px;
+    color: var(--background);
+    position: sticky;
+}
+.lc {
+     transition: all .1s linear 0.1s;
+    margin-top: .1rem !important;
+    margin-bottom: 4px;
+    height: .82rem;
+    margin-inline-start: 1.5px;
+    background-color: var(--background) !important;
+     -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+.lk {
+     width: 0px !important;
+}
+.l1 {
+    width: 60px;
+}
+.l2 {
+     width: 75px;
+}
+.l3 {
+     width: 90px;
+}
+.l4 {
+     width: 105px;
+}
+.l5 {
+     width: 120px;
+}
+.l6 {
+     width: 135px;
+}
+#main {
+    justify-content: center;
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: auto-fill;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 10px;
+    width: 100%;
+    z-index: 15;
+}
+ .info1 {
+     background-color: var(--monet);
+     color: var(--background);
+     width: 200px;
+     height: 170px;
+     padding: 10px;
+     border-radius: 10px;
+     transition: all .1s linear 0.3s;
+}
+ .text2 {
+     font-weight: 900;
+     /*color: var(--background);*/
+}
+.c_head {
+     text-align: center;
+     font-size: 2rem;
+     font-weight: 900;
+     color: var(--monet);
+}
+.popupContainer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      overflow: auto;
+}
+ .popupContainer .popUpBackground {
+      transition: all 0.3s ease-in-out;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+}
+ .popupContainer .popUpBackground.active {
+     z-index: 998;
+      background-color: rgba(0, 0, 0, 0.5);
+}
+ .popupContainer .popImage {
+     z-index: 999;
+      position: relative;
+      display: block;
+      transition: all 0.3s ease-in-out;
+      border-radius: 6px;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+.info1 img{
+     cursor: pointer;
+     border-radius: 6px;
+}
+.zen {
+     z-index: unset !important;
+}
+@media screen and (max-width: 399px) {
+     .graph {
+          left: 200px;
+     }
+}
+
+@media screen and (min-width: 1200px) {
+     .graph {
+          left: 350px;
+     }
+}
+.info1:hover {
+     transform: scale(1.05);
+     border: 1.5px solid var(--back);
+}

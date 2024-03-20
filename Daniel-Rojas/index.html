@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="keywords" content="portfolio, developer, daniel, dani0105, 105code">
+    <meta name="description" content="This is my portafolio contribution for Hacktoberfest 2022">
+    <meta name="author" content="Daniel Rojas Rodriguez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="./assets/js/commands.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </head>
+
+  <body onload="loading()">
+    <div class="container">
+      <div id="screen" class="console-screen">
+      </div>
+      <div class="console-input">
+        <span class="prefix">$</span>
+        <input id="input" disabled type="text" class="text-input" onkeydown="readCommand(event)">
+      </div>
+    </div>
+  </body>
+
+</html>

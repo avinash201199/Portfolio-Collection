@@ -1,0 +1,57 @@
+#name {
+    font-size: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    cursor: default;
+}
+
+.view-more {
+    display: none;
+}
+
+#welcome-section,
+#experience,
+#education {
+    background-color: #292929;
+    color: white;
+}
+
+.menu-link {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-link:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.menu-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.cover {
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../images/cover_mobile.jpg);
+    background-size: cover; 
+}
+
+@media (min-width: 768px){
+    .cover {
+       background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../images/cover.jpg);
+       background-size: cover;
+    }
+}

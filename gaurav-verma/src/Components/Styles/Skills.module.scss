@@ -1,0 +1,43 @@
+.flex {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding: 5rem;
+  background-color: rgb(128, 0, 128, 0.1);
+  justify-content: space-evenly;
+  flex-direction: column;
+  &__heading {
+    font-weight: 900;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12rem;
+    background-image: linear-gradient(to right, purple, red, green);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    letter-spacing: 3rem;
+  }
+  &__content {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid purple;
+    border-radius: 1rem;
+    background-color: rgba(128, 0, 128, 0.1);
+    &:before {
+      content: "";
+      background: linear-gradient(to right, red, blue, green);
+    }
+    padding: 2rem;
+    & img {
+      margin: 2rem;
+      max-width: 10rem;
+      max-height: 10rem;
+      transition: all 0.2s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

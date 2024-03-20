@@ -1,0 +1,189 @@
+body{
+    background-color: black;
+    text-align: center;
+    color: rgb(221, 28, 221);
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 10px 0px;
+    font-size: 200%;
+}
+
+.intro{
+     width: 50%;
+     margin: auto;
+}
+
+.topimg{
+    height: 700px;
+    width: 400px;
+    display: inline;
+    position: relative;
+    left : 0px;
+
+
+    
+}
+p{
+    line-height: 2;
+}
+.skills{
+    display: inline;
+}
+.skill-row{
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: right;
+    line-height: 1;
+}
+.skill-row2{
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: left;
+    line-height: 1;
+}
+.topimg2{
+    height: 700px;
+    width: 400px;
+    display: inline;
+    position: relative;
+    right : 0px;
+        
+    
+}
+.topimg3{
+    height: 700px;
+    width: 400px;
+    display: inline;
+    position: relative;
+    
+    
+        
+    
+}
+
+.img{
+    height: 300px;
+    width: 300px;
+}
+.img1{
+    height: 25%;
+    width: 25%;
+    float: left;
+    margin-right: 60px;
+}
+.img2{
+    height: 25%;
+    width: 25%;
+    float: right;
+    margin-left: 60px;
+
+}
+
+.topcnt{
+    padding-top: 100px;
+    display: block;
+    position: relative;
+    margin: 100px 0px;
+    
+}
+.middle-container{
+    margin-top: 200px;
+    margin-bottom : 100px ;
+
+}
+.bottom-container{
+    background-color: rgb(21, 17, 53);
+    padding: 50px 0px 20px 0px;
+    margin-top: 200px;
+
+}
+h1{
+    color: rgb(255, 0, 51) ;
+    margin: 50px auto 0 auto ;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5.62rem;
+    padding: 10px 0;
+}
+h2
+{
+    color: rgb(255, 0, 51) ;
+    font-weight: normal;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    padding: 10px 0;
+
+}
+h3{
+    color: rgb(255, 0, 51) ;
+    font-weight: normal;
+
+    font-family: 'Inter', sans-serif;
+    padding: 10px 0;
+
+}
+
+hr{
+    
+    border: crimson dotted 6px;
+    border-top: none;
+    width: 4%;
+    margin: 100px auto;     
+    
+    
+}
+.headings{
+   color: red;
+    text-decoration: crimson;
+    margin-top: 100px;
+    display: block ;
+
+}
+
+a{
+    font-family: 'Inter', sans-serif;
+    color: crimson;
+    text-decoration : none;
+    margin: 10px 20px;
+
+    
+}
+
+a:hover{
+    color: rgb(228, 135, 153);
+}
+
+.copy{
+    font-size: 0.75rem;
+    padding: 50px 0px;
+    color: white;
+}
+
+.btn {
+    background: #7e13f0;
+    background-image: -webkit-linear-gradient(top, #7e13f0, #8e77ba);
+    background-image: -moz-linear-gradient(top, #7e13f0, #8e77ba);
+    background-image: -ms-linear-gradient(top, #7e13f0, #8e77ba);
+    background-image: -o-linear-gradient(top, #7e13f0, #8e77ba);
+    background-image: linear-gradient(to bottom, #7e13f0, #8e77ba);
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    font-family: Arial;
+    color: #f2f2f2;
+    font-size: 21px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #b556ed;
+    background-image: -webkit-linear-gradient(top, #b556ed, #bd62d6);
+    background-image: -moz-linear-gradient(top, #b556ed, #bd62d6);
+    background-image: -ms-linear-gradient(top, #b556ed, #bd62d6);
+    background-image: -o-linear-gradient(top, #b556ed, #bd62d6);
+    background-image: linear-gradient(to bottom, #b556ed, #bd62d6);
+    text-decoration: none;
+  }

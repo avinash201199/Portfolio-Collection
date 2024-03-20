@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Photography-Painting-Poetry Portfolio Website</title>
+        <link rel = "stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    </head>
+    <body>
+        <section class = "header" id="header">
+            <nav>
+                <a href = "index.html"><img src="images/kathakali.jpg" alt="Nature" class="responsive"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" id="hide" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#header">HOME</a></li>
+                        <li><a href="#activity">ABOUT</a></li>
+                        <li><a href="#works">WORKS</a></li>
+                        <li><a href="#tripole-says">BLOG</a></li>
+                        <li><a href="#footer">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" id="hide" onclick="showMenu()"></i>
+            </nav>
+            <div class = "text-box">
+                <h1>Tripole's Portfolio</h1>
+                <p>Tripole does quite a few stuffs</p>
+                <a href="#activity" class="hero-btn">Explore</a>
+            </div>
+        </section>
+        <!-- ------activities------ -->
+        <section class="activity" id="activity">
+            <h1>Activities by the Tripole</h1>
+            <p>Here are some activities by the Tripole</p>
+            <div class="row">
+                <div class="activity-col">
+                <h3>Photography</h3>
+                <p>“When words become unclear, I shall focus with photographs. When images become inadequate, I shall be content with silence.”<br/>
+                    – Ansel Adams</p>  
+                </div>
+                <div class="activity-col">
+                    <h3>Painting</h3>
+                    <p>“Painting is just another way of keeping a diary”<br/>
+                        – Pablo Picasso</p>  
+                </div>
+                <div class="activity-col">
+                    <h3>Poetry</h3>
+                    <p>“Poets are the sense, philosophers the intelligence of humanity.”<br/>
+                        – Samuel Beckett</p>  
+                </div>
+            </div>
+        </section>
+        <!----Some of Tripole's works----->
+        <section class="works" id="works">
+            <h1>Here are some of Tripole's works</h1>
+            <p>Have a look :</p>
+            <div class="row">
+                <div class="works-col">
+                    <img src ="images/img 2.jpg">
+                    <div class="layer">
+                        <h3 style="text-align: center;">Happiness?</h3>
+                    </div>
+                </div>
+                <div class="works-col">
+                    <img src ="images/Painting.jpg">
+                    <div class="layer">
+                        <h3 style="text-align: center;">Petrichor?</h3>
+                    </div>
+                </div>
+                <div class="works-col">
+                    <img src ="images/poetry.jpg">
+                    <div class="layer">
+                        <h3 style="text-align: center;">Scribblings?</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <section class="tripole-says" id="tripole-says">
+            <h1>Tripole has a few words to say :</h1>
+            <div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <img src="images/line-art.jpg">
+                <div>
+                    <p>
+                        "Hurting and being hurt<br/>
+                        In a tumultuous saga, called life<br/>
+                        Caging memories, expecting wonders<br/>
+                        Preparing the self for a real strife."<br/>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- -----call to action---- -->
+            <section class="cta">
+            <h1 style="color:white">Capture. Paint. Scribble</h1>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="hero-btn">EMAIL ID : TITASNATH4@GMAIL.COM</a>
+            </section>
+
+        </section>
+        <!-- ----footer---- -->
+        <section class="footer" id="footer">
+            <h4>About Tripole</h4>
+            <p>Here are Tripole's social media handles:</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/titas.nath.507/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/that_tripolar_kid/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/titas-nath-54ab191b3/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/trip0le" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i>  by Tripole </p>
+        </section>
+        <!-- --JavaScript for Toggle Menu--- -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>

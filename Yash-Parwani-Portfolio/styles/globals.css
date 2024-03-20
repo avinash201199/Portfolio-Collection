@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  ::-webkit-scrollbar {
+    width: 0.5em;
+    margin-left: 0.5em;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0e0b16;
+    margin-left: 0.5em;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 100vw;
+    background: #a239ca;
+  }
+}
+
+@layer components {
+  .project-description {
+    box-shadow: -19px 15px 30px -8px rgba(71, 23, 246, 1);
+  }
+
+  
+}

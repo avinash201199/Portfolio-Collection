@@ -1,0 +1,631 @@
+<!-- <php
+function send_email_admin($first, $email, $message){	
+	$rdir = str_replace("\\", "/", __DIR__);                    //Root Dir
+require $rdir.'/PHPMailer/src/Exception.php';
+require $rdir.'/PHPMailer/src/PHPMailer.php';
+require $rdir.'/PHPMailer/src/SMTP.php';
+
+
+	$htmlversion= "You have received an email. <br> from: <b>".$email."</b> <br>Customer  Name: <b>".$first."</b> <br> </b> <br> Customer message: <b>".$message."</b> ";
+	$textversion= 'Contact';
+
+  
+	  $mail = new PHPMailer\PHPMailer\PHPMailer();
+	  $mail->IsSMTP(); // enable SMTP
+  
+	  //$mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+	  $mail->SMTPAuth = true; // authentication enabled
+	  $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
+	  $mail->Host = "smtp.gmail.com";
+	  $mail->Port = 465; // or 587
+	  $mail->IsHTML(true);
+	  $mail->Username = "learnedonline9419@gmail.com";
+	  $mail->Password = "";
+	  $mail->SetFrom("learnedonline9419@gmail.com", "Learned");
+	  $mail->Subject = 'Contact me ';
+$mail->Body    = $htmlversion;
+$mail->AltBody = $textversion;
+	  $mail->AddAddress("learnedonline9419@gmail.com");
+  
+	   if(!$mail->Send()) {
+	       	echo " <script>alert('$mail->ErrorInfo;.');</script>";
+		  echo "Mailer Error: " . $mail->ErrorInfo;
+	   } else {
+		echo " <script>alert('Message sent Successfully!');</script>";
+		  //echo "Message has been sent";
+	   }
+	}
+
+	if(isset($_POST['submit'])){
+		$first=($_POST['first']);
+		$lname=($_POST['lname']);
+		$mail=($_POST['email']);
+		$message=($_POST['message']);
+		$name = $first." ".$lname;
+		$additional=($_POST['additional']);
+		$msg = $message."   additional details: ".$additional;
+		send_email_admin($name, $mail, $msg);
+	}
+
+	if(isset($_POST['feedback'])){
+		$first=($_POST['frst']);
+		$message=($_POST['addtional']);
+		$mail=($_POST['mail']);
+		send_email_admin($first, $mail, $message);
+	}
+		if(isset($_POST['news'])){
+		$mail=($_POST['mail']);
+		send_email_admin('subscribe', $mail, 'newsletter');
+	}
+
+?> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge">
+    <title>Chiranjeev's Portfolio</title>
+    <meta name="desciption" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header id="header">
+        <nav>
+            <div class="logo"><img src="images/icon/logo.jpg" alt="logo"></div>
+            <ul>
+                <li><a class="active" href="">Home</a></li>
+                <li><a href="#about_section">About</a></li>
+                <li><a href="#portfolio_section">Skills</a></li>
+                <li><a href="#team_section">Social Accounts</a></li>
+                <li><a href="#services_section">Services</a></li>
+                <li><a href="#contactus_section">Contact</a></li>
+            </ul>
+            
+			<!--<a class="get-started" href="login.html">Get Started</a>-->
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+            <!-- <form action="search.php" id="login" class="input-group" method="get">
+                <div class="srch"><input type="text" class="search" placeholder="Search here..." name="search"><input
+                        type="image" style="width: 25px;
+	cursor: pointer;" src="images/icon/search.png" /></div>
+            </form>
+            <a class="get-started" href="login.php">Get Started</a>
+            <img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu"> -->
+        </nav>
+        <div class="head-container">
+            <div class="quote">
+                <!-- <p>Learn anything you want</p> -->
+                <!-- <h1>Learn anything<br> you want</h1>
+				<form action="search.php" id="login" class="input-group"  method="get">
+				<div class="srch"><input type="text" class="search" placeholder="Search here..."name="search"><input type = "image" style="width: 25px;
+	cursor: pointer;" src = "images/icon/search.png"  /> -->
+                <section class="home section" id="home">
+                    <div class="home__container container grid">
+                        <div class="home__content grid">
+                            <div class="home__social">
+                                <a href="https://www.linkedin.com/in/chiranjeev-vishnoi-345b481b0/" target="__blank"
+                                    class="home__social-icon"><i class="uil uil-linkedin-alt"></i></a>
+                                <a href="https://www.instagram.com/chiru_vishnoi/" target="__blank"
+                                    class="home__social-icon"><i class="uil uil-instagram"></i></a>
+                                <a href="https://github.com/Chiranjeev-droid" target="__blank"
+                                    class="home__social-icon"><i class="uil uil-github-alt"></i></a>
+                            </div>
+                            <div class="home__img">
+                                <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <mask id="mask0" mask-type="alpha">
+                                        <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                  130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                  97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                  0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                    </mask>
+                                    <g mask="url(#mask0)">
+                                        <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                  165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                  129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                  -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                        <image class="home__blob-img" x="2" y="2" xlink:href="img/snap.png" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="home__data">
+                                <h1 class="home__title">Hi, I'am Chiranjeev </h1>
+                                <h3 class="home__subtitle">Web developer</h3>
+                                <h5 class="home__description">
+                                    High level experience in web design and development knowledge,
+                                    producing quality work.
+                                </h5>
+                                <a href="#contactus_section" class="button button--flex">Contact me<i
+                                        class="uil uil-message button__icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+        <div class="side-menu" id="side-menu">
+            <div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+            <div class="user">
+                <img src="images/creator/linkedin.jpg" alt="Chiru">
+                <p>Chiru_Vishnoi</p>
+            </div>
+            <ul>
+                <li><a href="#about_section">About</a></li>
+                <li><a href="#portfolio_section">Skills</a></li>
+                <li><a href="#team_section">Social Accounts</a></li>
+                <li><a href="#services_section">Services</a></li>
+                <li><a href="#contactus_section">Contact</a></li>
+                <li><a href="#feedBACK">Feedback</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <!-- ABOUT -->
+    <div class="diffSection" id="about_section">
+        <center>
+            <p style="font-size: 50px; padding: 100px">About</p>
+        </center>
+        <div class="about-content">
+            <div class="side-image">
+                <img class="sideImage" src="images/extra/e3.jpg">
+            </div>
+            <div class="side-text">
+                <h2>What you think about me ?</h2>
+                <p>First Year Computer Science Student, Learner. My passion for coding and web development and to
+                    explore something new brought me to the Vellore Institute Of Technology, where I am working on my
+                    BTech in Computer Science Programme.<br><br>
+                    This year I have mastered HTML, CSS, Javascript, and PHP. I continue to build some websites with
+                    these skills. Next year, I hope to complete my C++ programming language and to complete an
+                    internship in web development that will help me in real-life experience and important technological
+                    skills.
+                    <br><br>When I am not working or learning , I usually spend my time listening music.
+                </p>
+                <div class="about__info">
+                    <div>
+                        <span class="about__info-title">+2</span>
+                        <span class="about__info-name">Programming <br />
+                            languages</span>
+                    </div>
+                    <div>
+                        <span class="about__info-title">5+</span>
+                        <span class="about__info-name">Completed <br />
+                            project</span>
+                    </div>
+                    <!--<div>-->
+                    <!--    <span class="about__info-title"><a-->
+                    <!--            href="https://github.com/Chiranjeev-droid" target="_blank"><img-->
+                    <!--                src="images/git.png" /></a></span>-->
+                    <!--    <span class="about__info-name">My Github <br /> </span>-->
+                    <!--</div>-->
+                </div>
+                <div class="about__buttons">
+                    <a download="" href="pdf/resume.pdf" class="button button--flex">Download CV<i
+                            class="uil uil-file-download-alt button__icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PORTFOLIO -->
+    <div class="diffSection" id="portfolio_section">
+        <center>
+            <p style="font-size: 50px; padding: 20px; padding-bottom: 0px;">Skills</p>
+        </center>
+        <section class="skills section" id="skills">
+            <!-- <h2 class="section__title">My Technical Level</h2> -->
+            <!-- <span class="section__subtitle">My technical level</span> -->
+            <div class="skills__container container grid">
+                <!-- <div> -->
+                <div class="skills__content skills__open">
+                    <!-- ----------------------------skills-1 -->
+                    <div class="skills__header">
+                        <i class="uil uil-brackets-curly skills__icon"></i>
+                        <div>
+                            <h1 class="skills__title">Frontend developer</h1>
+                            <span class="skills__subtitle">More than 1 year</span>
+                        </div>
+                    </div>
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">HTML</h3>
+                                <span class="skills__number">95%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__html"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">CSS</h3>
+                                <span class="skills__number">90%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__css"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Javascript</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__js"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">React</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__react"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== SKILLS- 2====================-->
+                </div>
+                <div class="skills__content skills__open">
+                    <div class="skills__header">
+                        <i class="uil uil-server-network skills__icon"></i>
+                        <div>
+                            <h1 class="skills__title">Backend developer</h1>
+                            <span class="skills__subtitle">More than 6 months</span>
+                        </div>
+                    </div>
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Node JS</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__nodejs"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">MongoDB</h3>
+                                <span class="skills__number">70%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__mongodb"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">PHP</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__php"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Python</h3>
+                                <span class="skills__number">60%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__python"></span>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+
+                    <!-- --------------------------------------------------------- -->
+                </div>
+            </div>
+        </section>
+
+        <!-- <div class="content">
+            <p>
+                “Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” “Your
+                attitude, not your aptitude, will determine your altitude.” “If you think education is expensive, try
+                ignorance.” “The only person who is educated is the one who has learned how to learn …and change.”
+            </p>
+        </div> -->
+    </div>
+    <div class="extra">
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My personal journey</span>
+
+            <div class="qualification__container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!--==================== QUALIFICATION Content 1 ====================-->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Class-10th(92.60%)</h3>
+                                <span class="qualification__subtitle">Central Academy Sr. Sec. School</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"> </i>
+                                    2018-2019
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">
+                                    Class-12th(93.40%)
+                                </h3>
+                                <span class="qualification__subtitle">Central Academy Sr. Sec. School</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"> </i>
+                                    2020-2021
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION 3 ====================-->
+
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Computer Science & Engineering</h3>
+                                <span class="qualification__subtitle">Vellore Institute Of Technology</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"> </i>
+                                    2021-2025
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+
+                                
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION 4 ====================-->
+                
+                    </div>
+
+                    <!-- ---------------------------------------------------------------------work------------------------------------------------------ -->
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!-- TEAM -->
+    <div class="diffSection" id="team_section">
+        <center>
+            <p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">My Social Accounts</p>
+        </center>
+        <div class="totalcard">
+            <div class="card">
+                <center><img src="images/creator/linkedin.jpg"></center>
+                <center>
+                    <div class="card-title"> LinkedIn Account</div>
+                    <div id="detail">
+                        <p>“Full Stack Web Developer | Coder | Learner - Loves to Explore Different Fields & Domains |“</p>
+                        <div class="duty"></div>
+                        <a href="https://www.linkedin.com/in/chiranjeev-vishnoi-345b481b0/" target="_blank"><button
+                                class="btn-roshan">Connect +</button></a>
+                    </div>
+                </center>
+            </div>
+            <div class="card">
+                <center><img src="images/creator/roshan2.jpg"></center>
+                <center>
+                    <div class="card-title">Instagram Account</div>
+                    <div id="detail">
+                        <p>“Be desperate for what you want in life.
+                        Passion means to Suffer.“</p>
+                        <div class="duty"></div>
+                        <a href="https://www.instagram.com/chiru_vishnoi/" target="_blank"><button
+                                class="btn-roshan">Follow +</button></a>
+                    </div>
+                </center>
+            </div>
+            <div class="card">
+                <center><img src="images/creator/insta.jpg"></center>
+                <center>
+                    <div class="card-title">Youtube Channel</div>
+                    <div id="detail">
+                        <p>“ Young YouTuber with 1500+ Young Hustlers. CheckOut my YouTube Channel.“</p>
+                        <div class="duty"></div>
+                        <a href="https://www.youtube.com/c/ChiruVishnoi18082003/" target="_blank"><button
+                                class="btn-roshan">Subscribe</button></a>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SERVICES -->
+    <div class="service-swipe">
+        <div class="diffSection" id="services_section">
+            <center>
+                <p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p>
+            </center>
+        </div>
+        <a href="#contactus_section">
+            <div class="s-card"><img src="images/icon/computer-courses.png">
+                <p>Frontend Web Developer</p>
+            </div>
+        </a>
+        <a href="#contactus_section">
+            <div class="s-card"><img src="images/icon/brainbooster.png">
+                <p>Backend Web Developer</p>
+            </div>
+        </a>
+        <a href="#contactus_section">
+            <div class="s-card"><img src="images/icon/ful.png">
+                <p>Full Stack Web Developer</p>
+            </div>
+        </a>
+        <a href="#contactus_section">
+            <div class="s-card"><img src="images/icon/canva.png">
+                <p>Canva Designer</p>
+            </div>
+        </a>
+        <a href="#contactus_section">
+            <div class="s-card"><img src="images/icon/data.jpg">
+                <p>Data Entry Operator</p>
+            </div>
+        </a>
+        <a href="#contactus_section">
+            <div class="s-card"><img src="images/icon/help.png">
+                <p>24x7 Online Support</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- CONTACT US -->
+    <div class="diffSection" id="contactus_section">
+        <center>
+            <p style="font-size: 50px; padding: 100px">Contact Me</p>
+        </center>
+        <div class="csec"></div>
+        <div class="back-contact">
+            <div class="cc">
+                <form action="#" method="post">
+                    <label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name
+                        <span class="imp">*</span></label><br>
+                    <center>
+                        <input type="text" name="first" style="margin-right: 10px; width: 175px"
+                            required="required"><input type="text" name="lname" style="width: 175px"
+                            required="required"><br>
+                    </center>
+                    <label>Email <span class="imp">*</span></label><br>
+                    <input type="email" name="email" style="width: 100%" required="required"><br>
+                    <label>Message <span class="imp">*</span></label><br>
+                    <input type="text" name="message" style="width: 100%" required="required"><br>
+                    <label>Additional Details</label><br>
+                    <textarea name="additional"></textarea><br>
+                    <button type="submit" name="submit" id="csubmit" value="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- FEEDBACK -->
+    <div class="title2" id="feedBACK">
+        <span>Give Feedback</span>
+        <div class="shortdesc2">
+            <p>Please share your valuable feedback to me</p>
+        </div>
+    </div>
+
+    <div class="feedbox">
+        <div class="feed">
+            <form action="" method="post">
+                <label>Your Name</label><br>
+                <input type="text" name="frst" class="fname" required="required"><br>
+                <label>Email</label><br>
+                <input type="email" name="mail" required="required"><br>
+                <label>Additional Details</label><br>
+                <textarea name="addtional"></textarea><br>
+                <button type="submit" id="csubmit" name="feedback">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sliding Information -->
+    <marquee style="background: linear-gradient(to right, #FA4B37, #DF2771); margin-top: 50px;" direction="left"
+        onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20">
+        <div class="marqu">“First Year Computer Science Student, Learner. My passion for coding and web development and
+            to explore something new brought me to the Vellore Institute Of Technology, where I am working on my BTech
+            in Computer Science Programme. When I am not working or learning , I usually spend my time listening music."
+    </marquee>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <!--<img src="images/icon/logo - Copy.png" style="width: 200px;">-->
+                <div class="logo"></div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/chiranjeev.vishnoi.9/"><img src="images/icon\fb.png"></a>
+                    <a href="https://www.instagram.com/chiru_vishnoi/"><img src="images/icon\insta.png"></a>
+                    <a href="https://twitter.com/Chiranjeevvish3"><img src="images/icon\tt.png"></a>
+                    <a href="https://www.youtube.com/c/ChiruVishnoi18082003"><img src="images/icon\ytube.png"></a>
+                    <a href="https://www.linkedin.com/in/chiranjeev-vishnoi-345b481b0/"><img src="images/icon\linkedin.png"></a>
+                </div><br><br>
+                <p class="rights-text">Copyright © 2021 Created By Chiranjeev Vishnoi All Rights Reserved.</p>
+                <br>
+                <p><img src="images/icon/location.png">Pur<br>Bhilwara, Rajasthan-311802</p>
+                <br>
+                <p><img src="images/icon/phone.png"> +91-1234-567-890<br><img src="images/icon/mail.png">&nbsp;
+                    somu209e@gmail.com</p>
+            </div>
+            <div class="right-col">
+                <h1 style="color: #fff">Newsletter</h1>
+                <div class="border"></div><br>
+                <p>Enter Your Email to get News and updates.</p>
+                <form class="newsletter-form" action="#" method="post">
+                    <input class="txtb" type="email" name="mail" placeholder="Enter Your Email">
+                    <input class="btn" type="submit"  name="news" value="Submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.web{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.webOption{
+    font-size: 24px;
+    margin-right: 16px;
+    font-weight: 500;
+}
+
+.webOption a{
+    text-decoration: none;
+    display: flex;
+    color: rgb(0, 0, 0);
+    align-items: center;
+}

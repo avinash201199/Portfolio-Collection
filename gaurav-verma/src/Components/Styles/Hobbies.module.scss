@@ -1,0 +1,56 @@
+@import "mixins.scss";
+.flex {
+  background-color: rgba(255, 192, 203, 0.1);
+  @include flex;
+
+  &__heading {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12rem;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    padding: 2rem;
+    letter-spacing: 1rem;
+    transform: rotate(270deg);
+    @media (max-width: 52em) {
+      font-size: 10rem;
+    }
+    @media (max-width: 25rem) {
+      border: none;
+      transform: rotate(0deg);
+    }
+  }
+  &__list {
+    position: relative;
+    width: 50rem;
+    height: 50rem;
+    background-color: rgb(0, 0, 0, 0.8);
+
+    color: #fff;
+    border-radius: 50%;
+    @media (max-width: 58em) {
+      width: 40rem;
+      height: 40rem;
+    }
+    @media (max-width: 25rem) {
+      width: 50rem;
+      height: 50rem;
+    }
+    ul {
+      @media (max-width: 25rem) {
+        font-size: 2rem;
+      }
+      font-size: 1.5rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      p {
+        padding-top: 1rem;
+        font-size: 2rem;
+      }
+      li {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+extends template.pug
+
+block stylesheet
+    link(rel="stylesheet", href="./../static/css/contact.css")
+
+block script
+    script(type="text/javascript", href="./../static/js/contact.js")
+
+block logo
+    img.nav__bar--image(src="./../static/img/knowme-nav.png", alt="Logo")
+
+block content
+    div.main__div
+        p.main__para Let’s get a coffee and talk!
+        p.link__para
+            a.email__button(href="mailto:imp.abhayparihar@gmail.com") Mail Me 
+    p.links
+        a(href="https://github.com/A-Spiral-Forge/", target="_blank")
+            i.fab.fa-github
+        a(href="https://www.linkedin.com/in/spiralforge/", target="_blank")
+            i.fab.fa-linkedin 
+        a(href="https://stackoverflow.com/users/16887219/abhay-parihar", target="_blank")
+            i.fab.fa-stack-overflow 
+        a(href="https://twitter.com/SpiralForge_", target="_blank")
+            i.fab.fa-twitter 
+        a(href="https://www.instagram.com/spiralforge_/", target="_blank")
+            i.fab.fa-instagram  
+        a(href="https://discordapp.com/users/758892801378484234", target="_blank")
+            i.fab.fa-discord
+    div.waves
+        div.wave.wave1
+        div.wave.wave2
+        div.wave.wave3
+        div.wave.wave4 
