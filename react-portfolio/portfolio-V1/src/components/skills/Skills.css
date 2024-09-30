@@ -1,0 +1,66 @@
+.skills-container {
+    margin: 4rem 0; 
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap; /* Optional: allows wrapping to the next line if needed */
+}
+
+.skills-container::after,
+.skills-container::before { 
+    content: " "; 
+    width: 28rem; 
+    height: 28rem; 
+    border-radius: 28.125rem;
+    background: #7c66e3;
+    position: absolute; 
+    z-index: -1;
+    filter:blur(200px);
+}
+
+.img {
+    mix-blend-mode: multiply; /* Or other blend modes like 'screen' */
+}
+
+.skills-container::after { 
+    top: -3rem; 
+    left: -5rem;
+}
+.skills-container::before {
+    background: #9e51b9;
+    bottom: 0rem; 
+    right: 0rem;
+}
+
+.skills-container h2 {
+    font-size: 1.5rem; 
+    font-weight: 600; 
+    margin-bottom: 3.5rem;
+}
+   
+.skills-content { 
+    display: flex; 
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.skills {
+    flex: 1;
+    display: grid; 
+    grid-gap: 4rem;
+    grid-template-columns: repeat(4, 1fr); /* Remove space between repeat and ( */
+}
+    
+.skills-info {
+    flex: 1;
+}
+
+@media (max-width: 1025px) {
+    .skills { 
+        padding-left: 1rem;
+    }
+    .skills,
+    .skills-content {
+        grid-gap: 2rem;
+    }
+}

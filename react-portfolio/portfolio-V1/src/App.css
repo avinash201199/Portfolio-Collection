@@ -1,0 +1,18 @@
+.container{
+    max-width: 1400px !important;
+    margin: 0 auto; 
+    position: relative;
+    padding: 0 2rem;
+}
+@media (max-width: 1400px) {
+    .container { padding: 0 1.5rem;
+    }
+} 
+
+hr{
+    border: 0;
+    height: 3px;
+    background: #77709c;
+    margin: 1rem 0;
+    box-shadow: 0 0px 20px 0px #fffbfb;
+}
