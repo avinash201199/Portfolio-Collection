@@ -1,0 +1,30 @@
+.work-experience-card {
+  background: #130f2a;
+  border-radius: 0.65rem;
+  border: 1.5px solid;
+  padding: 1.5rem;
+  margin: 0 1rem;
+  color: #ffffff;
+  margin: 1.5rem;
+}
+
+.work-experience-card h6 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+}
+
+.work-duration {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 400;
+  background: rgba(103,81,185,0.5);
+  border-radius: 0.3rem;
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 1.3rem;
+  color: #fdfcff;
+
+}
+
+.work-experience-card ul li { list-style: none; font-size: 0.8rem; font-weight: 400; margin-bottom: 0.5rem; position: relative; }
+.work-experience-card ul li::after { content: " "; width: 0.5rem; height: 0.5rem; background-color: #6751b9; border-radius: 0.5rem; position: absolute; left: -1.3rem; top: 0.35rem; }  
