@@ -1,0 +1,119 @@
+.homebody {
+    margin-top: 4vw;
+  }
+  
+  .home_name {
+    color: #cd0ff9;
+    text-shadow: 0 0 16px #cd0ff9;
+  }
+  
+  .intro {
+    font-family: 'elegante';
+    font-weight: bold;
+  }
+  
+  .field {
+    font-family: 'elegante';
+  }
+  
+  .typed {
+    font-weight: bold;
+    color: #cd0ff9;
+    text-shadow: 0 0 16px #cd0ff9;
+  }
+  
+  .typed-cursor {
+    display: none;
+  }
+  
+  .info {
+    font-family: 'elegante';
+  }
+  
+  .link {
+    display: inline;
+    border-radius: 50%;
+    padding: 11px;
+    border: 3px solid #cd0ff9;
+    margin: 0 7px;
+    fill: #cd0ff9;
+    transition: 0.5s;
+  }
+  
+  .link:hover {
+    fill: white;
+    background-color: #cd0ff9;
+    box-shadow: 0 0 3px #be4ae4, 0 0 8px #be4ae4, 0 0 12px #be4ae4, 0 0 17px #be4ae4, 0 0 21px #be4ae4;
+    color: #cd0ff9;
+    text-shadow: 0 0 15px #cd0ff9;
+  }
+  
+  .link:hover:before {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #cd0ff9;
+    filter: blur(3px);
+  }
+  
+  .rounded-circle {
+    margin-top: -50px;
+  }
+  
+  .rounded-circle:hover {
+    transition: box-shadow 0.5s;
+    box-shadow: 0 0 10px #be4ae4, 0 0 20px #be4ae4, 0 0 30px #be4ae4, 0 0 40px #be4ae4, 0 0 50px #be4ae4;
+  }
+  
+  .margin_info {
+    margin-bottom: 70px;
+  }
+
+  .my_pic:hover{
+    transition: scale 0.5s;
+    scale: 1.1;
+  }
+
+  .cv_btn{
+    margin-top: 20px;
+  }
+  
+
+
+  .cv_btn {
+    background-color: #cd0ff9 !important;
+    color: white !important;
+    padding: 5px 20px !important;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+}
+
+.cv_btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.4s ease-in-out;
+    z-index: 0;
+}
+
+.cv_btn:hover::before {
+    left: 0;
+}
+
+.cv_btn:hover {
+    color: white !important;
+}
+
+.cv_btn > strong {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    transition: color 0.4s ease-in-out;
+}
+
+.cv_btn:hover > strong {
+    color: #cd0ff9 !important;
+}

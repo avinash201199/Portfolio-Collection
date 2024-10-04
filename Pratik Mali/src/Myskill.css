@@ -1,0 +1,70 @@
+.row{
+  margin-top: 100px !important;
+}
+
+.card{
+    background-color: transparent !important;
+    background-color: transparent !important;
+    border: 2px solid #cd0ff9;
+    box-shadow:  0 0 5px #ffffff,
+    0 0 10px #ffffff,
+    0 0 30px #cd0ff9,
+    0 0 40px #be4ae4,
+    0 0 50px #be4ae4 !important;
+    border-radius: 10% !important;
+    margin: 10px;
+    text-align: center !important;
+}
+
+.card:hover{
+    transition: scale 0.5s;
+    scale: 1.1;
+}
+
+.my_skills_cards {
+    width: 5rem !important;
+    height: 5rem !important;
+    object-fit: contain;
+  }
+  
+  .completed-card {
+    border: 2px solid green;
+  }
+  
+  .ongoing-card {
+    overflow: hidden;
+    background-color: #afafaf7d !important;
+    position: relative;
+  }
+  
+  .ribbon-wrapper {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: 0;
+  }
+  
+
+  
+  .ribbon {
+    width: 10rem !important;
+    background-color: #cd0ff9 ;
+    color: white;
+    padding: 6px 12px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+    left: -45px;
+    text-align: center;
+  }
+
+.card-title{
+    color: #cd0ff9 !important;
+}
+.card-title{
+    color: #cd0ff9 !important;
+}
+.card-text{
+    color: white !important;
+}
