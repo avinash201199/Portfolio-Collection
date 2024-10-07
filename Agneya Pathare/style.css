@@ -1,0 +1,21 @@
+img{
+    height: 250px;
+    border-radius: 10px;
+}
+body{
+    background-color: #EAF6F6;
+    font-size: large;
+  }
+
+  hr{
+    background-color: white;
+    border-style: dotted none none;
+    border-color: grey;
+    border-width: 7px;
+    height: 0px;
+    width: 10%;
+  }
+
+  div{
+    margin: 60px auto;
+  }
