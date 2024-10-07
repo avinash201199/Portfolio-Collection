@@ -1,0 +1,21 @@
+.heading{
+    text-align: center;
+    margin: 45px 0 !important;
+    font-size: 3rem;
+    color: white;
+}
+
+.sub_heading{
+    margin: 35px 0 !important;
+    font-size: 2rem;
+    color: white;
+}
+
+body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}

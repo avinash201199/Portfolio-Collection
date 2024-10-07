@@ -1,0 +1,35 @@
+
+.navbar-brand {
+    font-family: 'cocogoose';
+    font-weight: bolder;
+    color: white;
+    font-size: 2rem;
+}
+
+.surname {
+    color: #cd0ff9;
+    text-shadow: 0 0 16px #cd0ff9;
+}
+
+.nav-link {
+    font-family: 'cocogoose';
+    color: white !important;
+    font-weight: bold !important;
+    margin: 0 15px;
+    transition: color 0.5s, padding 0.5s, border-bottom 0.5s; 
+    font-size: 1.2rem !important;
+}
+
+.nav-link:hover {
+    padding: 2px;
+    color: #cd0ff9 !important;
+    border-bottom: 2px solid rgb(236, 81, 248);
+    border-radius: 5px;
+}
+
+.active-link {
+    padding: 2px; 
+    color: #cd0ff9 !important;
+    border-bottom: 2px solid rgb(236, 81, 248) !important;
+    border-radius: 5px !important;
+}

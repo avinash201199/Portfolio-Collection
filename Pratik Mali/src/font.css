@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'elegante';
+    src: url('./assets/Fonts/elegante/EleganteClassica.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'cocogoose';
+    src: url('./assets/Fonts/cocogoose/Cocogoose-Pro-Light-trial.ttf') format('truetype');
+  }

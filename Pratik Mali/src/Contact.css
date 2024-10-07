@@ -1,0 +1,75 @@
+.contact_bg{
+    background-color: transparent;
+    box-shadow: 
+      0 0 5px #ffffff,
+      0 0 10px #ffffff,
+      0 0 30px #cd0ff9,
+      0 0 40px #be4ae4,
+      0 0 50px #be4ae4 !important;
+      padding: 10px 20px;
+      border-radius: 20px;
+      color: white;
+      margin: 20px 10px;
+}
+
+.field_area{
+    color: white !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 2px solid #cd0ff9 !important;
+}
+
+.form-control:focus{
+    box-shadow: none !important;
+}
+
+.field_area::placeholder{
+    color: white !important;
+}
+
+.contact_img{
+  width: 400px;
+  height: 400px;
+  margin: 0 !important;
+}
+
+.contactBtn {
+    background-color: white !important;
+    color: #cd0ff9 !important;
+    padding: 5px 20px !important;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    margin: 20px 35%;
+}
+
+.contactBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #cd0ff9;
+    transition: left 0.4s ease-in-out;
+    z-index: 0;
+}
+
+.contactBtn:hover::before {
+    left: 0;
+}
+
+.contactBtn:hover {
+    color: white !important;
+}
+
+.contactBtn > strong {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    transition: color 0.4s ease-in-out;
+}
+
+.contactBtn:hover > strong {
+    color: white !important;
+}

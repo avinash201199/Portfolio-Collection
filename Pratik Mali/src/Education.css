@@ -1,0 +1,41 @@
+.vertical-timeline-element-icon {
+    scale: 0.25;
+    background-color: #cd0ff9;
+    box-shadow: 
+      0 0 5px #ffffff,
+      0 0 10px #ffffff,
+      0 0 30px #cd0ff9,
+      0 0 40px #be4ae4,
+      0 0 50px #be4ae4 !important;
+  }
+.vertical-timeline-element-date{
+    color: rgb(255, 255, 255) !important;
+    opacity: 1 !important;
+}
+.vertical-timeline-element-content{
+    background-color: transparent !important;
+    border: 2px solid #cd0ff9;
+    box-shadow:  0 0 5px #ffffff,
+    0 0 10px #ffffff,
+    0 0 30px #cd0ff9,
+    0 0 40px #be4ae4,
+    0 0 50px #be4ae4 !important;
+    border-radius: 10% !important;
+    color: white !important;
+}
+
+.vertical-timeline-element-content:hover{
+    transition: scale 0.5s;
+    scale: 1.05;
+}
+
+.vertical-timeline-element-content-arrow{
+    display: none;
+}
+
+.vertical-timeline{
+    margin-top: 100px !important;
+}
+.contact_me{
+    color: #cd0ff9;
+}

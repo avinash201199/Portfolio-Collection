@@ -1,0 +1,167 @@
+.adminPage{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login_page{
+    min-width: 300px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    box-shadow: 
+      0 0 5px #ffffff,
+      0 0 10px #ffffff,
+      0 0 30px #cd0ff9,
+      0 0 40px #be4ae4,
+      0 0 50px #be4ae4 !important;
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin: 20px 10px;
+}
+
+.form-control{
+    background-color: black !important;
+    color: white !important;
+    border: none !important;
+    border-bottom: 2px solid #cd0ff9 !important;
+    box-shadow: none !important;
+}
+
+label
+{
+    color: white;
+    background-color: transparent;
+}
+
+label::after{
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label{
+    color: white !important;
+}
+
+
+.loginBtn {
+    border-radius: 10px;
+    background-color: white !important;
+    color: #cd0ff9 !important;
+    padding: 5px 20px !important;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    margin: 20px 35%;
+}
+
+.loginBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #cd0ff9;
+    transition: left 0.4s ease-in-out;
+    z-index: 0;
+}
+
+.loginBtn:hover::before {
+    left: 0;
+}
+
+.loginBtn:hover {
+    color: white !important;
+}
+
+.loginBtn > strong {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    transition: color 0.4s ease-in-out;
+}
+
+.loginBtn:hover > strong {
+    color: white !important;
+}
+
+.custom_table{
+    min-width: 300px;
+    width: 50vw;
+    background-color: transparent !important;
+    box-shadow: 
+    0 0 5px #ffffff,
+    0 0 10px #ffffff,
+    0 0 30px #cd0ff9,
+    0 0 40px #be4ae4,
+    0 0 50px #be4ae4 !important;
+    border-radius: 10px;
+}
+
+.custom_table th,
+.custom_table td {
+    color: white;
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.deleteOne{
+    border-radius: 10px;
+    background-color: white !important;
+    color: #cd0ff9 !important;
+    padding: 5px 20px !important;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+}
+
+.delBtn{
+    border-radius: 10px;
+    background-color: white !important;
+    color: #cd0ff9 !important;
+    padding: 5px 20px !important;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    margin: 0px 35%;
+    margin-bottom: 30px;
+}
+
+.delBtn::before,.deleteOne::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #cd0ff9;
+    transition: left 0.4s ease-in-out;
+    z-index: 0;
+}
+
+.delBtn:hover::before,.deleteOne:hover::before{
+    left: 0;
+}
+
+.delBtn:hover,.deleteOne:hover{
+    color: white !important;
+}
+
+.delBtn > strong,.deleteOne>strong{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    transition: color 0.4s ease-in-out;
+}
+
+.delBtn:hover > strong ,.deleteOne:hover>strong{
+    color: white !important;
+}
