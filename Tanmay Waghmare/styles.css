@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Anton Sc";
+}
+
+.maain{
+    background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNG85ZWV3OGdoOTlpbmFrOHkxNnFrMGhibm42MW5xbWJheG5kcGQ1bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6UDUfPjK12c6cDVpMN/giphy-downsized-large.gif');
+    background-size: cover;
+}
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(206, 9%, 15%);
+    
+   /*  background-image: url('https://drive.google.com/thumbnail?id=1sD24tryPCtlOVRI9jl4-rkk7oS-0SSzq');  */  
+    /* background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNG85ZWV3OGdoOTlpbmFrOHkxNnFrMGhibm42MW5xbWJheG5kcGQ1bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6UDUfPjK12c6cDVpMN/giphy-downsized-large.gif');
+    background-size: cover; */
+}
+
+#welcome-section h1 {
+    font-size: 80px;
+    color: white;
+    font-family: "Anton Sc";
+}
+
+#navbar {
+    background-color: hsl(206, 9%, 15%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+#navbar a {
+    color: white;
+    font-family: "Oswald";
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+#navbar a:hover {
+    background-color: #3b89ff;
+    border-radius: 5px;
+}
+/* <blockquote class="imgur-embed-pub" lang="en" data-id="a/YsWQxLp" data-context="false" ><a href="//imgur.com/a/YsWQxLp"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script> */
+.maain{
+    background-color: green;
+    background-image: url("https://imgur.com/a/YsWQxLp");
+    background-size: cover;
+}
+
+.skills{
+    background-color: #83B4FF;
+    background-image: linear-gradient(#83B4FF, #3b89ff);
+}
+
+.hero img{
+    width: 200px;
+    height: 200px;
+    align-self: flex-start;
+    padding: 0px;
+}
+
+.stack{
+    display: grid;
+}
+
+.stack > *{
+    grid-area: 1/1;
+}
+
+.social{
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    font-family: "Anton Sc";
+    height: 100%;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+}
+
+.top button{
+    flex-direction: column;
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.ve{
+    font-size: 80px;
+}
+
+.gif img{
+    width: 500px;
+    height: 360px;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.gif{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.p{
+    width: 100%;
+    font-size: 48px;
+    color: #131842; 
+}
+
+.video .p{
+    font-family: "Lilita One";
+}
+
+.skill-gifs{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    font-family: "Anton Sc";
+    font-size: 24px;
+    width: 10rem;
+    height: 4rem;
+}
+
+button:hover{
+    background-color: #5865f2;
+    color: #f9f9f9;
+    transform: scale(1.2);
+    border: solid 2px white;
+}
+
+.apps img{
+    width: 100;
+    height: 100px;
+}
+
+.skills h1, .videos-section h1{
+    text-align: center;
+    font-family: "Anton Sc";
+    padding-top: 10px;
+    color: #23272a;   
+}
+
+.skills h1{
+    color: #131842;
+}
+
+.videos-section{
+    background-color: #FFF8DB;
+    background-image: linear-gradient(#FFF8DB, #ffefb1);
+}
+
+.videos{
+    flex-wrap: wrap;
+}
+
+.videos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.video{
+    text-align: center;
+}
+
+iframe{
+    width: 480px;
+    height: 270px;
+    transition: 0.1s;
+}
+
+iframe:hover{
+    border: 5px solid #5865f2;
+    transform: translateY(-3%);
+}
+
+.contact-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(35, 39, 42);
+    background-image: linear-gradient(rgb(35, 39, 42), rgb(42, 33, 33));
+    color: #f9f9f9;
+    text-align: center;
+}
+
+.contact{
+    width: 50%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: left;
+}
+
+form h1{
+    font-size: 50px;
+    text-align: left;
+}
+
+form label{
+    font-size: 30px;
+}
+
+form input{
+    width: 200px;
+    height: 50px;
+    transition: 0.5s;
+}
+
+form textarea{
+    width: 400px;
+    height: 100px;
+    transition: 0.5s;
+}
+
+form input::placeholder, form textarea{
+    font-family: "Lilita One";
+}
+
+form input:hover, textarea:hover{
+    border: #5865f2 solid;
+}
+
+form input{
+    font-family: "Lilita One";
+}
+
+form button[type="submit"]{
+    font-family: "Anton Sc";
+    font-size: 18px;
+    background-color: #3b89ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover{
+    background-color: #5865f2;
+}
+
+.bot_social{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.bot_social .icon{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.bot_social p{
+    font-family: "Oswald";
+    font-size: 14px;
+    color: #23272a;
+    margin-top: 5px;
+}
+
+.link1:hover, .link2:hover{
+    transform: scale(1.1);
+    background-color: #3b89ff;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(-600px);
+    }    
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.animation{
+    animation-name: slide;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+}
+
+@media (max-width: 768px){
+    .top{
+        font-size: 50px;
+    }
+
+    .hero{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .ve{
+        font-size: 40px;
+    }
+
+    .gif img{
+        width: 100%;
+        height: auto;
+    }
+
+    .stack img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .contact input[type="email"],
+    .contact textarea{
+        width: 90%;
+    }
+}
+
+.icon {
+    display: inline-block;
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    background-size: cover;
+    transition: background-image 0.3s;
+}
+
+/* Instagram icon */
+.icon.instagram {
+    background-image: url('https://drive.google.com/thumbnail?id=1hZTuIdQpwoznNnUuarG7JlJUeJ2x3CIw');
+    
+}
+
+
+
+/* LinkedIn icon */
+.icon.linkedin {
+    background-image: url('https://drive.google.com/thumbnail?id=18KN9hGGw6_9Y5rLbsbJ412ZiD254-ryL');
+}
+
+.link1, .link2{
+    padding: 12px;
+    transition: 0.5s;
+}
+
+.link1:hover, .link2:hover{
+    color: #5865f2;
+}
+
+@media (max-width: 480px){
+    .top{
+        font-size: 30px;
+    }
+
+    .hero{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .ve{
+        font-size: 24px;
+    }
+
+    form button[type="submit"]{
+        width: 100%;
+    }
+
+    .bot_social{
+        flex-direction: column;
+    }
+
+    .bot_social .icon{
+        margin-bottom: 10px;
+    }
+}
