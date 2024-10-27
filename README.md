@@ -1,9 +1,12 @@
 ![Portfolio-Collection](https://socialify.git.ci/avinash201199/Portfolio-Collection/image?font=Jost&forks=1&issues=1&name=1&owner=1&stargazers=1&theme=Auto)
 <div align="center">
-<strong>Welcome to Portfolio-Collection repository.</strong>
+<strong>Welcome to Portfolio-Collection repository 🚀</strong>
+</div>
+<br>
 
 Showcase your talent, get inspired, and collaborate with a creative collection of portfolio source code designed for developers like you!
-</div>
+
+Whether you’re revamping your portfolio or seeking fresh ideas, this is your go-to hub for creative presentation of skills and projects. Contribute your own work and collaborate with a community that values creativity, learning, and the evolution of portfolio design!
 
 ## Star History 🌟
 <a href="https://star-history.com/#avinash201199/Portfolio-Collection&Date">
