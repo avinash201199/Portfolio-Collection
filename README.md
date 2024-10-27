@@ -1,4 +1,8 @@
 ![Portfolio-Collection](https://socialify.git.ci/avinash201199/Portfolio-Collection/image?font=Jost&forks=1&issues=1&name=1&owner=1&stargazers=1&theme=Auto)
+<div align="center">
+<strong>Welcome to Portfolio-Collection repository.</strong>
+</div>
+
 Showcase your talent, get inspired, and collaborate with a creative collection of portfolio source code designed for developers like you!
 
 ## Star History 🌟
@@ -11,11 +15,17 @@ Showcase your talent, get inspired, and collaborate with a creative collection o
 </a>
 
 ## Contributing 🤝
-Contribute by adding your portfolio to this repository and let your work inspire developers across the community! <br>
-For information on how to contribute to the intro repository, check out the [Contributing Guidelines](CONTRIBUTING.md).
+Contribute by adding your portfolio to this repository and let your work inspire developers across the community! 
+
+For information on how to contribute to this repository, check out the [Contributing Guidelines](CONTRIBUTING.md).
+
+Happy Submissions 🙂
 
 
 ## Our Contributors ✨
 <a href="https://github.com/avinash201199/Portfolio-Collection/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=avinash201199/Portfolio-Collection" />
 </a>
+
+## License ⚖
+This project is licensed under the [MIT License](LICENSE).
