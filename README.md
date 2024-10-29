@@ -46,6 +46,24 @@ Happy Submissions :slightly_smiling_face:
 
 Your feedback is valuable! Thank you for contributing to the growth of the Portfolio-Collection repository. Happy rating! 🌈✨
 
+Got it! Here’s a concise section for that:
+
+# Contribute Your Portfolio 🌟
+
+1. **Add Your Portfolio Folder:**  
+   Place your portfolio files in a new folder within the repository, naming it after yourself (e.g., `YourName-Portfolio`).
+
+2. **Update `index.html`:**  
+   After adding your portfolio, update the `index.html` file in the `.portfolio-grid` section:
+   ```html
+   <a href="./YourName-Portfolio/index.html" class="portfolio-box" target="_blank">
+     Your Name
+   </a>
+   ```
+   Replace `"YourName-Portfolio/index.html"` with the path to your main HTML file.
+
+Thank you for adding to the Portfolio-Collection! 🎉
+
 
 <h2 align="center">Contribution Guidelines🏗</h2>
 
