@@ -1,0 +1,48 @@
+{
+  "about": {
+    "aboutMe": "",
+    "bannerImage": "",
+    "description": "",
+    "name": "",
+    "profileImage": ""
+  },
+  "contact": {
+    "email": "",
+    "location": ""
+  },
+  "education": [
+    {
+      "dates": "",
+      "degree": "",
+      "institution": ""
+    }
+  ],
+  "favoriteTools": [
+    ""
+  ],
+  "languages": [
+    ""
+  ],
+  "links": {
+    "github": "",
+    "linkedin": ""
+  },
+  "projects": [
+    {
+      "description": "",
+      "link": "",
+      "name": ""
+    }
+  ],
+  "skills": [
+    ""
+  ],
+  "workExperience": [
+    {
+      "company": "",
+      "dates": "",
+      "role": "",
+      "technologies": ""
+    }
+  ]
+}
