@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AG - Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <!--
+      - #SIDEBAR
+    -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Arpit Gupta" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Arpit Gupta">Arpit Gupta </h1>
+          <p class="title">App developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:arpitgupta4957@gmail.com" class="contact-link">arpitgupta4957@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+91 93359 46391" class="contact-link">+91 93359 46391</a>
+            </div>
+          </li>
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="2005-02-20">Feb 20, 2005</time>
+            </div>
+
+          </li>
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Kanpur, Uttar Pradesh, India</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/arpit-gupta-95b5a2250" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/ArpitGupta4957" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/smashsizzle_52" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+    <div class="main-content">
+
+    <!--
+       - #NAVBAR
+    -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+      <!--
+        - #ABOUT
+      -->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+        <section class="about-text">
+          <p>
+            🌟 As a developer, problem solver, and keen learner from Kanpur, India 🌏, I thrive on tackling complex challenges and transforming them into innovative, efficient solutions. With expertise in front-end development, Android app development, and a passion for coding in Java and Python.
+          </p>
+          <p>
+            My job is building applications that are functional 🛠️, impactful 🤝, and future-ready 🚀. I take responsibilities seriously ✅, excel at working under pressure ⏱️, and am well-versed in leadership roles while being a strong advocate for teamwork 🤝. Always eager to learn and grow 🌱, I bring creativity, dedication, and collaboration to every project, aiming to create tools and applications that truly make a difference 💡.
+          </p>
+        </section>
+
+        <!--
+          - service
+        -->
+        <section class="service">
+          <h3 class="h3 service-title">What i'm doing</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Interface design</h4>
+                <p class="service-item-text">
+                  Crafting cutting-edge and visually captivating designs tailored to meet professional standards.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+                <p class="service-item-text">
+                  Delivering robust and dynamic websites with precision and functionality at an expert level
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <p class="service-item-text">
+                  Creating seamless and user-friendly mobile applications for both iOS and Android platforms.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+                <p class="service-item-text">
+                  Capturing stunning visuals across various genres with a professional touch.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!--
+          - testimonials
+        -->
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+          <ul class="testimonials-list has-scrollbar">
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Arpit Gupta" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Amarjeet Singh</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Arpit Gupta has been an exceptional addition to the team as an HR Intern at the IISPPR. His dedication, proactive approach, and ability to manage recruitment processes, enhance HR policies, and foster a positive work environment have truly stood out. Arpit’s commitment to aligning HR strategies with organizational goals and his collaborative spirit have made a significant impact. He is a true professional, always eager to learn and contribute, and I am confident he will excel in any challenge he takes on.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Vedanshi Nigam" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Vedanshi Nigam</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Arpit Gupta has been an outstanding App Developer Intern at DoShare.Me. His technical expertise, innovative mindset, and dedication to delivering high-quality solutions have greatly contributed to the development and enhancement of our platform. Arpit demonstrated exceptional skills in development, collaborating effectively with the team to create user-friendly and efficient app features. His problem-solving abilities and passion for learning made him a valuable asset, and I am confident he will continue to achieve great success in his future endeavors.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </li> -->
+          </ul>
+        </section>
+
+        <!--
+          - testimonials modal
+        -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+        
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+        
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Amarjeet Singh</h4>
+              <time datetime="2024-12-12">12 Dec, 2024</time>
+              <div data-modal-text>
+                <p>
+                  Arpit Gupta has been an exceptional addition to the team as an HR Intern at the IISPPR. His dedication, proactive approach, and ability to manage recruitment processes, enhance HR policies, and foster a positive work environment have truly stood out. Arpit’s commitment to aligning HR strategies with organizational goals and his collaborative spirit have made a significant impact. He is a true professional, always eager to learn and contribute, and I am confident he will excel in any challenge he takes on.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+        
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-2.png" alt="Vedanshi Nigam" width="80" data-modal-img>
+              </figure>
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+        
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Vedanshi Nigam</h4>
+              <time datetime="2025-01-10">10 Jan, 2025</time>
+              <div data-modal-text>
+                <p>
+                  Arpit Gupta has been an outstanding App Developer Intern at DoShare.Me. His technical expertise, innovative mindset, and dedication to delivering high-quality solutions have greatly contributed to the development and enhancement of our platform. Arpit demonstrated exceptional skills in Java and Android development, collaborating effectively with the team to create user-friendly and efficient app features. His problem-solving abilities and passion for learning made him a valuable asset, and I am confident he will continue to achieve great success in his future endeavors.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!--
+          - Experience
+        -->
+        <section class="experience">
+          <h3 class="h3 experience-title">Experience</h3>
+          <ul class="experience-list has-scrollbar">
+            <li class="experience-item">
+              <a href="https://www.linkedin.com/posts/arpit-gupta-95b5a2250_appdevelopment-techforimpact-sdgs-activity-7339556248821891072-ldxe?utm_source=share&utm_medium=member_desktop&rcm=ACoAADZqD8EBPmsKy5ryUK613fgH4sfv3El_cg0" target="_blank">
+                <img src="./assets/images/logo-1-color.jpg" alt="client logo">
+              </a>
+              <div class="experience-img-text">App Developer <br> @IISPPR</div>
+            </li>
+
+            <li class="experience-item">
+              <a href="https://www.linkedin.com/posts/arpit-gupta-95b5a2250_intership-doshareme-activity-7271096451638697984-eDWy?utm_source=share&utm_medium=member_desktop" target="_blank">
+                <img src="./assets/images/logo-2-color.jpeg" height="150px" alt="client logo">
+              </a>
+              <div class="experience-img-text">APP DEVELOPER <br> @DoShare.me</div>
+            </li>
+
+            <li class="experience-item">
+              <a href="https://www.linkedin.com/posts/arpit-gupta-95b5a2250_newbeginnings-gratitude-hrinternship-activity-7275524729984208897-N-TK?utm_source=share&utm_medium=member_desktop" target="_blank">
+                <img src="./assets/images/logo-1-color.jpg" alt="client logo">
+              </a>
+              <div class="experience-img-text">HR @IISPPR</div>
+            </li>
+
+            <li class="experience-item">
+              <a href="https://www.linkedin.com/posts/arpit-gupta-95b5a2250_offer-letter-activity-7281181256044679168-6ddg?utm_source=share&utm_medium=member_desktop" target="_blank">
+                <img src="./assets/images/logo-3-color.jpg" alt="client logo">
+              </a>
+              <div class="experience-img-text">NEP Saarthi @UGC</div>
+            </li>
+
+            <li class="experience-item">
+              <a href="https://www.linkedin.com/posts/arpit-gupta-95b5a2250_grateful-studentwelfare-vitbhopal-activity-7196183854460657664-8-A4?utm_source=share&utm_medium=member_desktop" target="_blank">
+                <img src="./assets/images/logo-4-color.jpg" alt="client logo">
+              </a>
+              <div class="experience-img-text">DSW office @VIT</div>
+            </li>
+
+            <li class="experience-item">
+              <a href="https://www.linkedin.com/posts/arpit-gupta-95b5a2250_ai-team-work-activity-7027148623817621504-2S1P?utm_source=share&utm_medium=member_desktop" target="_blank">
+                <img src="./assets/images/logo-5-color.jpg" alt="client logo">
+              </a>
+              <div class="experience-img-text">Sponsorship Team <br> @AI CLUB VIT</div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">
+            <a href="https://drive.google.com/file/d/1CRYGp7uUmVv1qgs2aXTpvvJrmZwehDA1/view?usp=sharing" target="_blank">Resume</a>
+          </h2>
+        </header>
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">VIT Bhopal University</h4>
+              <span>2022 — 2026</span>
+              <p class="timeline-text">
+                B.Tech in Computer Science and Engineering
+                <br>
+                CGPA: 8.7/10
+                <br>
+                Skills: Java, Python, Flutter, AI & ML basics, Figma, Canva, MS Excel, MySQL, Firebase, Git, GitHub, HTML,
+                CSS.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Kendriya vidyalaya No2 AFS Kanpur</h4>
+              <span>2021 — 2022</span>
+              <p class="timeline-text">
+                Percentage: 92% (Class XII, CBSE)
+                <br>
+                Skills: Basic programming, presentation, and teamwork skills
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Kendriya vidyalaya No2 AFS Kanpur</h4>
+              <span>2019 — 2020</span>
+              <p class="timeline-text">
+                Percentage: 85% (Class X, CBSE)
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">App Developer Intern @IISPPR</h4>
+              <span> June 2025 — August 2025</span>
+              <p class="timeline-text">
+                Building a user-focused app to boost engagement and accessibility at IISPPR. Leveraging past HR experience to design people-centric digital solutions.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">App Developer Intern @DoShare.Me</h4>
+              <span>Dec 2024 — March 2025</span>
+              <p class="timeline-text">
+                Developed and optimized app features, ensuring a seamless user experience by implementing best coding practices and conducting regular testing.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">HR Intern @IISPPR</h4>
+              <span> Dec 2024 — March 2025</span>
+              <p class="timeline-text">
+                Contributed to managing recruitment processes, streamlining communication, and enhancing team productivity in alignment with organizational goals.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">DSW OFFICE MEMBER @VIT</h4>
+              <span>DEC 2022 — Present</span>
+              <p class="timeline-text">
+                Organized and coordinated university events, facilitating communication between students and administration, and managing logistical support.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">NEP Saarthi @UGC</h4>
+              <span>Jan 2025 — Present</span>
+              <p class="timeline-text">
+                Promoted awareness and implementation of the National Education Policy, ensuring alignment with institutional objectives and outreach programs.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Partnership Team MEMBER @AI Club VIT</h4>
+              <span>Feb 2023 — April 2025</span>
+              <p class="timeline-text">
+                Collaborated with organizations to secure partnerships, organized workshops, and fostered networking opportunities to enhance club activities.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">App development</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Problem Solver</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Team leadership</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Designing</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Research</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Project management</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!--
+        - #PROJECTS
+      -->
+      <article class="projects" data-page="projects">
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+        <section class="projects">
+
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-select-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+                <p class="project-category">Applications</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+                <p class="project-category">Applications</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+
+          </ul>
+        </section>
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d893.2891937911704!2d80.38716066945507!3d26.418416898559094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c41611cf822c5%3A0x556a174a39c4f!2sHome%20sweet%20home!5e0!3m2!1sen!2sin!4v1735325139532!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form class="form" data-form onsubmit="sendEmail(event)">
+            <div class="input-wrapper">
+              <input type="text" id="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" id="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea id="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
