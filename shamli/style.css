@@ -1,0 +1,40 @@
+/* ===== Reset & Base ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+body { background: #f5f5f5; color: #333; }
+
+/* ===== Navbar ===== */
+header { background: #111; padding: 1rem 2rem; }
+.navbar { display: flex; justify-content: space-between; align-items: center; }
+.logo { color: #fff; font-size: 1.5rem; font-weight: bold; }
+.logo span { color: #ff4b5c; }
+.nav-links { list-style: none; display: flex; gap: 1.5rem; }
+.nav-links a { color: #fff; text-decoration: none; transition: color 0.3s; }
+.nav-links a:hover { color: #ff4b5c; }
+.menu-toggle { display: none; color: #fff; font-size: 2rem; cursor: pointer; }
+
+/* ===== Hero ===== */
+.hero { background: linear-gradient(to right, #111, #333); color: #fff; padding: 5rem 2rem; text-align: center; }
+.hero h1 span { color: #ff4b5c; }
+.hero .highlight { color: #ffd700; }
+.btn { display: inline-block; margin-top: 1rem; padding: 0.8rem 1.5rem; background: #ff4b5c; color: #fff; border-radius: 8px; text-decoration: none; transition: 0.3s; }
+.btn:hover { background: #ff6f7c; }
+
+/* ===== Sections ===== */
+section { padding: 4rem 2rem; text-align: center; }
+h2 { margin-bottom: 1rem; font-size: 2rem; }
+
+/* ===== Skills ===== */
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin-top: 2rem; }
+.skill { padding: 1rem; background: #fff; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+
+/* ===== Projects ===== */
+.projects .project-card { background: #fff; padding: 1.5rem; margin: 1rem auto; border-radius: 10px; max-width: 500px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+.projects .project-card a { display: inline-block; margin-top: 1rem; color: #ff4b5c; text-decoration: none; }
+
+/* ===== Contact ===== */
+form { max-width: 500px; margin: 2rem auto; display: flex; flex-direction: column; gap: 1rem; }
+input, textarea { padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px; }
+button { border: none; cursor: pointer; }
+
+/* ===== Footer ===== */
+footer { background: #111; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }
