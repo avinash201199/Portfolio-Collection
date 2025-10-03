@@ -1,0 +1,16 @@
+/* Styles for Manu Dwivedi portfolio (copied minimal template) */
+:root{--bg:#ffffff;--text:#0b1220;--accent:#0366d6}
+body{font-family:'KoHo',system-ui,Segoe UI,Roboto,Arial;color:var(--text);margin:0;background:#f7fafc}
+.container{max-width:980px;margin:0 auto;padding:24px}
+.site-header{background:#fff;border-bottom:1px solid #e6eef8}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.name{font-size:1.25rem;margin:0;padding:12px 0}
+.nav{list-style:none;margin:0;padding:0;display:flex;gap:12px}
+.nav a{color:var(--text);text-decoration:none}
+.hero{display:flex;gap:20px;align-items:center;padding:40px 0}
+.avatar{width:120px;height:120px;border-radius:12px;object-fit:cover}
+.skills-list{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}
+.project-card{background:#fff;padding:16px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+.btn{display:inline-block;margin-top:8px;padding:8px 12px;background:var(--accent);color:white;border-radius:6px;text-decoration:none}
+.site-footer{padding:24px;text-align:center;color:#94a3b8}
+@media(max-width:720px){.hero{flex-direction:column;text-align:center}.avatar{width:100px;height:100px;border-radius:50px}}
