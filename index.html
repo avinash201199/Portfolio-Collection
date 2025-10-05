@@ -2,97 +2,393 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Collections</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f6f9;
-        color: #333;
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+      * {
         margin: 0;
         padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        box-sizing: border-box;
       }
-      
+
+      body {
+        font-family: 'Space Grotesk', 'Inter', sans-serif;
+        background: #0a0a0f;
+        color: #fff;
+        min-height: 100vh;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      /* Animated gradient background */
+      body::before {
+        content: '';
+        position: fixed;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: 
+          radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.15) 0%, transparent 50%),
+          radial-gradient(circle at 80% 80%, rgba(138, 43, 226, 0.15) 0%, transparent 50%),
+          radial-gradient(circle at 40% 20%, rgba(72, 187, 120, 0.1) 0%, transparent 50%);
+        animation: gradientMove 15s ease infinite;
+        pointer-events: none;
+      }
+
+      @keyframes gradientMove {
+        0%, 100% { transform: translate(0, 0) rotate(0deg); }
+        33% { transform: translate(5%, 5%) rotate(5deg); }
+        66% { transform: translate(-5%, 5%) rotate(-5deg); }
+      }
+
+      /* Floating particles */
+      .particle {
+        position: fixed;
+        width: 3px;
+        height: 3px;
+        background: rgba(138, 43, 226, 0.3);
+        border-radius: 50%;
+        pointer-events: none;
+        animation: float 20s infinite;
+      }
+
+      @keyframes float {
+        0%, 100% { transform: translate(0, 0); opacity: 0; }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { transform: translate(100vw, -100vh); opacity: 0; }
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        position: relative;
+        z-index: 1;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 60px;
+        animation: fadeInDown 1s ease;
+      }
+
       h1 {
-        margin: 20px 0;
-        font-size: 2.5em;
-        font-weight: bold;
-        color: #007bff;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        font-size: 4.5em;
+        font-weight: 700;
+        background: linear-gradient(135deg, #667eea 0%, #a78bfa 50%, #ec4899 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 15px;
+        letter-spacing: -2px;
+        position: relative;
+      }
+
+      h1::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 4px;
+        background: linear-gradient(90deg, transparent, #a78bfa, transparent);
+        border-radius: 2px;
+      }
+
+      .subtitle {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1.2em;
+        font-weight: 300;
         letter-spacing: 1px;
       }
 
       .search-container {
-        margin: 20px 0;
-        width: 80%;
-        max-width: 400px;
+        margin: 0 auto 50px;
+        width: 100%;
+        max-width: 700px;
+        animation: fadeInUp 1s ease 0.2s both;
+      }
+
+      .search-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+
+      .search-icon {
+        position: absolute;
+        left: 25px;
+        font-size: 1.2em;
+        z-index: 2;
+        filter: grayscale(1);
+        opacity: 0.5;
+        transition: all 0.3s ease;
+      }
+
+      .search-bar:focus + .search-icon,
+      .search-bar:not(:placeholder-shown) + .search-icon {
+        opacity: 1;
+        filter: grayscale(0);
       }
 
       .search-bar {
         width: 100%;
-        padding: 10px;
+        padding: 20px 25px 20px 60px;
+        font-size: 1.05em;
+        border: 2px solid rgba(167, 139, 250, 0.2);
+        border-radius: 60px;
+        background: rgba(20, 20, 30, 0.6);
+        backdrop-filter: blur(20px);
+        color: #fff;
+        transition: all 0.4s ease;
+        outline: none;
+        font-family: 'Space Grotesk', sans-serif;
+      }
+
+      .search-bar:focus {
+        border-color: rgba(167, 139, 250, 0.6);
+        background: rgba(20, 20, 30, 0.8);
+        box-shadow: 0 0 40px rgba(167, 139, 250, 0.2);
+        transform: translateY(-2px);
+      }
+
+      .search-bar::placeholder {
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      .stats {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 40px;
         font-size: 1em;
-        border: 2px solid #007bff;
-        border-radius: 5px;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        animation: fadeIn 1s ease 0.4s both;
+        font-weight: 300;
+      }
+
+      #portfolio-count {
+        color: #a78bfa;
+        font-weight: 600;
       }
 
       .portfolio-grid {
-        display: flex;
-        gap: 24px;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 20px;
         padding: 20px;
-        max-width: 1300px;
-        justify-content: center;
+        animation: fadeInUp 1s ease 0.4s both;
       }
 
       .portfolio-box {
-        width: 280px;
+        position: relative;
         height: 100px;
-        background-color: #ffffff;
-        border-left: 6px solid #007bff;
-        border-radius: 10px;
+        background: rgba(20, 20, 30, 0.5);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(167, 139, 250, 0.1);
+        border-radius: 16px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        font-weight: bold;
-        color: #007bff;
-        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        font-weight: 500;
+        font-size: 0.95em;
+        color: #e0e0e0;
         text-decoration: none;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        cursor: pointer;
+      }
+
+      .portfolio-box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(167, 139, 250, 0.1) 100%);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+      }
+
+      .portfolio-box::after {
+        content: '→';
+        position: absolute;
+        right: 20px;
+        opacity: 0;
+        transform: translateX(-10px);
+        transition: all 0.3s ease;
+        font-size: 1.3em;
+        color: #a78bfa;
       }
 
       .portfolio-box:hover {
-        transform: translateY(-8px);
-        box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
-        background-color: #eaf3ff;
-      }
-      
-      .portfolio-box:active {
-        transform: scale(0.95);
+        transform: translateY(-6px) scale(1.02);
+        border-color: rgba(167, 139, 250, 0.4);
+        box-shadow: 
+          0 10px 40px rgba(167, 139, 250, 0.2),
+          0 0 0 1px rgba(167, 139, 250, 0.1) inset;
+        background: rgba(30, 30, 45, 0.7);
       }
 
+      .portfolio-box:hover::before {
+        opacity: 1;
+      }
+
+      .portfolio-box:hover::after {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      .portfolio-box:active {
+        transform: translateY(-3px) scale(0.98);
+      }
+
+      .portfolio-name {
+        position: relative;
+        z-index: 2;
+        padding: 0 40px;
+        transition: all 0.3s ease;
+        letter-spacing: 0.5px;
+      }
+
+      .portfolio-box:hover .portfolio-name {
+        transform: translateX(-8px);
+        color: #fff;
+      }
+
+      .no-results {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.4);
+        font-size: 1.2em;
+        margin-top: 80px;
+        display: none;
+      }
+
+      /* Scrollbar styling */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: rgba(20, 20, 30, 0.3);
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: rgba(167, 139, 250, 0.3);
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(167, 139, 250, 0.5);
+      }
+
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      @media (max-width: 1200px) {
+        .portfolio-grid {
+          grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        }
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 3em;
+        }
+
+        .portfolio-grid {
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          gap: 15px;
+        }
+
+        .portfolio-box {
+          height: 90px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 2.2em;
+        }
+
+        .portfolio-grid {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .portfolio-box {
+          height: 85px;
+        }
+      }
     </style>
   </head>
   <body>
-    <h1>Portfolio Collections</h1>
+    <!-- Floating particles -->
+    <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="particle" style="left: 20%; animation-delay: 3s;"></div>
+    <div class="particle" style="left: 30%; animation-delay: 6s;"></div>
+    <div class="particle" style="left: 40%; animation-delay: 9s;"></div>
+    <div class="particle" style="left: 50%; animation-delay: 12s;"></div>
+    <div class="particle" style="left: 60%; animation-delay: 2s;"></div>
+    <div class="particle" style="left: 70%; animation-delay: 5s;"></div>
+    <div class="particle" style="left: 80%; animation-delay: 8s;"></div>
+    <div class="particle" style="left: 90%; animation-delay: 11s;"></div>
 
-    <div class="search-container">
-      <input
-        type="text"
-        id="search-bar"
-        class="search-bar"
-        placeholder="Search portfolios..."
-        onkeyup="filterPortfolios()"
-      />
-    </div>
+    
+      <div class="container">
+      <header>
+        <h1>Portfolio Collections</h1>
+        <p class="subtitle">Discover amazing portfolios from talented creators</p>
+      </header>
 
-    <div class="portfolio-grid" id="portfolio-grid">
+      <div class="search-container">
+        <div class="search-wrapper">
+          <input
+            type="text"
+            id="search-bar"
+            class="search-bar"
+            placeholder="Search portfolios by name..."
+          />
+          <span class="search-icon">🔍</span>
+        </div>
+      </div>
+
+      <div class="stats">
+        <span id="portfolio-count"></span> portfolios available
+      </div>
+       <div class="portfolio-grid" id="portfolio-grid">
       <a href="./Aaditya Raj/index.html" class="portfolio-box" target="_blank">
         Aaditya Raj
       </a>
@@ -488,15 +784,45 @@
     </div>
 
     <script>
-      function filterPortfolios() {
-        const searchInput = document.getElementById("search-bar").value.toLowerCase();
-        const portfolioBoxes = document.querySelectorAll(".portfolio-box");
+      // Count and display total portfolios
+      const portfolioBoxes = document.querySelectorAll('.portfolio-box');
+      const portfolioCount = document.getElementById('portfolio-count');
+      const noResults = document.getElementById('no-results');
+      const searchBar = document.getElementById('search-bar');
+      
+      portfolioCount.textContent = portfolioBoxes.length;
 
-        portfolioBoxes.forEach((box) => {
-          const portfolioName = box.textContent.toLowerCase();
-          box.style.display = portfolioName.includes(searchInput) ? "flex" : "none";
+      // Filter portfolios function
+      searchBar.addEventListener('keyup', function() {
+        const searchTerm = this.value.toLowerCase().trim();
+        let visibleCount = 0;
+
+        portfolioBoxes.forEach(box => {
+          const name = box.querySelector('.portfolio-name').textContent.toLowerCase();
+          
+          if (name.includes(searchTerm)) {
+            box.style.display = 'flex';
+            visibleCount++;
+          } else {
+            box.style.display = 'none';
+          }
         });
-      }
+
+        // Show/hide no results message
+        if (visibleCount === 0 && searchTerm !== '') {
+          noResults.style.display = 'block';
+        } else {
+          noResults.style.display = 'none';
+        }
+
+        // Update count
+        portfolioCount.textContent = visibleCount;
+      });
+
+      // Add stagger animation to portfolio boxes on load
+      portfolioBoxes.forEach((box, index) => {
+        box.style.animation = `fadeInUp 0.6s ease ${index * 0.02}s both`;
+      });
     </script>
   </body>
 </html>
