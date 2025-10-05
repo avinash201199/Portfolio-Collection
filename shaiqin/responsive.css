@@ -1,0 +1,213 @@
+/*<!--========================================================
+                    Nav Bar max-width:1000px
+=========================================================-->*/
+@media(max-width:1000px){
+nav{
+    display: block;
+    justify-items: center;
+    padding: 0;
+}
+nav .logo{
+    width: 100%;
+    padding:0.2em ;
+}
+.no-hr{
+    display: block;
+    width: 100vw;
+}
+.nav-menu{
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+nav .logo p{
+    font-size: 2em;
+}
+nav .logo img{
+    width: 35px;
+}
+.nav-menu table tr td a{
+    padding:0 0.2em 0 0.2em;
+    font-size: 1.1em;
+}
+/*<!--============================
+            Home Page
+=============================-->*/
+main{
+    width: 100vw;
+    display: block;
+    justify-items: center;
+}
+main img{
+    width: 100vw;
+}
+main .main-text{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    height: 250px;
+}
+main .main-text p:nth-child(1){
+    font-size: 2.4em;
+}
+main .main-text p:nth-child(2){
+    font-size: 1.8em;
+}
+main .main-text p:nth-child(3){
+    font-size: 1em;
+    padding:0 0.5em;
+}
+header {
+    font-size: 1.3em;
+}
+/*<!--============================
+        Project Section
+=============================-->*/
+.project-list{
+    overflow: auto;
+}
+.project-showcase{
+    display: flex;  
+    flex-wrap: nowrap;
+    justify-content: none;
+    overflow-x: scroll;
+    min-width: 2200px;
+    margin: 0.5em 0 0.5em 0;
+}
+.project-showcase::-webkit-scrollbar {
+    height: 5px;
+}
+.repositories{
+    overflow: hidden;
+    width: 350px;
+    height: 100%;
+    margin: 1em;
+    border: 2px solid #eeeeee;
+    color: white;
+}
+.repositories img{
+    width: 100%;
+}
+.view-all center a{
+    font-size: 1.2em;
+}
+/*<!--============================
+        Skills Section
+=============================-->*/
+#skills{
+    margin-top: 1em;
+}
+.skills-section{
+    margin: 1em;
+    display: block;
+    justify-items: center;
+}
+.img-3 img{
+    width: 90%;
+    margin:0 5%;
+}
+/*<!--============================
+            About Section
+=============================-->*/
+.about-me{
+    margin: 2em 0;
+    display: block;
+}
+.about-me img{
+    width: 70vw;
+    margin: 0 15vw;
+}
+.about-text {
+    color: white;
+    width: 90%;
+    margin:1.5em 5%;
+}
+.about-text p{
+    padding: 0.5em;
+    font-size: 1.2em;
+}
+/*<!--============================
+        Education Section
+=============================-->*/
+.education{
+    display: block;
+    margin: 0 5vw;
+}
+.college{
+    width: 90%;
+    margin: 0 auto;
+}
+.college:nth-child(2){
+    border: 3px solid white;
+    border-top: none;
+}
+.watermark p{
+    font-size: 1em;
+}
+/*<!--============================
+        Certifications Section
+=============================-->*/
+.cert-img-list{
+    overflow-x: scroll;
+}
+.cert-showcase{
+    display: flex;  
+    flex-wrap: nowrap;
+    justify-content: none;
+    overflow-x: scroll;
+    min-width: 5500px;
+    margin: 0.5em 0 0.5em 0;
+}
+.cert-img{
+    margin: 10px 10px 0 10px;
+    border: 1px solid white;
+}
+.cert-img img{
+    width:90vw;
+}
+.cert-img p{
+    font-size: 1em;
+}
+/*<!--============================
+        Contact Section
+=============================-->*/
+.contact-section{
+    margin: 1em;
+}
+.contact-section center{
+    width: 90%;
+    font-size: 1.22em;
+}
+    .contact-section{
+        margin: 1em;
+    }
+    .contact-section center{
+        font-size: 1.2em;
+    }
+    .contact-form{
+        padding: 0.3em 0;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .img-5 img{
+        width: 350px;
+    }
+    .question{
+        font-size: 1.1em;
+        padding:0.5em 0;
+    }
+    input,
+    textarea{
+        width: 250px;
+        padding:0.5em;
+        font-size: 1em;
+    }
+    button{
+        color: white;
+        width: 120px;
+        padding:0.5em;
+        font-size: 1em;
+    }
+}
