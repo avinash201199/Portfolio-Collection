@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Portfolio - Portfolio Collection</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Space Grotesk', 'Inter', sans-serif;
+            background: #0a0a0f;
+            color: #fff;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 3em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #a78bfa 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .section {
+            background: rgba(20, 20, 30, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(167, 139, 250, 0.2);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #a78bfa;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .steps {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .steps li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .steps li:before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: linear-gradient(135deg, #667eea, #a78bfa);
+            color: #fff;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #a78bfa);
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(167, 139, 250, 0.4);
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: #a78bfa;
+            text-decoration: none;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: #ec4899;
+        }
+        
+        code {
+            background: rgba(167, 139, 250, 0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: #a78bfa;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .highlight {
+            background: rgba(167, 139, 250, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 3px solid #a78bfa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="./index.html" class="back-link">← Back to Portfolio Collection</a>
+        
+        <h1>Submit Your Portfolio 🚀</h1>
+        
+        <div class="section">
+            <h2>Quick Submit via GitHub Issue</h2>
+            <p>The fastest way to submit your portfolio is through our GitHub Issue form. Simply click the button below and fill in the required information:</p>
+            
+            <a href="https://github.com/mathurojus/Portfolio-Collection/issues/new?assignees=&labels=portfolio-submission&projects=&template=portfolio-submission.yml&title=%5BPortfolio+Submission%5D%3A+Your+Name" class="cta-button" target="_blank">Submit Portfolio via Issue →</a>
+            
+            <div class="highlight">
+                <p><strong>What you'll need:</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Your name</li>
+                    <li>Portfolio folder name</li>
+                    <li>Brief description of your portfolio</li>
+                    <li>Your portfolio's live URL (if available)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Alternative: Submit via Pull Request</h2>
+            <p>If you prefer to submit your portfolio directly via a Pull Request, follow these steps:</p>
+            
+            <ol class="steps">
+                <li>
+                    <strong>Fork the Repository</strong>
+                    <p>Fork the Portfolio-Collection repository to your GitHub account.</p>
+                </li>
+                
+                <li>
+                    <strong>Add Your Portfolio Folder</strong>
+                    <p>Create a new folder with your name (e.g., <code>YourName-Portfolio</code>) in the root directory and add your portfolio files.</p>
+                </li>
+                
+                <li>
+                    <strong>Update index.html</strong>
+                    <p>Add your portfolio link to the <code>index.html</code> file in the <code>.portfolio-grid</code> section:</p>
+                    <div class="highlight">
+                        <code>&lt;a href="./YourName-Portfolio/index.html" class="portfolio-box" target="_blank"&gt;<br/>
+                        &nbsp;&nbsp;&lt;span class="portfolio-name"&gt;Your Name&lt;/span&gt;<br/>
+                        &lt;/a&gt;</code>
+                    </div>
+                </li>
+                
+                <li>
+                    <strong>Create Pull Request</strong>
+                    <p>Submit a Pull Request with a clear title: <code>[Portfolio] Your Name</code></p>
+                </li>
+            </ol>
+        </div>
+        
+        <div class="section">
+            <h2>Guidelines 📝</h2>
+            <ul style="margin-left: 20px; line-height: 2;">
+                <li>Ensure your portfolio is responsive and works on all devices</li>
+                <li>Keep your folder size reasonable (avoid large assets)</li>
+                <li>Include a README.md in your portfolio folder with your name and a brief description</li>
+                <li>Make sure all links work properly</li>
+                <li>Follow the existing code structure and naming conventions</li>
+            </ul>
+        </div>
+        
+        <div class="section" style="text-align: center;">
+            <h2>Need Help?</h2>
+            <p>Check out our <a href="./CONTRIBUTING.md" style="color: #a78bfa; text-decoration: underline;">Contributing Guidelines</a> or <a href="https://github.com/mathurojus/Portfolio-Collection/issues" style="color: #a78bfa; text-decoration: underline;" target="_blank">open an issue</a> if you have any questions.</p>
+        </div>
+    </div>
+</body>
+</html>
