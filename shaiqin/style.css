@@ -1,0 +1,413 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+::-webkit-scrollbar {
+    width:5px;
+}
+/*<!--============================
+            Nav Bar
+=============================-->*/
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0.5em 0 0.5em 0;
+}
+nav .logo{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding:0 0 0 1em;
+}
+nav .logo img{
+    width:45px;
+}
+nav .logo p{
+    color: white;
+    font-family: Fira Sans;
+    font-size: 2.5em;
+    padding: 10px 0 10px 5px;
+}
+span{
+    color: yellow;
+}
+.no-hr{
+    display: none;
+}
+.nav-menu{
+    padding: 1em;
+}
+.nav-menu table tr td a{
+    padding:0 0.7em 0 0;
+    font-size: 1.6em;
+    font-family: Fira Sans;
+    color: white;
+    text-decoration: none;
+}
+.nav-menu table tr td a:hover{
+    color: white;
+}
+/*<!--============================
+            Home Page
+=============================-->*/
+main{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+main img{
+    width: 50vw;
+}
+main .main-text{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    color: white;
+    font-family: Fira Code;
+    padding: 4em;
+}
+main .main-text p:nth-child(1){
+    font-size: 3em;
+    font-weight: bolder;
+}
+main .main-text p:nth-child(2){
+    font-size: 2em;
+    font-weight:500;
+}
+main .main-text p:nth-child(3){
+    font-size: 1.2em;
+}
+/*<!--============================
+            Header
+=============================-->*/
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+header {
+    overflow: hidden;
+    color: white;
+    font-family: Fira Code;
+    white-space: nowrap;
+    position: relative;
+    font-size: 1.5em;
+}
+.slide-block{
+    padding: 0.3em 0 0.4em 0; 
+}
+header:before,
+header:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+header:hover .slide {
+    animation-play-state: paused;
+}
+.slide {
+    display: inline-block;
+    animation:110s slide infinite linear;
+}
+/*<!--============================
+        Project Section
+=============================-->*/
+.project-showcase{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 2em 0 2em 0;
+}/*
+#project-list{
+    overflow: auto;
+}*/
+.project-showcase::-webkit-scrollbar {
+    height: 5px;
+}
+.repositories{
+    overflow: hidden;
+    width: 380px;
+    height: 100%;
+    margin: 1em ;
+    border: 2px solid white;
+    color: white;
+    font-family: Fira Code;
+}
+.repositories img{
+    width: 100%;
+}
+.repositories p span{
+    color: white;
+    margin: 5px;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+.repositories .project-detail{
+    padding:0.5em 1em 1em 1em;
+}
+.repositories .project-detail>a{
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border: 2px solid white;
+    padding:3px 5px;
+    display: inline-block;
+    width: 80px;
+}
+.repositories .project-detail>a:hover{
+    border: 2px solid yellow;
+}
+.repositories .project-detail>a>img{
+    width: 20px;
+    float: right;
+    padding: 4px;
+}
+.view-all center a{
+    text-decoration: none;
+    color: white;
+    font-family: Fira Code;
+    font-size: 1.5em;
+}
+.view-all center a:hover{
+    border: 2px solid yellow;
+    padding: 10px;
+}
+/*<!--============================
+        Skills Section
+=============================-->*/
+#skills{
+    margin-top: 2em;
+}
+.skills-section{
+    margin: 2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.img-3 img{
+    width: 50vw;
+}
+.skill-list{
+    color: white;
+    font-family: Fira Code;
+}
+.skills-opt{
+    border: 1.5px solid white;
+    margin: 1em;
+}
+.skills-opt p{
+    font-size: 1.8em;
+    margin: 5px 10px;
+}
+.skills-opt .skills-dtl{
+    line-height: 1.8em;
+    padding: 10px;
+}
+/*<!--============================
+        About Section
+=============================-->*/
+#about{
+    margin: 2em 0;
+}
+.about-me{
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.about-me img{
+    width: 25%;
+    border-radius: 50%;
+}
+.about-text {
+    color: white;
+    width: 60vw;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.about-text p{
+    padding: 1em;
+    font-size: 1.5em;
+    border: 1.5px solid white;
+    border-radius: 20px;
+    font-family: Fira Code;
+}
+/*<!--============================
+        Education Section
+=============================-->*/
+.education{
+    display: flex;
+    margin: 0 5vw;
+}
+.college{
+    width: 30vw;
+    border: 2px solid white;
+    border-top: none;
+    padding: 15px;
+    color: white;
+    font-family: Fira Code;
+}
+.college:nth-child(2){
+    border-left: none;
+    border-right: none;
+}
+.college p{
+    color: yellow;
+    font-size: 2em;
+    font-weight: bold;
+}
+.college ul li a{
+    text-decoration: none;
+    color: white;
+}
+.college ul li{
+    list-style: none;
+    font-size: 1.2em;
+    padding: 3px 0;
+}
+/*<!--============================
+    Certifications Section
+=============================-->*/
+.cert-img-list{
+    overflow-x: scroll;
+}
+.cert-showcase{
+    display: flex;  
+    flex-wrap: nowrap;
+    justify-content: none;
+    overflow-x: scroll;
+    min-width: 2200px;
+    margin: 0.5em 0 0.5em 0;
+}
+.cert-img-list::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+.cert-img-list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0); 
+}
+.cert-img-list::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 0, 0); 
+    border-radius: 25px;
+}
+.cert-img-list::-webkit-scrollbar-thumb:hover {
+    background: yellow; 
+}
+.cert-img{
+    margin: 10px 10px 0 10px;
+    border: 1px solid white;
+}
+.cert-img img{
+    width:40vw;
+}
+.cert-img p{
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.2em;
+    font-family: Fira Code;
+}
+#certifications>.view-all{
+    margin: 0 0 1.5em 0;
+}
+/*<!--============================
+        Contact Section
+=============================-->*/
+.contact-section{
+    margin: 2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-section center{
+    color: white;
+    width: 80%;
+    font-family: Fira Code;
+    font-size: 2em;
+}
+.contact-icon {
+    margin: 1em 1em 0 1em;
+}
+.contact-icon a{
+    color: white;
+    font-size: 2.5em;
+    margin: 0em 0.1em;
+}
+.contact-icon a:hover{
+    color: yellow;
+}
+.contact-form{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em 0 0 0;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1.5px solid white;
+    border-bottom: none;
+    width: 600px;
+    margin: 0 auto;
+}
+.img-5 img{
+    width: 700px;
+}
+.img-5 {
+    display: flex;
+    justify-content: space-around;
+}
+.question{
+    font-size: 1.5em;
+    color: white;
+    font-family: Fira Code;
+    padding:1em 0 0.5em 0;
+}
+input,
+textarea{
+    width: 500px;
+    color: white;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    padding:0.5em;
+    font-size: 1.2em;
+    font-family: Fira Code;
+}
+button{
+    color: white;
+    width: 150px;
+    border: 1.5px solid white;
+    padding:0.5em;
+    font-size: 1.2em;
+    border-radius: 25px;
+    font-family: Fira Code;
+}
+button:hover{
+    color: yellow;
+    border:1.5px solid yellow;
+}
+/*<!--============================
+            Footer
+=============================-->*/
+.watermark p{
+    color: white;
+    text-align: center;
+    font-family: Fira Code;
+    padding: 1em 0 1em 0;
+    font-size: 1.5em;
+}
+.watermark p:hover{
+    color: yellow;
+}
