@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshat Talwar</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .resume-btn {
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 212, 170, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+}
+
+.resume-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 212, 170, 0.4);
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #00d4aa;
+            --secondary: #6366f1;
+            --accent: #f59e0b;
+            --bg-dark: #0a0a0a;
+            --bg-card: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #a3a3a3;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        .floating-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            animation: float 20s infinite linear;
+        }
+
+        .shape:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .shape:nth-child(2) {
+            width: 60px;
+            height: 60px;
+            top: 60%;
+            left: 80%;
+            animation-delay: -5s;
+        }
+
+        .shape:nth-child(3) {
+            width: 40px;
+            height: 40px;
+            top: 80%;
+            left: 20%;
+            animation-delay: -10s;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-30px) rotate(120deg); }
+            66% { transform: translateY(30px) rotate(240deg); }
+            100% { transform: translateY(0px) rotate(360deg); }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 2rem;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { filter: brightness(1); }
+            to { filter: brightness(1.2); }
+        }
+
+        .profession {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            box-shadow: 0 10px 30px rgba(0, 212, 170, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 212, 170, 0.4);
+        }
+
+        /* Skills Section */
+        .skills {
+            padding: 8rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 4rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 212, 170, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .skill-card:hover::before {
+            left: 100%;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(0, 212, 170, 0.2);
+        }
+
+        .skill-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .skill-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .skill-list {
+            list-style: none;
+            color: var(--text-secondary);
+        }
+
+        .skill-list li {
+            padding: 0.3rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .skill-list li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 8rem 2rem;
+            background: linear-gradient(135deg, rgba(0, 212, 170, 0.05), rgba(99, 102, 241, 0.05));
+        }
+
+        .projects-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .projects-grid {
+            display: grid;
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            border-radius: 25px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .project-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            border-color: var(--primary);
+        }
+
+        /* YouTube Video Styling */
+        .project-video-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background: #000;
+            border-radius: 15px 15px 0 0;
+            overflow: hidden;
+        }
+
+        .youtube-video {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .video-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            text-align: center;
+            padding: 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .video-placeholder:hover {
+            background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+            color: var(--primary);
+        }
+
+        .video-placeholder i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .video-placeholder p {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .video-placeholder small {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .project-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .project-features li {
+            padding: 0.5rem 0;
+            color: var(--text-secondary);
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .project-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .project-link {
+            padding: 0.7rem 1.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .project-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 212, 170, 0.3);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 8rem 2rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-content {
+            background: var(--bg-card);
+            padding: 4rem 2rem;
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            padding: 1rem 1.5rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-link:hover {
+            color: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project-video-container {
+                height: 250px;
+            }
+        }
+
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Akshat Talwar</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="projects.html">All Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content fade-in">
+            <h1>Akshat Talwar</h1>
+            <p class="profession">Machine Learning Developer · Agentic AI Builder</p>
+            <p class="hero-description">
+                What excites me most about machine learning is the opportunity to build systems that have genuine impact. I love working on intelligent solutions, contributing to the open source community, and creating Python automation that helps people work more efficiently
+            </p>
+            <div class="cta-buttons">
+    <a href="#projects" class="btn btn-primary">
+        <i class="fas fa-rocket"></i>
+        View My Work
+    </a>
+    <a href="#contact" class="btn btn-secondary">
+        <i class="fas fa-envelope"></i>
+        Get In Touch
+    </a>
+    <button class="resume-btn" onclick="openResume()">
+        <i class="fas fa-file-pdf"></i>
+        View Resume
+    </button>
+</div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title fade-in">Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card fade-in">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="skill-title">Programming Languages</h3>
+                <ul class="skill-list">
+                    <li>Python</li>
+                    <li>SQL (Querying & Data handling)</li>
+                </ul>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="skill-title">Data Science & ML</h3>
+                <ul class="skill-list">
+                    <li>NumPy, Pandas</li>
+                    <li>Scikit-learn</li>
+                    <li>Matplotlib, Seaborn</li>
+                    <li>TensorFlow / Keras</li>
+                </ul>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="skill-title">AI & Agentic Systems</h3>
+                <ul class="skill-list">
+                    <li>Prompt Engineering</li>
+                    <li>Foundation Models & LLMs</li>
+                    <li>Agentic AI Workflows</li>
+                    <li>Langchain</li>
+                </ul>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3 class="skill-title">Domain Expertise</h3>
+                <ul class="skill-list">
+                    <li>Prediction Systems</li>
+                    <li>Automation</li>
+                    <li>Computer Vision</li>
+                    <li>Retrieval Augumented Generation</li>
+                </ul>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3 class="skill-title">Tools & Platforms</h3>
+                <ul class="skill-list">
+                    <li>Git & GitHub</li>
+                    <li>Streamlit, Flask, FastAPI</li>
+                    <li>Google Sheets Automation</li>
+                    <li>n8n</li>
+                </ul>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3 class="skill-title">Automation & Integration</h3>
+                <ul class="skill-list">
+                    <li>Python Scripting</li>
+                    <li>Web Scraping</li>
+                    <li>API Integration</li>
+                    <li>Workflow Automation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects">
+        <div class="projects-container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+
+            <div class="projects-grid">
+                <!-- Project 1: Live Emotion Detector -->
+                <div class="project-card fade-in">
+                    <div class="project-video-container">
+                        <div class="video-placeholder" onclick="loadVideo(this, 'R2RaI-VC1ds')">
+                            <i class="fab fa-youtube"></i>
+                            <p>Live Emotion Detector Demo</p>
+                            <small>Click to watch on YouTube</small>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Live Emotion Detector</h3>
+                        <p class="project-description">
+                            Real-time emotion detection system using DeepFace, MediaPipe, and OpenCV
+                            that identifies and tracks 6 different emotions with live percentage display.
+                        </p>
+                        <ul class="project-features">
+                            <li>🙂 Happy | 😲 Surprise | 😐 Neutral | 😠 Angry | 😨 Fear | 😢 Sad</li>
+                            <li>Live percentage display of emotions</li>
+                            <li>Facemesh version with 468 face landmarks</li>
+                            <li>Real-time expression tracking</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://lnkd.in/dFERfMgp" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Viralyze AI -->
+                <div class="project-card fade-in">
+                    <div class="project-video-container">
+                        <div class="video-placeholder" onclick="loadVideo(this, '1pfTi0-ny8Y')">
+                            <i class="fab fa-youtube"></i>
+                            <p>Viralyze AI Demo</p>
+                            <small>Click to watch on YouTube</small>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Viralyze AI</h3>
+                        <p class="project-description">
+                            Smart assistant for Instagram creators and admins featuring predictive analytics,
+                            content generation, and comprehensive engagement insights all in one platform.
+                        </p>
+                        <ul class="project-features">
+                            <li>Predict likes and optimal posting times</li>
+                            <li>Generate captions and hashtags</li>
+                            <li>Engagement insights and analytics</li>
+                            <li>Creator-focused dashboard</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://lnkd.in/dA3Pz9xq" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Franchise Timeline Explorer -->
+                <div class="project-card fade-in">
+                    <div class="project-video-container">
+                        <div class="video-placeholder" onclick="loadVideo(this, 'xY7asmazXIo')">
+                            <i class="fab fa-youtube"></i>
+                            <p>Franchise Timeline Explorer Demo</p>
+                            <small>Click to watch on YouTube</small>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Franchise Timeline Explorer</h3>
+                        <p class="project-description">
+                            Interactive website helping movie fans explore their favorite franchises
+                            with unique timeline visualizations based on both release and chronological order.
+                        </p>
+                        <ul class="project-features">
+                            <li>Dual timeline views (release vs chronological)</li>
+                            <li>Interactive franchise exploration</li>
+                            <li>Movie connection visualization</li>
+                            <li>User-friendly navigation</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://lnkd.in/d9F7KC2y" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="projects.html" class="btn btn-primary">
+                    <i class="fas fa-folder-open"></i>
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-content fade-in">
+            <h2 class="section-title">Let's Connect</h2>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 2rem;">
+                Open to collaborations, opportunities, and discussions about AI/ML projects
+            </p>
+
+            <div class="contact-links">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWstwNRLwnlRgPTJXcjwkTVGZrxCHnzJMkwFDlJvSdWNTkrJmhsVmDrhpZzhPMvjpGcxmRNlB" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    Email at akshattalwar100@gmail.com
+                </a>
+                <a href="https://linkedin.com/in/akshat-talwar" class="contact-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/akshattalwar001" class="contact-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://x.com/akshatalwar" class="contact-link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    Twitter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Akshat Talwar</p>
+    </footer>
+
+    <script>
+        // Add this function to your existing script section
+function openResume() {
+    // Replace this URL with your actual resume PDF URL
+    const resumeUrl = 'D:\Games\Portfolio\RESUME (3).pdf';
+
+    // Open PDF in a new window with specific dimensions
+    const newWindow = window.open(
+        resumeUrl,
+        'resumeWindow',
+        'width=900,height=700,scrollbars=yes,resizable=yes,menubar=yes,toolbar=yes'
+    );
+
+    // Focus on the new window
+    if (newWindow) {
+        newWindow.focus();
+    } else {
+        // Fallback if popup is blocked
+        alert('Please allow popups to view the resume, or the PDF will open in the current tab.');
+        window.open(resumeUrl, '_blank');
+    }
+}
+        // Function to load YouTube video
+        function loadVideo(element, videoId) {
+            if (videoId === 'YOUR_YOUTUBE_VIDEO_ID_1' || videoId === 'YOUR_YOUTUBE_VIDEO_ID_2' || videoId === 'YOUR_YOUTUBE_VIDEO_ID_3') {
+                alert('Please replace "YOUR_YOUTUBE_VIDEO_ID_X" with actual YouTube video IDs in the HTML code.');
+                return;
+            }
+
+            const iframe = document.createElement('iframe');
+            iframe.className = 'youtube-video';
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+            iframe.frameBorder = '0';
+            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+            iframe.allowFullscreen = true;
+
+            element.parentNode.replaceChild(iframe, element);
+        }
+
+        // Alternative function to open video in new tab
+        function openVideoInNewTab(videoId) {
+            window.open(`https://www.youtube.com/watch?v=${videoId}`, '_blank');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add visible class to hero content immediately
+        document.querySelector('.hero-content').classList.add('visible');
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(10, 10, 10, 0.95)';
+            } else {
+                nav.style.background = 'rgba(10, 10, 10, 0.9)';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects | Akshat Talwar</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #00d4aa;
+            --secondary: #6366f1;
+            --accent: #f59e0b;
+            --bg-dark: #0a0a0a;
+            --bg-card: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #a3a3a3;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding-top: 100px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .page-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Filter Buttons */
+        .filter-container {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .filter-btn {
+            padding: 0.8rem 1.5rem;
+            margin: 0 0.5rem;
+            background: transparent;
+            color: var(--text-secondary);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            color: var(--text-primary);
+            border-color: var(--primary);
+            background: rgba(0, 212, 170, 0.1);
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: var(--primary);
+        }
+
+        .project-video {
+            width: 100%;
+            height: 250px;
+            background: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-video::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(0, 212, 170, 0.1), rgba(99, 102, 241, 0.1));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-video:hover::before {
+            opacity: 1;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--text-primary);
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tag {
+            padding: 0.3rem 0.8rem;
+            background: rgba(0, 212, 170, 0.2);
+            color: var(--primary);
+            border-radius: 15px;
+            font-size: 0.8rem;
+            border: 1px solid rgba(0, 212, 170, 0.3);
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .project-link {
+            padding: 0.6rem 1.2rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .project-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 212, 170, 0.3);
+        }
+
+        .project-link.secondary {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 212, 170, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+            margin-top: 4rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .page-title {
+                font-size: 2.5rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .filter-btn {
+                margin: 0.5rem;
+                display: block;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        /* Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Akshat Talwar</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Featured Projects</a></li>
+                <li><a href="#" style="color: var(--primary);">All Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header fade-in">
+                <h1 class="page-title">All Projects</h1>
+                <p class="page-subtitle">
+                    Explore my complete portfolio of AI/ML projects, automation tools,
+                    and innovative solutions across healthcare, education, and beyond.
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-container fade-in">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
+                <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+                <button class="filter-btn" data-filter="education">Education</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+                <button class="filter-btn" data-filter="web">Web Tools</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Featured Project 1: Live Emotion Detector -->
+                <div class="project-card fade-in" data-category="ai-ml healthcare">
+                    <div class="project-video">
+                        <i class="fas fa-play-circle" style="font-size: 2.5rem; color: var(--primary);"></i>
+                        <p style="margin-left: 1rem;">Emotion Detector Demo</p>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Live Emotion Detector</h3>
+                        <p class="project-description">
+                            Real-time emotion detection using DeepFace, MediaPipe, and OpenCV.
+                            Detects 6 emotions with live percentage display and 468 face landmarks tracking.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">DeepFace</span>
+                            <span class="tag">MediaPipe</span>
+                            <span class="tag">Computer Vision</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://lnkd.in/dFERfMgp" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Project 2: Viralyze AI -->
+                <div class="project-card fade-in" data-category="ai-ml automation">
+                    <div class="project-video">
+                        <i class="fas fa-play-circle" style="font-size: 2.5rem; color: var(--primary);"></i>
+                        <p style="margin-left: 1rem;">Viralyze AI Demo</p>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Viralyze AI</h3>
+                        <p class="project-description">
+                            Smart Instagram assistant for creators and admins. Features predictive analytics,
+                            content generation, and comprehensive engagement insights.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">Social Media</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://lnkd.in/dA3Pz9xq" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Project 3: Franchise Timeline Explorer -->
+                <div class="project-card fade-in" data-category="web">
+                    <div class="project-video">
+                        <i class="fas fa-play-circle" style="font-size: 2.5rem; color: var(--primary);"></i>
+                        <p style="margin-left: 1rem;">Franchise Explorer Demo</p>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Franchise Timeline Explorer</h3>
+                        <p class="project-description">
+                            Interactive website for exploring movie franchises with dual timeline views
+                            (release vs chronological) and connection visualizations.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">Data Visualization</span>
+                            <span class="tag">Interactive UI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://lnkd.in/d9F7KC2y" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Projects (Placeholder examples) -->
+                <div class="project-card fade-in" data-category="healthcare ai-ml">
+                    <div class="project-video">
+                        <i class="fas fa-heartbeat" style="font-size: 2.5rem; color: var(--primary);"></i>
+                        <p style="margin-left: 1rem;">Disease Prediction Model</p>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Healthcare Disease Prediction</h3>
+                        <p class="project-description">
+                            Machine learning model for early disease prediction using patient data.
+                            Implements various ML algorithms for accurate health outcome forecasting.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Healthcare</span>
+                            <span class="tag">Predictive Analytics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                                <div class="project-card fade-in" data-category="web">
+                    <div class="project-video">
+                        <i class="fab fa-chrome" style="font-size: 2.5rem; color: var(--primary);"></i>
+                        <p style="margin-left: 1rem;">Website Load Time Tracker</p>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SpeedTab Chrome Extension</h3>
+                        <p class="project-description">
+                            A cutting-edge Chrome extension paired with a Flask backend to measure website load times,
+                            deliver AI-powered performance insights, and showcase a webpage preview
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Predictive Analytics</span>
+                            <span class="tag">Web Tools</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/akshattalwar001/SpeedTab-Extension" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-category="web">
+                    <div class="project-video">
+                        <i class="fab fa-youtube" style="font-size: 2.5rem; color: var(--primary);"></i>
+                        <p style="margin-left: 1rem;">AI Claim Verifier</p>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">YT Claim Verifier</h3>
+                        <p class="project-description">
+                            YT-Claim-Verifier is a tool designed to help verify claims related to YouTube videos.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Predictive Analytics</span>
+                            <span class="tag">Web Tools</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/akshattalwar001/YT-Claim-Verifier" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in" data-category="education ai-ml">
+                    <div class="project-video">
+                        <i class="fas fa-graduation-cap" style="font-size: 2.5rem; color: var(--primary);"></i>
+                        <p style="margin-left: 1rem;">IoSC Chatbot</p>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">RAG Chatbot for IoSC</h3>
+                        <p class="project-description">
+                            The RAG Chatbot for Intel oneapi Students Club is an AI-powered assistant that answers user queries by retrieving relevant information
+                            from club website like members details, event details etc. It combines semantic search with LLMs to provide accurate, context-aware responses.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Recommendation Systems</span>
+                            <span class="tag">Education</span>
+                            <span class="tag">Personalization</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ragchatbot-production-0545.up.railway.app/" class="project-link">
+                                <i class="fab fa-github"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-category="automation">
+                    <div class="project-video">
+                        <i class="fas fa-cogs" style="font-size: 2.5rem; color: var(--primary);"></i>
+                        <p style="margin-left: 1rem;">Google Sheets Automation</p>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Python Google Sheets Automation</h3>
+                        <p class="project-description">
+                            Comprehensive automation suite for Google Sheets operations including
+                            data processing, report generation, and workflow automation.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Google APIs</span>
+                            <span class="tag">Automation</span>
+                            <span class="tag">Data Processing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Akshat Talwar. Passionate about AI/ML innovation and open source contributions.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category').includes(filter)) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Back to top button
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Project video click handlers
+        document.querySelectorAll('.project-video').forEach(video => {
+            video.addEventListener('click', function() {
+                alert('Video demo would play here. Please add your demo videos to the assets/videos/ folder.');
+            });
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
