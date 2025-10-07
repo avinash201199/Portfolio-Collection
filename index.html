@@ -165,23 +165,24 @@
         animation: fadeInUp 1s ease 0.4s both;
       }
       .portfolio-box {
-        position: relative;
-        height: 100px;
-        background: rgba(20, 20, 30, 0.5);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(167, 139, 250, 0.1);
-        border-radius: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-weight: 500;
-        font-size: 0.95em;
-        color: #e0e0e0;
-        text-decoration: none;
-        overflow: hidden;
-        transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-        cursor: pointer;
+  position: relative;
+  height: 220px;
+  background: rgba(20, 20, 30, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(167, 139, 250, 0.1);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.95em;
+  color: #e0e0e0;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
       }
       .portfolio-box::before {
         content: '';
@@ -223,11 +224,20 @@
         transform: translateY(-3px) scale(0.98);
       }
       .portfolio-name {
-        position: relative;
-        z-index: 2;
-        padding: 0 40px;
-        transition: all 0.3s ease;
-        letter-spacing: 0.5px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 12px 0;
+  background: rgba(20, 20, 30, 0.85);
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
       }
       .portfolio-box:hover .portfolio-name {
         transform: translateX(-8px);
@@ -344,24 +354,44 @@
         <span id="portfolio-count"></span> portfolios available
       </div>
        <div class="portfolio-grid" id="portfolio-grid">
-      <!-- portfolio links kept unchanged -->
+      <!-- Portfolio boxes will be injected here by JS -->
       </div>
-    
+    <div id="no-results" class="no-results">No portfolios found.</div>
     <script>
-      // Count and display total portfolios
-      const portfolioBoxes = document.querySelectorAll('.portfolio-box');
+      const portfolioGrid = document.getElementById('portfolio-grid');
       const portfolioCount = document.getElementById('portfolio-count');
       const noResults = document.getElementById('no-results');
       const searchBar = document.getElementById('search-bar');
-      
-      portfolioCount.textContent = portfolioBoxes.length;
+      let portfolioBoxes = [];
+
+      // Fetch and render portfolios from data.json
+      fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+          portfolioGrid.innerHTML = '';
+          data.portfolio.forEach((item, index) => {
+            const box = document.createElement('a');
+            box.className = 'portfolio-box';
+            box.href = item.source_code_link;
+            box.target = '_blank';
+            box.style.position = 'relative';
+            box.innerHTML = `
+              <img src='${item.screenshot}' alt='${item.contributor_name} screenshot' style='width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;'>
+              <span class=\"portfolio-name\">${item.contributor_name}</span>
+            `;
+            box.style.animation = `fadeInUp 0.6s ease ${index * 0.02}s both`;
+            portfolioGrid.appendChild(box);
+          });
+          portfolioBoxes = Array.from(document.querySelectorAll('.portfolio-box'));
+          portfolioCount.textContent = portfolioBoxes.length;
+        });
+
       // Filter portfolios function
       searchBar.addEventListener('keyup', function() {
         const searchTerm = this.value.toLowerCase().trim();
         let visibleCount = 0;
         portfolioBoxes.forEach(box => {
           const name = box.querySelector('.portfolio-name')?.textContent.toLowerCase() || box.textContent.toLowerCase();
-          
           if (name.includes(searchTerm)) {
             box.style.display = 'flex';
             visibleCount++;
@@ -377,10 +407,6 @@
         }
         // Update count
         portfolioCount.textContent = visibleCount;
-      });
-      // Add stagger animation to portfolio boxes on load
-      portfolioBoxes.forEach((box, index) => {
-        box.style.animation = `fadeInUp 0.6s ease ${index * 0.02}s both`;
       });
     </script>
   </body>
