@@ -365,7 +365,7 @@
       let portfolioBoxes = [];
 
       // Fetch and render portfolios from data.json
-      fetch('data.json')
+  fetch('/data.json')
         .then(response => response.json())
         .then(data => {
           portfolioGrid.innerHTML = '';
