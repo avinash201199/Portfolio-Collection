@@ -360,12 +360,10 @@
       h1 {
         font-size: 3em;
       }
-
       .portfolio-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 15px;
       }
-
       .portfolio-box {
         height: 90px;
       }
@@ -815,13 +813,12 @@
     </div> -->
 
     <script>
-      // Count and display total portfolios
-      const portfolioBoxes = document.querySelectorAll('.portfolio-box');
+      const portfolioGrid = document.getElementById('portfolio-grid');
       const portfolioCount = document.getElementById('portfolio-count');
       const noResults = document.getElementById('no-results');
       const searchBar = document.getElementById('search-bar');
       const container = document.getElementById('portfolio-container');
-
+      const portfolioBoxes = document.querySelectorAll('.portfolio-box');
 
       portfolioCount.textContent = portfolioBoxes.length;
 
@@ -829,7 +826,6 @@
       searchBar.addEventListener('keyup', function () {
         const searchTerm = this.value.toLowerCase().trim();
         let visibleCount = 0;
-
         portfolioBoxes.forEach(box => {
           const name = box.querySelector('.portfolio-name').textContent.toLowerCase();
 
@@ -840,21 +836,14 @@
             box.style.display = 'none';
           }
         });
-
         // Show/hide no results message
         if (visibleCount === 0 && searchTerm !== '') {
-          noResults.style.display = 'block';
+          noResults && (noResults.style.display = 'block');
         } else {
-          noResults.style.display = 'none';
+          noResults && (noResults.style.display = 'none');
         }
-
         // Update count
         portfolioCount.textContent = visibleCount;
-      });
-
-      // Add stagger animation to portfolio boxes on load
-      portfolioBoxes.forEach((box, index) => {
-        box.style.animation = `fadeInUp 0.6s ease ${index * 0.02}s both`;
       });
     </script>
     <script src="./scripts/portfolio-render.js"></script>
