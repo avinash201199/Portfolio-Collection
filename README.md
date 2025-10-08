@@ -39,7 +39,6 @@ Got it! Here's a concise section for that:
 }
 ```
 
-4. **Update index.html**: No manual update needed! Portfolios are now loaded automatically from `data.json`.
 
 5. **Quick Submission Option**: Use the "Add Portfolio/Resume" link in the navbar for fast instructions and an issue shortcut.
 
