@@ -1,790 +1,818 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Collections</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Collections</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Space Grotesk', 'Inter', sans-serif;
+      background: #0a0a0f;
+      color: #fff;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Animated gradient background */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background:
+        radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(138, 43, 226, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(72, 187, 120, 0.1) 0%, transparent 50%);
+      animation: gradientMove 15s ease infinite;
+      pointer-events: none;
+    }
+
+    @keyframes gradientMove {
+
+      0%,
+      100% {
+        transform: translate(0, 0) rotate(0deg);
       }
 
-      body {
-        font-family: 'Space Grotesk', 'Inter', sans-serif;
-        background: #0a0a0f;
-        color: #fff;
-        min-height: 100vh;
-        position: relative;
-        overflow-x: hidden;
+      33% {
+        transform: translate(5%, 5%) rotate(5deg);
       }
 
-      /* Animated gradient background */
-      body::before {
-        content: '';
-        position: fixed;
-        top: -50%;
-        left: -50%;
-        width: 200%;
-        height: 200%;
-        background: 
-          radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.15) 0%, transparent 50%),
-          radial-gradient(circle at 80% 80%, rgba(138, 43, 226, 0.15) 0%, transparent 50%),
-          radial-gradient(circle at 40% 20%, rgba(72, 187, 120, 0.1) 0%, transparent 50%);
-        animation: gradientMove 15s ease infinite;
-        pointer-events: none;
+      66% {
+        transform: translate(-5%, 5%) rotate(-5deg);
+      }
+    }
+
+    /* Floating particles */
+    .particle {
+      position: fixed;
+      width: 3px;
+      height: 3px;
+      background: rgba(138, 43, 226, 0.3);
+      border-radius: 50%;
+      pointer-events: none;
+      animation: float 20s infinite;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translate(0, 0);
+        opacity: 0;
       }
 
-      @keyframes gradientMove {
-        0%, 100% { transform: translate(0, 0) rotate(0deg); }
-        33% { transform: translate(5%, 5%) rotate(5deg); }
-        66% { transform: translate(-5%, 5%) rotate(-5deg); }
-      }
-
-      /* Floating particles */
-      .particle {
-        position: fixed;
-        width: 3px;
-        height: 3px;
-        background: rgba(138, 43, 226, 0.3);
-        border-radius: 50%;
-        pointer-events: none;
-        animation: float 20s infinite;
-      }
-
-      @keyframes float {
-        0%, 100% { transform: translate(0, 0); opacity: 0; }
-        10% { opacity: 1; }
-        90% { opacity: 1; }
-        100% { transform: translate(100vw, -100vh); opacity: 0; }
-      }
-
-      .container {
-        width: 100%;
-        max-width: 1600px;
-        margin: 0 auto;
-        padding: 40px 20px;
-        position: relative;
-        z-index: 1;
-      }
-
-      header {
-        text-align: center;
-        margin-bottom: 60px;
-        animation: fadeInDown 1s ease;
-      }
-
-      h1 {
-        font-size: 4.5em;
-        font-weight: 700;
-        background: linear-gradient(135deg, #667eea 0%, #a78bfa 50%, #ec4899 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        margin-bottom: 15px;
-        letter-spacing: -2px;
-        position: relative;
-      }
-
-      h1::after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100px;
-        height: 4px;
-        background: linear-gradient(90deg, transparent, #a78bfa, transparent);
-        border-radius: 2px;
-      }
-
-      .subtitle {
-        color: rgba(255, 255, 255, 0.6);
-        font-size: 1.2em;
-        font-weight: 300;
-        letter-spacing: 1px;
-      }
-
-      .search-container {
-        margin: 0 auto 50px;
-        width: 100%;
-        max-width: 700px;
-        animation: fadeInUp 1s ease 0.2s both;
-      }
-
-      .search-wrapper {
-        position: relative;
-        display: flex;
-        align-items: center;
-      }
-
-      .search-icon {
-        position: absolute;
-        left: 25px;
-        font-size: 1.2em;
-        z-index: 2;
-        filter: grayscale(1);
-        opacity: 0.5;
-        transition: all 0.3s ease;
-      }
-
-      .search-bar:focus + .search-icon,
-      .search-bar:not(:placeholder-shown) + .search-icon {
+      10% {
         opacity: 1;
-        filter: grayscale(0);
       }
 
-      .search-bar {
-        width: 100%;
-        padding: 20px 25px 20px 60px;
-        font-size: 1.05em;
-        border: 2px solid rgba(167, 139, 250, 0.2);
-        border-radius: 60px;
-        background: rgba(20, 20, 30, 0.6);
-        backdrop-filter: blur(20px);
-        color: #fff;
-        transition: all 0.4s ease;
-        outline: none;
-        font-family: 'Space Grotesk', sans-serif;
+      90% {
+        opacity: 1;
       }
 
-      .search-bar:focus {
-        border-color: rgba(167, 139, 250, 0.6);
-        background: rgba(20, 20, 30, 0.8);
-        box-shadow: 0 0 40px rgba(167, 139, 250, 0.2);
-        transform: translateY(-2px);
+      100% {
+        transform: translate(100vw, -100vh);
+        opacity: 0;
+      }
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+      animation: fadeInDown 1s ease;
+    }
+
+    h1 {
+      font-size: 4.5em;
+      font-weight: 700;
+      background: linear-gradient(135deg, #667eea 0%, #a78bfa 50%, #ec4899 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 15px;
+      letter-spacing: -2px;
+      position: relative;
+    }
+
+    h1::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, #a78bfa, transparent);
+      border-radius: 2px;
+    }
+
+    .subtitle {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 1.2em;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    .search-container {
+      margin: 0 auto 50px;
+      width: 100%;
+      max-width: 700px;
+      animation: fadeInUp 1s ease 0.2s both;
+    }
+
+    .search-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 25px;
+      font-size: 1.2em;
+      z-index: 2;
+      filter: grayscale(1);
+      opacity: 0.5;
+      transition: all 0.3s ease;
+    }
+
+    .search-bar:focus+.search-icon,
+    .search-bar:not(:placeholder-shown)+.search-icon {
+      opacity: 1;
+      filter: grayscale(0);
+    }
+
+    .search-bar {
+      width: 100%;
+      padding: 20px 25px 20px 60px;
+      font-size: 1.05em;
+      border: 2px solid rgba(167, 139, 250, 0.2);
+      border-radius: 60px;
+      background: rgba(20, 20, 30, 0.6);
+      backdrop-filter: blur(20px);
+      color: #fff;
+      transition: all 0.4s ease;
+      outline: none;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .search-bar:focus {
+      border-color: rgba(167, 139, 250, 0.6);
+      background: rgba(20, 20, 30, 0.8);
+      box-shadow: 0 0 40px rgba(167, 139, 250, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .search-bar::placeholder {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    .stats {
+      text-align: center;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 40px;
+      font-size: 1em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      animation: fadeIn 1s ease 0.4s both;
+      font-weight: 300;
+    }
+
+    #portfolio-count {
+      color: #a78bfa;
+      font-weight: 600;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      animation: fadeInUp 1s ease 0.4s both;
+    }
+
+    .portfolio-box {
+      position: relative;
+      height: 100px;
+      background: rgba(20, 20, 30, 0.5);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(167, 139, 250, 0.1);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: 500;
+      font-size: 0.95em;
+      color: #e0e0e0;
+      text-decoration: none;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      cursor: pointer;
+    }
+
+    .portfolio-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(167, 139, 250, 0.1) 100%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .portfolio-box::after {
+      content: '→';
+      position: absolute;
+      right: 20px;
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: all 0.3s ease;
+      font-size: 1.3em;
+      color: #a78bfa;
+    }
+
+    .portfolio-box:hover {
+      transform: translateY(-6px) scale(1.02);
+      border-color: rgba(167, 139, 250, 0.4);
+      box-shadow:
+        0 10px 40px rgba(167, 139, 250, 0.2),
+        0 0 0 1px rgba(167, 139, 250, 0.1) inset;
+      background: rgba(30, 30, 45, 0.7);
+    }
+
+    .portfolio-box:hover::before {
+      opacity: 1;
+    }
+
+    .portfolio-box:hover::after {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .portfolio-box:active {
+      transform: translateY(-3px) scale(0.98);
+    }
+
+    .portfolio-name {
+      position: relative;
+      z-index: 2;
+      padding: 0 40px;
+      transition: all 0.3s ease;
+      letter-spacing: 0.5px;
+    }
+
+    .portfolio-box:hover .portfolio-name {
+      transform: translateX(-8px);
+      color: #fff;
+    }
+
+    .no-results {
+      text-align: center;
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 1.2em;
+      margin-top: 80px;
+      display: none;
+    }
+
+    /* Scrollbar styling */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: rgba(20, 20, 30, 0.3);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgba(167, 139, 250, 0.3);
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(167, 139, 250, 0.5);
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
       }
 
-      .search-bar::placeholder {
-        color: rgba(255, 255, 255, 0.3);
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
       }
 
-      .stats {
-        text-align: center;
-        color: rgba(255, 255, 255, 0.5);
-        margin-bottom: 40px;
-        font-size: 1em;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        animation: fadeIn 1s ease 0.4s both;
-        font-weight: 300;
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
       }
 
-      #portfolio-count {
-        color: #a78bfa;
-        font-weight: 600;
+      to {
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 3em;
       }
 
       .portfolio-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        gap: 20px;
-        padding: 20px;
-        animation: fadeInUp 1s ease 0.4s both;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
       }
 
       .portfolio-box {
-        position: relative;
-        height: 100px;
-        background: rgba(20, 20, 30, 0.5);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(167, 139, 250, 0.1);
-        border-radius: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-weight: 500;
-        font-size: 0.95em;
-        color: #e0e0e0;
-        text-decoration: none;
-        overflow: hidden;
-        transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-        cursor: pointer;
+        height: 90px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.2em;
       }
 
-      .portfolio-box::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(167, 139, 250, 0.1) 100%);
-        opacity: 0;
-        transition: opacity 0.4s ease;
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
       }
 
-      .portfolio-box::after {
-        content: '→';
-        position: absolute;
-        right: 20px;
-        opacity: 0;
-        transform: translateX(-10px);
-        transition: all 0.3s ease;
-        font-size: 1.3em;
-        color: #a78bfa;
+      .portfolio-box {
+        height: 85px;
       }
+    }
+  </style>
+</head>
 
-      .portfolio-box:hover {
-        transform: translateY(-6px) scale(1.02);
-        border-color: rgba(167, 139, 250, 0.4);
-        box-shadow: 
-          0 10px 40px rgba(167, 139, 250, 0.2),
-          0 0 0 1px rgba(167, 139, 250, 0.1) inset;
-        background: rgba(30, 30, 45, 0.7);
-      }
+<body>
+  <!-- Floating particles -->
+  <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+  <div class="particle" style="left: 20%; animation-delay: 3s;"></div>
+  <div class="particle" style="left: 30%; animation-delay: 6s;"></div>
+  <div class="particle" style="left: 40%; animation-delay: 9s;"></div>
+  <div class="particle" style="left: 50%; animation-delay: 12s;"></div>
+  <div class="particle" style="left: 60%; animation-delay: 2s;"></div>
+  <div class="particle" style="left: 70%; animation-delay: 5s;"></div>
+  <div class="particle" style="left: 80%; animation-delay: 8s;"></div>
+  <div class="particle" style="left: 90%; animation-delay: 11s;"></div>
 
-      .portfolio-box:hover::before {
-        opacity: 1;
-      }
 
-      .portfolio-box:hover::after {
-        opacity: 1;
-        transform: translateX(0);
-      }
+  <div class="container">
+    <header>
+      <h1>Portfolio Collections</h1>
+      <p class="subtitle">Discover amazing portfolios from talented creators</p>
+    </header>
 
-      .portfolio-box:active {
-        transform: translateY(-3px) scale(0.98);
-      }
-
-      .portfolio-name {
-        position: relative;
-        z-index: 2;
-        padding: 0 40px;
-        transition: all 0.3s ease;
-        letter-spacing: 0.5px;
-      }
-
-      .portfolio-box:hover .portfolio-name {
-        transform: translateX(-8px);
-        color: #fff;
-      }
-
-      .no-results {
-        text-align: center;
-        color: rgba(255, 255, 255, 0.4);
-        font-size: 1.2em;
-        margin-top: 80px;
-        display: none;
-      }
-
-      /* Scrollbar styling */
-      ::-webkit-scrollbar {
-        width: 10px;
-      }
-
-      ::-webkit-scrollbar-track {
-        background: rgba(20, 20, 30, 0.3);
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: rgba(167, 139, 250, 0.3);
-        border-radius: 5px;
-      }
-
-      ::-webkit-scrollbar-thumb:hover {
-        background: rgba(167, 139, 250, 0.5);
-      }
-
-      @keyframes fadeInDown {
-        from {
-          opacity: 0;
-          transform: translateY(-40px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(40px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-      }
-
-      @media (max-width: 1200px) {
-        .portfolio-grid {
-          grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        }
-      }
-
-      @media (max-width: 768px) {
-        h1 {
-          font-size: 3em;
-        }
-
-        .portfolio-grid {
-          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-          gap: 15px;
-        }
-
-        .portfolio-box {
-          height: 90px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        h1 {
-          font-size: 2.2em;
-        }
-
-        .portfolio-grid {
-          grid-template-columns: 1fr;
-          gap: 12px;
-        }
-
-        .portfolio-box {
-          height: 85px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Floating particles -->
-    <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
-    <div class="particle" style="left: 20%; animation-delay: 3s;"></div>
-    <div class="particle" style="left: 30%; animation-delay: 6s;"></div>
-    <div class="particle" style="left: 40%; animation-delay: 9s;"></div>
-    <div class="particle" style="left: 50%; animation-delay: 12s;"></div>
-    <div class="particle" style="left: 60%; animation-delay: 2s;"></div>
-    <div class="particle" style="left: 70%; animation-delay: 5s;"></div>
-    <div class="particle" style="left: 80%; animation-delay: 8s;"></div>
-    <div class="particle" style="left: 90%; animation-delay: 11s;"></div>
-
-    
-      <div class="container">
-      <header>
-        <h1>Portfolio Collections</h1>
-        <p class="subtitle">Discover amazing portfolios from talented creators</p>
-      </header>
-
-      <div class="search-container">
-        <div class="search-wrapper">
-          <input
-            type="text"
-            id="search-bar"
-            class="search-bar"
-            placeholder="Search portfolios by name..."
-          />
-          <span class="search-icon">🔍</span>
-        </div>
+    <div class="search-container">
+      <div class="search-wrapper">
+        <input type="text" id="search-bar" class="search-bar" placeholder="Search portfolios by name..." />
+        <span class="search-icon">🔍</span>
       </div>
+    </div>
 
-      <div class="stats">
-        <span id="portfolio-count"></span> portfolios available
-      </div>
-       <div class="portfolio-grid" id="portfolio-grid">
+    <div class="stats">
+      <span id="portfolio-count"></span> portfolios available
+    </div>
+    <div class="portfolio-grid" id="portfolio-grid">
+
       <a href="./Aaditya Raj/index.html" class="portfolio-box" target="_blank">
-        Aaditya Raj
+        <span class="portfolio-name">Aaditya Raj</span>
       </a>
       <a href="./Jaswanth-Kumar/index.html" class="portfolio-box" target="_blank">
-        Jaswanth Kumar
+        <span class="portfolio-name">Jaswanth Kumar</span>
+
       </a>
       <a href="./Abhay Parihar/app.js" class="portfolio-box" target="_blank">
-        Abhay Parihar
+        <span class="portfolio-name">Abhay Parihar</span>
+
       </a>
-      <a href="./Abhinav Naman/index.html" class="portfolio-box" target="_blank"> 
-        Abhinav Naman
+      <a href="./Abhinav Naman/index.html" class="portfolio-box" target="_blank">
+        <span class="portfolio-name">Abhinav Naman</span>
       </a>
       <a href="./Abhishek Portfolio/index.html" class="portfolio-box" target="_blank">
-        Abhishek Portfolio
+        <span class="portfolio-name">Abhishek Portfolio</span>
       </a>
+
       <a href="./Abhishek Tyagi/index.html" class="portfolio-box" target="_blank">
-        Abhishek Tyagi  
-      </a>  
+        <span class="portfolio-name">Abhishek Tyagi</span>
+      </a>
+
       <a href="./Adhiraj Pawar/index.html" class="portfolio-box" target="_blank">
-        Adhiraj Pawar
+        <span class="portfolio-name">Adhiraj Pawar</span>
       </a>
+
       <a href="./Aditya Chaki/index.html" class="portfolio-box" target="_blank">
-        Aditya Chaki
+        <span class="portfolio-name">Aditya Chaki</span>
       </a>
-      <a href="./Aditya Prakash/index.html" class="portfolio-box" target="_blank">  
-        Aditya Prakash
+
+      <a href="./Aditya Prakash/index.html" class="portfolio-box" target="_blank">
+        <span class="portfolio-name">Aditya Prakash</span>
       </a>
+
       <a href="./Afraz Khan/src/App.js" class="portfolio-box" target="_blank">
-        Afraz Khan
+        <span class="portfolio-name">Afraz Khan</span>
       </a>
+
       <a href="./Agneya Pathare/index.html" class="portfolio-box" target="_blank">
-        Agneya Pathare
+        <span class="portfolio-name">Agneya Pathare</span>
       </a>
+
       <a href="./Aiman_Aisha/index.html" class="portfolio-box" target="_blank">
-        Aiman_Aisha
+        <span class="portfolio-name">Aiman_Aisha</span>
       </a>
+
       <a href="./Ajay Dahiya/index.html" class="portfolio-box" target="_blank">
-        Ajay Dahiya
+        <span class="portfolio-name">Ajay Dahiya</span>
       </a>
+
       <a href="./Alex-main/index.html" class="portfolio-box" target="_blank">
-        Alex-main
+        <span class="portfolio-name">Alex-main</span>
       </a>
+
       <a href="./Amin Tai/index.html" class="portfolio-box" target="_blank">
-        Amin Tai
+        <span class="portfolio-name">Amin Tai</span>
       </a>
+
       <a href="./Amit Maity/index.html" class="portfolio-box" target="_blank">
-        Amit Maity
+        <span class="portfolio-name">Amit Maity</span>
       </a>
+
       <a href="./Anamika/index.html" class="portfolio-box" target="_blank">
-        Anamika
+        <span class="portfolio-name">Anamika</span>
       </a>
+
       <a href="./Aniket Pal/main.py" class="portfolio-box" target="_blank">
-        Aniket Pal
+        <span class="portfolio-name">Aniket Pal</span>
       </a>
-      <a href="./Ankan Sarkar/index.html" class="portfolio-box" target="_blank">  
-        Ankan Sarkar
+
+      <a href="./Ankan Sarkar/index.html" class="portfolio-box" target="_blank">
+        <span class="portfolio-name">Ankan Sarkar</span>
       </a>
+
       <a href="./ANKIT KUMAR/index.html" class="portfolio-box" target="_blank">
-        ANKIT KUMAR
+        <span class="portfolio-name">ANKIT KUMAR</span>
       </a>
+
       <a href="./Ansh Kumar/index.html" class="portfolio-box" target="_blank">
-        Ansh Kumar
+        <span class="portfolio-name">Ansh Kumar</span>
       </a>
+
       <a href="./Anurag Verma/src/App.js" class="portfolio-box" target="_blank">
-        Anurag Verma
+        <span class="portfolio-name">Anurag Verma</span>
       </a>
+
       <a href="./Anushka Dubey/public/index.html" class="portfolio-box" target="_blank">
-        Anushka Dubey
+        <span class="portfolio-name">Anushka Dubey</span>
       </a>
+
       <a href="./Anushka Mandal/index.html" class="portfolio-box" target="_blank">
-        Anushka Mandal
+        <span class="portfolio-name">Anushka Mandal</span>
       </a>
+
       <a href="./Anushka Mittal/index.html" class="portfolio-box" target="_blank">
-        Anushka Mittal
+        <span class="portfolio-name">Anushka Mittal</span>
       </a>
+
       <a href="./Aritra Das/index.html" class="portfolio-box" target="_blank">
-        Aritra Das
+        <span class="portfolio-name">Aritra Das</span>
       </a>
+
       <a href="./Arnab_Mondal/index.html" class="portfolio-box" target="_blank">
-        Arnab Mondal
+        <span class="portfolio-name">Arnab Mondal</span>
       </a>
+
       <a href="./Arnav Gupta/index.html" class="portfolio-box" target="_blank">
-        Arnav Gupta
+        <span class="portfolio-name">Arnav Gupta</span>
       </a>
+
       <a href="./Aryan's Portfolio/index.html" class="portfolio-box" target="_blank">
-        Aryan's Portfolio
+        <span class="portfolio-name">Aryan's Portfolio</span>
       </a>
+
       <a href="./Augusto Guerra/index.html" class="portfolio-box" target="_blank">
-        Augusto Guerra
+        <span class="portfolio-name">Augusto Guerra</span>
       </a>
+
       <a href="./Ayush Kumar/frontend_react/public/index.html" class="portfolio-box" target="_blank">
-        Ayush Kumar
+        <span class="portfolio-name">Ayush Kumar</span>
       </a>
+
       <a href="./Ayush Sharma/index.html" class="portfolio-box" target="_blank">
-        Ayush Sharma
+        <span class="portfolio-name">Ayush Sharma</span>
       </a>
+
       <a href="./Ayush Yadav/public/index.html" class="portfolio-box" target="_blank">
-        Ayush Yadav
+        <span class="portfolio-name">Ayush Yadav</span>
       </a>
 
       <a href="./Badshah Yadav/Profile.html" class="portfolio-box" target="_blank">
-        Badshah Yadav
+        <span class="portfolio-name">Badshah Yadav</span>
       </a>
+
       <a href="./Baihaki-Al-Biruni/pages/index.vue" class="portfolio-box" target="_blank">
-        Baihaki-Al-Biruni
+        <span class="portfolio-name">Baihaki-Al-Biruni</span>
       </a>
+
       <a href="Beer-idev/index.html" class="portfolio-box" target="_blank">
-        Beer-idev
+        <span class="portfolio-name">Beer-idev</span>
       </a>
+
       <a href="./Bhaitabahi/Index.html" class="portfolio-box" target="_blank">
-        Bhaitabahi
+        <span class="portfolio-name">Bhaitabahi</span>
       </a>
+
       <a href="./Binay Shaw/index.html" class="portfolio-box" target="_blank">
-        Binay Shaw
+        <span class="portfolio-name">Binay Shaw</span>
       </a>
 
       <a href="./Candida Noronha/index.html" class="portfolio-box" target="_blank">
-        Candida Noronha
+        <span class="portfolio-name">Candida Noronha</span>
       </a>
+
       <a href="./Chaitrali Kakde/index.html" class="portfolio-box" target="_blank">
-        Chaitrali Kakde
+        <span class="portfolio-name">Chaitrali Kakde</span>
       </a>
+
       <a href="./CHINMAY/PORTFOLIO.HTML" class="portfolio-box" target="_blank">
-        CHINMAY
+        <span class="portfolio-name">CHINMAY</span>
       </a>
+
       <a href="./chiranjeev's portfolio/index.html" class="portfolio-box" target="_blank">
-        chiranjeev's portfolio
+        <span class="portfolio-name">chiranjeev's portfolio</span>
       </a>
 
       <a href="./Daniel-Rojas/index.html" class="portfolio-box" target="_blank">
-        Daniel-Rojas
+        <span class="portfolio-name">Daniel-Rojas</span>
       </a>
+
       <a href="./Deepak Kumar/index.html" class="portfolio-box" target="_blank">
-        Deepak Kumar
+        <span class="portfolio-name">Deepak Kumar</span>
       </a>
+
       <a href="./DelayCoderz/index.html" class="portfolio-box" target="_blank">
-        DelayCoderz
+        <span class="portfolio-name">DelayCoderz</span>
       </a>
+
       <a href="./Dennis Thomas/index.html" class="portfolio-box" target="_blank">
-        Dennis Thomas
+        <span class="portfolio-name">Dennis Thomas</span>
       </a>
+
       <a href="./Devansh Upadhyay/index.html" class="portfolio-box" target="_blank">
-        Devansh Upadhyay
+        <span class="portfolio-name">Devansh Upadhyay</span>
       </a>
+
       <a href="./Dhanush/public/index.html" class="portfolio-box" target="_blank">
-        Dhanush
+        <span class="portfolio-name">Dhanush</span>
       </a>
+
       <a href="./Dhiraj Kumar/index.html" class="portfolio-box" target="_blank">
-        Dhiraj Kumar
+        <span class="portfolio-name">Dhiraj Kumar</span>
       </a>
+
       <a href="./Dhruv Arora's Portfolio/index.html" class="portfolio-box" target="_blank">
-        Dhruv Arora's Portfolio
+        <span class="portfolio-name">Dhruv Arora's Portfolio</span>
       </a>
+
       <a href="./Dhruva-Bhat-Portfolio/index.html" class="portfolio-box" target="_blank">
-        Dhruva-Bhat-Portfolio
+        <span class="portfolio-name">Dhruva-Bhat-Portfolio</span>
       </a>
+
       <a href="./Divyanshu Gupta/index.html" class="portfolio-box" target="_blank">
-        Divyanshu Gupta 
+        <span class="portfolio-name">Divyanshu Gupta</span>
       </a>
 
       <a href="./gaurav-verma/public/index.html" class="portfolio-box" target="_blank">
-        Gaurav Verma
+        <span class="portfolio-name">Gaurav Verma</span>
       </a>
+
       <a href="./Gopish_portfolio/index.html" class="portfolio-box" target="_blank">
-        Gopish's Portfolio
+        <span class="portfolio-name">Gopish's Portfolio</span>
       </a>
+
       <a href="./Guilherme Orcezi/index.html" class="portfolio-box" target="_blank">
-        Guilherme Orcezi
+        <span class="portfolio-name">Guilherme Orcezi</span>
       </a>
+
       <a href="./Gulshan_jakhon/index.html" class="portfolio-box" target="_blank">
-        Gulshan_jakhon
+        <span class="portfolio-name">Gulshan_jakhon</span>
       </a>
 
       <a href="./Hargun Kaur/index.html" class="portfolio-box" target="_blank">
-        Hargun Kaur
+        <span class="portfolio-name">Hargun Kaur</span>
       </a>
+
       <a href="./Harshwardhan Mehrotra/index.html" class="portfolio-box" target="_blank">
-        Harshwardhan Mehrotra
+        <span class="portfolio-name">Harshwardhan Mehrotra</span>
       </a>
-      <a href="./HEMANG YADAV/index.html" class="portfolio-box" target="_blank">  
-        HEMANG YADAV
+
+      <a href="./HEMANG YADAV/index.html" class="portfolio-box" target="_blank">
+        <span class="portfolio-name">HEMANG YADAV</span>
       </a>
+
       <a href="./Hemant Sachdeva/src/templates/index.html" class="portfolio-box" target="_blank">
-        Hemant Sachdeva
+        <span class="portfolio-name">Hemant Sachdeva</span>
       </a>
+
       <a href="./Hritik/index.html" class="portfolio-box" target="_blank">
-        Hritik
+        <span class="portfolio-name">Hritik</span>
       </a>
 
       <a href="./ikabir/public/index.html" class="portfolio-box" target="_blank">
-        ikabir  
-      </a>  
-      <a href="./Ilyas_A_Yusuf/index.html" class="portfolio-box" target="_blank">
-        Ilyas A Yusuf
+        <span class="portfolio-name">ikabir</span>
       </a>
+
+      <a href="./Ilyas_A_Yusuf/index.html" class="portfolio-box" target="_blank">
+        <span class="portfolio-name">Ilyas A Yusuf</span>
+      </a>
+
       <a href="./Irmeen Husain/index.html" class="portfolio-box" target="_blank">
-        Irmeen Husain
+        <span class="portfolio-name">Irmeen Husain</span>
       </a>
 
       <a href="./Jaspreet-Singh-Portfolio/index.html" class="portfolio-box" target="_blank">
-        Jaspreet-Singh-Portfolio
-      </a>  
-      <a href="./Jitu Nayak/pages/index.tsx" class="portfolio-box" target="_blank">    
-        Jitu Nayak
+        <span class="portfolio-name">Jaspreet-Singh-Portfolio</span>
       </a>
+
+      <a href="./Jitu Nayak/pages/index.tsx" class="portfolio-box" target="_blank">
+        <span class="portfolio-name">Jitu Nayak</span>
+      </a>
+
       <a href="./Joaquin144/index.html" class="portfolio-box" target="_blank">
-        Joaquin144
+        <span class="portfolio-name">Joaquin144</span>
       </a>
+
       <a href="./Jyotimoy Kashyap/index.html" class="portfolio-box" target="_blank">
-        Jyotimoy Kashyap  
+        <span class="portfolio-name">Jyotimoy Kashyap</span>
       </a>
 
-      <a href="./Karanjot Singh/pages/docs.tsx" class="portfolio-box" target="_blank">
-        Karanjot Singh
-      </a>
-      <a href="./keshav/index.html" class="portfolio-box" target="_blank">
-        keshav
-      </a>
-      <a href="./Khushi_Nikam_Portfolio/index.html" class="portfolio-box" target="_blank">
-        Khushi_Nikam_Portfolio
-      </a>
-      <a href="./Korla Goutham/public/index.html" class="portfolio-box" target="_blank">  
-        Korla Goutham
-      </a>
-      <a href="./Krishna Rajkumar Dembla/index.html" class="portfolio-box" target="_blank">
-        Krishna Rajkumar Dembla 
-      </a>
-      <a href="Kumar Rahul/index.html" class="portfolio-box" target="_blank">  
-        Kumar Rahul    
-      </a>
-
-      <a href="./MANISH VERMA  PORTFOLIO/index.html" class="portfolio-box" target="_blank">
-        MANISH VERMA  PORTFOLIO
-      </a>
-      <a href="Meet Thakur/index.html"   class="portfolio-box" target="_blank">
-        Meet Thakur
-      </a>
-      <a href="./Megha Vishwakrama/index.html" class="portfolio-box" target="_blank">
-        Megha Vishwakrama
-      </a>
-      <a href="./my Portfolio/index.html" class="portfolio-box" target="_blank">
-        My Portfolio
-      </a>
-
-      <a href="./Nikita Singh/public_html/index.html" class="portfolio-box" target="_blank">
-        Nikita Singh
-      </a>
-
-      <a href="Ojasvi Khare/index.html"   class="portfolio-box" target="_blank">  
-        Ojasvi Khare
-      </a>
-      <a href="OmaribaCollins/index.html" class="portfolio-box" target="_blank">  
-        OmaribaCollins
-      </a>
-
-      <a href="./Pavan_Kamthane/public/index.html" class="portfolio-box" target="_blank">
-        Pavan Kamthane
-      </a>
-      <a href="./portfolio/index.html"  class="portfolio-box" target="_blank">
-        Portfolio   
-      </a>
-      <a href="./Prakash Sahi/index.html" class="portfolio-box" target="_blank">
-        Prakash Sahi
-      </a>
-      <a href="./Pratik Mali/index.html" class="portfolio-box" target="_blank">
-        Pratik Mali
-      </a>
-      <a href="./Pratikshaekbote/index.html"  class="portfolio-box" target="_blank">
-        Pratikshaekbote
-      </a>
-      <a href="./Priya Gupta/index.html" class="portfolio-box" target="_blank">
-        Priya Gupta 
-      </a>
-
-      <a href="./Rachit Singhal/public/index.html" class="portfolio-box" target="_blank">
-        Rachit Singhal
-      </a>
-      <a href="./Rahul Palamarthi/index.html" class="portfolio-box" target="_blank">
-        Rahul Palamarthi
-      </a>
-      <a href="./Raj Tiwari/index.html" class="portfolio-box" target="_blank">
-        Raj Tiwari
-      </a>
-      <a href="./RHans-Portfolio-(hidesec)/index.html" class="portfolio-box" target="_blank"> 
-        RHans-Portfolio-(hidesec)
-      </a>
-      <a href="./RISHIKA KANT/index.html" class="portfolio-box" target="_blank">
-        RISHIKA KANT
-      </a>
-      <a href="./Rishita Shaw/index.html" class="portfolio-box" target="_blank">
-        Rishita Shaw
-      </a>
-      <a href="./Ritik R Jha/index.html" class="portfolio-box" target="_blank">
-        Ritik R Jha
-      </a>
-      <a href="./Riya Malik/index.html" class="portfolio-box" target="_blank">
-        Riya Malik
-      </a>
-      <a href="./Rohit jaiswal/index.html" class="portfolio-box" target="_blank">
-        Rohit jaiswal
-      </a>
       <a href="./Rohit Purkait/public/index.html" class="portfolio-box" target="_blank">
-        Rohit Purkait
+        <span class="portfolio-name">Rohit Purkait</span>
       </a>
+
       <a href="./Romar2020Portfolio/index.html" class="portfolio-box" target="_blank">
-        Romar2020Portfolio
+        <span class="portfolio-name">Romar2020Portfolio</span>
       </a>
-      
+
       <a href="./Sahil Srivastava/index.html" class="portfolio-box" target="_blank">
-        Sahil Srivastava
+        <span class="portfolio-name">Sahil Srivastava</span>
       </a>
+
       <a href="./Sai Ram Pendyala/index.html" class="portfolio-box" target="_blank">
-        Sai Ram Pendyala
+        <span class="portfolio-name">Sai Ram Pendyala</span>
       </a>
+
       <a href="./Sai Shankar/index.html" class="portfolio-box" target="_blank">
-        Sai Shankar
+        <span class="portfolio-name">Sai Shankar</span>
       </a>
+
       <a href="./SAMPLE RESPONSIVE WEBSITE USING HTML AND CSS/index.html" class="portfolio-box" target="_blank">
-        SAMPLE RESPONSIVE WEBSITE USING HTML AND CSS
+        <span class="portfolio-name">SAMPLE RESPONSIVE WEBSITE USING HTML AND CSS</span>
       </a>
+
       <a href="./Samriddhi Singh/index.html" class="portfolio-box" target="_blank">
-        Samriddhi Singh
+        <span class="portfolio-name">Samriddhi Singh</span>
       </a>
+
       <a href="./Sarvesh-Pandit/index.html" class="portfolio-box" target="_blank">
-        Sarvesh Pandit
+        <span class="portfolio-name">Sarvesh Pandit</span>
       </a>
+
       <a href="./Shivam Jha/index.html" class="portfolio-box" target="_blank">
-        Shivam Jha  
+        <span class="portfolio-name">Shivam Jha</span>
       </a>
+
       <a href="./Shivan singh/index.html" class="portfolio-box" target="_blank">
-        Shivan singh
+        <span class="portfolio-name">Shivan singh</span>
       </a>
+
       <a href="./Shrey Nahar A/index.html" class="portfolio-box" target="_blank">
-        Shrey Nahar A
+        <span class="portfolio-name">Shrey Nahar A</span>
       </a>
-      <a href="./Shubham Kumar/index.html" class="portfolio-box" target="_blank"> 
-        Shubham Kumar
+
+      <a href="./Shubham Kumar/index.html" class="portfolio-box" target="_blank">
+        <span class="portfolio-name">Shubham Kumar</span>
       </a>
+
       <a href="./Siddhant Tiwari/templates/index.html" class="portfolio-box" target="_blank">
-        Siddhant Tiwari
+        <span class="portfolio-name">Siddhant Tiwari</span>
       </a>
+
       <a href="./SM_SAIF/index.html" class="portfolio-box" target="_blank">
-        SM_SAIF
+        <span class="portfolio-name">SM_SAIF</span>
       </a>
+
       <a href="./Sohan Singhamahapatra/index.html" class="portfolio-box" target="_blank">
-        Sohan Singhamahapatra
+        <span class="portfolio-name">Sohan Singhamahapatra</span>
       </a>
+
       <a href="./Sujal Vijayvargiya/index.html" class="portfolio-box" target="_blank">
-        Sujal Vijayvargiya
+        <span class="portfolio-name">Sujal Vijayvargiya</span>
       </a>
+
       <a href="./Sushrut Shukla/index.html" class="portfolio-box" target="_blank">
-        Sushrut Shukla
+        <span class="portfolio-name">Sushrut Shukla</span>
       </a>
+
       <a href="./Suvarnesh K M/public/index.html" class="portfolio-box" target="_blank">
-        Suvarnesh K M
+        <span class="portfolio-name">Suvarnesh K M</span>
       </a>
 
       <a href="Tanya Singh/Portfolio/index.html" class="portfolio-box" target="_blank">
-        Tanya Singh
+        <span class="portfolio-name">Tanya Singh</span>
       </a>
 
       <a href="./Utkarsh Somvanshi/PersonalPortfolio/index.html" class="portfolio-box" target="_blank">
-        Utkarsh Somvanshi
+        <span class="portfolio-name">Utkarsh Somvanshi</span>
       </a>
 
       <a href="./Vaibhav-Vijay/index.html" class="portfolio-box" target="_blank">
-        Vaibhav-Vijay
+        <span class="portfolio-name">Vaibhav-Vijay</span>
       </a>
-      <a href="./Vyjayanti_nandula/index.html"  class="portfolio-box" target="_blank">
-        Vyjayanti_nandula
+
+      <a href="./Vyjayanti_nandula/index.html" class="portfolio-box" target="_blank">
+        <span class="portfolio-name">Vyjayanti_nandula</span>
       </a>
 
       <a href="./Yash-Parwani-Portfolio/pages/index.jsx" class="portfolio-box" target="_blank">
-        Yash-Parwani-Portfolio
-      </a>  
-      <a href="./YashGupta/portfolio/index.html" class="portfolio-box" target="_blank"> 
-        YashGupta
+        <span class="portfolio-name">Yash-Parwani-Portfolio</span>
       </a>
+
+      <a href="./YashGupta/portfolio/index.html" class="portfolio-box" target="_blank">
+        <span class="portfolio-name">YashGupta</span>
+      </a>
+
       <a href="./Yashika_Portfolio/index.html" class="portfolio-box" target="_blank">
-        Yashika_Portfolio
+        <span class="portfolio-name">Yashika_Portfolio</span>
       </a>
+
       <a href="./Avinash-Portfolio/index.html" class="portfolio-box" target="_blank">
-        Avinash Mishra
+        <span class="portfolio-name">Avinash Mishra</span>
       </a>
+
       <a href="./Arpit_Gupta/index.html" class="portfolio-box" target="_blank">
-        Arpit Gupta
+        <span class="portfolio-name">Arpit Gupta</span>
       </a>
+
       <a href="https://portfolio-zeta-flax-64.vercel.app/" class="portfolio-box" target="_blank">
-        Waqar Akhtar
+        <span class="portfolio-name">Waqar Akhtar</span>
       </a>
+
       <a href="./shaiqin/index.html" class="portfolio-box" target="_blank">
-        shaiqin
+        <span class="portfolio-name">shaiqin</span>
       </a>
+
 
       <!-- Add more links like the ones above for each portfolio -->
     </div>
+    <div id="no-results" class="no-results">No portfolios found</div>
+    <!-- This is the area where the portfolios will appear -->
+    <!-- <div>
+        <section id="portfolio-container"></section>
+    </div> -->
 
     <script>
       // Count and display total portfolios
@@ -792,17 +820,19 @@
       const portfolioCount = document.getElementById('portfolio-count');
       const noResults = document.getElementById('no-results');
       const searchBar = document.getElementById('search-bar');
-      
+      const container = document.getElementById('portfolio-container');
+
+
       portfolioCount.textContent = portfolioBoxes.length;
 
       // Filter portfolios function
-      searchBar.addEventListener('keyup', function() {
+      searchBar.addEventListener('keyup', function () {
         const searchTerm = this.value.toLowerCase().trim();
         let visibleCount = 0;
 
         portfolioBoxes.forEach(box => {
           const name = box.querySelector('.portfolio-name').textContent.toLowerCase();
-          
+
           if (name.includes(searchTerm)) {
             box.style.display = 'flex';
             visibleCount++;
@@ -827,5 +857,8 @@
         box.style.animation = `fadeInUp 0.6s ease ${index * 0.02}s both`;
       });
     </script>
-  </body>
+    <script src="./scripts/portfolio-render.js"></script>
+
+</body>
+
 </html>
