@@ -165,22 +165,28 @@
 					<strong>Fork the Repository</strong>
 					<p>Fork the Portfolio-Collection repository to your GitHub account.</p>
 				</li>
-                
 				<li>
 					<strong>Add Your Portfolio Folder</strong>
 					<p>Create a new folder with your name (e.g., <code>YourName-Portfolio</code>) in the root directory and add your portfolio files.</p>
 				</li>
-                
 				<li>
-					<strong>Update index.html</strong>
-					<p>Add your portfolio link to the <code>index.html</code> file in the <code>.portfolio-grid</code> section:</p>
+					<strong>Add a Screenshot</strong>
+					<p>Place a screenshot of your portfolio in <code>public/screenshots/</code> and name it clearly (e.g., <code>YourName.png</code>). If you do not provide a screenshot, a default image will be shown.</p>
+				</li>
+				<li>
+					<strong>Update <code>data.json</code></strong>
+					<p>Add an entry to <code>public/data.json</code> with your name, screenshot filename, and source code link. Example:</p>
 					<div class="highlight">
-						<code>&lt;a href="./YourName-Portfolio/index.html" class="portfolio-box" target="_blank"&gt;<br/>
-						&nbsp;&nbsp;&lt;span class="portfolio-name"&gt;Your Name&lt;/span&gt;<br/>
-						&lt;/a&gt;</code>
+						<code>{<br/>
+						  "source_code_link": "https://github.com/avinash201199/Portfolio-Collection/tree/main/YourName-Portfolio",<br/>
+						  "screenshot": "YourName.png",<br/>
+						  "contributor_name": "Your Name"<br/>}</code>
 					</div>
 				</li>
-                
+				<li>
+					<strong>No Manual index.html Edit Needed!</strong>
+					<p>Portfolios are now loaded automatically from <code>data.json</code>.</p>
+				</li>
 				<li>
 					<strong>Create Pull Request</strong>
 					<p>Submit a Pull Request with a clear title: <code>[Portfolio] Your Name</code></p>
