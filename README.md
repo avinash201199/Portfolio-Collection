@@ -26,16 +26,22 @@ Got it! Here's a concise section for that:
 # Contribute Your Portfolio 🌟
 
 1. **Add Your Portfolio Folder**: Place your portfolio files in a new folder within the repository, naming it after yourself (e.g., YourName-Portfolio).
-   
-2. **Update index.html**: After adding your portfolio, update the index.html file in the .portfolio-grid section:
-```html
-<a href="./YourName-Portfolio/index.html" class="portfolio-box" target="_blank">
-  <span class="portfolio-name">Your Name</span>
-</a>
-```
-Replace "YourName-Portfolio/index.html" with the path to your main HTML file.
 
-**New:** You can now use the "Add Portfolio/Resume" link in the navbar to find quick submission instructions and an issue shortcut.
+2. **Add a Screenshot**: Place a screenshot of your portfolio in `public/screenshots/` and name it clearly (e.g., `YourName.png`).
+   - If you do not provide a screenshot, a default image will be shown.
+
+3. **Update data.json**: Add an entry to `public/data.json` with your name, screenshot filename, and source code link. Example:
+```json
+{
+  "source_code_link": "https://github.com/avinash201199/Portfolio-Collection/tree/main/YourName-Portfolio",
+  "screenshot": "YourName.png",
+  "contributor_name": "Your Name"
+}
+```
+
+4. **Update index.html**: No manual update needed! Portfolios are now loaded automatically from `data.json`.
+
+5. **Quick Submission Option**: Use the "Add Portfolio/Resume" link in the navbar for fast instructions and an issue shortcut.
 
 Thank you for adding to the Portfolio-Collection! 🎉
 
