@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Vidhi Bhutia Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+	<style>
+		.about-mf .box-shadow-full {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+
+		.about-mf .about-img {
+			margin-bottom: 2rem;
+		}
+
+		.about-mf .about-img img {
+			margin-left: 10px;
+		}
+
+
+		.skill-mf .progress {
+			/* background-color: #cde1f8; */
+			margin: .5rem 0 1.2rem 0;
+			border-radius: 0;
+			height: .7rem;
+		}
+
+		.skill-mf .progress .progress-bar {
+			height: .7rem;
+			background-color: #ffbd39;
+		}
+
+
+		/* Animation styles */
+		#typing-animation {
+			position: relative;
+			font-size: 30px;
+			font-weight: bold;
+			color: rgb(255, 255, 255);
+			overflow: hidden;
+			white-space: nowrap;
+			animation: typing 3s steps(20, end) infinite;
+		}
+
+		#typing-animation:before {
+			content: "";
+			/* position: absolute; */
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background-color: #ccc;
+			animation: typing-cursor 0.5s ease-in-out infinite;
+		}
+
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+
+			to {
+				width: 100%;
+			}
+		}
+
+		@keyframes typing-cursor {
+			from {
+				width: 5px;
+			}
+
+			to {
+				width: 0;
+			}
+		}
+
+
+		/* project image zoom effect */
+
+		.zoom-effect {
+			overflow: hidden;
+			transition: transform 0.3s ease-out;
+		}
+
+		.zoom-effect:hover {
+			transform: scale(1.1);
+		}
+	</style>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Vidhi Bhutia</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third js-fullheight order-md-last img"
+							style="background-image:url(images/bg_1.png);">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello!</span>
+								<h1 class="mb-4 mt-3">I'm <span>Vidhi Bhutia</span></h1>
+
+								<!-- Element to contain animated typing -->
+								<span id="typing-animation"></span>
+
+								<script>
+
+									// Initialize the typing animation
+									const typingAnimationElement = document.getElementById('typing-animation');
+
+									// Create an array of typing text
+									const typingTexts = [
+										'Engineer  ',
+										'Data Analyst  ',
+										'Student   ',
+									];
+
+									// Create a function to display the typing animation for a given text
+									function playTypingAnimation(text) {
+										// Loop through each character and add it to the element
+										for (let i = 0; i < text.length; i++) {
+											setTimeout(() => {
+												typingAnimationElement.textContent += text[i];
+											}, i * 200); // Increase the delay to slow down the typing animation
+										}
+
+										// Once the animation is complete, reset the text and start over
+										setTimeout(() => {
+											typingAnimationElement.textContent = '';
+											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+										}, text.length * 200);
+									}
+
+									// Start the typing animation loop
+									playTypingAnimation(typingTexts[0]);
+
+								</script>
+
+								<br>
+								<br>
+								<h2>A Software Engineer</h2>
+								<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+								<!-- <br> -->
+								<p><a href="https://www.linkedin.com/in/vidhi-bhutia/"
+										class="btn btn-primary py-3 px-4">LinkedIn</a>
+									<a href="https://github.com/Vidhi-bhutia"
+										class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+					<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+										<div class="about-img">
+											<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+										</div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+										<div class="about-info">
+											<p><span class="title-s">Name: </span> <span>Vidhi Bhutia</span></p>
+											<p><span class="title-s">Job Role: </span> <span>Software Engineer</span>
+											</p>
+											<p><span class="title-s">Experience: </span> <span>Fresher</span></p>
+											<p><span class="title-s">Address: </span> <span>Madhya Pradesh,
+													India</span></p>
+										</div>
+									</div>
+								</div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 65%;"
+											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Python</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Data Visualization</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%"
+											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Statistical Analysis</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 60%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Machine Learning</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 50%"
+											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+
+								<p>Hi, I'm Vidhi Bhutia, a data enthusiast and technology advocate with a strong passion
+									for problem-solving, coding, data analysis and entrepreneurship. Currently pursuing
+									a Bachelor of Technology in Computer Science and Business Systems at Vellore
+									Institute of Technology, I am leveraging my technical and business skills to tackle
+									real-world challenges.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Computer Science Engineering &amp;
+											Business Systems</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>Visualization Tools:</span> <span>Microsoft Power BI,
+											Microsoft Excel &amp; Tableau</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Photography &amp; Reading
+											Business Stories </span></li>
+
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="10">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/vidhi-bhutia/"
+										class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Resume</h1>
+					<h2 class="mb-4">Resume</h2>
+					<p>Aspiring Data Analyst with a keen interest in leveraging data-driven insights to drive business
+						strategies. Developing expertise in data science, statistical analysis, and machine learning
+						algorithms, with a focus on project management for impactful solutions.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h1 class="big-4">Experience</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">May, 2025 - July, 2025</span>
+						<h2>Technology Analyst Intern</h2>
+						<span class="position">Morgan Stanley</span>
+						<p class="mt-4">Morgan Stanley is a leading global financial services firm providing investment
+							banking, securities, wealth management, and investment management services worldwide.
+						<ul>
+							<li>Designed a machine learning-powered dashboard to detect anomalies in system and error
+								log data for the Account Onboarding team, improving issue identification and operational
+								efficiency.</li>
+							<li>Developed an AI-driven chatbot to automate recurring internal queries, reducing manual
+								workload and enhancing team productivity.</li>
+							<li>Created interactive visualizations and dynamic dashboards using Python and Dash, with
+								multiple filtering options, enabling comprehensive analysis of log trends and supporting
+								data-driven decision-making.</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">June, 2024 - August, 2024</span>
+						<h2>Data Analyst and Research Intern</h2>
+						<span class="position">Northstar Impact Solution</span>
+						<p class="mt-4">NorthStar Impact Solution addresses the imperative to go beyond the triple
+							dividend by conceptualising and developing sustainability and impact management software.
+						<ul>
+							<li>Conducted comprehensive competitive analysis on products, technologies, pricing, reach,
+								and strategies of more than 20
+								national and international competitors, enhancing strategic decision-making.</li>
+							<li>Crafted and showcased detailed data reports through Power BI, enhancing data clarity and
+								usability by 20%, empowering
+								the management team to execute data-driven strategies more effectively and efficiently
+							</li>
+							<li>Analyzed various sustainability indices such as GRI, TCFD, IR, NVG, etc. for multiple
+								power companies to develop a unified template, achieving a significant 50% increase in
+								efficiency.</li>
+						</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">June, 2024</span>
+						<h2>Data Analyst Research Intern</h2>
+						<span class="position">National Institute of Technology, Rourkela</span>
+						<p class="mt-4">NIT Rourkela is recognized as an Institute of National Importance and is known
+							for its excellence in research, consultancy, and education.
+						<ul>
+							<li>Collaborated on two pioneering research projects in stock market prediction, employing
+								LSTM, GRU, and TCN models
+								to analyze a comprehensive dataset spanning 20 years and including extensive data
+								points.</li>
+							<li>Developed and deployed a cutting-edge web application using Python libraries like
+								yfinance and Streamlit, enabling
+								real-time visualization and analysis of stock price forecasts.
+							</li>
+							<li>Utilized error metrics such as MSE (Mean Squared Error), RMSE (Root Mean Squared Error),
+								and MAE (Mean Absolute Error) to quantify model accuracy.</li>
+						</ul>
+						</p>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Feb, 2024 - Mar, 2024</span>
+						<h2>HR Management Intern</h2>
+						<span class="position">Suvidha Foundation</span>
+						<p class="mt-4">Suvidha Foundation is a non-profit organization dedicated to empowering
+							communities through education, skill development, and social initiatives.
+						<ul>
+							<li>Coordinated communication with selected candidates via email, managed comprehensive
+								onboarding processes effectively, and maintained candidate databases for improved
+								tracking.</li>
+							<li>Monitored and handled official WhatsApp groups, addressed candidate queries promptly,
+								and provided timely support to ensure smooth operations and enhanced candidate
+								satisfaction.</li>
+							<li>Actively contributed to regular meetings and group messages to present updates on
+								recruitment progress and HR operations, contributing to efficient workflow management.
+							</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<br>
+			<br>
+
+			<div class="row">
+				<h1 class="big-4">Education</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2022 - 2026</span>
+						<h2>Bachelor of Technology</h2>
+						<span class="position">Vellore Institute of Technology, Vellore</span>
+						<p class="mt-4">Current CGPA: 9.04/10</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2019-2021</span>
+						<h2>Higher Secondary School</h2>
+						<span class="position">Scindia Kanya Vidyalaya</span>
+						<p class="mt-4">Percentage: 94.6%</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2017-2019</span>
+						<h2>Secondary School</h2>
+						<span class="position">Delhi Public School, Katni</span>
+						<p class="mt-4">Percentage: 91.6%</p>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Projects</h2>
+					<p>Below are some of the projects I have worked on. Click on the project to view the details.</p>
+				</div>
+			</div>
+
+			<!-- First row of projects -->
+			<div class="row">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/Vidhi-bhutia/Disease-Prediction-Model" class="block-20 zoom-effect"
+							style="background-image: url('images/precision-health-stock.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">
+								<a href="https://github.com/Vidhi-bhutia/Disease-Prediction-Model">
+									Disease Prediction Model
+								</a>
+							</h3>
+							<p>A predictive model designed to identify potential disease outbreaks and trends using
+								historical health data and machine learning techniques to improve public health
+								responses.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/Vidhi-bhutia/Twitter-Sentiment-Analysis"
+							class="block-20 zoom-effect"
+							style="background-image: url('images/Twitter-sentiment-analysis-Final.svg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">
+								<a href="https://github.com/Vidhi-bhutia/Twitter-Sentiment-Analysis">
+									Twitter Sentiment Analysis
+								</a>
+							</h3>
+							<p>An NLP-based tool trained on vaccination-related tweets to analyze public sentiment and
+								opinions, helping understand trends and attitudes toward vaccination.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/Vidhi-bhutia/Climate-Change-Predictions"
+							class="block-20 zoom-effect" style="background-image: url('images/climate_change.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">
+								<a href="https://github.com/Vidhi-bhutia/Climate-Change-Predictions">
+									Climate Change Prediction
+								</a>
+							</h3>
+							<p>A robust machine learning model that utilizes Random Forest, Gradient Boosting, and
+								Neural Network algorithms to predict climate change trends and analyze environmental
+								data.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Second row of projects -->
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/Vidhi-bhutia/Stock_Price_Predictor" class="block-20 zoom-effect"
+							style="background-image: url('images/proj_1.jpeg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">
+								<a href="https://github.com/Vidhi-bhutia/Stock_Price_Predictor">
+									Stock Prediction Model
+								</a>
+							</h3>
+							<p>Developed an advanced web application using Streamlit to predict stock prices,
+								integrating three cutting-edge models: LSTM, GRU, and TCN.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/Vidhi-bhutia/Amazon-Prime-Analysis" class="block-20 zoom-effect"
+							style="background-image: url('images/proj_2.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">
+								<a href="https://github.com/Vidhi-bhutia/Amazon-Prime-Analysis">
+									Amazon Prime Videos Analysis
+								</a>
+							</h3>
+							<p>Conducted an in-depth analysis of Amazon Prime Video's content library using Power BI.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="https://github.com/Vidhi-bhutia/Comprehensive-Analysis-on-Unicorn-Businesses"
+							class="block-20 zoom-effect" style="background-image: url('images/proj_3.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">
+								<a href="https://github.com/Vidhi-bhutia/Comprehensive-Analysis-on-Unicorn-Businesses">
+									Analysis on Unicorn Businesses
+								</a>
+							</h3>
+							<p>Utilized Microsoft Power BI and advanced visual tools to analyze a comprehensive dataset
+								of 1072 unicorn companies worldwide.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Center align for last two projects -->
+			<div class="row d-flex justify-content-center">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://vidhi-bhutia.my.canva.site/edme" class="block-20 zoom-effect"
+							style="background-image: url('images/proj_4.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">
+								<a href="https://vidhi-bhutia.my.canva.site/edme">
+									EdMe - School Admission Website (Prototype)
+								</a>
+							</h3>
+							<p>EdMe offers comprehensive school discovery, comparison tools, expert counseling, and
+								ensures authenticity in school information.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/Vidhi-bhutia/Tic-Tac-Toe" class="block-20 zoom-effect"
+							style="background-image: url('images/proj_5.jpeg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading">
+								<a href="https://github.com/Vidhi-bhutia/Tic-Tac-Toe">
+									Tic-Tac-Toe Game
+								</a>
+							</h3>
+							<p>Developed a python Tic-Tac-Toe game which gives you options to play with intelligent
+								computer or another human.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+			<div class="row d-md-flex align-items-center">
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="4">0</strong>
+							<span>Volunteer Programs</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="10">0</strong>
+							<span>Projects</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="15">0</strong>
+							<span>Certifications</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github </span> </h2>
+						<div class="heading">
+							<h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+							<br>
+							<p><a href="https://github.com/Vidhi-bhutia" class="btn btn-primary py-3 px-5">GitHub</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+					<p>Below are the details to reach out to me!</p>
+				</div>
+			</div>
+
+			<div class="row justify-content-center align-items-center">
+				<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p>Madhya Pradesh, India</p>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto:name@gmail.com"
+								style="color: inherit; text-decoration: none;">name@gmail.com</a></p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="container">
+				<br>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>Have a<span> Question? </span> <a href="https://linkedin.com/in/vidhi-bhutia"
+								class="btn btn-primary py-3 px-5">DM me</a> </h2>
+					</div>
+				</div>
+				<br>
+				<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					<li class="ftco-animate normal-txt">Find me on </li>
+					<li class="ftco-animate"><a href="https://www.linkedin.com/in/vidhi-bhutia/"><span
+								class="icon-linkedin"></span></a></li>
+					<li class="ftco-animate"><a href="https://twitter.com/VidhiBhutia_"><span
+								class="icon-twitter"></span></a></li>
+				</ul>
+				<br>
+			</div>
+		</div>
+	</section>
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
