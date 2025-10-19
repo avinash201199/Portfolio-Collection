@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanyasri | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape"></div><div class="shape"></div><div class="shape"></div>
+        <div class="shape"></div><div class="shape"></div><div class="shape"></div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <nav class="glass">
+                <div class="logo" onclick="showPage('home')">
+                    <div class="logo-icon">💻</div>
+                    <span>DHANYASRI</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" onclick="showPage('home')" class="active">Home</a>
+                    <a href="#" onclick="showPage('about')">About</a>
+                    <a href="#" onclick="showPage('internships')">Internships</a>
+                    <a href="#" onclick="showPage('projects')">Projects</a>
+                    <a href="#" onclick="showPage('contact')">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HOME -->
+    <div id="home" class="page active">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <div class="hero-image">
+                        <img src="images/templatemo-futuristic-girl.jpg" alt="Dhanya Portfolio" />
+                    </div>
+                    <div class="hero-content">
+                        <h1>Hi, I’m Dhanyasri G 👩‍💻</h1>
+                        <p>Computer Science Engineer | Machine Learning & Web Developer | Open Source Contributor</p>
+                        <a href="#" class="cta-button" onclick="showPage('about')">About Me</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="about-content">
+                    <div class="about-text glass">
+                        <h2>About Me</h2>
+                        <p>I’m Dhanyasri, a passionate Computer Science Engineering student skilled in Python, Java, ReactJS, and Machine Learning.  
+                        I enjoy solving problems, building impactful projects, and contributing to hackathons & open-source.  
+                        Currently, I am a contributor at <b>GirlScript Summer of Code (GSSoC)</b>.  
+                        My goal is to grow as a full-stack developer and machine learning engineer while creating innovative solutions.</p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-card glass">
+                            <div class="stat-number">6+</div>
+                            <div class="stat-label">Major Projects</div>
+                        </div>
+                        <div class="stat-card glass">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Internships Completed</div>
+                        </div>
+                        <div class="stat-card glass">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Hackathons</div>
+                        </div>
+                        <div class="stat-card glass">
+                            <div class="stat-number">GSSOC</div>
+                            <div class="stat-label">Open source contibutor</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CERTIFICATIONS -->
+                <section class="team-section">
+                    <h2>Certifications</h2>
+                    <div class="team-grid">
+                        <div class="team-member glass">
+                            <h3>✔ Python</h3>
+                            <p class="bio">Infosys Certification in Python Programming</p>
+                        </div>
+                        <div class="team-member glass">
+                            <h3>✔ HTML & CSS</h3>
+                            <p class="bio">Certified by CodeGalatta</p>
+                        </div>
+                        <div class="team-member glass">
+                            <h3>✔ Problem Solving</h3>
+                            <p class="bio">Certified by HackerRank</p>
+                        </div>
+                        <div class="team-member glass">
+                            <h3>✔ Flipkart SCOA</h3>
+                            <p class="bio">Flipkart Supply Chain Operations Academy Certification</p>
+                        </div>
+                        <div class="team-member glass">
+                            <h3>✔ Infosys Pragati</h3>
+                            <p class="bio">Selected for Infosys Pragati: Path to Future Program</p>
+                        </div>
+                        <div class="team-member glass">
+                            <h3>✔ Finest Coder</h3>
+                            <p class="bio">Completed 10‑day intensive Data Structures & Algorithms workshop with Finest Coder</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- INTERNSHIPS -->
+    <div id="internships" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <h1>Internships</h1>
+                    <p>Professional training & real-world experience</p>
+                </section>
+
+                <section class="services-grid">
+                    <div class="service-card glass">
+                        <h3>🔬 ABE Neura Technologies</h3>
+                        <p>Machine Learning Intern – Built a Malware Classification project using ML algorithms on real-world datasets.</p>
+                        <a href="https://github.com/Dhanyasri7/Malwares-in-cyber-security" target="_blank" class="cta-button">View Project</a>
+                    </div>
+
+                    <div class="service-card glass">
+                        <h3>☀️ Edunet Foundation</h3>
+                        <p>Data Science Intern – Developed Solar Power Prediction system using weather data and ML models.</p>
+                        <a href="https://github.com/Dhanyasri7/Solar_Power_Output" target="_blank" class="cta-button">View Project</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="projects" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <h1>Projects</h1>
+                    <p>Some of my recent work & hackathon projects</p>
+                </section>
+
+                <section class="services-grid">
+                    <div class="service-card glass">
+                        <h3>💧 AquaTrack</h3>
+                        <p>Daily Water Intake Tracker with a bubbly UI theme.</p>
+                        <a href="https://dhanyasri7.github.io/water-tracker-app/" target="_blank" class="cta-button">View Project</a>
+                    </div>
+
+                    <div class="service-card glass">
+                        <h3>🚦 AI Traffic Management</h3>
+                        <p>Hackathon project for congestion detection & route planning using AI.</p>
+                        <a href="https://www.figma.com/proto/KHSa9YzNX4ArvcUiNj7tAK/SONA_250071?node-id=1-2&t=YfbwyFnwGZI8MTsU-1" target="_blank" class="cta-button">View Project</a>
+                    </div>
+
+                    <div class="service-card glass">
+                        <h3>☀️ Solar Power Prediction</h3>
+                        <p>Internship project predicting solar output using ML models.</p>
+                        <a href="https://github.com/Dhanyasri7/Solar_Power_Output" target="_blank" class="cta-button">View Project</a>
+                    </div>
+
+                    <div class="service-card glass">
+                        <h3>🛡 Malware Classification</h3>
+                        <p>Built ML-based malware detection system during ABE Neura internship.</p>
+                        <a href="https://github.com/Dhanyasri7/Malwares-in-cyber-security" target="_blank" class="cta-button">View Project</a>
+                    </div>
+
+                    <div class="service-card glass">
+                        <h3>🎮 Memory Game</h3>
+                        <p>A fun React-based card matching game with custom images, animations, and attempts counter.</p>
+                        <a href="https://688f6dc81d9c62778ca9a6e4--memory-game-07.netlify.app" target="_blank" class="cta-button">View Project</a>
+                    </div>
+
+                    <div class="service-card glass">
+                        <h3>🎨 Color Picker</h3>
+                        <p>A simple and interactive web app to pick colors and copy hex/RGB values instantly.</p>
+                        <a href="https://github.com/Dhanyasri7/color-picker/tree/'main'" target="_blank" class="cta-button">View Project</a>
+                    </div>
+
+                    <div class="service-card glass">
+                        <h3>⭐ Undo/Redo Drawing Canvas</h3>
+                        <p>Interactive drawing tool in React with full Undo & Redo functionality.</p>
+                        <a href="https://dhanyasri7.github.io/undo-redo/" target="_blank" class="cta-button">View Project</a>
+                    </div>
+
+                    <div class="service-card glass">
+                        <h3>🌍 Open Source Contribution – GSSoC 2025</h3>
+                        <p>Contributed to <b>Weather App</b> under <b>GirlScript Summer of Code 2025</b>. </p>
+                        <a href="https://github.com/Dhanyasri7/Snow-Background-Weather-App" target="_blank" class="cta-button">View Contribution</a>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="contact-info glass">
+                    <h2>Contact Me</h2>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📧</div>
+                        <div class="contact-item-text">
+                            <h4>Email</h4>
+                            <p>dhanyasri921@gmail.com</p>
+                            <p>dsri09108@gmail.com</p>
+                        </div>
+                    </div>
+                     <div class="contact-item">
+                        <div class="contact-item-icon">📞</div>
+                        <div class="contact-item-text">
+                            <h4>Mobile</h4>
+                            <p>+91 7810038694</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">💻</div>
+                        <div class="contact-item-text">
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com/Dhanyasri7" target="_blank">github.com/Dhanyasri7</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">🔗</div>
+                        <div class="contact-item-text">
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://www.linkedin.com/in/dhanyasri-g-80188b243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/dhanya</a></p>
+                        </div>
+                        
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">🧩</div>
+                        <div class="contact-item-text">
+                            <h4>LeetCode</h4>
+                            <p><a href="https://leetcode.com/u/uSprHfETN7/" target="_blank">leetcode.com/uSprHfETN7</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📄</div>
+                        <div class="contact-item-text">
+                            <h4>Resume</h4>
+                            <p><a href="https://drive.google.com/file/d/1xrCS1Yt-EeIC1ZfJdjrwmYgGAbqepp2p/view?usp=sharing" target="_blank">View Resume</a></p>
+                        </div>
+                    </div>
+
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <div class="container">
+            <footer class="glass">
+                <div class="footer-content">
+                    <div class="footer-links">
+                        <a href="#" onclick="showPage('about')">About</a>
+                        <a href="#" onclick="showPage('internships')">Internships</a>
+                        <a href="#" onclick="showPage('projects')">Projects</a>
+                        <a href="#" onclick="showPage('contact')">Contact</a>
+                    </div>
+                    <div class="copyright">
+                        &copy; 2025 Dhanya. All rights reserved. Crafted with 💙 & code.
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
