@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushi - Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Decorative Elements -->
+    <div class="deco-star deco-star-1">✨</div>
+    <div class="deco-star deco-star-2">✨</div>
+    <div class="deco-star deco-star-3">✨</div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <span class="logo-star">✦</span>
+            <span>Khushi</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#interests" class="nav-link">Interests</a></li>
+            <li><a href="#contact" class="nav-link">Hire Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>I make <span class="highlight">🎯</span> top notch websites</h1>
+            <p>Creating beautiful, functional digital experiences that stand out</p>
+            <a href="#portfolio" class="cta-button">See Portfolio</a>
+        </div>
+        <div class="hero-image">
+            <div class="lightbulb">💡</div>
+            <div class="frame">
+                <div class="frame-content">😊</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-title">my fun projects</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="portfolio-card-image">🎨</div>
+                <h3>E-Commerce Platform</h3>
+                <p>Modern shopping experience with smooth interactions and beautiful UI</p>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-card-image">📱</div>
+                <h3>Mobile App Design</h3>
+                <p>Responsive design that works seamlessly across all devices</p>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-card-image">🚀</div>
+                <h3>SaaS Dashboard</h3>
+                <p>Intuitive analytics dashboard for data-driven decisions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I'm a passionate web designer and developer with a love for creating minimalist, user-friendly interfaces.</p>
+                <p>My approach combines clean design principles with modern web technologies to deliver websites that not only look great but also perform exceptionally well.</p>
+                <div class="skills">
+                    <span class="skill-tag">UI/UX Design</span>
+                    <span class="skill-tag">Web Development</span>
+                    <span class="skill-tag">HTML/CSS/JS</span>
+                    <span class="skill-tag">Responsive Design</span>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="flower">🌸</div>
+            </div>
+        </div>
+    </section>
+     <!-- Interests Section -->
+  <section class="interests" id="interests">
+    <h2 class="section-title">Interests</h2>
+    <div class="interests-content">
+      <div class="interests-text">
+        <p>I love watching movies, cartoons, and Pixar films — I’ve watched tons! I enjoy how playfully they convey deep lessons — this is how my desktop's wallpaper looks like lol 🎬✨</p>
+      </div>
+      <div class="interests-image">
+        <img src="desktop.png" alt="Pixar-themed desktop wallpaper">
+      </div>
+    </div>
+
+    <div class="interests-content reverse">
+      <div class="interests-text">
+        <p>I also feel grateful that I have a tree outside my window 🌳☀️</p>
+      </div>
+      <div class="interests-image">
+        <img src="window tree.png" alt="Tree outside window">
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Let's Work Together</h2>
+        <p style="margin-bottom: 30px; font-size: 18px;">Ready to create something amazing?</p>
+        <div class="contact-links">
+            <a href="mailto:khushipanghal08@gmail.com" class="contact-link">Email Me</a>
+            <a href="https://www.linkedin.com/in/khushi-panghal-3b951228a/" class="contact-link">LinkedIn</a>
+            <a href="https://x.com/khushixtwt" class="contact-link">Twitter</a>
+            <a href="https://github.com/khushiiiip" class="contact-link">GitHub</a>
+        </div>
+    </section>
+      <!-- Comment Section -->
+  <section class="comments" id="comments">
+    <h2 class="section-title">Leave a Comment</h2>
+    <p class="comments-intro">I'd love to hear your thoughts! ✨</p>
+
+    <form id="commentForm" class="comment-form">
+      <input type="text" id="name" placeholder="Your name" required>
+      <input type="email" id="email" placeholder="Your email" required>
+      <textarea id="message" placeholder="Write your comment..." rows="4" required></textarea>
+      <button type="submit" class="cta-button">Post Comment</button>
+    </form>
+
+    <div id="commentList" class="comment-list"></div>
+  </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Khushi. All rights reserved. Designed with ✨</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
