@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Rajdeep Singh | Terminal Portfolio" />
+    <meta
+      name="description"
+      content="Interactive terminal-themed portfolio of Rajdeep Singh - Full-Stack Developer specializing in JavaScript, React, Node.js, and modern web technologies. Explore projects, skills, and achievements through a unique command-line interface."
+    />
+    <meta
+      name="keywords"
+      content="Rajdeep Singh, RajdeepKushwaha5, Developer, Portfolio, Full-Stack, JavaScript, React, Node.js, Web Developer, Software Engineer, Terminal Portfolio, GitHub"
+    />
+    <meta name="author" content="Rajdeep Singh" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rajdeep-singh.vercel.app/" />
+    <meta property="og:title" content="Rajdeep Singh | Terminal Portfolio" />
+    <meta
+      property="og:description"
+      content="Interactive terminal-themed portfolio showcasing full-stack development projects and skills. Type 'help' to explore!"
+    />
+    <meta
+      property="og:image"
+      content="https://rajdeep-singh.vercel.app/assets/og-image.png"
+    />
+    <meta property="og:site_name" content="Rajdeep Singh Portfolio" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://rajdeep-singh.vercel.app/" />
+    <meta
+      property="twitter:title"
+      content="Rajdeep Singh | Terminal Portfolio"
+    />
+    <meta
+      property="twitter:description"
+      content="Interactive terminal-themed portfolio showcasing full-stack development projects and skills. Type 'help' to explore!"
+    />
+    <meta
+      property="twitter:image"
+      content="https://rajdeep-singh.vercel.app/assets/og-image.png"
+    />
+    <meta property="twitter:creator" content="@rajdeeptwts" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#0a0e27" />
+
+    <title>Rajdeep Singh | Terminal Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Fira+Code:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Loading Spinner -->
+    <div
+      id="loading-screen"
+      class="loading-screen"
+      role="status"
+      aria-live="polite"
+    >
+      <div class="spinner" aria-hidden="true"></div>
+      <p class="loading-text">Initializing terminal...</p>
+    </div>
+
+    <main class="main-container" role="main">
+      <!-- Terminal Header -->
+      <header class="terminal-header" role="banner">
+        <div class="terminal-buttons" aria-label="Window controls">
+          <span class="terminal-button close" aria-label="Close"></span>
+          <span class="terminal-button minimize" aria-label="Minimize"></span>
+          <span class="terminal-button maximize" aria-label="Maximize"></span>
+        </div>
+        <div class="terminal-title" aria-label="Terminal title">
+          rajdeep@portfolio:~$
+        </div>
+      </header>
+
+      <!-- ASCII Art Banner -->
+      <pre class="ascii-name" aria-label="Rajdeep Singh name banner" role="img">
+ ____      _         _  ____   _____  _____  ____    ____   ___  _   _   ____  _   _ 
+|  _ \    / \       | ||  _ \ | ____|| ____||  _ \  / ___| |_ _|| \ | | / ___|| | | |
+| |_) |  / _ \   _  | || | | ||  _|  |  _|  | |_) | \___ \  | | |  \| || |  _ | |_| |
+|  _ <  / ___ \ | |_| || |_| || |___ | |___ |  __/   ___) | | | | |\  || |_| ||  _  |
+|_| \_\/_/   \_\ \___/ |____/ |_____||_____||_|     |____/ |___||_| \_| \____||_| |_|
+      </pre>
+
+      <!-- Introduction Section -->
+      <section class="introduction" aria-labelledby="welcome-heading">
+        <h1 id="welcome-heading" class="message-text fade-in">
+          <span class="wave" aria-label="Waving hand">👋</span> Welcome to my
+          terminal portfolio!
+        </h1>
+        <p class="message-text fade-in-delay">
+          Type <span class="help-text">'help'</span> to view available commands
+          or <span class="help-text">'about'</span> to learn more about me.
+        </p>
+      </section>
+
+      <!-- Command Output Area -->
+      <div
+        id="command-output"
+        role="log"
+        aria-live="polite"
+        aria-atomic="false"
+      >
+        <!-- Command results will be displayed here -->
+      </div>
+
+      <!-- Command Input -->
+      <div class="input-container" role="form">
+        <label for="command" class="input-label">
+          <span class="prompt-user">guest</span>@<span class="prompt-host"
+            >rajdeep</span
+          >:<span class="prompt-path">~</span>$
+        </label>
+        <input
+          type="text"
+          name="command"
+          id="command"
+          class="input-command input-text"
+          autocomplete="off"
+          spellcheck="false"
+          autofocus
+          placeholder="Type a command..."
+          aria-label="Command input"
+          aria-describedby="command-help"
+        />
+        <span id="command-help" class="sr-only"
+          >Enter a command and press Enter to execute. Type help for available
+          commands.</span
+        >
+      </div>
+    </main>
+
+    <!-- Mobile Help Button -->
+    <button
+      class="mobile-help-btn"
+      id="mobile-help"
+      aria-label="Show help menu"
+      title="Show help"
+    >
+      <span aria-hidden="true">?</span>
+    </button>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
